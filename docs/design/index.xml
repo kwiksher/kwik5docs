@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Design on Kwik</title><link>/design/</link><description>Recent content in Design on Kwik</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><atom:link href="/design/index.xml" rel="self" type="application/rss+xml"/><item><title>Architecure</title><link>/design/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/design/architecture/</guid><description>Architecure html panel
+browser uxp panel webview flowchart LR Designer((fas:fa-user Designer)) Developer((fas:fa-user Developer)) subgraph Photoshop graphics UXP end subgraph Editor[Editor] subgraph App assets[(assets/images&amp;lt;br&amp;gt;models/json)] lua[(Source .lua)] end tools(renderer&amp;lt;br&amp;gt;scafolder) httpServer GUI(GUI&amp;lt;br&amp;gt;transform&amp;lt;br&amp;gt;animation) GUI -.- tools end subgraph htmlPanel[REST API] form(Properties &amp;lt;br&amp;gt; CRUD) end subgraph VSCode httpYac(httpYac) end Photoshop -.img/json.-&amp;gt; assets htmlPanel &amp;lt;-.img/json.-&amp;gt; httpServer httpServer &amp;lt;-.-&amp;gt; assets httpServer -.- tools tools -.- App Browser-.- htmlPanel httpYac -.- htmlPanel VSCode -.- lua GUI -.</description></item><item><title>New Features</title><link>/design/new_features/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/design/new_features/</guid><description>New Features Solar2D API to be included
+Audio
+seek rewind cross fade function Social
+twitter facebook instagram transition.*
+chaining them mesh
+2.5D — Perspective and Depth
+game controllers
+Solar2D video texture
+https://github.com/ANSH3LL/plugin_movie Tiled
+https://forums.solar2d.com/t/smooth-scrolling-of-top-down-tiled-map/150199/2
+&amp;ldquo;cull based on a 3x3 area of sub-screens centered around player. &amp;quot;</description></item></channel></rss>

@@ -1,0 +1,670 @@
+<!doctype html><html>
+<head>
+<title>Kwik</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name=revised content="2022-08-02T10:27:23 UTC">
+<title>Editor :: Kwik</title>
+<link rel="shortcut icon" href=/images/favicon.png type=image/x-icon>
+<link href=/css/nucleus.css rel=stylesheet>
+<link href=/css/font-awesome.min.css rel=stylesheet>
+<link href=/css/featherlight.min.css rel=stylesheet>
+<link href=/css/auto-complete.css rel=stylesheet>
+<link href=/theme-flex/style.css rel=stylesheet>
+<link rel=stylesheet href=/css/bootstrap.min.css>
+<meta name=description content>
+</head>
+<body data-url=/design/tools/editor/>
+<header>
+<div class=logo>
+<a class=baselink href>Kwik</a>
+</div>
+<div class=burger><a href=javascript:void(0); style=font-size:15px>&#9776;</a></div>
+<nav class=shortcuts>
+<li role>
+<a href=https://github.com/vjeantet/hugo-theme-docdock rel=noopener>
+<i class="fa fa-github"></i> <label>Github repo</label>
+</a>
+</li>
+<li role>
+<a href=https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip rel=noopener>
+<i class="fa fa-cloud-download"></i> <label>Download</label>
+</a>
+</li>
+<li role>
+<a href=https://gohugo.io/ rel=noopener>
+<i class="fa fa-bookmark"></i> <label>Hugo Documentation</label>
+</a>
+</li>
+<li role>
+<a href=/credits rel=noopener>
+<i class="fa fa-bullhorn"></i> <label>Credits</label>
+</a>
+</li>
+</nav>
+</header>
+<article>
+<aside>
+<ul class=menu>
+<li data-nav-id=/ class=dd-item>
+<a href=/>
+<i class="fa fa-fw fa-home"></i>
+</a>
+</li>
+<li data-nav-id=/get_started/ class="dd-item haschildren">
+<div>
+<a href=/get_started/>Get Started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/get_started/naming_rule/ class=dd-item>
+<div>
+<a href=/get_started/naming_rule/>
+Naming Rule
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/get_started/components/ class=dd-item>
+<div>
+<a href=/get_started/components/>
+Components
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/get_started/events/ class=dd-item>
+<div>
+<a href=/get_started/events/>
+Events & Commands
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/ class="dd-item haschildren">
+<div>
+<a href=/design/>Design</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/architecture/ class=dd-item>
+<div>
+<a href=/design/architecture/>
+Architecure
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/ class="dd-item haschildren">
+<div>
+<a href=/design/project_model/>Project Model</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/project_model/content/ class=dd-item>
+<div>
+<a href=/design/project_model/content/>
+Content X Structure
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/components/ class="dd-item haschildren">
+<div>
+<a href=/design/project_model/components/>Components</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/project_model/components/audio/ class=dd-item>
+<div>
+<a href=/design/project_model/components/audio/>
+Audio
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/components/image/ class=dd-item>
+<div>
+<a href=/design/project_model/components/image/>
+Image
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/project_model/template/ class=dd-item>
+<div>
+<a href=/design/project_model/template/>
+Template strurcture
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/photoshop/ class=dd-item>
+<div>
+<a href=/design/project_model/photoshop/>
+Photoshop File
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/template_model/ class=dd-item>
+<div>
+<a href=/design/project_model/template_model/>
+Template Model
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/icons/ class=dd-item>
+<div>
+<a href=/design/project_model/icons/>
+Icons
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/tools/ class="dd-item haschildren">
+<div>
+<a href=/design/tools/>Tools</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/tools/plugins/ class=dd-item>
+<div>
+<a href=/design/tools/plugins/>
+UXP Plugins
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/tools/editor/ class=dd-item>
+<div>
+<a href=/design/tools/editor/>
+Editor
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/tools/webapp/ class=dd-item>
+<div>
+<a href=/design/tools/webapp/>
+REST Server
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/tools/utilities/ class=dd-item>
+<div>
+<a href=/design/tools/utilities/>
+Utilities
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/workflow/ class="dd-item haschildren">
+<div>
+<a href=/design/workflow/>Workflow</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/workflow/lua/ class=dd-item>
+<div>
+<a href=/design/workflow/lua/>
+Lua Code
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/workflow/workflow/ class=dd-item>
+<div>
+<a href=/design/workflow/workflow/>
+REST API
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/sample-projects/ class=dd-item>
+<div>
+<a href=/design/sample-projects/>Sample Projects</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/new_features/ class=dd-item>
+<div>
+<a href=/design/new_features/>
+New Features
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/all/ class=dd-item>
+<div>
+<a href=/all/>all</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+<section>
+</section>
+</aside>
+<section class=page>
+<div class=nav-select>
+<center>Navigation :
+<select onchange="location.href=this.value"><option value=/get_started/>
+Get Started</option><option value=/design/>
+Design</option><option value=/design/architecture/>- Architecure</option><option value=/design/project_model/>
+-
+Project Model</option><option value=/design/tools/>
+-
+Tools</option><option value=/design/tools/plugins/>-- UXP Plugins</option><option value=/design/tools/editor/ selected>-- Editor</option><option value=/design/tools/webapp/>-- REST Server</option><option value=/design/tools/utilities/>-- Utilities</option><option value=/design/workflow/>
+-
+Workflow</option><option value=/design/sample-projects/>
+-
+Sample Projects</option><option value=/design/new_features/>- New Features</option><option value=/all/>
+all</option></select>
+</center>
+</div>
+<div>
+<div class=searchbox>
+<input data-search-input id=search-by type=text placeholder=Search...>
+</div>
+</div>
+<div align=right>Last Modified: 2022-08-02</div>
+<h3 id=editor>Editor</h3>
+<ul>
+<li>React</li>
+<li>Solar2D</li>
+</ul>
+<hr>
+<p>Kwik functions</p>
+<ul>
+<li>
+<p>Command</p>
+<ul>
+<li>
+<p>File</p>
+<ul>
+<li>Project New</li>
+<li>Project Open</li>
+<li>Project Recent</li>
+<li>Page New</li>
+</ul>
+</li>
+<li>
+<p>Edit</p>
+<ul>
+<li>Paste/Copy components</li>
+<li>Delete
+<ul>
+<li>pages</li>
+<li>components</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Publish</p>
+<ul>
+<li>Compress PNGs &ndash; TBI notarized compress.app in Kwik</li>
+<li>Assemble PNGs
+<ul>
+<li>A-Gif or A-PNG</li>
+</ul>
+</li>
+<li>Publish
+<ul>
+<li>Images</li>
+<li>One page or Selected pages</li>
+<li>Open Solar2D simulator</li>
+<li>options
+<ul>
+<li>Enable child components &ndash; TBI as layerSet as a group or independent option</li>
+<li>Debug
+<ul>
+<li>show memory</li>
+<li>(trace/print control)</li>
+</ul>
+</li>
+<li>Spritsheet @2x</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Importer for a Kwik3 project</p>
+</li>
+</ul>
+</li>
+<li>
+<p>License</p>
+<ul>
+<li>Perpetual or Subscription</li>
+<li>Activate</li>
+<li>Transfer</li>
+<li>Proxy Settings</li>
+</ul>
+</li>
+<li>
+<p>Template &ndash; TBI as auto update from kwiksher.com and store it as global</p>
+<ul>
+<li>Copy global to local for customization</li>
+</ul>
+</li>
+<li>
+<p>Auto update - TBI</p>
+<ul>
+<li>notarization and store updater.app in kwik5</li>
+</ul>
+</li>
+<li>
+<p>Language</p>
+<ul>
+<li>English or Japanese</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>Samples</p>
+<ul>
+<li>Afraid (Get Started)</li>
+<li>Actions</li>
+<li>Animations</li>
+<li>Canvas</li>
+<li>Multi Lingual</li>
+<li>Layer Replacements</li>
+<li>Physics</li>
+<li>Project And Pages</li>
+</ul>
+<hr>
+<p>Structure</p>
+<ul>
+<li>
+<p>Project Properties</p>
+<ul>
+<li>Icon</li>
+<li>Splash screen</li>
+<li>Letter/ZoomEven/ZoomStretch</li>
+<li>Navigation Thumbnail</li>
+<li>Auto Bookmark</li>
+<li>Admob</li>
+<li>(Rating)</li>
+<li>IAP
+<ul>
+<li>simple unlock</li>
+<li>bookshelf</li>
+</ul>
+</li>
+<li>Bookshelf
+<ul>
+<li>pages</li>
+<li>template</li>
+<li>embedded
+<ul>
+<li>normal or versions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Languages &ndash; TBI as State in kwik5, global</li>
+<li>Upate Template</li>
+</ul>
+</li>
+<li>
+<p>Extended</p>
+<ul>
+<li>
+<p>Normal or Component</p>
+</li>
+<li>
+<p>Page Properties</p>
+<ul>
+<li>Context &ndash; load the page images using the context page</li>
+<li>Scale</li>
+<li>Enable page swipe</li>
+<li>Show in navigation</li>
+<li>Loading option
+<ul>
+<li>Preload</li>
+<li>Template &ndash; bookshelf template page</li>
+<li>Comic &ndash; enable comic rendering for -panels, balloons, background</li>
+<li>Alias &ndash; bookshelf: the page alias for a master template page</li>
+</ul>
+</li>
+<li>IAP Unlock</li>
+<li>Show Ad</li>
+<li>Record screen</li>
+</ul>
+</li>
+<li>
+<p>Page components</p>
+<ul>
+<li>Audios
+<ul>
+<li>Audio
+<ul>
+<li>global or local</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Groups
+<ul>
+<li>Group
+<ul>
+<li>Change order</li>
+<li>Hide a group</li>
+</ul>
+</li>
+<li>Simple Camera Frame</li>
+<li>Set
+<ul>
+<li>Group with</li>
+<li>Audio with</li>
+<li>Variable with</li>
+</ul>
+</li>
+<li>Common
+<ul>
+<li>Hide</li>
+<li>Simple Responsive</li>
+<li>Random Position</li>
+<li>Scale</li>
+<li>Infinity Scroll</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>States local
+<ul>
+<li>State</li>
+</ul>
+</li>
+<li>Actions
+<ul>
+<li>Action</li>
+</ul>
+</li>
+<li>Timers
+<ul>
+<li>Timers</li>
+</ul>
+</li>
+<li>Variables
+<ul>
+<li>Variable
+<ul>
+<li>global or local</li>
+<li>keep track</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Physics
+<ul>
+<li>Environment</li>
+<li>(Joints)</li>
+<li>(Collisions)</li>
+</ul>
+</li>
+<li>External codes &ndash; global, local, self, ace editor?
+<ul>
+<li>libraries</li>
+<li>codes
+<ul>
+<li>onInit</li>
+<li>onCreate</li>
+<li>onShow</li>
+<li>onHide</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Layer Properties</p>
+<ul>
+<li>
+<p>Common</p>
+<ul>
+<li>Hide</li>
+<li>Simple Responsive</li>
+<li>Random Position</li>
+<li>Scale</li>
+<li>Export
+<ul>
+<li>as Jpeg</li>
+<li>save as Shared Asset</li>
+</ul>
+</li>
+<li>Render as</li>
+<li>Infinity Scroll</li>
+<li>Set
+<ul>
+<li>Group with</li>
+<li>Audio with</li>
+<li>Variable with</li>
+</ul>
+</li>
+<li>States
+<ul>
+<li>Gloabl</li>
+<li>Local</li>
+<li>Object</li>
+</ul>
+</li>
+<li>Extenal Code - self</li>
+</ul>
+</li>
+<li>
+<p>Set Language &ndash; TBI as State function gloal, local, object</p>
+</li>
+<li>
+<p>Animation</p>
+<ul>
+<li>Linear</li>
+<li>Path</li>
+<li>Switch Image to</li>
+<li>Rotation</li>
+<li>Pulse</li>
+<li>Bounce</li>
+<li>Blink</li>
+<li>Shake</li>
+<li>Filter</li>
+</ul>
+</li>
+<li>
+<p>Replacements</p>
+<ul>
+<li>Spritesheet
+<ul>
+<li>Simple</li>
+<li>Texture Packer</li>
+<li>Adobe Animate</li>
+<li>(Spine)</li>
+</ul>
+</li>
+<li>Sync Text Audio
+<ul>
+<li>(Lip Sync - Spine and Papagayo)</li>
+</ul>
+</li>
+<li>Video
+<ul>
+<li>normal or PNGs</li>
+</ul>
+</li>
+<li>Web</li>
+<li>Vector</li>
+<li>Map</li>
+<li>Multiplier</li>
+<li>Particles
+<ul>
+<li>Importer</li>
+<li>Editor</li>
+</ul>
+</li>
+<li>Text
+<ul>
+<li>Dynamic</li>
+<li>Static</li>
+<li>Input</li>
+</ul>
+</li>
+<li>Countdown</li>
+<li>Mask</li>
+</ul>
+</li>
+<li>
+<p>Interactions</p>
+<ul>
+<li>Button</li>
+<li>Drag</li>
+<li>Swipe</li>
+<li>Pinch</li>
+<li>Spin</li>
+<li>Shake</li>
+<li>Scroll</li>
+<li>Parallax (Accelerometer)</li>
+<li>Canvas</li>
+<li>(Snapeshot Eraser)</li>
+<li>(Push - OneSignal)</li>
+</ul>
+</li>
+<li>
+<p>Physics</p>
+<ul>
+<li>Body</li>
+<li>Set Force</li>
+<li>Set Joint with</li>
+<li>Set Collision with</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div class=chevrons>
+<div id=navigation>
+<a class="nav nav-prev" href=/design/tools/plugins/ title="UXP Plugins"> <i class="fa fa-chevron-left"></i><label>UXP Plugins</label></a>
+<a class="nav nav-next" href=/design/tools/webapp/ title="REST Server" style=margin-right:0><label>REST Server</label><i class="fa fa-chevron-right"></i></a></div>
+</div>
+</section>
+</article>
+<footer>
+<div class=footline>
+<div class=date>
+<i class="fa fa-calendar"></i> Last update on 02/08/2022
+</div>
+<div class=github-link>
+<a href=https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/design/tools/editor.md target=blank><i class="fa fa-code-fork"></i>
+Improve this page</a>
+</div>
+</div>
+<div>
+Create a content/_footer.md file to customize the footer content
+</div>
+</footer>
+<script src=/js/jquery-2.x.min.js></script>
+<script type=text/javascript>var baseurl=""</script>
+<script src=/js/clipboard.min.js></script>
+<script src=/js/featherlight.min.js></script>
+<script type=text/javascript src=/js/lunr.min.js></script>
+<script type=text/javascript src=/js/auto-complete.js></script>
+<script type=text/javascript src=/js/search.js></script>
+<script src=/theme-flex/script.js></script>
+<script src=/js/scripts.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.12.0/mermaid.min.js crossorigin=anonymous></script>
+<script>mermaid.init(void 0,".language-mermaid")</script>
+</body>
+</html>

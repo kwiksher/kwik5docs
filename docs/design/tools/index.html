@@ -1,0 +1,462 @@
+<!doctype html><html>
+<head>
+<title>Kwik</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name=revised content="2022-08-02T10:27:23 UTC">
+<title>Tools :: Kwik</title>
+<link rel="shortcut icon" href=/images/favicon.png type=image/x-icon>
+<link href=/css/nucleus.css rel=stylesheet>
+<link href=/css/font-awesome.min.css rel=stylesheet>
+<link href=/css/featherlight.min.css rel=stylesheet>
+<link href=/css/auto-complete.css rel=stylesheet>
+<link href=/theme-flex/style.css rel=stylesheet>
+<link rel=stylesheet href=/css/bootstrap.min.css>
+<meta name=description content>
+</head>
+<body data-url=/design/tools/>
+<header>
+<div class=logo>
+<a class=baselink href>Kwik</a>
+</div>
+<div class=burger><a href=javascript:void(0); style=font-size:15px>&#9776;</a></div>
+<nav class=shortcuts>
+<li role>
+<a href=https://github.com/vjeantet/hugo-theme-docdock rel=noopener>
+<i class="fa fa-github"></i> <label>Github repo</label>
+</a>
+</li>
+<li role>
+<a href=https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip rel=noopener>
+<i class="fa fa-cloud-download"></i> <label>Download</label>
+</a>
+</li>
+<li role>
+<a href=https://gohugo.io/ rel=noopener>
+<i class="fa fa-bookmark"></i> <label>Hugo Documentation</label>
+</a>
+</li>
+<li role>
+<a href=/credits rel=noopener>
+<i class="fa fa-bullhorn"></i> <label>Credits</label>
+</a>
+</li>
+</nav>
+</header>
+<article>
+<aside>
+<ul class=menu>
+<li data-nav-id=/ class=dd-item>
+<a href=/>
+<i class="fa fa-fw fa-home"></i>
+</a>
+</li>
+<li data-nav-id=/get_started/ class="dd-item haschildren">
+<div>
+<a href=/get_started/>Get Started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/get_started/naming_rule/ class=dd-item>
+<div>
+<a href=/get_started/naming_rule/>
+Naming Rule
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/get_started/components/ class=dd-item>
+<div>
+<a href=/get_started/components/>
+Components
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/get_started/events/ class=dd-item>
+<div>
+<a href=/get_started/events/>
+Events & Commands
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/ class="dd-item haschildren">
+<div>
+<a href=/design/>Design</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/architecture/ class=dd-item>
+<div>
+<a href=/design/architecture/>
+Architecure
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/ class="dd-item haschildren">
+<div>
+<a href=/design/project_model/>Project Model</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/project_model/content/ class=dd-item>
+<div>
+<a href=/design/project_model/content/>
+Content X Structure
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/components/ class="dd-item haschildren">
+<div>
+<a href=/design/project_model/components/>Components</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/project_model/components/audio/ class=dd-item>
+<div>
+<a href=/design/project_model/components/audio/>
+Audio
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/components/image/ class=dd-item>
+<div>
+<a href=/design/project_model/components/image/>
+Image
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/project_model/template/ class=dd-item>
+<div>
+<a href=/design/project_model/template/>
+Template strurcture
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/photoshop/ class=dd-item>
+<div>
+<a href=/design/project_model/photoshop/>
+Photoshop File
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/template_model/ class=dd-item>
+<div>
+<a href=/design/project_model/template_model/>
+Template Model
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/icons/ class=dd-item>
+<div>
+<a href=/design/project_model/icons/>
+Icons
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/tools/ class="dd-item haschildren">
+<div>
+<a href=/design/tools/>Tools</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/tools/plugins/ class=dd-item>
+<div>
+<a href=/design/tools/plugins/>
+UXP Plugins
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/tools/editor/ class=dd-item>
+<div>
+<a href=/design/tools/editor/>
+Editor
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/tools/webapp/ class=dd-item>
+<div>
+<a href=/design/tools/webapp/>
+REST Server
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/tools/utilities/ class=dd-item>
+<div>
+<a href=/design/tools/utilities/>
+Utilities
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/workflow/ class="dd-item haschildren">
+<div>
+<a href=/design/workflow/>Workflow</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/workflow/lua/ class=dd-item>
+<div>
+<a href=/design/workflow/lua/>
+Lua Code
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/workflow/workflow/ class=dd-item>
+<div>
+<a href=/design/workflow/workflow/>
+REST API
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/sample-projects/ class=dd-item>
+<div>
+<a href=/design/sample-projects/>Sample Projects</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/new_features/ class=dd-item>
+<div>
+<a href=/design/new_features/>
+New Features
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/all/ class=dd-item>
+<div>
+<a href=/all/>all</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+<section>
+</section>
+</aside>
+<section class=page>
+<div class=nav-select>
+<center>Navigation :
+<select onchange="location.href=this.value"><option value=/get_started/>
+Get Started</option><option value=/design/>
+Design</option><option value=/design/architecture/>- Architecure</option><option value=/design/project_model/>
+-
+Project Model</option><option value=/design/tools/ selected>
+-
+Tools</option><option value=/design/tools/plugins/>-- UXP Plugins</option><option value=/design/tools/editor/>-- Editor</option><option value=/design/tools/webapp/>-- REST Server</option><option value=/design/tools/utilities/>-- Utilities</option><option value=/design/workflow/>
+-
+Workflow</option><option value=/design/sample-projects/>
+-
+Sample Projects</option><option value=/design/new_features/>- New Features</option><option value=/all/>
+all</option></select>
+</center>
+</div>
+<div>
+<div class=searchbox>
+<input data-search-input id=search-by type=text placeholder=Search...>
+</div>
+</div>
+<div align=right>Last Modified: 2022-08-02</div>
+<h2 id=tools>Tools</h2>
+<p>Exporrter plugin for PS, XD</p>
+<ul>
+<li>
+<p>UXP</p>
+<ul>
+<li>export images</li>
+<li>export source code
+<ol>
+<li>
+<p>traverse photoshop layers</p>
+<p>scenes/pageX/**/*.lua</p>
+<blockquote>
+<p>kwik-exporter\src\photoshop\publishCode.ts</p>
+</blockquote>
+</li>
+<li>
+<p>traverse App/contentX/</p>
+<ul>
+<li>commands/pageX/ for envets</li>
+<li>components/pageX for components such as audios,groups ..</li>
+<li>scenes/pageX for layers from Photoshop and attached animation, button</li>
+</ul>
+<blockquote>
+<p>generate_scene_index\generate_models.lua</p>
+</blockquote>
+</li>
+<li>
+<p>merge the both results to ouput scenes/pageX/index.lua ⭐️</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#66d9ef>local</span> sceneName <span style=color:#f92672>=</span> ...
+<span style=color:#75715e>--</span>
+<span style=color:#66d9ef>local</span> scene <span style=color:#f92672>=</span> require(<span style=color:#e6db74>&#39;controller.scene&#39;</span>).new(sceneName, {
+    name <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;page01&#34;</span>,
+    layers <span style=color:#f92672>=</span> {{bg <span style=color:#f92672>=</span> {}}, {layerX <span style=color:#f92672>=</span> {types<span style=color:#f92672>=</span>{button}}}},
+    components <span style=color:#f92672>=</span> {
+        audios <span style=color:#f92672>=</span> {},
+        groups <span style=color:#f92672>=</span> {},
+        others <span style=color:#f92672>=</span> {},
+        timers <span style=color:#f92672>=</span> {},
+        variables <span style=color:#f92672>=</span> {}
+    },
+    events <span style=color:#f92672>=</span> {<span style=color:#e6db74>&#34;bg.clickLayer&#34;</span>},
+    onInit <span style=color:#f92672>=</span> <span style=color:#66d9ef>function</span>(scene) print(<span style=color:#e6db74>&#34;onInit&#34;</span>) <span style=color:#66d9ef>end</span>
+})
+
+<span style=color:#66d9ef>return</span> scene
+</code></pre></div></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>develop/UXP/kwik-exporter</p>
+<p>A layer set is exported as one single image if assets/images/pageX has the foler with the same name of the layer set.</p>
+<ul>
+<li>
+<p>export images</p>
+</li>
+<li>
+<p>export props</p>
+<ul>
+<li>output .json/.lua</li>
+</ul>
+<p>develop\UXP\kwik-exporter\plugin\kwik\templates\components\</p>
+<ul>
+<li>layer_image.json</li>
+<li>layer_image.lua</li>
+</ul>
+<p>(TODO) Update develop\Solar2D\template to sync with the two files.</p>
+<p>(TODO) UXP/plugin/kwik/template is a clone of template/App/contentX</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre tabindex=0><code>├─Solar2D
+│  ├─robotlegs
+│  │  ├─App
+│  │  │  ├─book
+│  │  │  │  ├─assets
+│  │  │  │  │  ├─images
+│  │  │  │  │  │  └─page01
+│  │  │  │  ├─models
+│  │  │  │  │  └─page01
+│  │  │  │  │      └─layers
+│  │  │  │  └─scenes
+│  │  │  │      └─page01
+│  ├─template
+│  │  ├─App
+│  │  │  └─contentX
+│  │  │      ├─assets
+│  │  │      ├─commands
+│  │  │      │  └─pageX
+│  │  │      ├─components
+│  │  │      │  ├─pageX
+│  │  │      │  │  ├─audios
+│  │  │      │  │  ├─groups
+│  │  │      │  │  ├─interactions
+│  │  │      │  │  │  └─page
+│  │  │      │  │  ├─others
+│  │  │      │  │  │  ├─ext_lib_codes
+│  │  │      │  │  │  ├─page
+│  │  │      │  │  │  └─store
+│  │  │      │  │  ├─timers
+│  │  │      │  │  └─variables
+│  │  │      │  └─store
+│  │  │      ├─models
+│  │  │      │  └─pageX
+│  │  │      │      ├─events
+│  │  │      │      └─layers
+│  │  │      └─scenes
+│  │  │          └─pageX
+│  │  │              ├─animations
+│  │  │              ├─images
+│  │  │              ├─interactions
+│  │  │              ├─physics
+│  │  │              └─replacements
+│  │  │                  ├─particles
+│  │  │                  ├─sprites
+│  │  │                  ├─syncAudioText
+│  │  │                  ├─videos
+│  │  │                  └─www
+│  └─tools
+│      ├─kwik-editor
+└─UXP
+    └─kwik-exporter
+        ├─plugin
+        │  ├─icons
+        │  └─kwik
+        │      ├─templates
+        │      │  ├─components
+        │      │  │  └─kwik
+        │      │  ├─model
+        │      │  │  ├─components
+        │      │  │  ├─events
+        │      │  │  └─layers
+        │      │  └─scenes
+
+</code></pre><p>Editor</p>
+<ul>
+<li>
+<p>Web App (React)</p>
+<p>{{TBI}}</p>
+</li>
+<li>
+<p>Solar2D Desktop App</p>
+</li>
+<li>
+<p>/develop/Solar2D/tools/kwik-editor</p>
+</li>
+</ul>
+<p>REST Server</p>
+<ul>
+<li>
+<p>receives Props and Commands and then renders .lua/.json</p>
+<p>/develop/Solar2D/tools/pegasus-harness</p>
+<p>/develop/Solar2D/tools/pegasus-launcher</p>
+</li>
+</ul>
+<p>Utilities</p>
+<ul>
+<li>
+<p>generating scene/pageX/index.lua</p>
+<p>the table in the index.lua is created by interating files in App/bookX/components and bookX/commands</p>
+</li>
+<li>
+<p>scafolding (optional)</p>
+<p>it outputs .lua files to components and commands folder by reading scene/pageX/index.lua</p>
+<p>/develop/Solar2D/tools/generate_scene_index</p>
+</li>
+</ul>
+<div class=chevrons>
+<div id=navigation>
+<a class="nav nav-prev" href=/design/project_model/icons/ title=Icons> <i class="fa fa-chevron-left"></i><label>Icons</label></a>
+<a class="nav nav-next" href=/design/tools/plugins/ title="UXP Plugins" style=margin-right:0><label>UXP Plugins</label><i class="fa fa-chevron-right"></i></a></div>
+</div>
+</section>
+</article>
+<footer>
+<div class=footline>
+<div class=date>
+<i class="fa fa-calendar"></i> Last update on 02/08/2022
+</div>
+<div class=github-link>
+<a href=https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/design/tools/_index.md target=blank><i class="fa fa-code-fork"></i>
+Improve this page</a>
+</div>
+</div>
+<div>
+Create a content/_footer.md file to customize the footer content
+</div>
+</footer>
+<script src=/js/jquery-2.x.min.js></script>
+<script type=text/javascript>var baseurl=""</script>
+<script src=/js/clipboard.min.js></script>
+<script src=/js/featherlight.min.js></script>
+<script type=text/javascript src=/js/lunr.min.js></script>
+<script type=text/javascript src=/js/auto-complete.js></script>
+<script type=text/javascript src=/js/search.js></script>
+<script src=/theme-flex/script.js></script>
+<script src=/js/scripts.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.12.0/mermaid.min.js crossorigin=anonymous></script>
+<script>mermaid.init(void 0,".language-mermaid")</script>
+</body>
+</html>

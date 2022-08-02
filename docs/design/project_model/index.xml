@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Project Model on Kwik</title><link>/design/project_model/</link><description>Recent content in Project Model on Kwik</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><atom:link href="/design/project_model/index.xml" rel="self" type="application/rss+xml"/><item><title>Content X Structure</title><link>/design/project_model/content/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/design/project_model/content/</guid><description>Content X Structure sandbox/Ps/react-uxp-styles/Project/Solar2D/src/App/contentX
+(TODO clean the tree structure below)
+. ├── assets │ ├── audios │ │ ├── sounds │ │ │ └── ballsCollide.mp3 │ │ ├── streams │ │ │ ├── Gentle-Rain.mp3 │ │ │ └── Tranquility.mp3 │ │ └── sync │ │ ├── en │ │ │ ├── cat.mp3 │ │ │ ├── kwik.mp3 │ │ │ └── narration.mp3 │ │ ├── jp │ │ │ ├── cat.</description></item><item><title>Template strurcture</title><link>/design/project_model/template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/design/project_model/template/</guid><description>template structure ├── App ├── contentX ├── assets │ ├── audios │ │ ├── sounds │ │ ├── streams │ │ └── sync │ ├── images │ └── model.json ├── commands │ └── pageX ├── components │ ├── pageX │ │ ├── audios │ │ ├── groups │ │ ├── interactions │ │ │ └── page │ │ ├── others │ │ ├── timers │ │ └── variables │ └── store?</description></item><item><title>Photoshop File</title><link>/design/project_model/photoshop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/design/project_model/photoshop/</guid><description>Photoshop File https://www.ios-resolution.com/
+iPhone 13 Pro Max 1284x2778
+iPad Pro 2048 x 2732
+iPhone X 1125 x 2436
+iPhone 11 Pro 1242 x 2688
+https://forums.solar2d.com/t/iphone-11-pro-max-screen-shots-in-simulator/151266/11
+Kwik4 Ulitimate Config
+1280 x 1920
+https://kwiksher.com/doc/getting_startted/guidelines/blend_mode/
+https://kwiksher.com/doc/getting_startted/guidelines/screenshot/
+background
+1440 x 2280
+iPhone X 1440 × 2772
+https://forums.solar2d.com/t/how-to-define-application-working-area-on-the-screen/351066/11
+https://forums.solar2d.com/t/safe-area-on-iphone-x-and-11-problem/353608
+https://github.com/SpyricGames/Solar2D-Plugins-Public</description></item><item><title>Template Model</title><link>/design/project_model/template_model/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/design/project_model/template_model/</guid><description>Code Template Model assets/model/schema
+embedded in codes &amp;ndash; TBI to be extracted
+external codes - export it to .lua or can be imported directly physics path read2me - timecodes spritesheet info TODO:add ext codes
+extCodes libs p1 user_codes.lua ext_001.lua ext_002.lua commands/ button_name_001.lua action_name_001.lua user_codes.lua p2/ =&amp;gt; build4/
+```lua function ActionCommand:new() local command = {} -- function command:execute(params) local UI = params.UI local sceneGroup = UI.scene.view local layer = UI.</description></item><item><title>Icons</title><link>/design/project_model/icons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/design/project_model/icons/</guid><description>https://forums.solar2d.com/t/new-icon-size-for-ios/354492
+114x114</description></item></channel></rss>

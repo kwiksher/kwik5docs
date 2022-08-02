@@ -1,0 +1,388 @@
+<!doctype html><html>
+<head>
+<title>Kwik</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name=revised content="2022-08-02T10:27:23 UTC">
+<title>New Features :: Kwik</title>
+<link rel="shortcut icon" href=/images/favicon.png type=image/x-icon>
+<link href=/css/nucleus.css rel=stylesheet>
+<link href=/css/font-awesome.min.css rel=stylesheet>
+<link href=/css/featherlight.min.css rel=stylesheet>
+<link href=/css/auto-complete.css rel=stylesheet>
+<link href=/theme-flex/style.css rel=stylesheet>
+<link rel=stylesheet href=/css/bootstrap.min.css>
+<meta name=description content>
+</head>
+<body data-url=/design/new_features/>
+<header>
+<div class=logo>
+<a class=baselink href>Kwik</a>
+</div>
+<div class=burger><a href=javascript:void(0); style=font-size:15px>&#9776;</a></div>
+<nav class=shortcuts>
+<li role>
+<a href=https://github.com/vjeantet/hugo-theme-docdock rel=noopener>
+<i class="fa fa-github"></i> <label>Github repo</label>
+</a>
+</li>
+<li role>
+<a href=https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip rel=noopener>
+<i class="fa fa-cloud-download"></i> <label>Download</label>
+</a>
+</li>
+<li role>
+<a href=https://gohugo.io/ rel=noopener>
+<i class="fa fa-bookmark"></i> <label>Hugo Documentation</label>
+</a>
+</li>
+<li role>
+<a href=/credits rel=noopener>
+<i class="fa fa-bullhorn"></i> <label>Credits</label>
+</a>
+</li>
+</nav>
+</header>
+<article>
+<aside>
+<ul class=menu>
+<li data-nav-id=/ class=dd-item>
+<a href=/>
+<i class="fa fa-fw fa-home"></i>
+</a>
+</li>
+<li data-nav-id=/get_started/ class="dd-item haschildren">
+<div>
+<a href=/get_started/>Get Started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/get_started/naming_rule/ class=dd-item>
+<div>
+<a href=/get_started/naming_rule/>
+Naming Rule
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/get_started/components/ class=dd-item>
+<div>
+<a href=/get_started/components/>
+Components
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/get_started/events/ class=dd-item>
+<div>
+<a href=/get_started/events/>
+Events & Commands
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/ class="dd-item haschildren">
+<div>
+<a href=/design/>Design</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/architecture/ class=dd-item>
+<div>
+<a href=/design/architecture/>
+Architecure
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/ class="dd-item haschildren">
+<div>
+<a href=/design/project_model/>Project Model</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/project_model/content/ class=dd-item>
+<div>
+<a href=/design/project_model/content/>
+Content X Structure
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/components/ class="dd-item haschildren">
+<div>
+<a href=/design/project_model/components/>Components</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/project_model/components/audio/ class=dd-item>
+<div>
+<a href=/design/project_model/components/audio/>
+Audio
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/components/image/ class=dd-item>
+<div>
+<a href=/design/project_model/components/image/>
+Image
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/project_model/template/ class=dd-item>
+<div>
+<a href=/design/project_model/template/>
+Template strurcture
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/photoshop/ class=dd-item>
+<div>
+<a href=/design/project_model/photoshop/>
+Photoshop File
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/template_model/ class=dd-item>
+<div>
+<a href=/design/project_model/template_model/>
+Template Model
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/project_model/icons/ class=dd-item>
+<div>
+<a href=/design/project_model/icons/>
+Icons
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/tools/ class="dd-item haschildren">
+<div>
+<a href=/design/tools/>Tools</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/tools/plugins/ class=dd-item>
+<div>
+<a href=/design/tools/plugins/>
+UXP Plugins
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/tools/editor/ class=dd-item>
+<div>
+<a href=/design/tools/editor/>
+Editor
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/tools/webapp/ class=dd-item>
+<div>
+<a href=/design/tools/webapp/>
+REST Server
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/tools/utilities/ class=dd-item>
+<div>
+<a href=/design/tools/utilities/>
+Utilities
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/workflow/ class="dd-item haschildren">
+<div>
+<a href=/design/workflow/>Workflow</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+</div>
+<ul>
+<li data-nav-id=/design/workflow/lua/ class=dd-item>
+<div>
+<a href=/design/workflow/lua/>
+Lua Code
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/workflow/workflow/ class=dd-item>
+<div>
+<a href=/design/workflow/workflow/>
+REST API
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/design/sample-projects/ class=dd-item>
+<div>
+<a href=/design/sample-projects/>Sample Projects</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=/design/new_features/ class=dd-item>
+<div>
+<a href=/design/new_features/>
+New Features
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+</li>
+<li data-nav-id=/all/ class=dd-item>
+<div>
+<a href=/all/>all</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+</ul>
+<section>
+</section>
+</aside>
+<section class=page>
+<div class=nav-select>
+<center>Navigation :
+<select onchange="location.href=this.value"><option value=/get_started/>
+Get Started</option><option value=/design/>
+Design</option><option value=/design/architecture/>- Architecure</option><option value=/design/project_model/>
+-
+Project Model</option><option value=/design/tools/>
+-
+Tools</option><option value=/design/workflow/>
+-
+Workflow</option><option value=/design/sample-projects/>
+-
+Sample Projects</option><option value=/design/new_features/ selected>- New Features</option><option value=/all/>
+all</option></select>
+</center>
+</div>
+<div>
+<div class=searchbox>
+<input data-search-input id=search-by type=text placeholder=Search...>
+</div>
+</div>
+<div align=right>Last Modified: 2022-08-02</div>
+<h2 id=new-features>New Features</h2>
+<p>Solar2D API to be included</p>
+<ul>
+<li>
+<p>Audio</p>
+<ul>
+<li>seek</li>
+<li>rewind</li>
+<li>cross fade function</li>
+</ul>
+</li>
+<li>
+<p>Social</p>
+<ul>
+<li>twitter</li>
+<li>facebook</li>
+<li>instagram</li>
+</ul>
+</li>
+<li>
+<p>transition.*</p>
+<ul>
+<li>chaining them</li>
+</ul>
+</li>
+<li>
+<p>mesh</p>
+</li>
+<li>
+<p>2.5D — Perspective and Depth</p>
+</li>
+<li>
+<p>game controllers</p>
+</li>
+</ul>
+<p>Solar2D video texture</p>
+<ul>
+<li><a href=https://github.com/ANSH3LL/plugin_movie>https://github.com/ANSH3LL/plugin_movie</a></li>
+</ul>
+<p>Tiled</p>
+<ul>
+<li>
+<p><a href=https://forums.solar2d.com/t/smooth-scrolling-of-top-down-tiled-map/150199/2>https://forums.solar2d.com/t/smooth-scrolling-of-top-down-tiled-map/150199/2</a></p>
+<p>&ldquo;cull based on a 3x3 area of sub-screens centered around player. "</p>
+</li>
+<li>
+<p><a href=https://gamedev.stackexchange.com/questions/83253/is-there-any-way-to-load-pieces-of-a-tile-map-as-and-when-needed-and-not-the-en>https://gamedev.stackexchange.com/questions/83253/is-there-any-way-to-load-pieces-of-a-tile-map-as-and-when-needed-and-not-the-en</a></p>
+</li>
+<li>
+<p><a href=https://www.dynetisgames.com/2018/02/24/manage-big-maps-phaser-3/>https://www.dynetisgames.com/2018/02/24/manage-big-maps-phaser-3/</a></p>
+<ul>
+<li>A tool to split an existing Tiled tilemap into chunks</li>
+<li>How to reason about chunks based on their ID’s and the world dimensions</li>
+<li>How to load and destroy them on the fly using Phaser 3</li>
+</ul>
+</li>
+</ul>
+<p>Texture atlas function in kwik?</p>
+<ul>
+<li>
+<p><a href=https://github.com/shama/atlaspack>https://github.com/shama/atlaspack</a></p>
+</li>
+<li>
+<p><a href=http://free-tex-packer.com/>http://free-tex-packer.com/</a></p>
+</li>
+<li>
+<p><a href=https://github.com/odrick/free-tex-packer>https://github.com/odrick/free-tex-packer</a></p>
+</li>
+<li>
+<p><a href=https://github.com/richardjdare/Atlasmaker>https://github.com/richardjdare/Atlasmaker</a></p>
+</li>
+<li>
+<p><a href=https://github.com/soimy/atlasify>https://github.com/soimy/atlasify</a> ⭐️</p>
+<ul>
+<li><a href=https://github.com/soimy/maxrects-packer>https://github.com/soimy/maxrects-packer</a></li>
+</ul>
+</li>
+</ul>
+<p>Audio sprites?</p>
+<ul>
+<li><a href=https://medium.com/game-development-stuff/how-to-create-audiosprites-to-use-with-howler-js-beed5d006ac1>https://medium.com/game-development-stuff/how-to-create-audiosprites-to-use-with-howler-js-beed5d006ac1</a></li>
+</ul>
+<hr>
+<p>Interactive</p>
+<ul>
+<li>texture atlas &ndash; Spine</li>
+<li>spritesheet &ndash; Adobe Animate</li>
+<li>movie &ndash; Adobe Animate</li>
+</ul>
+<p>Lottie ts to lua? ⭐️</p>
+<ul>
+<li><a href=https://github.com/bytedance/lottiefy>https://github.com/bytedance/lottiefy</a></li>
+<li><a href=https://github.com/airbnb/lottie-web>https://github.com/airbnb/lottie-web</a></li>
+<li><a href=https://github.com/LottieFiles>https://github.com/LottieFiles</a></li>
+<li><a href=https://lottiefiles.com/what-is-lottie>https://lottiefiles.com/what-is-lottie</a></li>
+</ul>
+<div class=chevrons>
+<div id=navigation>
+<a class="nav nav-prev" href=/design/sample-projects/ title="Sample Projects"> <i class="fa fa-chevron-left"></i><label>Sample Projects</label></a>
+<a class="nav nav-next" href=/all/ title=all style=margin-right:0><label>all</label><i class="fa fa-chevron-right"></i></a></div>
+</div>
+</section>
+</article>
+<footer>
+<div class=footline>
+<div class=date>
+<i class="fa fa-calendar"></i> Last update on 02/08/2022
+</div>
+<div class=github-link>
+<a href=https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/design/new_features.md target=blank><i class="fa fa-code-fork"></i>
+Improve this page</a>
+</div>
+</div>
+<div>
+Create a content/_footer.md file to customize the footer content
+</div>
+</footer>
+<script src=/js/jquery-2.x.min.js></script>
+<script type=text/javascript>var baseurl=""</script>
+<script src=/js/clipboard.min.js></script>
+<script src=/js/featherlight.min.js></script>
+<script type=text/javascript src=/js/lunr.min.js></script>
+<script type=text/javascript src=/js/auto-complete.js></script>
+<script type=text/javascript src=/js/search.js></script>
+<script src=/theme-flex/script.js></script>
+<script src=/js/scripts.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.12.0/mermaid.min.js crossorigin=anonymous></script>
+<script>mermaid.init(void 0,".language-mermaid")</script>
+</body>
+</html>
