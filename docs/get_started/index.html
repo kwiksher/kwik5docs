@@ -1,535 +1,106 @@
-<!doctype html><html>
-<head>
-<title>Kwik</title>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name=revised content="2022-08-02T10:54:16 UTC">
-<title>Get Started :: Kwik</title>
-<link rel="shortcut icon" href=/images/favicon.png type=image/x-icon>
-<link href=/css/nucleus.css rel=stylesheet>
-<link href=/css/font-awesome.min.css rel=stylesheet>
-<link href=/css/featherlight.min.css rel=stylesheet>
-<link href=/css/auto-complete.css rel=stylesheet>
-<link href=/theme-flex/style.css rel=stylesheet>
-<link rel=stylesheet href=/css/bootstrap.min.css>
-<meta name=description content>
-</head>
-<body data-url=/get_started/>
-<header>
-<div class=logo>
-<a class=baselink href>Kwik</a>
-</div>
-<div class=burger><a href=javascript:void(0); style=font-size:15px>&#9776;</a></div>
-<nav class=shortcuts>
-<li role>
-<a href=https://github.com/kwiksher/ rel=noopener>
-<i class="fa fa-github"></i> <label>Github repo</label>
-</a>
-</li>
-<li role>
-<a href=https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip rel=noopener>
-<i class="fa fa-cloud-download"></i> <label>Download</label>
-</a>
-</li>
-<li role>
-<a href=https://gohugo.io/ rel=noopener>
-<i class="fa fa-bookmark"></i> <label>Hugo Documentation</label>
-</a>
-</li>
-<li role>
-<a href=/credits rel=noopener>
-<i class="fa fa-bullhorn"></i> <label>Credits</label>
-</a>
-</li>
-</nav>
-</header>
-<article>
-<aside>
-<ul class=menu>
-<li data-nav-id=/ class=dd-item>
-<a href=/>
-<i class="fa fa-fw fa-home"></i>
-</a>
-</li>
-<li data-nav-id=/get_started/ class="dd-item haschildren">
-<div>
-<a href=/get_started/>Get Started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-</div>
-<ul>
-<li data-nav-id=/get_started/naming_rule/ class=dd-item>
-<div>
-<a href=/get_started/naming_rule/>
-Naming Rule
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/get_started/components/ class=dd-item>
-<div>
-<a href=/get_started/components/>
-Components
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/get_started/events/ class=dd-item>
-<div>
-<a href=/get_started/events/>
-Events & Commands
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-</ul>
-</li>
-<li data-nav-id=/design/ class="dd-item haschildren">
-<div>
-<a href=/design/>Design</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-</div>
-<ul>
-<li data-nav-id=/design/architecture/ class=dd-item>
-<div>
-<a href=/design/architecture/>
-Architecure
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/design/project_model/ class="dd-item haschildren">
-<div>
-<a href=/design/project_model/>Project Model</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-</div>
-<ul>
-<li data-nav-id=/design/project_model/content/ class=dd-item>
-<div>
-<a href=/design/project_model/content/>
-Content X Structure
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/design/project_model/components/ class="dd-item haschildren">
-<div>
-<a href=/design/project_model/components/>Components</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-</div>
-<ul>
-<li data-nav-id=/design/project_model/components/audio/ class=dd-item>
-<div>
-<a href=/design/project_model/components/audio/>
-Audio
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/design/project_model/components/image/ class=dd-item>
-<div>
-<a href=/design/project_model/components/image/>
-Image
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-</ul>
-</li>
-<li data-nav-id=/design/project_model/template/ class=dd-item>
-<div>
-<a href=/design/project_model/template/>
-Template strurcture
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/design/project_model/photoshop/ class=dd-item>
-<div>
-<a href=/design/project_model/photoshop/>
-Photoshop File
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/design/project_model/template_model/ class=dd-item>
-<div>
-<a href=/design/project_model/template_model/>
-Template Model
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/design/project_model/icons/ class=dd-item>
-<div>
-<a href=/design/project_model/icons/>
-Icons
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-</ul>
-</li>
-<li data-nav-id=/design/tools/ class="dd-item haschildren">
-<div>
-<a href=/design/tools/>Tools</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-</div>
-<ul>
-<li data-nav-id=/design/tools/plugins/ class=dd-item>
-<div>
-<a href=/design/tools/plugins/>
-UXP Plugins
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/design/tools/editor/ class=dd-item>
-<div>
-<a href=/design/tools/editor/>
-Editor
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/design/tools/webapp/ class=dd-item>
-<div>
-<a href=/design/tools/webapp/>
-REST Server
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/design/tools/utilities/ class=dd-item>
-<div>
-<a href=/design/tools/utilities/>
-Utilities
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-</ul>
-</li>
-<li data-nav-id=/design/workflow/ class="dd-item haschildren">
-<div>
-<a href=/design/workflow/>Workflow</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-</div>
-<ul>
-<li data-nav-id=/design/workflow/lua/ class=dd-item>
-<div>
-<a href=/design/workflow/lua/>
-Lua Code
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/design/workflow/workflow/ class=dd-item>
-<div>
-<a href=/design/workflow/workflow/>
-REST API
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-</ul>
-</li>
-<li data-nav-id=/design/sample-projects/ class=dd-item>
-<div>
-<a href=/design/sample-projects/>Sample Projects</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-<li data-nav-id=/design/new_features/ class=dd-item>
-<div>
-<a href=/design/new_features/>
-New Features
-</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-</ul>
-</li>
-<li data-nav-id=/all/ class=dd-item>
-<div>
-<a href=/all/>all</a><i class="fa fa-circle-thin read-icon"></i>
-</div>
-</li>
-</ul>
-<section>
-</section>
-</aside>
-<section class=page>
-<div class=nav-select>
-<center>Navigation :
-<select onchange="location.href=this.value"><option value=/get_started/ selected>
-Get Started</option><option value=/get_started/naming_rule/>- Naming Rule</option><option value=/get_started/components/>- Components</option><option value=/get_started/events/>- Events & Commands</option><option value=/design/>
-Design</option><option value=/all/>
-all</option></select>
-</center>
-</div>
-<div>
-<div class=searchbox>
-<input data-search-input id=search-by type=text placeholder=Search...>
-</div>
-</div>
-<div align=right>Last Modified: 2022-08-02</div>
-<p>TODO</p>
-<ul>
-<li>
-<p><input disabled type=checkbox> swipe page or A/D keys for navigation</p>
-<ul>
-<li>
-<p><input disabled type=checkbox> main.lua</p>
-<ul>
-<li>
-<p>rendered with Solar2D Project > Select Book, bookFolder</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>require(<span style=color:#e6db74>&#34;controller.index&#34;</span>).bootstrap({name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;book&#34;</span>, sceneIndex <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>, position <span style=color:#f92672>=</span> {x<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>, y<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>}}) <span style=color:#75715e>-- scenes.index</span>
-</code></pre></div></li>
-</ul>
-</li>
-<li>
-<p><input disabled type=checkbox> scenes/index.lua</p>
-<ul>
-<li>
-<p>Active Document index should be set to main.lua&rsquo;s sceneIndex</p>
-<img src=./img/2022-07-25-13-37-55.png width=300>
-</li>
-</ul>
-</li>
-<li>
-<p><input disabled type=checkbox> mediators/pageXMediator.lua</p>
-<ul>
-<li>when publishing, create the file.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><input checked disabled type=checkbox> test layer groups and add how to work with a layer group in get started</p>
-</li>
-<li>
-<p><input disabled type=checkbox> clean image template lua</p>
-</li>
-<li>
-<p><input disabled type=checkbox> add animation and button</p>
-</li>
-<li>
-<p><input disabled type=checkbox> add audio & video</p>
-</li>
-</ul>
-<h1 id=get-started>Get Started</h1>
-<p>{{ %toc% }}</p>
-<ol>
-<li>
-<p>Open Adobe UXP Developer Tool</p>
-<p>Add Plugin to select develop/UXP/kwik-exporter/dist</p>
-<blockquote>
-<p>TODO alpla release folder structure may be different to the current develop</p>
-</blockquote>
-<img src=./img/2022-07-02-20-29-05.png width=600>
-<p>Load it</p>
-<img src=./img/2022-07-23-20-01-45.png width=600>
-<p>Kwik Exporter Panel apppears</p>
-<img src=./img/2022-07-23-20-02-58.png width=400>
-</li>
-<li>
-<p>Photoshop Files > Open</p>
-<p>you can select the following folder that comes with demo .psd files and kwikconfig.json. You may open a folder of yours which contains psd files.</p>
-<ul>
-<li>
-<p>sample-projects/SingleBook/book01</p>
-<ul>
-<li>page1.psd</li>
-<li>page2.psd</li>
-<li>kwikconfig.json</li>
-</ul>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
-  <span style=color:#f92672>&#34;name&#34;</span>:<span style=color:#e6db74>&#34;book one&#34;</span>,
-  <span style=color:#f92672>&#34;output&#34;</span>:<span style=color:#e6db74>&#34;../../Solar2D/src/App/book&#34;</span>,
-  <span style=color:#f92672>&#34;pages&#34;</span>:[
-    {<span style=color:#f92672>&#34;psd&#34;</span>:<span style=color:#e6db74>&#34;page01.psd&#34;</span>, <span style=color:#f92672>&#34;name&#34;</span>:<span style=color:#e6db74>&#34;page one&#34;</span>},
-    {<span style=color:#f92672>&#34;psd&#34;</span>:<span style=color:#e6db74>&#34;page02.psd&#34;</span>, <span style=color:#f92672>&#34;name&#34;</span>:<span style=color:#e6db74>&#34;page two&#34;</span>}
-  ]
-}
-</code></pre></div></li>
-</ul>
-<blockquote>
-<p>TODO Project Name Text Box to display a selected folder name as default.</p>
-</blockquote>
-<blockquote>
-<p>TODO User can change it and Kwik uses it for a folder name when publshing</p>
-</blockquote>
-<blockquote>
-<p>TODO kwikconfig.json will be created in the selected folder.</p>
-</blockquote>
-</li>
-<li>
-<p>Double Click the one of .psd in the list to open for editing.</p>
-<img src=./img/2022-07-23-20-05-50.png width=600>
-</li>
-<li>
-<p>Solar2D Project > Select Book</p>
-</li>
-</ol>
-<ul>
-<li>
-<p>New button, a set of Solar2D project will be generated to a selected folder.</p>
-</li>
-<li>
-<p>Select Book</p>
-<p>please select an output folder where each psf files are published. It must be under App folder.</p>
-<img src=./img/2022-07-23-20-10-03.png width=400>
-<img src=./img/2022-07-23-20-16-18.png width=300>
-</li>
-</ul>
-<ol>
-<li>
-<p>Publish</p>
-<p>selected psd files are publihsed to App/book folder</p>
-<img src=./img/2022-07-23-20-09-31.png width=400>
-<ul>
-<li>
-<p>checkbox all</p>
-<p>it will select all the psd files in the list</p>
-</li>
-<li>
-<p>Input text box</p>
-<p>you can input the index number of psd files to be published for example,</p>
-<p>0, 2-3</p>
-</li>
-<li>
-<p>Publish button</p>
-<p>Export Settings Dialog appears, click Export</p>
-<blockquote>
-<p>TODO show the project name with the default output folder</p>
-</blockquote>
-<img src=./img/2022-07-02-20-46-39.png width=350>
-<ul>
-<li>
-<p>Browse button</p>
-<p>Select the folder for output if you like to change the destination. The default is defined in kwikconfig.json as <strong>"../../Solar2D/src/App/book"</strong></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Kwik will publish images/source code. You can find them in</p>
-<blockquote>
-<p>TODO change dist to src with SimpleBook sample</p>
-</blockquote>
-<img src=./img/2022-07-02-21-01-08.png width=300>
-</li>
-</ul>
-</li>
-<li>
-<p>Active Document</p>
-</li>
-</ol>
-<ul>
-<li>
-<p>Export Images</p>
-</li>
-<li>
-<p>Export Code</p>
-<img src=./img/2022-07-23-20-23-00.png width=300>
-</li>
-</ul>
-<h2 id=solar2d-simulator>Solar2D Simulator</h2>
-<ol>
-<li>
-<p>Open main.lua in Solar2D/src with Solar2D Simulator</p>
-<p>TODO UXP::Publish to include swipe page or A/D keys for navigation ⭐️</p>
-<p>kwiconfig.lua</p>
-<pre tabindex=0><code>debug = {enable = true, navigation= &quot;swipe/keys&quot;}
-</code></pre></li>
-</ol>
-<h3 id=custom-code>Custom Code</h3>
-<p>you can put your own code into commands and scenes folder. Kwik Exporter traverses folders of Solar2D project to integrate your additional files.</p>
-<ul>
-<li>commands/*.lua</li>
-<li>scenes/*.lua</li>
-</ul>
-<img src=./img/2022-07-23-20-34-40.png width=300>
-<p>for instance, myrect.lua calls myEvents.testHandler when user taps the rect.</p>
-<p>The $weight is a meta variable. A scene componet(layer or your custom code)with lower value will be placed top. The top layer from Photoshop is zero. Then values are increases to until the background layer. For your custom code , you can use minus or positive with decimal. For example, myrect is -2, mycircle is -1. If you change weight values of custom code files, don&rsquo;t forget to publish code again.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#75715e>-- $weight=-2</span>
-<span style=color:#75715e>--</span>
-<span style=color:#66d9ef>local</span> _M <span style=color:#f92672>=</span> {}
-<span style=color:#75715e>--</span>
-<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>_M</span>:<span style=color:#a6e22e>init</span>(UI)
-<span style=color:#66d9ef>end</span>
-<span style=color:#75715e>--</span>
-<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>_M</span>:<span style=color:#a6e22e>create</span>(UI)
-  <span style=color:#66d9ef>local</span> sceneGroup <span style=color:#f92672>=</span> UI.scene.view
-  <span style=color:#66d9ef>local</span> obj <span style=color:#f92672>=</span> display.newRect( sceneGroup, display.contentCenterX, display.contentCenterY<span style=color:#f92672>-</span><span style=color:#ae81ff>100</span>, <span style=color:#ae81ff>100</span>, <span style=color:#ae81ff>100</span> )
-  obj:setFillColor(<span style=color:#ae81ff>0.2</span>,<span style=color:#ae81ff>0.2</span>,<span style=color:#ae81ff>0.2</span>);
-
-  obj:addEventListener(<span style=color:#e6db74>&#34;tap&#34;</span>, <span style=color:#66d9ef>function</span>()
-    UI.scene:dispatchEvent({
-      name <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;myEvents.testHandler&#34;</span>,
-      UI <span style=color:#f92672>=</span> UI
-    })
-  <span style=color:#66d9ef>end</span>)
-<span style=color:#66d9ef>end</span>
-<span style=color:#75715e>--</span>
-<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>_M</span>:<span style=color:#a6e22e>didShow</span>(UI)
-<span style=color:#66d9ef>end</span>
-<span style=color:#75715e>--</span>
-<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>_M</span>:<span style=color:#a6e22e>didHide</span>(UI)
-<span style=color:#66d9ef>end</span>
-<span style=color:#75715e>--</span>
-<span style=color:#66d9ef>function</span>  <span style=color:#a6e22e>_M</span>:<span style=color:#a6e22e>destory</span>()
-<span style=color:#66d9ef>end</span>
-<span style=color:#75715e>--</span>
-<span style=color:#66d9ef>return</span> _M
-</code></pre></div><p>myEvents.testHandker.lua</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#66d9ef>local</span> instance <span style=color:#f92672>=</span> require(<span style=color:#e6db74>&#34;commands.kwik.baseCommand&#34;</span>).new(
-  <span style=color:#66d9ef>function</span> (params)
-    <span style=color:#66d9ef>local</span> e     <span style=color:#f92672>=</span> params.event
-    <span style=color:#66d9ef>local</span> UI    <span style=color:#f92672>=</span> e.UI
-
-    print(<span style=color:#e6db74>&#34;commands.myEvents.testhander&#34;</span>)
-
-    UI.scene:dispatchEvent({
-      name <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;myAction&#34;</span>,
-      UI <span style=color:#f92672>=</span> UI
-    })
-
-  <span style=color:#66d9ef>end</span>
-)
-<span style=color:#75715e>--</span>
-<span style=color:#66d9ef>return</span> instance
-</code></pre></div><p>You can find your custom code are inserted in scenes/{PSD FILENAME}/index.lua. The layers are sorted internally by values of meta weight variables.</p>
-<img src=./img/2022-07-23-20-46-52.png width=600>
-<hr>
-<h2 id=layer-groups>Layer Groups</h2>
-<p>You can export images of a layer group individually.</p>
-<img src=./img/2022-07-25-13-12-57.png width=300>
-<p>Select layer groups and then click Unmerge button.</p>
-<img src=./img/2022-07-25-13-13-44.png width=300>
-<p>If you want to cancel a layer group to be unmerged, Check it and click Cancel button. It will disppaer from the list.</p>
-<img src=./img/2022-07-25-13-16-15.png width=300>
-<p>The source files and the images are exported when you publish.</p>
-<img src=./img/2022-07-25-13-19-38.png width=300>
-<blockquote>
-<p>TODO fix the bug that unmerged group is not indexed at the right position in index.lua</p>
-</blockquote>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#66d9ef>local</span> scene <span style=color:#f92672>=</span> require(<span style=color:#e6db74>&#39;controller.scene&#39;</span>).new(sceneName, {
-    name <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;kwik4_1280x1920&#34;</span>,
-    layers <span style=color:#f92672>=</span> {
-          {  bg<span style=color:#f92672>=</span>{
-                            } },
-          {  copyright<span style=color:#f92672>=</span>{
-                            } },
-          {  star<span style=color:#f92672>=</span>{
-                            } },
-          {  hello<span style=color:#f92672>=</span>{
-                            } },
-          {  mycircle<span style=color:#f92672>=</span>{
-                            } },
-          {  myrect<span style=color:#f92672>=</span>{
-                            } },
-          {  GroupA<span style=color:#f92672>=</span>{
-                { SubA <span style=color:#f92672>=</span> {  } },            } },
-    },
-</code></pre></div><hr>
-<h2 id=create-a-new-project>Create a new project</h2>
-<img src=./img/2022-07-23-20-28-14.png width=300>
-<ol>
-<li>
-<p>Solar2D Project > New button</p>
-<p>TODO dialog for choice</p>
-<ul>
-<li>create a pair of Photoshop & Solar2D project folder</li>
-</ul>
-<pre><code> it will scafold a Solar2D folder of a template to a folder you choose.
+<!doctype html><html><head><title>Kwik</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=revised content="2022-08-02T11:22:57 UTC"><title>Get Started :: Kwik</title><link rel="shortcut icon" href=/kwik5docs/images/favicon.png type=image/x-icon><link href=/kwik5docs/css/nucleus.css rel=stylesheet><link href=/kwik5docs/css/font-awesome.min.css rel=stylesheet><link href=/kwik5docs/css/featherlight.min.css rel=stylesheet><link href=/kwik5docs/css/auto-complete.css rel=stylesheet><link href=/kwik5docs/theme-flex/style.css rel=stylesheet><link rel=stylesheet href=/kwik5docs/css/bootstrap.min.css><meta name=description content></head><body data-url=/kwik5docs/get_started/><header><div class=logo><a class=baselink href=https://kwiksher.github.io/kwik5docs/>Kwik</a></div><div class=burger><a href=javascript:void(0); style=font-size:15px>&#9776;</a></div><nav class=shortcuts><li role><a href=https://github.com/kwiksher/ rel=noopener><i class='fa fa-github'></i> <label>Github repo</label></a></li><li role><a href=https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip rel=noopener><i class='fa fa-cloud-download'></i> <label>Download</label></a></li><li role><a href=https://gohugo.io/ rel=noopener><i class='fa fa-bookmark'></i> <label>Hugo Documentation</label></a></li><li role><a href=/kwik5docs/credits rel=noopener><i class='fa fa-bullhorn'></i> <label>Credits</label></a></li></nav></header><article><aside><ul class=menu><li data-nav-id=/ class=dd-item><a href=/><i class="fa fa-fw fa-home"></i></a></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/ class="dd-item haschildren"><div><a href=/kwik5docs/get_started/>Get Started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/naming_rule/ class=dd-item><div><a href=/kwik5docs/get_started/naming_rule/>Naming Rule
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/components/ class=dd-item><div><a href=/kwik5docs/get_started/components/>Components
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/events/ class=dd-item><div><a href=/kwik5docs/get_started/events/>Events & Commands
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/ class="dd-item haschildren"><div><a href=/kwik5docs/design/>Design</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/architecture/ class=dd-item><div><a href=/kwik5docs/design/architecture/>Architecure
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/ class="dd-item haschildren"><div><a href=/kwik5docs/design/project_model/>Project Model</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/content/ class=dd-item><div><a href=/kwik5docs/design/project_model/content/>Content X Structure
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/ class="dd-item haschildren"><div><a href=/kwik5docs/design/project_model/components/>Components</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/audio/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/audio/>Audio
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/image/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/image/>Image
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/template/ class=dd-item><div><a href=/kwik5docs/design/project_model/template/>Template strurcture
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/photoshop/ class=dd-item><div><a href=/kwik5docs/design/project_model/photoshop/>Photoshop File
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/template_model/ class=dd-item><div><a href=/kwik5docs/design/project_model/template_model/>Template Model
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/icons/ class=dd-item><div><a href=/kwik5docs/design/project_model/icons/>Icons
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/tools/ class="dd-item haschildren"><div><a href=/kwik5docs/design/tools/>Tools</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/tools/plugins/ class=dd-item><div><a href=/kwik5docs/design/tools/plugins/>UXP Plugins
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/tools/editor/ class=dd-item><div><a href=/kwik5docs/design/tools/editor/>Editor
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/tools/webapp/ class=dd-item><div><a href=/kwik5docs/design/tools/webapp/>REST Server
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/tools/utilities/ class=dd-item><div><a href=/kwik5docs/design/tools/utilities/>Utilities
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/workflow/ class="dd-item haschildren"><div><a href=/kwik5docs/design/workflow/>Workflow</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/workflow/lua/ class=dd-item><div><a href=/kwik5docs/design/workflow/lua/>Lua Code
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/workflow/workflow/ class=dd-item><div><a href=/kwik5docs/design/workflow/workflow/>REST API
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/sample-projects/ class=dd-item><div><a href=/kwik5docs/design/sample-projects/>Sample Projects</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/new_features/ class=dd-item><div><a href=/kwik5docs/design/new_features/>New Features
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/all/ class=dd-item><div><a href=/kwik5docs/all/>all</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul><section></section></aside><section class=page><div class=nav-select><center>Navigation :
+<select onchange="location.href=this.value"><option value=/kwik5docs/get_started/ selected>
+Get Started</option><option value=/kwik5docs/design/>
+Design</option><option value=/kwik5docs/all/>
+all</option></select></center></div><div><div class=searchbox><input data-search-input id=search-by type=text placeholder></div></div><div align=right>Last Modified: 2022-08-02</div><p>TODO</p><ul><li><p><input disabled type=checkbox> swipe page or A/D keys for navigation</p><ul><li><p><input disabled type=checkbox> main.lua</p><ul><li><p>rendered with Solar2D Project > Select Book, bookFolder</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#34;controller.index&#34;</span><span style=color:#111>).</span><span style=color:#111>bootstrap</span><span style=color:#111>({</span><span style=color:#111>name</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;book&#34;</span><span style=color:#111>,</span> <span style=color:#111>sceneIndex</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#111>position</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>x</span><span style=color:#f92672>=</span><span style=color:#ae81ff>0</span><span style=color:#111>,</span> <span style=color:#111>y</span><span style=color:#f92672>=</span><span style=color:#ae81ff>0</span><span style=color:#111>}})</span> <span style=color:#75715e>-- scenes.index</span>
+</span></span></code></pre></div></li></ul></li><li><p><input disabled type=checkbox> scenes/index.lua</p><ul><li><p>Active Document index should be set to main.lua&rsquo;s sceneIndex</p><img src=./img/2022-07-25-13-37-55.png width=300></li></ul></li><li><p><input disabled type=checkbox> mediators/pageXMediator.lua</p><ul><li>when publishing, create the file.</li></ul></li></ul></li><li><p><input checked disabled type=checkbox> test layer groups and add how to work with a layer group in get started</p></li><li><p><input disabled type=checkbox> clean image template lua</p></li><li><p><input disabled type=checkbox> add animation and button</p></li><li><p><input disabled type=checkbox> add audio & video</p></li></ul><h1 id=get-started>Get Started</h1><p>{{ %toc% }}</p><ol><li><p>Open Adobe UXP Developer Tool</p><p>Add Plugin to select develop/UXP/kwik-exporter/dist</p><blockquote><p>TODO alpla release folder structure may be different to the current develop</p></blockquote><img src=./img/2022-07-02-20-29-05.png width=600><p>Load it</p><img src=./img/2022-07-23-20-01-45.png width=600><p>Kwik Exporter Panel apppears</p><img src=./img/2022-07-23-20-02-58.png width=400></li><li><p>Photoshop Files > Open</p><p>you can select the following folder that comes with demo .psd files and kwikconfig.json. You may open a folder of yours which contains psd files.</p><ul><li><p>sample-projects/SingleBook/book01</p><ul><li>page1.psd</li><li>page2.psd</li><li>kwikconfig.json</li></ul><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;name&#34;</span><span style=color:#111>:</span><span style=color:#d88200>&#34;book one&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;output&#34;</span><span style=color:#111>:</span><span style=color:#d88200>&#34;../../Solar2D/src/App/book&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;pages&#34;</span><span style=color:#111>:[</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>{</span><span style=color:#f92672>&#34;psd&#34;</span><span style=color:#111>:</span><span style=color:#d88200>&#34;page01.psd&#34;</span><span style=color:#111>,</span> <span style=color:#f92672>&#34;name&#34;</span><span style=color:#111>:</span><span style=color:#d88200>&#34;page one&#34;</span><span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>{</span><span style=color:#f92672>&#34;psd&#34;</span><span style=color:#111>:</span><span style=color:#d88200>&#34;page02.psd&#34;</span><span style=color:#111>,</span> <span style=color:#f92672>&#34;name&#34;</span><span style=color:#111>:</span><span style=color:#d88200>&#34;page two&#34;</span><span style=color:#111>}</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>]</span>
+</span></span><span style=display:flex><span><span style=color:#111>}</span>
+</span></span></code></pre></div></li></ul><blockquote><p>TODO Project Name Text Box to display a selected folder name as default.</p></blockquote><blockquote><p>TODO User can change it and Kwik uses it for a folder name when publshing</p></blockquote><blockquote><p>TODO kwikconfig.json will be created in the selected folder.</p></blockquote></li><li><p>Double Click the one of .psd in the list to open for editing.</p><img src=./img/2022-07-23-20-05-50.png width=600></li><li><p>Solar2D Project > Select Book</p></li></ol><ul><li><p>New button, a set of Solar2D project will be generated to a selected folder.</p></li><li><p>Select Book</p><p>please select an output folder where each psf files are published. It must be under App folder.</p><img src=./img/2022-07-23-20-10-03.png width=400>
+<img src=./img/2022-07-23-20-16-18.png width=300></li></ul><ol><li><p>Publish</p><p>selected psd files are publihsed to App/book folder</p><img src=./img/2022-07-23-20-09-31.png width=400><ul><li><p>checkbox all</p><p>it will select all the psd files in the list</p></li><li><p>Input text box</p><p>you can input the index number of psd files to be published for example,</p><p>0, 2-3</p></li><li><p>Publish button</p><p>Export Settings Dialog appears, click Export</p><blockquote><p>TODO show the project name with the default output folder</p></blockquote><img src=./img/2022-07-02-20-46-39.png width=350><ul><li><p>Browse button</p><p>Select the folder for output if you like to change the destination. The default is defined in kwikconfig.json as <strong>"../../Solar2D/src/App/book"</strong></p></li></ul></li><li><p>Kwik will publish images/source code. You can find them in</p><blockquote><p>TODO change dist to src with SimpleBook sample</p></blockquote><img src=./img/2022-07-02-21-01-08.png width=300></li></ul></li><li><p>Active Document</p></li></ol><ul><li><p>Export Images</p></li><li><p>Export Code</p><img src=./img/2022-07-23-20-23-00.png width=300></li></ul><h2 id=solar2d-simulator>Solar2D Simulator</h2><ol><li><p>Open main.lua in Solar2D/src with Solar2D Simulator</p><p>TODO UXP::Publish to include swipe page or A/D keys for navigation ⭐️</p><p>kwiconfig.lua</p><pre tabindex=0><code>debug = {enable = true, navigation= &#34;swipe/keys&#34;}
+</code></pre></li></ol><h3 id=custom-code>Custom Code</h3><p>you can put your own code into commands and scenes folder. Kwik Exporter traverses folders of Solar2D project to integrate your additional files.</p><ul><li>commands/*.lua</li><li>scenes/*.lua</li></ul><img src=./img/2022-07-23-20-34-40.png width=300><p>for instance, myrect.lua calls myEvents.testHandler when user taps the rect.</p><p>The $weight is a meta variable. A scene componet(layer or your custom code)with lower value will be placed top. The top layer from Photoshop is zero. Then values are increases to until the background layer. For your custom code , you can use minus or positive with decimal. For example, myrect is -2, mycircle is -1. If you change weight values of custom code files, don&rsquo;t forget to publish code again.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#75715e>-- $weight=-2</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>_M</span> <span style=color:#f92672>=</span> <span style=color:#111>{}</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>function</span> <span style=color:#75af00>_M</span><span style=color:#111>:</span><span style=color:#75af00>init</span><span style=color:#111>(</span><span style=color:#111>UI</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>function</span> <span style=color:#75af00>_M</span><span style=color:#111>:</span><span style=color:#75af00>create</span><span style=color:#111>(</span><span style=color:#111>UI</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#00a8c8>local</span> <span style=color:#111>sceneGroup</span> <span style=color:#f92672>=</span> <span style=color:#111>UI.scene</span><span style=color:#111>.</span><span style=color:#111>view</span>
+</span></span><span style=display:flex><span>  <span style=color:#00a8c8>local</span> <span style=color:#111>obj</span> <span style=color:#f92672>=</span> <span style=color:#111>display.newRect</span><span style=color:#111>(</span> <span style=color:#111>sceneGroup</span><span style=color:#111>,</span> <span style=color:#111>display.contentCenterX</span><span style=color:#111>,</span> <span style=color:#111>display.contentCenterY</span><span style=color:#f92672>-</span><span style=color:#ae81ff>100</span><span style=color:#111>,</span> <span style=color:#ae81ff>100</span><span style=color:#111>,</span> <span style=color:#ae81ff>100</span> <span style=color:#111>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>obj</span><span style=color:#111>:</span><span style=color:#111>setFillColor</span><span style=color:#111>(</span><span style=color:#ae81ff>0.2</span><span style=color:#111>,</span><span style=color:#ae81ff>0.2</span><span style=color:#111>,</span><span style=color:#ae81ff>0.2</span><span style=color:#111>);</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#111>obj</span><span style=color:#111>:</span><span style=color:#111>addEventListener</span><span style=color:#111>(</span><span style=color:#d88200>&#34;tap&#34;</span><span style=color:#111>,</span> <span style=color:#00a8c8>function</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>UI.scene</span><span style=color:#111>:</span><span style=color:#111>dispatchEvent</span><span style=color:#111>({</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;myEvents.testHandler&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>UI</span> <span style=color:#f92672>=</span> <span style=color:#111>UI</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>})</span>
+</span></span><span style=display:flex><span>  <span style=color:#00a8c8>end</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>function</span> <span style=color:#75af00>_M</span><span style=color:#111>:</span><span style=color:#75af00>didShow</span><span style=color:#111>(</span><span style=color:#111>UI</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>function</span> <span style=color:#75af00>_M</span><span style=color:#111>:</span><span style=color:#75af00>didHide</span><span style=color:#111>(</span><span style=color:#111>UI</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>function</span>  <span style=color:#75af00>_M</span><span style=color:#111>:</span><span style=color:#75af00>destory</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>_M</span>
+</span></span></code></pre></div><p>myEvents.testHandker.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>instance</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#34;commands.kwik.baseCommand&#34;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>(</span>
+</span></span><span style=display:flex><span>  <span style=color:#00a8c8>function</span> <span style=color:#111>(</span><span style=color:#111>params</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#00a8c8>local</span> <span style=color:#111>e</span>     <span style=color:#f92672>=</span> <span style=color:#111>params.event</span>
+</span></span><span style=display:flex><span>    <span style=color:#00a8c8>local</span> <span style=color:#111>UI</span>    <span style=color:#f92672>=</span> <span style=color:#111>e.UI</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;commands.myEvents.testhander&#34;</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#111>UI.scene</span><span style=color:#111>:</span><span style=color:#111>dispatchEvent</span><span style=color:#111>({</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;myAction&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>UI</span> <span style=color:#f92672>=</span> <span style=color:#111>UI</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>})</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>instance</span>
+</span></span></code></pre></div><p>You can find your custom code are inserted in scenes/{PSD FILENAME}/index.lua. The layers are sorted internally by values of meta weight variables.</p><img src=./img/2022-07-23-20-46-52.png width=600><hr><h2 id=layer-groups>Layer Groups</h2><p>You can export images of a layer group individually.</p><img src=./img/2022-07-25-13-12-57.png width=300><p>Select layer groups and then click Unmerge button.</p><img src=./img/2022-07-25-13-13-44.png width=300><p>If you want to cancel a layer group to be unmerged, Check it and click Cancel button. It will disppaer from the list.</p><img src=./img/2022-07-25-13-16-15.png width=300><p>The source files and the images are exported when you publish.</p><img src=./img/2022-07-25-13-19-38.png width=300><blockquote><p>TODO fix the bug that unmerged group is not indexed at the right position in index.lua</p></blockquote><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scene</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#39;controller.scene&#39;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>(</span><span style=color:#111>sceneName</span><span style=color:#111>,</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;kwik4_1280x1920&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>bg</span><span style=color:#f92672>=</span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>                            <span style=color:#111>}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>copyright</span><span style=color:#f92672>=</span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>                            <span style=color:#111>}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>star</span><span style=color:#f92672>=</span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>                            <span style=color:#111>}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>hello</span><span style=color:#f92672>=</span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>                            <span style=color:#111>}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>mycircle</span><span style=color:#f92672>=</span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>                            <span style=color:#111>}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>myrect</span><span style=color:#f92672>=</span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>                            <span style=color:#111>}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>GroupA</span><span style=color:#f92672>=</span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>                <span style=color:#111>{</span> <span style=color:#111>SubA</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>}</span> <span style=color:#111>},</span>            <span style=color:#111>}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
+</span></span></code></pre></div><hr><h2 id=create-a-new-project>Create a new project</h2><img src=./img/2022-07-23-20-28-14.png width=300><ol><li><p>Solar2D Project > New button</p><p>TODO dialog for choice</p><ul><li>create a pair of Photoshop & Solar2D project folder</li></ul><pre><code> it will scafold a Solar2D folder of a template to a folder you choose.
 
  NG Current implementation copies Solar2D folder w/o App
 
  TODO it would be better to scafold the entire structure of SingleBook sample
-</code></pre>
-<ul>
-<li>create a book folder into Photoshop folder</li>
-</ul>
-<p>select a distination folder</p>
-<p>TODO select portrait or landscape</p>
-</li>
-</ol>
-<pre tabindex=0><code> ├── Photoshop
+</code></pre><ul><li>create a book folder into Photoshop folder</li></ul><p>select a distination folder</p><p>TODO select portrait or landscape</p></li></ol><pre tabindex=0><code> ├── Photoshop
  │   └── book01
  │       ├── kwikconfig.json
  │       └── page01.psd
@@ -553,113 +124,37 @@ all</option></select>
      │   └── mySplashScreen.png
      ├── templates
      └── tools
-</code></pre><hr>
-<h2 id=tools>Tools</h2>
-<h3 id=kwik-editor>Kwik Editor</h3>
-<p>develop/Solar2D/tools/kwik-editor</p>
-<p>This tool visually edits Soar2D/src files of a Kwik project and is harnessed by Pegasus http-server</p>
-<p>TODO Port kwik5/sandbox/Solar2D_MENU/KwikLiveEditor to the folder above. Take diff</p>
-<p>TODO editPorpsTable.lua</p>
-<pre tabindex=0><code>	muiButton.listener = function(event)
-		print(&quot;button listener&quot;)
+</code></pre><hr><h2 id=tools>Tools</h2><h3 id=kwik-editor>Kwik Editor</h3><p>develop/Solar2D/tools/kwik-editor</p><p>This tool visually edits Soar2D/src files of a Kwik project and is harnessed by Pegasus http-server</p><p>TODO Port kwik5/sandbox/Solar2D_MENU/KwikLiveEditor to the folder above. Take diff</p><p>TODO editPorpsTable.lua</p><pre tabindex=0><code>	muiButton.listener = function(event)
+		print(&#34;button listener&#34;)
 		local map = {}
 		local objs = tableHelper:getTextFields()
 		for i=1, #objs do
-			print(&quot; &quot;..i..&quot;:&quot;, objs[i].text)
+			print(&#34; &#34;..i..&#34;:&#34;, objs[i].text)
 			models[i].value = objs[i].text
 			map[models[i].name] = objs[i].text -- TODO tonumber?
 		end
 
-		local tmplt = UI.appFolder..&quot;/../../templates/components/layer_props&quot;
-		local path = UI.currentPage.path ..&quot;/&quot;..UI.currentLayer.name..&quot;_props&quot;
+		local tmplt = UI.appFolder..&#34;/../../templates/components/layer_props&#34;
+		local path = UI.currentPage.path ..&#34;/&#34;..UI.currentLayer.name..&#34;_props&#34;
 		util.renderer(tmplt, path, map)
-</code></pre><img src=./img/2022-07-03-14-34-35.png width=1080>
-<p>↑
-Select a layer or an event to review. You can edit values of properties</p>
-<p>TODO each kwik component with default values</p>
-<p>TODO ui components like checkbox/selectors &mldr; for each component ⭐️</p>
-<blockquote>
-<p>react compnents on webview &ndash; can be shared with UXP panel which may send params via http to pegasus in kwik editor</p>
-</blockquote>
-<blockquote>
-<p>current editPorpsTable.lua servers as plain table viewer & editor</p>
-</blockquote>
-<p>TODO save/copy params to .http (YAML) for httpYac</p>
-<p>TODO how to send text to clipboard from Solar2D　⭐️</p>
-<hr>
-<h3 id=harness>Harness</h3>
-<p>develop/Solar2D/tools/pegasus-harness</p>
-<ul>
-<li>test_character_transitions.http</li>
-<li>test_Loading_animation.http</li>
-</ul>
-<p>You can post params with httpYac in VS Code to a Solar2D project</p>
-<p>TODO set Layer varaible with samples</p>
-<p>TODO create models: animation, transition2, button &mldr;, and pegasus-receiver in kwik-editor ⭐️</p>
-<ul>
-<li>
-<p>Animation_bounce.http</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#ae81ff>POST /layers/logo</span>
-<span style=color:#f92672>Content-Type</span>: <span style=color:#ae81ff>application/yaml</span>
-
-- <span style=color:#f92672>transition</span>: <span style=color:#ae81ff>bounce</span>
-- <span style=color:#f92672>params</span>:
-    <span style=color:#f92672>height</span>: <span style=color:#ae81ff>400</span>
-    <span style=color:#f92672>width</span>: <span style=color:#ae81ff>200</span>
-    <span style=color:#f92672>time</span>: <span style=color:#ae81ff>1000</span>
-    <span style=color:#f92672>iterations</span>: <span style=color:#ae81ff>0</span>
-</code></pre></div></li>
-</ul>
-<hr>
-<h3 id=launcher>Launcher</h3>
-<p>develop/Solar2D/tools/pegasus-launcher</p>
-<ul>
-<li>test-Solar2D-SampleCode.http</li>
-</ul>
-<p>You can open a solar2D project from VS Code with httpYac</p>
-<hr>
-<h2 id=coding-manually-in-vs-code>Coding manually in VS Code</h2>
-<ol>
-<li>
-<p>create .lua for commands or components</p>
-</li>
-<li>
-<p>run the follwoing tool to update scenes/pageX/index.lua to append the new .lua to the index.</p>
-<p><strong>/develop/Solar2D/tools/generate_scene_index</strong> is a Solar2D application. You can open the main.lua in Solar2D simulator.</p>
-<p>the table in the index.lua is updated by iterating files in App/bookX/components and bookX/commands</p>
-</li>
-</ol>
-<div class=chevrons>
-<div id=navigation>
-<a class="nav nav-prev" href=/ title=Home> <i class="fa fa-chevron-left"></i><label>Home</label></a>
-<a class="nav nav-next" href=/get_started/naming_rule/ title="Naming Rule" style=margin-right:0><label>Naming Rule</label><i class="fa fa-chevron-right"></i></a></div>
-</div>
-</section>
-</article>
-<footer>
-<div class=footline>
-<div class=date>
-<i class="fa fa-calendar"></i> Last update on 02/08/2022
-</div>
-<div class=github-link>
-<a href=https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/get_started/_index.md target=blank><i class="fa fa-code-fork"></i>
-Improve this page</a>
-</div>
-</div>
-<div>
-Create a content/_footer.md file to customize the footer content
-</div>
-</footer>
-<script src=/js/jquery-2.x.min.js></script>
-<script type=text/javascript>var baseurl=""</script>
-<script src=/js/clipboard.min.js></script>
-<script src=/js/featherlight.min.js></script>
-<script type=text/javascript src=/js/lunr.min.js></script>
-<script type=text/javascript src=/js/auto-complete.js></script>
-<script type=text/javascript src=/js/search.js></script>
-<script src=/theme-flex/script.js></script>
-<script src=/js/scripts.min.js></script>
+</code></pre><img src=./img/2022-07-03-14-34-35.png width=1080><p>↑
+Select a layer or an event to review. You can edit values of properties</p><p>TODO each kwik component with default values</p><p>TODO ui components like checkbox/selectors &mldr; for each component ⭐️</p><blockquote><p>react compnents on webview &ndash; can be shared with UXP panel which may send params via http to pegasus in kwik editor</p></blockquote><blockquote><p>current editPorpsTable.lua servers as plain table viewer & editor</p></blockquote><p>TODO save/copy params to .http (YAML) for httpYac</p><p>TODO how to send text to clipboard from Solar2D　⭐️</p><hr><h3 id=harness>Harness</h3><p>develop/Solar2D/tools/pegasus-harness</p><ul><li>test_character_transitions.http</li><li>test_Loading_animation.http</li></ul><p>You can post params with httpYac in VS Code to a Solar2D project</p><p>TODO set Layer varaible with samples</p><p>TODO create models: animation, transition2, button &mldr;, and pegasus-receiver in kwik-editor ⭐️</p><ul><li><p>Animation_bounce.http</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#ae81ff>POST /layers/logo</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>Content-Type</span><span style=color:#111>:</span> <span style=color:#ae81ff>application/yaml</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>- <span style=color:#f92672>transition</span><span style=color:#111>:</span> <span style=color:#ae81ff>bounce</span>
+</span></span><span style=display:flex><span>- <span style=color:#f92672>params</span><span style=color:#111>:</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>height</span><span style=color:#111>:</span> <span style=color:#ae81ff>400</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>width</span><span style=color:#111>:</span> <span style=color:#ae81ff>200</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>time</span><span style=color:#111>:</span> <span style=color:#ae81ff>1000</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>iterations</span><span style=color:#111>:</span> <span style=color:#ae81ff>0</span>
+</span></span></code></pre></div></li></ul><hr><h3 id=launcher>Launcher</h3><p>develop/Solar2D/tools/pegasus-launcher</p><ul><li>test-Solar2D-SampleCode.http</li></ul><p>You can open a solar2D project from VS Code with httpYac</p><hr><h2 id=coding-manually-in-vs-code>Coding manually in VS Code</h2><ol><li><p>create .lua for commands or components</p></li><li><p>run the follwoing tool to update scenes/pageX/index.lua to append the new .lua to the index.</p><p><strong>/develop/Solar2D/tools/generate_scene_index</strong> is a Solar2D application. You can open the main.lua in Solar2D simulator.</p><p>the table in the index.lua is updated by iterating files in App/bookX/components and bookX/commands</p></li></ol><div class=chevrons><div id=navigation><a class="nav nav-prev" href=/kwik5docs/ title=Home><i class="fa fa-chevron-left"></i><label>Home</label></a>
+<a class="nav nav-next" href=/kwik5docs/get_started/naming_rule/ title="Naming Rule" style=margin-right:0><label>Naming Rule</label><i class="fa fa-chevron-right"></i></a></div></div></section></article><footer><div class=footline><div class=date><i class='fa fa-calendar'></i> 02/08/2022</div><div class=github-link><a href=https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/get_started/_index.md target=blank><i class="fa fa-code-fork"></i></a></div></div><div></div></footer><script src=/kwik5docs/js/jquery-2.x.min.js></script>
+<script type=text/javascript>var baseurl="https://kwiksher.github.io/kwik5docs/"</script><script src=/kwik5docs/js/clipboard.min.js></script>
+<script src=/kwik5docs/js/featherlight.min.js></script>
+<script type=text/javascript src=/kwik5docs/js/lunr.min.js></script>
+<script type=text/javascript src=/kwik5docs/js/auto-complete.js></script>
+<script type=text/javascript src=/kwik5docs/js/search.js></script>
+<script src=/kwik5docs/theme-flex/script.js></script>
+<script src=https://kwiksher.github.io/kwik5docs/js/scripts.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.12.0/mermaid.min.js crossorigin=anonymous></script>
-<script>mermaid.init(void 0,".language-mermaid")</script>
-</body>
-</html>
+<script>mermaid.init(void 0,".language-mermaid")</script></body></html>
