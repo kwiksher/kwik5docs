@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on Kwik</title><link>https://kwiksher.github.io/kwik5docs/design/tools/</link><description>Recent content in Tools on Kwik</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/design/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>UXP Plugins</title><link>https://kwiksher.github.io/kwik5docs/design/tools/plugins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/tools/plugins/</guid><description>UXP Plugins Kwik4 created a project folder where psd files are placed. Kwik5 you can creat a folder for your psd files on your own. When Kwik Exporter opens, it asks for the folder location.
 Exporter plugins for PS, XD develop/UXP/kwik-exporter
-New
-Open psd files from a folder (TODO)
 the folder name/path is saved in a json
-Publish selected psd files (TODO)
-Drag &amp;amp; Drop to change the order of psd files</description></item><item><title>Editor</title><link>https://kwiksher.github.io/kwik5docs/design/tools/editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/tools/editor/</guid><description>Editor React Solar2D Kwik functions
+Photoshop Files
+Open psd files from a folder
+Drag &amp;amp; Drop to change the order of psd files
+one psd file corresponds one scene in Solar2D code.</description></item><item><title>Editor</title><link>https://kwiksher.github.io/kwik5docs/design/tools/editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/tools/editor/</guid><description>Editor React Solar2D Kwik functions
 Command
 File
 Project New Project Open Project Recent Page New Edit
@@ -13,8 +13,6 @@ Compress PNGs &amp;ndash; TBI notarized compress.app in Kwik Assemble PNGs A-Gif
 returns .json of layer components(classes) or events/commands. It also returns default values of compoent properties
 POST
 receives Props of layers and Commands and then renders .lua components/commands. It also stores the request params in .json
-/develop/Solar2D/tools/pegasus-harness /develop/Solar2D/tools/pegasus-launcher</description></item><item><title>Utilities</title><link>https://kwiksher.github.io/kwik5docs/design/tools/utilities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/tools/utilities/</guid><description>Utilities /develop/Solar2D/tools/generate_scene_index (TODO update ⭐️)
-generating scene/pageX/index.lua
-index.lua is created by iterating files from
-App/conentX/scene/pageX App/contentX/components/pageX App/conentX/commands/pageX scafolding (optional)
-it outputs .lua files to components and commands folder by reading scene/pageX/index.lua</description></item></channel></rss>
+/develop/Solar2D/tools/pegasus-harness /develop/Solar2D/tools/pegasus-launcher</description></item><item><title>Utilities</title><link>https://kwiksher.github.io/kwik5docs/design/tools/utilities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/tools/utilities/</guid><description>Utilities /develop/Solar2D/tools/yaml2lua
+there is a vscode extention to convert yaml to json , json to yaml etc
+- name: Loading01 from: from to: x: 100 y: 100 alpha: 1 duration: 2000 xScale: 1.5 yScale: 1.5 rotation: 0 controls: restart: false easing: Linear reverse: false delay: 1000 loop: 1 angle: 45 xSwipe: 0 ySwipe: 0 referncePoint: Center breadcrumbs: dispose: true shape: &amp;#34;&amp;#34; color: - 1 - 0 - 1 interval: 300 time: 2000 width: 30 height: 30 lua</description></item></channel></rss>
