@@ -86,30 +86,29 @@ http-server
 │   ├── bookTOC
 |        ├── components
 |        |      ├── library
-|        |      |      ├── pages
-|        |      |           └── bookstore.lua ⭐️
-|        |      └── dialog
-|        └── scenes
-|              ├── library
-|              |      ├── bg.lua
-|              |      ├── bookFreeIcon.lua
-|              |      ├── bookOneIcon.lua
-|              |      ├── downloadBtn.lua
-|              |      ├── purchaseBtn.lua
-|              |      ├── restoreBtn.lua
-|              |      ├── savedBtn.lua
-|              |      ├── savingTxt.lua
-|              |      └── index.lua　 ⭐️
-|              └── dialog
-|                     ├── bg.lua
-|                     ├── bookIcon.lua
-|                     ├── downloadBtn.lua
-|                     ├── hideOverlayBtn.lua
-|                     ├── infoTxt.lua
-|                     ├── purchaseBtn.lua
-|                     ├── savedBtn.lua
-|                     ├── savingTxt.lua
-|                     └── inddx.lua
+|               |      ├── layers
+|               |      |      ├── bg.lua
+|               |      |      ├── bookFreeIcon.lua
+|               |      |      ├── bookOneIcon.lua
+|               |      |      ├── downloadBtn.lua
+|               |      |      ├── purchaseBtn.lua
+|               |      |      ├── restoreBtn.lua
+|               |      |      ├── savedBtn.lua
+|               |      |      └── savingTxt.lua
+|               |      ├── page
+|               |      |     └── bookstore.lua ⭐️
+|               |      └── index.lua　 ⭐️
+|               └── dialog
+|                     └──  layers
+|                            ├── bg.lua
+|                            ├── bookIcon.lua
+|                            ├── downloadBtn.lua
+|                            ├── hideOverlayBtn.lua
+|                            ├── infoTxt.lua
+|                            ├── purchaseBtn.lua
+|                            ├── savedBtn.lua
+|                            ├── savingTxt.lua
+|                            └── inddx.lua
 │
 ├── components
     ├── bookstore
@@ -123,20 +122,20 @@ http-server
 </span></span><span style=display:flex><span>  <span style=color:#75715e>--</span>
 </span></span><span style=display:flex><span>  <span style=color:#00a8c8>local</span> <span style=color:#111>scene</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#39;controller.scene&#39;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>(</span><span style=color:#111>sceneName</span><span style=color:#111>,</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;library&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>      <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>            <span style=color:#111>{</span>  <span style=color:#111>bg</span> <span style=color:#f92672>=</span><span style=color:#111>{</span> <span style=color:#111>}</span> <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>            <span style=color:#111>{</span>  <span style=color:#111>bookIcon</span> <span style=color:#f92672>=</span><span style=color:#111>{</span> <span style=color:#111>}</span> <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>            <span style=color:#111>...</span>
 </span></span><span style=display:flex><span>            <span style=color:#111>...</span>
-</span></span><span style=display:flex><span>      <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>      <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>        <span style=color:#111>audios</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>        <span style=color:#111>groups</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>        <span style=color:#111>timers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>        <span style=color:#111>variables</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>        <span style=color:#111>pages</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#d88200>&#34;bookstore&#34;</span> <span style=color:#111>}</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>      <span style=color:#111>events</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>commands</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>onInit</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#111>scene</span><span style=color:#111>)</span> <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;onInit&#34;</span><span style=color:#111>)</span> <span style=color:#00a8c8>end</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>})</span>
 </span></span><span style=display:flex><span>  <span style=color:#75715e>--</span>
@@ -455,7 +454,7 @@ http-server
 </span></span><span style=display:flex><span>    <span style=color:#111>productNames</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>apple</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;bookOne_apple&#34;</span><span style=color:#111>,</span> <span style=color:#111>google</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;bookOne_google&#34;</span><span style=color:#111>,</span> <span style=color:#111>amazon</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;bookOne_amazon&#34;</span><span style=color:#111>},</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>}</span>
 </span></span><span style=display:flex><span><span style=color:#111>}</span>
-</span></span></code></pre></div><p>when user purchase bookX, user can download the default of bookX or en, jp. Kwik internally downloads bookX.zip or bookXen/asset zip files or bookXjp/asset zip files</p><h3 id=use-case-memo>use case memo</h3><blockquote><p>TODO direct open a book according to the language code of the page</p></blockquote><ul><li><p>when user click purchase button and the transaction is completed, next user needs to click download-version button to get an asset zip of a selected language from Book server</p></li><li><p>library.psd</p><ul><li><p>purchase button is not available in library page. It is removed (alpha=0)</p></li><li><p>user can not directly open a book from a thumbnail icon. Click the icon to pop up the dilaog, and then user choose one of version of a book</p></li></ul><ul><li>from dialog, user can open a book if it has been purchased and been downloaded in the app</li></ul></li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/>Design</small><h1 id=design>Design</h1><p>Project model</p><ul><li>robotlegs</li><li>template<ul><li>components</li><li>commands</li></ul></li></ul><p>Tools</p><ul><li><p>image exporter</p><p>PS/XD UXP</p></li><li><p>visual editor (frontEnd)</p><p>Solar2D</p><ul><li>live editor</li></ul><p>(Maybe) React</p><ul><li>uxp plugin for Ps or XD</li><li>web app</li></ul></li><li><p>REST server</p><ul><li><p>pegasus-harness</p></li><li><p>pegasus-launcher</p><p>frontEnd app sends REST API requests to harness of pegasus lua server</p><p>this server offers the renderer of .lua for components and commands</p></li></ul></li><li><p>other tools</p><ul><li>generate_scene_index</li></ul></li></ul><p>Sample projects</p><hr><p>Image Exporter plugin for Adobe Photoshop</p><img src=./img/2022-05-18-13-25-58.png width=360><hr><p>Project Model</p><blockquote><p>sample-projects/Pegasus</p></blockquote><img src=./img/2022-05-31-11-13-26.png width=360><blockquote><p>/kwik5/sandbox/Ps/react-uxp-styles/Project/Solar2D</p></blockquote><img src=./img/2022-05-18-13-20-45.png width=360><hr><p>Visual Editor(React)</p><p>{{webview html panel}}</p><ul><li>UXP</li><li>Browser</li></ul><hr><p>Visual Live Editor(Solar2D)</p><img src=./img/2022-10-22-10-29-56.png width=600><blockquote><p>Solar2D/tools/kwik-editor/App/kwikEditor to be copied into a project? Or make them as components like a AtoB?</p></blockquote><ul><li><p>books/pages(scenes)/layers</p><img src=./img/2022-10-22-10-31-11.png width=600></li><li><p>menu</p><img src=./img/2022-10-22-10-32-39.png width=300>
+</span></span></code></pre></div><p>when user purchase bookX, user can download the default of bookX or en, jp. Kwik internally downloads bookX.zip or bookXen/asset zip files or bookXjp/asset zip files</p><h3 id=use-case-memo>use case memo</h3><blockquote><p>TODO direct open a book according to the language code of the page</p></blockquote><ul><li><p>when user click purchase button and the transaction is completed, next user needs to click download-version button to get an asset zip of a selected language from Book server</p></li><li><p>library.psd</p><ul><li><p>purchase button is not available in library page. It is removed (alpha=0)</p></li><li><p>user can not directly open a book from a thumbnail icon. Click the icon to pop up the dilaog, and then user choose one of version of a book</p></li></ul><ul><li>from dialog, user can open a book if it has been purchased and been downloaded in the app</li></ul></li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/>Design</small><h1 id=design>Design</h1><p>Project model</p><ul><li>robotlegs</li><li>template<ul><li>components</li><li>commands</li></ul></li></ul><p>Tools</p><ul><li><p>image exporter</p><p>PS/XD UXP</p></li><li><p>visual editor (frontEnd)</p><p>Solar2D</p><ul><li>live editor</li></ul><p>(Maybe) React</p><ul><li>uxp plugin for Ps or XD</li><li>web app</li></ul></li><li><p>REST server</p><ul><li><p>pegasus-harness</p></li><li><p>pegasus-launcher</p><p>frontEnd app sends REST API requests to harness of pegasus lua server</p><p>this server offers the renderer of .lua for components and commands</p></li></ul></li><li><p>other tools</p><ul><li>generate_scene_index</li></ul></li></ul><p>Sample projects</p><hr><p>Image Exporter plugin for Adobe Photoshop</p><img src=./img/2022-05-18-13-25-58.png width=360><hr><p>Project Model</p><blockquote><p>sample-projects/Pegasus</p></blockquote><img src=./img/2022-05-31-11-13-26.png width=360><blockquote><p>test/base-proj/Solar2D/App/bookFree</p></blockquote><img src=./img/2022-12-01-19-34-42.png width=360><hr><p>Visual Editor(React)</p><p>{{webview html panel}}</p><ul><li>UXP</li><li>Browser</li></ul><hr><p>Visual Live Editor(Solar2D)</p><img src=./img/2022-10-22-10-29-56.png width=600><blockquote><p>Solar2D/tools/kwik-editor/App/kwikEditor to be copied into a project? Or make them as components like a AtoB?</p></blockquote><ul><li><p>books/pages(scenes)/layers</p><img src=./img/2022-10-22-10-31-11.png width=600></li><li><p>menu</p><img src=./img/2022-10-22-10-32-39.png width=300>
 <img src=./img/2022-10-22-10-34-31.png width=600></li><li><p>tools/actions with icons</p><img src=./img/2022-10-22-10-35-39.png width=600><p>selectPage</p><ul><li><p><input disabled type=checkbox> selectLayer with filter</p><ul><li>select class<ul><li><input disabled type=checkbox> show an event with class name like button->onTap, anim->onComplete</li><li><input disabled type=checkbox> button (-> New Action Icon)</li></ul></li></ul></li><li><p>selectComponent</p><ul><li>audio<ul><li>event</li></ul></li><li>group</li><li>timer<ul><li>event</li></ul></li><li>var</li></ul></li><li><p><input disabled type=checkbox> add a component to a layer or a page selected</p></li><li><p><input disabled type=checkbox> selectAction</p><ul><li><p><input disabled type=checkbox> list actions</p></li><li><p><input disabled type=checkbox> cross references to components</p></li><li><p><input disabled type=checkbox> Action Editor</p><ul><li>Add a command<ul><li>user select Animation<ul><li><input disabled type=checkbox> list animations<ul><li>user select an animation, select an operation</li><li>editt props</li></ul></li></ul></li></ul></li><li>Drag & Drop to change the order of commands</li></ul></li></ul></li></ul><blockquote><p>Pegasus & httpYac to get/post properteis of components and actions?
 yaml props in .http</p></blockquote><p>Copy/(optional)EditRawJSON/Apply</p><ul><li>copy json-props in a buffer</li><li>(optional) show Edit JSON panel: json-props in text field, then you can copy it or modify</li><li>select components and click paste button?</li></ul></li></ul><blockquote><p>audio/group/timer/var are independent from layers</p></blockquote><ul><li><p>components w/o events</p><ul><li><p>page</p><ul><li>group</li><li>variable</li></ul></li><li><p>layer replacements</p><ul><li>set lang</li><li>multiplier</li><li>particles</li><li>dynamic text</li><li>text</li><li>mask</li></ul></li><li><p>interactions</p><ul><li>canvas</li><li>scroll</li></ul></li><li><p>physics</p><ul><li>env</li><li>body</li><li>force</li><li>joint</li></ul></li></ul></li><li><p>components with events</p><ul><li><p>timer</p></li><li><p>audio</p></li><li><p>layer (replacements)</p><ul><li><p>onComplete</p><ul><li>animation</li><li>video</li><li>countdown</li><li>text input</li></ul></li><li><p>transition</p><ul><li>onStart</li><li>onComplete</li><li>onPause</li><li>onResume</li><li>onCancel</li><li>onRepeat</li></ul></li><li><p>sprite</p><ul><li>began</li><li>ended</li><li>bounce</li><li>loop</li><li>next</li></ul></li><li><p>sync audio text</p><ul><li>word timecode</li></ul></li></ul></li><li><p>interactions</p><ul><li><p>button</p><ul><li>tap #</li><li>press</li><li>release</li></ul></li><li><p>drag</p><ul><li>drop area</li><li>dragging</li><li>release</li></ul></li><li><p>swipe</p></li><li><p>pinch</p><ul><li>pinching</li><li>release</li></ul></li><li><p>spin</p><ul><li>clockwise</li><li>anti clockwise</li></ul></li><li><p>shake</p></li><li><p>parallax</p><ul><li>forward</li><li>backword</li></ul></li></ul></li><li><p>physics</p><ul><li>collision</li><li>preCollision</li><li>postCollision</li></ul></li></ul></li></ul><hr><ul><li><p><input disabled type=checkbox> create &lsquo;select book/page/layer&rsquo; menu at the bottom</p><ul><li><p><input disabled type=checkbox> layers table for a seclection . showOverlay?</p></li><li><p><input disabled type=checkbox> layer name with &lsquo;Add Class&rsquo; button?</p></li></ul></li><li><p><input disabled type=checkbox> create tools/actions with icons at the bottom</p><ul><li><input disabled type=checkbox> select animation > linear</li></ul></li><li><p>save/load</p><pre tabindex=0><code>scene/layers
   create?
@@ -543,39 +542,36 @@ Developer --- VSCode
 │       ├── components
 │       │   ├── page1
 │       │   │   ├── audios
+│       |   |   ├── layers
+│       |   |   │   ├── bg.lua
+│       |   |   │   ├── gotoBtn.lua
+│       |   |   │   ├── gotoBtn_animation.lua
+│       |   |   │   ├── index.lua
+│       |   |   │   ├── title.lua
+│       |   |   │   └── title_animation.lua
 │       │   │   ├── groups
 │       │   │   ├── page
 │       │   │   ├── times
 │       │   │   └── variables
-│       │   └── page2
-│       ├── main.lua
-│       ├── mediators
+│       |   ├── page2
+│       │   └── index.lua
 │       ├── models
-│       │   ├── page1
-│       │   │   ├── audios
-│       │   │   ├── groups
-│       │   │   ├── page
-│       │   │   ├── times
-│       │   │   ├── variables
-│       │   │   ├── bg.json
-│       │   │   ├── events
-│       │   │   │   └── eventOne.json
-│       │   │   ├── gotoBtn.json
-│       │   │   ├── gotoBtn_animation.json
-│       │   │   ├── index.json
-│       │   │   ├── title.json
-│       │   │   └── title_animation.json
-│       │   └── page2
-│       └── scenes
-│           ├── index.lua
-│           ├── page1
-│           │   ├── bg.lua
-│           │   ├── gotoBtn.lua
-│           │   ├── gotoBtn_animation.lua
-│           │   ├── index.lua
-│           │   ├── title.lua
-│           │   └── title_animation.lua
-│           └── page2
+│           ├── page1
+│           │   ├── audios
+│           │   ├── layers
+│           │   ├── groups
+│           │   ├── page
+│           │   ├── times
+│           │   ├── variables
+│           │   ├── bg.json
+│           │   ├── commands
+│           │   │   └── eventOne.json
+│           │   ├── gotoBtn.json
+│           │   ├── gotoBtn_animation.json
+│           │   ├── index.json
+│           │   ├── title.json
+│           │   └── title_animation.json
+│           └── page2
 │  
 ├── Images.xcassets
 ├── LaunchScreen.storyboardc
@@ -609,13 +605,18 @@ Developer --- VSCode
 ├── components &lt;==== page components
 │   ├── page1
 │   │   ├── audios
+│   │   ├── layers
+│   │   │   ├── bg.lua
+│   │   │   ├── gotoBtn.lua
+│   │   │   ├── gotoBtn_animation.lua &lt;=== animation component lua
+│   │   │   ├── title.lua
+│   │   │   └── title_animation.lua &lt;=== animation component lua
 │   │   ├── groups
 │   │   ├── page
 │   │   ├── times
-│   │   └── variables
+│   │   ├── variables
+│   │   └── index.lua
 │   └── page2
-├── main.lua
-├── mediators
 ├── models
 │   ├── page1
 │   │   ├── bg.json
@@ -627,40 +628,27 @@ Developer --- VSCode
 │   │   ├── title.json
 │   │   └── title_animation.json &lt;=== animation component json
 │   └── page2
-├── scenes
-    ├── index.lua
-    ├── page1
-    │   ├── bg.lua
-    │   ├── gotoBtn.lua
-    │   ├── gotoBtn_animation.lua &lt;=== animation component lua
-    │   ├── index.lua
-    │   ├── title.lua
-    │   └── title_animation.lua &lt;=== animation component lua
-    └── page2
-</code></pre></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/animation/>Animation</small><h3 id=animation>Animation</h3></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/audio/>Audio</small><h3 id=audio>Audio</h3><ul><li><p>components/pageX/audios</p><ul><li>sounds/soundOne.lua</li><li>streams/songOne.lua</li></ul><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-.lua data-lang=.lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>Props</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</code></pre></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/animation/>Animation</small><h3 id=animation>Animation</h3></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/audio/>Audio</small><h3 id=audio>Audio</h3><ul><li><p>components/pageX/audios</p><ul><li>short/soundOne.lua</li><li>long/songOne.lua</li></ul><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-.lua data-lang=.lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>Props</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>name</span>     <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;soundOne&#34;</span><span style=color:#111>,</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>type</span>     <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;sound&#34;</span><span style=color:#111>,</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>autoPlay</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>true</span><span style=color:#111>,</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>channel</span>  <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>
 </span></span><span style=display:flex><span><span style=color:#111>}</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>Props</span>
-</span></span></code></pre></div></li><li><p>scenes/pageX/index.lua</p><pre tabindex=0><code>{
+</span></span></code></pre></div></li><li><p>componetns/pageX/index.lua</p><pre tabindex=0><code>{
     name = &#34;pageX&#34;,
-    layers = {
-        {background={}},
-    },
     components = {
-        {audios = {
-            {name=&#34;soundOne&#34;, type=&#34;sound&#34;},
-            {name=&#34;songOne&#34;, type=&#34;stream&#34;}
-        }},
-        {others = {
-            {nanostores={}}
-        }}
+      layers = {
+        {background={}},
+      },
+      audios = {
+        long = {&#34;streamOne&#34;, &#34;streamTwo&#34;},
+        short = {&#34;shortOne&#34;, &#34;shortTwo&#34;}
+      },
     },
-    events = {},
+    commands = {},
 }
-</code></pre></li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/button/>Button</small><h3 id=button>Button</h3></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/group/>Group</small><h3 id=group>Group</h3></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/image/>Image</small><h3 id=image>Image</h3><ul><li><p>scenes/pageX/background.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>_K</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span> <span style=color:#d88200>&#34;Application&#34;</span>
+</code></pre></li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/button/>Button</small><h3 id=button>Button</h3></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/group/>Group</small><h3 id=group>Group</h3></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/image/>Layer</small><h3 id=layer>Layer</h3><ul><li><p>scenes/pageX/background.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>_K</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span> <span style=color:#d88200>&#34;Application&#34;</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>_M</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#34;components.kwik.layer_image&#34;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>()</span>
 </span></span><span style=display:flex><span><span style=color:#111>_M.weight</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
 </span></span><span style=display:flex><span>
@@ -740,7 +728,32 @@ Developer --- VSCode
     components = {},
     events = {},
 }
-</code></pre></li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/spritesheet/>Spritesheet</small><h3 id=spritesheet>Spritesheet</h3></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/sync_audio_text/>Sync Audio&Text</small><h3 id=sync-audio--text>Sync Audio & Text</h3></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/content/>Content X Structure</small><h3 id=content-x-structure>Content X Structure</h3><p>test/base-proj/Solar2D/App/bookX</p><blockquote><p>obsolete develop/UXP/kwik-exporter/plugin/kwik/base-proj/Solar2D/App/bookX</p></blockquote><pre tabindex=0><code>.
+</code></pre></li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/spritesheet/>Spritesheet</small><h3 id=spritesheet>Spritesheet</h3></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/components/sync_audio_text/>Sync Audio&Text</small><h3 id=sync-audio--text>Sync Audio & Text</h3><p>test/base-proj/Solar2D/App/bookFree/components/page3/index.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>sceneName</span> <span style=color:#f92672>=</span> <span style=color:#111>...</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scene</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#39;controller.scene&#39;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>(</span><span style=color:#111>sceneName</span><span style=color:#111>,</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;page3&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>            <span style=color:#111>{</span> <span style=color:#111>test</span><span style=color:#f92672>=</span><span style=color:#111>{}},</span>
+</span></span><span style=display:flex><span>            <span style=color:#111>{</span> <span style=color:#111>alphabet</span>    <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>class</span><span style=color:#f92672>=</span><span style=color:#111>{</span><span style=color:#d88200>&#34;sync&#34;</span><span style=color:#111>}}},</span>
+</span></span><span style=display:flex><span>            <span style=color:#111>{</span> <span style=color:#111>iamacat</span>     <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>class</span><span style=color:#f92672>=</span><span style=color:#111>{</span><span style=color:#d88200>&#34;sync&#34;</span><span style=color:#111>}}},</span>
+</span></span><span style=display:flex><span>            <span style=color:#111>{</span> <span style=color:#111>mynameiskwik</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>class</span><span style=color:#f92672>=</span><span style=color:#111>{</span><span style=color:#d88200>&#34;sync&#34;</span><span style=color:#111>}}},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>audios</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>long</span>  <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;GentleRain&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;Tranquility&#34;</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>short</span> <span style=color:#f92672>=</span><span style=color:#111>{</span><span style=color:#d88200>&#34;ballsCollision&#34;</span><span style=color:#111>}</span> <span style=color:#111>,</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>groups</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>timers</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>variables</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>page</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#111>}</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>commands</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#d88200>&#34;onComplete&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;play&#34;</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>onInit</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#111>scene</span><span style=color:#111>)</span> <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;onInit&#34;</span><span style=color:#111>)</span> <span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span><span style=color:#111>})</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>scene</span>
+</span></span></code></pre></div></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/content/>Content X Structure</small><h3 id=content-x-structure>Content X Structure</h3><p>test/base-proj/Solar2D/App/bookX</p><blockquote><p>obsolete develop/UXP/kwik-exporter/plugin/kwik/base-proj/Solar2D/App/bookX</p></blockquote><pre tabindex=0><code>.
 ├── assets
 │   ├── audios
 │   │   ├── long
@@ -763,19 +776,17 @@ Developer --- VSCode
 ├── components
 │   └── pageX
 │       ├── audios
+│       ├── layers
+│       │    ├── layer_image.lua
 │       ├── groups
 │       ├── page
 │       │   └── controllers
 │       ├── timers
-│       └── variables
+│       ├── variables
+│       └──index.lua
 ├── config.lua
 ├── mediators
 ├── models
-├── scenes
-    ├── index.lua
-    └── pageX
-        ├── index.lua
-        ├── layer_image.lua
 </code></pre><p>example bookFree/page1</p><pre tabindex=0><code>.
 ├── assets
 │   ├── images
@@ -800,35 +811,32 @@ Developer --- VSCode
 ├── components
 │   ├── page1
 │   │   ├── audios
+│   │   ├── layers
+│   │   │   ├── bg.lua
+│   │   │   ├── gotoBtn.lua
+│   │   │   ├── gotoBtn_animation.lua
+│   │   │   ├── title.lua
+│   │   │   └── title_animation.lua
 │   │   ├── groups
 │   │   ├── page
 │   │   ├── times
-│   │   └── variables
+│   │   ├── variables
+│   │   └── index.lua
 │   └── page2
 ├── main.lua
 ├── mediators
 │   ├── page1Mediator.lua
 │   └── page2Mediator.lua
 ├── models
-│   ├── page1
-│   │   ├── bg.json
-│   │   ├── events
-│   │   │   └── eventOne.json
-│   │   ├── gotoBtn.json
-│   │   ├── gotoBtn_animation.json
-│   │   ├── index.json
-│   │   ├── title.json
-│   │   └── title_animation.json
-│   └── page2
-├── scenes
-    ├── index.lua
     ├── page1
-    │   ├── bg.lua
-    │   ├── gotoBtn.lua
-    │   ├── gotoBtn_animation.lua
-    │   ├── index.lua
-    │   ├── title.lua
-    │   └── title_animation.lua
+    │   ├── bg.json
+    │   ├── events
+    │   │   └── eventOne.json
+    │   ├── gotoBtn.json
+    │   ├── gotoBtn_animation.json
+    │   ├── index.json
+    │   ├── title.json
+    │   └── title_animation.json
     └── page2
 </code></pre></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/icons/>Icons</small><p><a href=https://forums.solar2d.com/t/new-icon-size-for-ios/354492>https://forums.solar2d.com/t/new-icon-size-for-ios/354492</a></p><ul><li>114x114</li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/photoshop/>Photoshop File</small><h2 id=photoshop-file>Photoshop File</h2><p><a href=https://www.ios-resolution.com/>https://www.ios-resolution.com/</a></p><p>iPhone 13 Pro Max 1284x2778</p><img src=../img/2022-05-21-11-26-54.png width=1080><ul><li><p>iPad Pro 2048 x 2732</p></li><li><p>iPhone X 1125 x 2436</p></li><li><p>iPhone 11 Pro 1242 x 2688</p><p><a href=https://forums.solar2d.com/t/iphone-11-pro-max-screen-shots-in-simulator/151266/11>https://forums.solar2d.com/t/iphone-11-pro-max-screen-shots-in-simulator/151266/11</a></p></li></ul><p>Kwik4 Ulitimate Config</p><ul><li><p>1280 x 1920</p><p><a href=https://kwiksher.com/doc/getting_startted/guidelines/blend_mode/>https://kwiksher.com/doc/getting_startted/guidelines/blend_mode/</a></p><p><a href=https://kwiksher.com/doc/getting_startted/guidelines/screenshot/>https://kwiksher.com/doc/getting_startted/guidelines/screenshot/</a></p></li><li><p>background</p><p>1440 x 2280</p><p>iPhone X 1440 × 2772</p><p><a href=https://forums.solar2d.com/t/how-to-define-application-working-area-on-the-screen/351066/11>https://forums.solar2d.com/t/how-to-define-application-working-area-on-the-screen/351066/11</a></p><p><a href=https://forums.solar2d.com/t/safe-area-on-iphone-x-and-11-problem/353608>https://forums.solar2d.com/t/safe-area-on-iphone-x-and-11-problem/353608</a></p><blockquote><p><a href=https://github.com/SpyricGames/Solar2D-Plugins-Public>https://github.com/SpyricGames/Solar2D-Plugins-Public</a></p></blockquote></li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/template_model/>Template Model</small><h3 id=code-template-model>Code Template Model</h3><p>assets/model/schema</p><p>embedded in codes &ndash; TBI to be extracted</p><ul><li>external codes - export it to .lua or can be imported directly</li><li>physics path</li><li>read2me -<ul><li>timecodes</li></ul></li><li>spritesheet info</li></ul><p>TODO:add ext codes</p><pre tabindex=0><code>extCodes
     libs
@@ -945,8 +953,8 @@ end
     ├── contentX
         ├── assets
         │   ├── audios
-        │   │   ├── sounds
-        │   │   ├── streams
+        │   │   ├── short
+        │   │   ├── long
         │   │   └── sync
         │   ├── images
         │   └── model.json
@@ -955,61 +963,58 @@ end
         ├── components
         │   ├── pageX
         │   │   ├── audios
-        │   │   ├── groups
-        │   │   ├── interactions
-        │   │   │   └── page
-        │   │   ├── others
-        │   │   ├── timers
-        │   │   └── variables
-        │   └── store?
+        │       │── layers
+        │       │    ├── animations
+        │       │    ├── images
+        │       │    ├── interactions
+        │       │    ├── physics
+        │       │    └── replacements
+        │       ├── groups
+        │       ├── page
+        │       ├── timers
+        │       ├── variables
+        │       └── index.lua
+        │
         ├── defaults
         │   ├── audio_properties.xml
         │   ├── layer_properties.xml
         │   ├── linear_anim_properties.xml
         │   └── spritesheet_properties.xml
-        ├── mediators
         ├── models
-        │   ├── assets
-        │   │   ├── audios
-        │   │   │   ├── sounds
-        │   │   │   ├── streams
-        │   │   │   └── sync
-        │   │   ├── index.json
-        │   │   ├── particles
-        │   │   ├── sprites
-        │   │   ├── videos
-        │   │   └── www
-        │   ├── lproj
-        │   └── pageX
-        │       ├── components
-        │       │   ├── audios
-        │       │   ├── groups
-        │       │   ├── others
-        │       │   ├── timers
-        │       │   └── variables
-        │       ├── events
-        │       ├── index.json
-        │       └── layers
-        ├── scenes
+            ├── assets
+            │   ├── audios
+            │   │   ├── short
+            │   │   ├── long
+            │   │   └── sync
+            │   ├── index.json
+            │   ├── particles
+            │   ├── sprites
+            │   ├── videos
+            │   └── www
+            ├── lproj
             └── pageX
-                ├── animations
-                ├── images
-                ├── interactions
-                ├── physics
-                └── replacements
-</code></pre></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/sample-projects/>Sample Projects</small><h2 id=sample-projects>Sample Projects</h2><ul><li>sample-projects/SingleBook</li><li>sample-projects/Pegasus</li><li>sample-projects/Misc/Transition2</li><li>sample-projects/MusicLibrary</li><li>sample-projects/MultilingualBook</li><li>sample-projects/GameCenter</li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/tools/>Tools</small><h2 id=tools>Tools</h2><p>Exporrter plugin for PS, XD</p><ul><li><p>UXP</p><ul><li>export images</li><li>export source code<ol><li><p>traverse photoshop layers</p><p>scenes/pageX/**/*.lua</p><blockquote><p>kwik-exporter\src\photoshop\publishCode.ts</p></blockquote></li><li><p>traverse App/contentX/</p><ul><li>commands/pageX/ for envets</li><li>components/pageX for components such as audios,groups ..</li><li>scenes/pageX for layers from Photoshop and attached animation, button</li></ul><blockquote><p>generate_scene_index\generate_models.lua</p></blockquote></li><li><p>merge the both results to ouput scenes/pageX/index.lua ⭐️</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>sceneName</span> <span style=color:#f92672>=</span> <span style=color:#111>...</span>
+                ├── components
+                │   ├── audios
+                │   ├── layers
+                │   ├── groups
+                │   ├── page
+                │   ├── timers
+                │   └── variables
+                ├── commands
+                ├── index.json
+</code></pre></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/sample-projects/>Sample Projects</small><h2 id=sample-projects>Sample Projects</h2><ul><li>sample-projects/SingleBook</li><li>sample-projects/Pegasus</li><li>sample-projects/Misc/Transition2</li><li>sample-projects/MusicLibrary</li><li>sample-projects/MultilingualBook</li><li>sample-projects/GameCenter</li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/tools/>Tools</small><h2 id=tools>Tools</h2><p>Exporrter plugin for PS, XD</p><ul><li><p>UXP</p><ul><li>export images</li><li>export source code<ol><li><p>traverse photoshop layers</p><p>components/pageX/layers/**/*.lua</p><blockquote><p>kwik-exporter\src\photoshop\publishCode.ts</p></blockquote></li><li><p>traverse App/contentX/</p><ul><li>commands/pageX/ for envets</li><li>components/pageX for components such as audios,groups ..</li><li>components/pageX/layers from Photoshop and attached animation, button</li></ul><blockquote><p>generate_scene_index\generate_models.lua</p></blockquote></li><li><p>merge the both results to ouput components/pageX/index.lua ⭐️</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>sceneName</span> <span style=color:#f92672>=</span> <span style=color:#111>...</span>
 </span></span><span style=display:flex><span><span style=color:#75715e>--</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scene</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#39;controller.scene&#39;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>(</span><span style=color:#111>sceneName</span><span style=color:#111>,</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;page01&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{{</span><span style=color:#111>bg</span> <span style=color:#f92672>=</span> <span style=color:#111>{}},</span> <span style=color:#111>{</span><span style=color:#111>layerX</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>types</span><span style=color:#f92672>=</span><span style=color:#111>{</span><span style=color:#111>button</span><span style=color:#111>}}}},</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{{</span><span style=color:#111>bg</span> <span style=color:#f92672>=</span> <span style=color:#111>{}},</span> <span style=color:#111>{</span><span style=color:#111>layerX</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>class</span><span style=color:#f92672>=</span><span style=color:#111>{</span><span style=color:#111>button</span><span style=color:#111>}}}},</span>
 </span></span><span style=display:flex><span>        <span style=color:#111>audios</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
 </span></span><span style=display:flex><span>        <span style=color:#111>groups</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
 </span></span><span style=display:flex><span>        <span style=color:#111>others</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
 </span></span><span style=display:flex><span>        <span style=color:#111>timers</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
 </span></span><span style=display:flex><span>        <span style=color:#111>variables</span> <span style=color:#f92672>=</span> <span style=color:#111>{}</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>events</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;bg.clickLayer&#34;</span><span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>commands</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;bg.clickLayer&#34;</span><span style=color:#111>},</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>onInit</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#111>scene</span><span style=color:#111>)</span> <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;onInit&#34;</span><span style=color:#111>)</span> <span style=color:#00a8c8>end</span>
 </span></span><span style=display:flex><span><span style=color:#111>})</span>
 </span></span><span style=display:flex><span>
@@ -1021,10 +1026,12 @@ end
 │  │  │  │  ├─assets
 │  │  │  │  │  ├─images
 │  │  │  │  │  │  └─page01
-│  │  │  │  ├─models
+│  │  │  │  ├─commands
 │  │  │  │  │  └─page01
 │  │  │  │  │      └─layers
-│  │  │  │  └─scenes
+│  │  │  │  ├─components
+│  │  │  │  │  └─page01
+│  │  │  │  ├──models
 │  │  │  │      └─page01
 │  ├─template
 │  │  ├─App
@@ -1035,32 +1042,27 @@ end
 │  │  │      ├─components
 │  │  │      │  ├─pageX
 │  │  │      │  │  ├─audios
+│  │  │      │  │  ├─layers
+│  │  │      │  │  │   ├─animations
+│  │  │      │  │  │   ├─images
+│  │  │      │  │  │   ├─interactions
+│  │  │      │  │  │   ├─physics
+│  │  │      │  │  │   └─replacements
+│  │  │      │  │  │       ├─particles
+│  │  │      │  │  │       ├─sprites
+│  │  │      │  │  │       ├─syncAudioText
+│  │  │      │  │  │       ├─videos
+│  │  │      │  │  │       └─www
 │  │  │      │  │  ├─groups
-│  │  │      │  │  ├─interactions
-│  │  │      │  │  │  └─page
-│  │  │      │  │  ├─others
-│  │  │      │  │  │  ├─ext_lib_codes
-│  │  │      │  │  │  ├─page
-│  │  │      │  │  │  └─store
+│  │  │      │  │  ├─page
+│  │  │      │  │  │  ├─controls
 │  │  │      │  │  ├─timers
 │  │  │      │  │  └─variables
-│  │  │      │  └─store
+│  │  │      │  └─store ?
 │  │  │      ├─models
 │  │  │      │  └─pageX
-│  │  │      │      ├─events
-│  │  │      │      └─layers
-│  │  │      └─scenes
-│  │  │          └─pageX
-│  │  │              ├─animations
-│  │  │              ├─images
-│  │  │              ├─interactions
-│  │  │              ├─physics
-│  │  │              └─replacements
-│  │  │                  ├─particles
-│  │  │                  ├─sprites
-│  │  │                  ├─syncAudioText
-│  │  │                  ├─videos
-│  │  │                  └─www
+│  │  │      │      ├─commands
+│  │  │      │      └─components
 │  └─tools
 │      ├─kwik-editor
 └─UXP
@@ -1150,8 +1152,8 @@ It also stores the request params in .json</p><ul><li>/develop/Solar2D/tools/peg
     ├── contentX
         ├── assets
             ├── audios
-            │   ├── sounds
-            │   ├── streams
+            │   ├── short
+            │   ├── long
             │   └── sync
             ├── images
             │   └── pageX
@@ -1163,8 +1165,8 @@ It also stores the request params in .json</p><ul><li>/develop/Solar2D/tools/peg
 </code></pre><h3 id=1-1-images>1-1 images</h3><ul><li><p>Manually put images in App/contentX/images/pageX folder</p><ul><li><p><strong>kwik-generate-model</strong></p><p>it creates .json under models folder</p></li></ul></li></ul><p>Alternatively</p><ul><li><p>Photoshop</p><ul><li>select .psd files to export</li><li><strong>kwik-export plugin</strong><ul><li><p>create folders for a layer group in order to export each image of the group</p></li><li><p>the plugin exports index.json too</p><ul><li>assets/images/.png</li><li>models/scenes/pageX/index.json</li></ul><pre tabindex=0><code>├── models
 │   ├── assets
 │   │   ├── audios
-│   │   │   ├── sounds
-│   │   │   ├── streams
+│   │   │   ├── short
+│   │   │   ├── long
 │   │   │   └── sync
 │   │   ├── index.json
 │   │   ├── images
@@ -1177,9 +1179,9 @@ It also stores the request params in .json</p><ul><li>/develop/Solar2D/tools/peg
 </code></pre></li></ul></li></ul><p>later you edit it with KwikLiveEditor, then layerX.json is created under models/pageX/layers folder. images/pageX/layerX.json is readonly.</p></li></ul><h3 id=1-2-audios>1-2 audios</h3><p>put audio files under assets/audios folder</p><pre tabindex=0><code>.
 ├── assets
 │   ├── audios
-│   │   ├── sounds
+│   │   ├── short
 │   │   │   └── ballsCollide.mp3
-│   │   ├── streams
+│   │   ├── long
 │   │   │   ├── Gentle-Rain.mp3
 │   │   │   └── Tranquility.mp3
 │   │   └── sync
@@ -1198,9 +1200,9 @@ It also stores the request params in .json</p><ul><li>/develop/Solar2D/tools/peg
 </code></pre><ul><li><p><strong>kwik-generate-model</strong></p><p>creates .json under models/assets/audios</p><pre tabindex=0><code>├── models
 │   ├── assets
 │   │   ├── audios
-│   │   │   ├── sounds
+│   │   │   ├── short
 |   |   |   |     ├── audioX.json
-│   │   │   ├── streams
+│   │   │   ├── long
 │   │   │   └── sync
 │   │   ├── index.json
 │   │   ├── images
@@ -1213,17 +1215,13 @@ It also stores the request params in .json</p><ul><li>/develop/Solar2D/tools/peg
     &#34;type&#34;:&#34;sound&#34;
 }
 </code></pre></li><li><p>you assign an audio entry to a page with kwik-editor. Then the tool adds the entry in models/pageX/index.json</p></li></ol><p><strong>pageX</strong>/index.json</p><pre tabindex=0><code>{
-    &#34;components&#34;: [
-        {
-            &#34;audios&#34;: [
-                {&#34;name&#34;:&#34;audioX&#34;, &#34;type&#34;:&#34;sound&#34;},
-            ]
-        }
-    ],
-    &#34;events&#34;: [],
-    &#34;layers&#34;: []
+    &#34;components&#34;: {
+        &#34;audios&#34;: {&#34;short&#34;: [{&#34;name&#34;:&#34;audioX&#34;}],
+      &#34;layers&#34;: [{}]
+    },
+    &#34;commands&#34;: [],
 }
-</code></pre></li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/workflow/lua/>Lua Code</small><h2 id=lua>Lua</h2><p>you don&rsquo;t need to use kwik-generate-model nor kwik-editor to output lua files. You can skip making .json files of these tools, and you create a lua file manually into a folder, and append a name of additional file to scenes/pageX/index.lua</p><ul><li>commands/pageX/**/*.lua</li><li>components/pageX/**/*.lua</li><li>scenes/pageX/**/*.lua</li></ul><p>At runtime, Kwik Code Framework reads scenes/pageX/index.lua to load each .lua files of pageX. The object names for commands, compnents, scenes are defined in the index.lua.</p><ul><li>scenes/pageX/index.lua</li></ul><p><strong>kwik-genereate-index</strong> is a tool to update the index.lua from traversing the folders above.</p><ol><li>create .lua for commands, components, layers of pageX,</li><li>run the tool to generate scenes/pageX/index.lua</li></ol><blockquote><p>you don&rsquo;t need to use kwik-generate-index tool. You can manually edit it but it would be better to generate the index.lua with the tool.</p></blockquote><blockquote><p>Alternatively, there is another tool named <strong>kwik-scaffold-lua</strong>. This tool scafolds .lua files from scenes/pageX/index.lua. The tool does not overwrite .lua if exists, and may delete .lua if not defined in index.lua</p></blockquote><p>Which Workflow do you like?</p><ul><li><p>A</p><p>use kwik-generate-index everytime after you update commands, components, senes lua files.</p></li><li><p>B</p><p>use kwik-scaffold-lua to create a lua for commands, components, scenes then edit the lua file.</p></li></ul><blockquote><p>I like A because thinking about files/folders strcure with a file explorer, and coping/pasting an exsiting file could be easier when coding is in progress.</p></blockquote><blockquote><p>To initiate a project, B would work quicky to make a skelton structure.</p></blockquote></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/workflow/workflow/>REST API</small><h2 id=rest-api---yaml>REST API - YAML</h2><ol><li><p>put images in App/demo/assets/page01</p><ul><li>logo</li><li>panel</li><li>message</li><li>button</li><li>background</li><li>shape1</li><li>shape2</li></ul><p>Tool</p><ul><li>Finder/File Expolorer</li><li>Plugin for Photoshop or XD will export images</li><li>Editor<ul><li>html post image form</li></ul></li><li>network<ul><li><p>display.loadRemoteImage</p><p><a href=https://solar2d.com/images/logo.png>https://solar2d.com/images/logo.png</a></p><blockquote><p>access images of XD shared view? or able to load them all?</p></blockquote></li><li><p>network.download</p></li></ul></li></ul></li><li><p>Create layer structure</p><ul><li>Editor lists the images<ul><li>Order Top/Bottom/Up/Down</li></ul></li></ul><p>frontEnd uses <strong>Adobe React Spectrum</strong> (in future, support screen reader etc)</p><p>REST API to get the list of images and post the orderd list back</p><p>GET /layers</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>  - <span style=color:#f92672>background</span><span style=color:#111>:</span> <span style=color:#111>[]</span>
+</code></pre></li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/workflow/lua/>Lua Code</small><h2 id=lua>Lua</h2><p>you don&rsquo;t need to use kwik-generate-model nor kwik-editor to output lua files. You can skip making .json files of these tools, and you create a lua file manually into a folder, and append a name of additional file to scenes/pageX/index.lua</p><ul><li>commands/pageX/**/*.lua</li><li>components/pageX/**/*.lua</li></ul><p>At runtime, Kwik Code Framework reads scenes/pageX/index.lua to load each .lua files of pageX. The object names for commands, compnents, scenes are defined in the index.lua.</p><ul><li>components/pageX/index.lua</li></ul><p><strong>kwik-genereate-index</strong> is a tool to update the index.lua from traversing the folders above.</p><ol><li>create .lua for commands, components, layers of pageX,</li><li>run the tool to generate components/pageX/index.lua</li></ol><blockquote><p>you don&rsquo;t need to use kwik-generate-index tool. You can manually edit it but it would be better to generate the index.lua with the tool.</p></blockquote><blockquote><p>Alternatively, there is another tool named <strong>kwik-scaffold-lua</strong>. This tool scafolds .lua files from components/pageX/index.lua. The tool does not overwrite .lua if exists, and may delete .lua if not defined in index.lua</p></blockquote><p>Which Workflow do you like?</p><ul><li><p>A</p><p>use kwik-generate-index everytime after you update commands, components, senes lua files.</p></li><li><p>B</p><p>use kwik-scaffold-lua to create a lua for commands, components then edit the lua file.</p></li></ul><blockquote><p>I like A because thinking about files/folders strcure with a file explorer, and coping/pasting an exsiting file could be easier when coding is in progress.</p></blockquote><blockquote><p>To initiate a project, B would work quicky to make a skelton structure.</p></blockquote></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/workflow/workflow/>REST API</small><h2 id=rest-api---yaml>REST API - YAML</h2><ol><li><p>put images in App/demo/assets/page01</p><ul><li>logo</li><li>panel</li><li>message</li><li>button</li><li>background</li><li>shape1</li><li>shape2</li></ul><p>Tool</p><ul><li>Finder/File Expolorer</li><li>Plugin for Photoshop or XD will export images</li><li>Editor<ul><li>html post image form</li></ul></li><li>network<ul><li><p>display.loadRemoteImage</p><p><a href=https://solar2d.com/images/logo.png>https://solar2d.com/images/logo.png</a></p><blockquote><p>access images of XD shared view? or able to load them all?</p></blockquote></li><li><p>network.download</p></li></ul></li></ul></li><li><p>Create layer structure</p><ul><li>Editor lists the images<ul><li>Order Top/Bottom/Up/Down</li></ul></li></ul><p>frontEnd uses <strong>Adobe React Spectrum</strong> (in future, support screen reader etc)</p><p>REST API to get the list of images and post the orderd list back</p><p>GET /layers</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>  - <span style=color:#f92672>background</span><span style=color:#111>:</span> <span style=color:#111>[]</span>
 </span></span><span style=display:flex><span>  - <span style=color:#f92672>button</span><span style=color:#111>:</span> <span style=color:#111>[]</span>
 </span></span><span style=display:flex><span>  - <span style=color:#f92672>logo</span><span style=color:#111>:</span> <span style=color:#111>[]</span>
 </span></span><span style=display:flex><span>  - <span style=color:#f92672>message</span><span style=color:#111>:</span> <span style=color:#111>[]</span>
@@ -1290,28 +1288,26 @@ It also stores the request params in .json</p><ul><li>/develop/Solar2D/tools/peg
      └── tools
 </code></pre><hr><h2 id=solar2d-simulatorkwik-editor>Solar2D Simulator/kwik-editor</h2><p>Open main.lua in Solar2D/src with Solar2D Simulator</p><p><strong>Kwik Visual Code Editor</strong> wiil be loaded and your content(App/book) of your psd files are previewd</p><p>For instance, animtion editing
 <img src=./img/2022-10-22-11-26-40.png width=600></p><p>Action editing
-<img src=./img/2022-10-22-11-28-25.png width=600></p></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/get_started/components/>Components</small><h1 id=components>Components</h1><p>For instance components/pageX/controller/swip.lua enables a page transition, and audios can have multiple audio objects.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>sceneName</span> <span style=color:#f92672>=</span> <span style=color:#111>...</span>
+<img src=./img/2022-10-22-11-28-25.png width=600></p></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/get_started/components/>Components</small><h1 id=components>Components</h1><p>For instance components/pageX/page/swip.lua enables a page transition, and components/pageX/audios folder can have multiple audio lua files for instance short/audioOne.lua, long/audioTwo.lua. short audio file is loaded in to memory with audio.loadSound(), and long audio file is streaming with audio.loadStream().</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>sceneName</span> <span style=color:#f92672>=</span> <span style=color:#111>...</span>
 </span></span><span style=display:flex><span><span style=color:#75715e>--</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scene</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#39;controller.scene&#39;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>(</span><span style=color:#111>sceneName</span><span style=color:#111>,</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;pageX&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
-</span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>bg</span><span style=color:#f92672>=</span><span style=color:#111>{</span>
-</span></span><span style=display:flex><span>                            <span style=color:#111>}</span> <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
-</span></span><span style=display:flex><span>      <span style=color:#111>audios</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#111>audioOne</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span> <span style=color:#111>audioTwo</span> <span style=color:#f92672>=</span> <span style=color:#111>{}</span>  <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>bg</span><span style=color:#f92672>=</span><span style=color:#111>{}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>audios</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#111>short</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;audioOne&#34;</span><span style=color:#111>},</span> <span style=color:#111>long</span><span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;audioTwo&#34;</span> <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>groups</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>timers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>variables</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>      <span style=color:#111>pages</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#d88200>&#34;controllers.swipe&#34;</span> <span style=color:#111>}</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>page</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#d88200>&#34;controllers.swipe&#34;</span> <span style=color:#111>}</span>
 </span></span><span style=display:flex><span>     <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>events</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#111>myAction</span><span style=color:#111>,</span><span style=color:#111>myEvents.testHandler</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>commands</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#111>myAction</span><span style=color:#111>,</span><span style=color:#111>myEvents.testHandler</span> <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>onInit</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#111>scene</span><span style=color:#111>)</span> <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;onInit&#34;</span><span style=color:#111>)</span> <span style=color:#00a8c8>end</span>
 </span></span><span style=display:flex><span><span style=color:#111>})</span>
 </span></span><span style=display:flex><span><span style=color:#75715e>--</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>scene</span>
-</span></span></code></pre></div><img src=../img/2022-10-22-21-08-05.png width=300><h3 id=page>page</h3><ul><li>common</li><li>controllers<ul><li>swipe</li><li>keyboard</li></ul></li></ul><h3 id=audio>audio</h3><h3 id=group>group</h3><h3 id=timer>timer</h3><hr><h2 id=common-components>Common components</h2><p>You can add a common component to components/common directory</p><img src=../img/2022-07-26-15-46-42.png width=240><p>And let it pass in arguments of bootstrap function in main.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>common</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>events</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;myEvent&#34;</span><span style=color:#111>},</span> <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;myComponent&#34;</span><span style=color:#111>}}</span>
+</span></span></code></pre></div><img src=../img/2022-12-01-18-31-03.png width=300><h3 id=page>page</h3><ul><li>common</li><li>controllers<ul><li>swipe</li><li>keyboard</li></ul></li></ul><h3 id=audio>audio</h3><h3 id=group>group</h3><h3 id=timer>timer</h3><hr><h2 id=common-components>Common components</h2><p>You can add a common component to components/common directory</p><img src=../img/2022-07-26-15-46-42.png width=240><p>And let it pass in arguments of bootstrap function in main.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>common</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>commands</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;myEvent&#34;</span><span style=color:#111>},</span> <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;myComponent&#34;</span><span style=color:#111>}}</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#34;controller.index&#34;</span><span style=color:#111>).</span><span style=color:#111>bootstrap</span><span style=color:#111>({</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>name</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;book&#34;</span><span style=color:#111>,</span> <span style=color:#111>sceneIndex</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#111>position</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>x</span><span style=color:#f92672>=</span><span style=color:#ae81ff>0</span><span style=color:#111>,</span> <span style=color:#111>y</span><span style=color:#f92672>=</span><span style=color:#ae81ff>0</span><span style=color:#111>},</span>
@@ -1326,7 +1322,11 @@ It also stores the request params in .json</p><ul><li>/develop/Solar2D/tools/peg
 </span></span><span style=display:flex><span>  <span style=color:#00a8c8>end</span><span style=color:#111>)</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>end</span>
-</span></span></code></pre></div></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/get_started/events/>Events & Commands</small><h1 id=events--commands>Events & Commands</h1><h2 id=for-an-event-for-a-page-in-a-book>For an event for a page in a book</h2><p>there are two types</p><ul><li>layer events</li><li>general events</li></ul><p>For example in scenes/pageX/index.lua, buttonOne layer has two events, tap and drag, and for general events (kwik calls it Action) are defined for instance &ldquo;myAction&rdquo;, &ldquo;myEvents.testHandler&rdquo; under the root of the table</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>{</span>
+</span></span></code></pre></div></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/get_started/events/>Commands & Events</small><h1 id=commands--events>Commands & Events</h1><h2 id=for-an-event-for-a-page-in-a-book>For an event for a page in a book</h2><p>commands/myAction.lua are triggeded with a dispatchEvent fucntion</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span>  <span style=color:#111>UI</span><span style=color:#111>:</span><span style=color:#111>dispatchEvent</span><span style=color:#111>({</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;myAction&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>UI</span> <span style=color:#f92672>=</span> <span style=color:#111>UI</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>})</span>
+</span></span></code></pre></div><p>this myAction is defined in commands table in components/pageX/index.lua</p><p>For a button, you see in components/pageX/index.lua, buttonOne layer has two events. they are tap and drag. These tap and drag events are handleld with commands/buttonOne/tap.lua and commands/buttonOne/drag.lua</p><p>commands are called as Action in Kwik. You can dispatchEvent with params to myAction.lua, myEvents.testHandler.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;kwik4_1280x1920&#34;</span><span style=color:#111>,</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>bg</span><span style=color:#f92672>=</span><span style=color:#111>{}</span> <span style=color:#111>},</span>
@@ -1340,22 +1340,22 @@ It also stores the request params in .json</p><ul><li>/develop/Solar2D/tools/peg
 </span></span><span style=display:flex><span>      <span style=color:#111>variables</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>others</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#111>}</span>
 </span></span><span style=display:flex><span>     <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>events</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#d88200>&#34;myAction&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;myEvents.testHandler&#34;</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>commands</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#d88200>&#34;myAction&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;myEvents.testHandler&#34;</span> <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>onInit</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#111>scene</span><span style=color:#111>)</span> <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;onInit&#34;</span><span style=color:#111>)</span> <span style=color:#00a8c8>end</span>
 </span></span><span style=display:flex><span><span style=color:#111>}</span>
-</span></span></code></pre></div><p>The assicated lua files are located in the commands folder</p><ul><li>App/bookX/pageX/commands<ul><li>buttonOne<ul><li>tap.lua</li><li>drag.lua</li></ul></li><li>myAction.lua</li><li>myEvents/testHandler.lua</li></ul></li></ul><hr><h2 id=for-a-common-event-for-a-book>For a common event for a book</h2><p>create a command lua in commands/common directory, for example</p><ul><li><p>commands/common/myEvent.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>instance</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#34;commands.kwik.baseCommand&#34;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>(</span>
+</span></span></code></pre></div><p>The assicated lua files are located in the commands folder</p><ul><li>App/bookX/commands/pageX<ul><li>buttonOne<ul><li>tap.lua</li><li>drag.lua</li></ul></li><li>myAction.lua</li><li>myEvents/testHandler.lua</li></ul></li></ul><hr><h2 id=for-a-common-action-for-a-book>For a common action for a book</h2><p>create a command lua in commands/common directory, for example</p><ul><li><p>commands/common/myEvent.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>instance</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#34;commands.kwik.baseCommand&#34;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>(</span>
 </span></span><span style=display:flex><span>  <span style=color:#00a8c8>function</span> <span style=color:#111>(</span><span style=color:#111>params</span><span style=color:#111>)</span>
 </span></span><span style=display:flex><span>    <span style=color:#00a8c8>local</span> <span style=color:#111>UI</span>    <span style=color:#f92672>=</span> <span style=color:#111>params.UI</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;commands.myCommonEvent&#34;</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;myEvent&#34;</span><span style=color:#111>)</span>
 </span></span><span style=display:flex><span>  <span style=color:#00a8c8>end</span><span style=color:#111>)</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>instance</span>
-</span></span></code></pre></div><img src=../img/2022-07-26-15-33-26.png width=200></li></ul><p>And let it pass in arguments of bootstrap function in main.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>common</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>events</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;myEvent&#34;</span><span style=color:#111>},</span> <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>myComponent</span><span style=color:#f92672>=</span><span style=color:#111>{}}}</span>
+</span></span></code></pre></div><img src=../img/2022-07-26-15-33-26.png width=200></li></ul><p>And let it pass in arguments of bootstrap function in main.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>common</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>commands</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;myEvent&#34;</span><span style=color:#111>},</span> <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>myComponent</span><span style=color:#f92672>=</span><span style=color:#111>{}}}</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#34;controller.index&#34;</span><span style=color:#111>).</span><span style=color:#111>bootstrap</span><span style=color:#111>({</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>name</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;book&#34;</span><span style=color:#111>,</span> <span style=color:#111>sceneIndex</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#111>position</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>x</span><span style=color:#f92672>=</span><span style=color:#ae81ff>0</span><span style=color:#111>,</span> <span style=color:#111>y</span><span style=color:#f92672>=</span><span style=color:#ae81ff>0</span><span style=color:#111>},</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>common</span> <span style=color:#f92672>=</span><span style=color:#111>common</span>
 </span></span><span style=display:flex><span><span style=color:#111>})</span>
-</span></span></code></pre></div><p>context:init function of controller/ApplicationContext.lua automtaically adds it</p><p>this context init is called everytime when a scene is loaded. You can dispatch an event to executre myEvent.lua like this</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>UI.scene</span><span style=color:#111>:</span><span style=color:#111>dispatchEvent</span><span style=color:#111>({</span>
+</span></span></code></pre></div><p>context:init function of controller/ApplicationContext.lua automtaically adds it</p><p>this context init is called everytime when a scene is loaded. You can dispatch an event to executre myEvent.lua like this</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>UI</span><span style=color:#111>:</span><span style=color:#111>dispatchEvent</span><span style=color:#111>({</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;common.myEvent&#34;</span><span style=color:#111>,</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>UI</span> <span style=color:#f92672>=</span> <span style=color:#111>UI</span>
 </span></span><span style=display:flex><span><span style=color:#111>})</span>
@@ -1427,7 +1427,7 @@ Select a layer or an event to review. You can edit values of properties</p><p>TO
 </span></span><span style=display:flex><span>    <span style=color:#f92672>width</span><span style=color:#111>:</span> <span style=color:#ae81ff>200</span>
 </span></span><span style=display:flex><span>    <span style=color:#f92672>time</span><span style=color:#111>:</span> <span style=color:#ae81ff>1000</span>
 </span></span><span style=display:flex><span>    <span style=color:#f92672>iterations</span><span style=color:#111>:</span> <span style=color:#ae81ff>0</span>
-</span></span></code></pre></div></li></ul><hr><h2 id=custom-code>Custom Code</h2><p>you can put your own code into commands and scenes folder. Kwik Exporter traverses folders of Solar2D project to integrate your additional files.</p><ul><li>commands/*.lua</li><li>scenes/*.lua</li></ul><img src=./img/2022-07-23-20-34-40.png width=300><p>for instance, myrect.lua calls myEvents.testHandler when user taps the rect.</p><p>The $weight in a comment line at the top is a variable for Kwik. A scene componet(layer or your custom code)with lower value will be placed upper. The top layer from Photoshop is zero. Then values are increases to until the background layer. For your custom code , you can use minus or positive with decimal. For example, myrect is -2, mycircle is -1. If you change weight values of custom code files, don&rsquo;t forget to publish code again.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#75715e>-- $weight=-2</span>
+</span></span></code></pre></div></li></ul><hr><h2 id=custom-code>Custom Code</h2><p>you can put your own code(.lua) into commands/pageX/ and componets/pageX/layers folder.</p><ul><li>commands/pageX/*.lua</li><li>components/pageX/layers/*.lua</li></ul><p>Kwik Exporter traverses folders of Solar2D project to integrate your additons. Or you can manually add the file names to components/pageX/index.lua</p><img src=../img/2022-12-01-19-18-25.png width=300><p>for instance, myrect.lua calls myEvents.testHandler when user taps the rect.</p><p>The $weight in a comment line at the top is a variable for Kwik. A scene componet(layer or your custom code)with lower value will be placed upper. The top layer from Photoshop is zero. Then values are increases to until the background layer. For your custom code , you can use minus or positive with decimal. For example, myrect is -2, mycircle is -1. If you change weight values of custom code files, don&rsquo;t forget to publish code again.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#75715e>-- $weight=-2</span>
 </span></span><span style=display:flex><span><span style=color:#75715e>--</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>_M</span> <span style=color:#f92672>=</span> <span style=color:#111>{}</span>
 </span></span><span style=display:flex><span><span style=color:#75715e>--</span>
@@ -1472,14 +1472,41 @@ Select a layer or an event to review. You can edit values of properties</p><p>TO
 </span></span><span style=display:flex><span><span style=color:#111>)</span>
 </span></span><span style=display:flex><span><span style=color:#75715e>--</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>instance</span>
-</span></span></code></pre></div><p>You can find your custom code are inserted in scenes/{PSD FILENAME}/index.lua. The layers are sorted internally by values of meta weight variables.</p><img src=../img/2022-07-23-20-46-52.png width=600><hr><h3 id=generate_scene_index-tool>generate_scene_index tool</h3><ol><li><p>create .lua for commands or components</p></li><li><p>run the follwoing tool to update scenes/pageX/index.lua to append the new .lua to the index.lua</p><p><strong>/develop/Solar2D/tools/generate_scene_index</strong> is a Solar2D application. You can open the main.lua in Solar2D simulator.</p><p>the table in the index.lua is updated by iterating files in App/bookX/components and bookX/commands</p></li></ol><hr></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/introduction/>Introduction</small><h1 id=introduction>Introduction</h1><nav id=TableOfContents><ul><li><a href=#modified>Modified</a><ul><li><a href=#uxp>UXP</a></li><li><a href=#folder-structure>Folder structure</a></li><li><a href=#lua>Lua</a></li></ul></li><li><a href=#new-features>New Features</a><ul><li><a href=#uxp-1>UXP</a></li><li><a href=#kwik-editor-in-solar2d>Kwik Editor in Solar2D</a></li><li><a href=#lua-1>Lua</a></li><li><a href=#bookstore>Bookstore</a></li></ul></li></ul></nav><h2 id=modified>Modified</h2><h3 id=uxp>UXP</h3><ul><li><p>Open</p><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>the psd files are under Kwik/{Project Name} folder.</td><td style=text-align:left>Please choose a folder that has the psf files to be published</td></tr></tbody></table></li><li><p>Solar2D Project</p><blockquote><p>this tells where to publish images of a PSD to a solar2D project
-Kwik4 was under build4 folder and no choice was available</p></blockquote><ul><li><p>New</p><p>creates a book folder under App folder. A book has scenes(pages). Each scene is genereted from each psd file.</p></li><li><p>Select</p><p>you can select a book where a psd is published as a scene(page).</p><ul><li>App/{bookName}</li></ul></li></ul></li></ul><h3 id=folder-structure>Folder structure</h3><ul><li><p>Book > scene (page) > layer</p><p>names of psd files are used to create a scene lua file for Solar2D composer</p><br><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>pageOne.psd uses &ldquo;page01&rdquo;<br>- assets/images/p1<br>- components/page01<br>- commands/page01<br>- views/page01Scene.lua.</td><td style=text-align:left>pageOne.psd uses &ldquo;pageOne&rdquo;<br>- assets/images/pageOne<br>- components/pageOne<br>- commands/pageOne<br>- scenes/pageOne/index.lua</td></tr></tbody></table></li><li><p>dist folder</p><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>build4<br>- assets/images/p1<br>- components/page01<br>- commands/page01<br>- views/page01Scene.lua.</td><td style=text-align:left>App/{bookName}<br>- assets/images/pageOne<br>- components/pageOne<br>- commands/pageOne<br>- scenes/pageOne/index.lua<br><br>commands/common<br>components/common<br>components/bookstore</td></tr></tbody></table><blockquote><p>bookshelf is renamed to bookstore that is an enhancement of the kwik4&rsquo;s bookshefl imlementation (it was provided with kwikshelf.plugin)</p></blockquote></li></ul><h3 id=lua>Lua</h3><ul><li><p>main.lua</p><p>you can load a book project with the following code.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#34;controller.index&#34;</span><span style=color:#111>).</span><span style=color:#111>bootstrap</span><span style=color:#111>({</span><span style=color:#111>name</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;bookFree&#34;</span><span style=color:#111>,</span> <span style=color:#111>sceneIndex</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span> <span style=color:#111>})</span>
-</span></span></code></pre></div><p>sceneIndex is defined in App/{bookName}/scenes/index.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scenes</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span></code></pre></div><p>You can find your custom code are inserted in components/pageX/index.lua. The layers are sorted internally by values of $weight variable.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>sceneName</span> <span style=color:#f92672>=</span> <span style=color:#111>...</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>model</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;page01&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>{</span><span style=color:#111>bg</span> <span style=color:#f92672>=</span> <span style=color:#111>{}},</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>{</span><span style=color:#111>mycircle</span><span style=color:#f92672>=</span><span style=color:#111>{}},</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>{</span><span style=color:#111>myrect</span><span style=color:#f92672>=</span><span style=color:#111>{}}</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>audios</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>groups</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>others</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>timers</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>variables</span> <span style=color:#f92672>=</span> <span style=color:#111>{}</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>commands</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;myAction&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;myEvnets.testHandler&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>onInit</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#111>scene</span><span style=color:#111>)</span> <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;onInit&#34;</span><span style=color:#111>)</span> <span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span><span style=color:#111>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scene</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#39;components.kwik.scene&#39;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>(</span><span style=color:#111>sceneName</span><span style=color:#111>,</span> <span style=color:#111>model</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>scene</span>
+</span></span></code></pre></div><hr><h3 id=generate_scene_index-tool>generate_scene_index tool</h3><ol><li><p>create .lua for commands or components</p></li><li><p>run the follwoing tool to update scenes/pageX/index.lua to append the new .lua to the index.lua</p><p><strong>/develop/Solar2D/tools/generate_scene_index</strong> is a Solar2D application. You can open the main.lua in Solar2D simulator.</p><p>the table in the index.lua is updated by iterating files in App/bookX/components and bookX/commands</p></li></ol><hr></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/introduction/>Introduction</small><h1 id=introduction>Introduction</h1><nav id=TableOfContents><ul><li><a href=#modified>Modified</a><ul><li><a href=#uxp>UXP</a></li><li><a href=#folder-structure>Folder structure</a></li><li><a href=#lua>Lua</a></li></ul></li><li><a href=#new-features>New Features</a><ul><li><a href=#uxp-1>UXP</a></li><li><a href=#kwik-editor-in-solar2d>Kwik Editor in Solar2D</a></li><li><a href=#lua-1>Lua</a></li><li><a href=#bookstore>Bookstore</a></li></ul></li></ul></nav><h2 id=modified>Modified</h2><h3 id=uxp>UXP</h3><ul><li><p>Open</p><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>the psd files are under Kwik/{Project Name} folder.</td><td style=text-align:left>Please choose a folder that has the psf files to be published</td></tr></tbody></table></li><li><p>Solar2D Project</p><blockquote><p>this tells where to publish images of a PSD to a solar2D project
+Kwik4 was under build4 folder and no choice was available</p></blockquote><ul><li><p>New</p><p>creates a book folder under App folder. A book has scenes(pages). Each scene is genereted from each psd file.</p></li><li><p>Select</p><p>you can select a book where a psd is published as a scene(page).</p><ul><li>App/{bookName}</li></ul></li></ul></li></ul><h3 id=folder-structure>Folder structure</h3><ul><li><p>Book > scene (page) > layer</p><p>names of psd files are used to create a scene lua file for Solar2D composer</p><br><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>pageOne.psd uses &ldquo;page01&rdquo;<br>- assets/images/p1<br>- components/page01<br>- commands/page01<br>- views/page01Scene.lua.</td><td style=text-align:left>pageOne.psd uses &ldquo;pageOne&rdquo;<br>- assets/images/pageOne<br>- components/pageOne<br>- commands/pageOne<br>- components/pageOne/index.lua</td></tr></tbody></table></li><li><p>dist folder</p><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>build4<br>- assets/images/p1<br>- components/page01<br>- commands/page01<br>- views/page01Scene.lua.</td><td style=text-align:left>App/{bookName}<br>- assets/images/pageOne<br>- components/pageOne<br>- commands/pageOne<br>- components/pageOne/index.lua<br><br>commands/common<br>components/common<br>components/bookstore</td></tr></tbody></table><blockquote><p>bookshelf is renamed to bookstore that is an enhancement of the kwik4&rsquo;s bookshefl imlementation (it was provided with kwikshelf.plugin)</p></blockquote></li></ul><h3 id=lua>Lua</h3><ul><li><p>main.lua</p><p>you can load a book project with the following code.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#34;controller.index&#34;</span><span style=color:#111>).</span><span style=color:#111>bootstrap</span><span style=color:#111>({</span><span style=color:#111>name</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;bookFree&#34;</span><span style=color:#111>,</span> <span style=color:#111>sceneIndex</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span> <span style=color:#111>})</span>
+</span></span></code></pre></div><p>sceneIndex is defined in App/{bookName}/index.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scenes</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#d88200>&#34;page1&#34;</span><span style=color:#111>,</span>
 </span></span><span style=display:flex><span>    <span style=color:#d88200>&#34;page2&#34;</span><span style=color:#111>,</span>
 </span></span><span style=display:flex><span><span style=color:#111>}</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>scenes</span>
-</span></span></code></pre></div></li><li><p>App/{bookName}/scenes/{pageName}/{layerName}.lua</p><p>a component or layer lua file is retrived from composer library of Solar2D.</p><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>UI.layer<br>local bg = UI.layer.bg</td><td style=text-align:left>UI.scene.view<br>local bg = UI.scene.view.bg</td></tr></tbody></table><blockquote><p>kwik4&rsquo;s UI.layer is obsolete.</p></blockquote><p>Kwik5 holds all layers in UI.layers as an array, and also UI.scene.view contains all the layers with it.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>function</span> <span style=color:#75af00>M</span><span style=color:#111>:</span><span style=color:#75af00>create</span><span style=color:#111>(</span><span style=color:#111>UI</span><span style=color:#111>)</span>
+</span></span></code></pre></div></li><li><p>App/{bookName}/components/{pageName}/layers/{layerName}.lua</p><p>a component or layer lua file is retrived from composer library of Solar2D.</p><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>UI.layer<br>local bg = UI.layer.bg</td><td style=text-align:left>UI.scene.view<br>local bg = UI.scene.view.bg</td></tr></tbody></table><blockquote><p>kwik4&rsquo;s UI.layer is obsolete.</p></blockquote><p>Kwik5 holds all layers in UI.layers as an array, and also UI.scene.view contains all the layers with it.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>function</span> <span style=color:#75af00>M</span><span style=color:#111>:</span><span style=color:#75af00>create</span><span style=color:#111>(</span><span style=color:#111>UI</span><span style=color:#111>)</span>
 </span></span><span style=display:flex><span>  <span style=color:#00a8c8>local</span> <span style=color:#111>sceneGroup</span> <span style=color:#f92672>=</span> <span style=color:#111>UI.scene</span><span style=color:#111>.</span><span style=color:#111>view</span>
 </span></span><span style=display:flex><span>  <span style=color:#75715e>-- layers is a array</span>
 </span></span><span style=display:flex><span>  <span style=color:#00a8c8>local</span> <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>UI.layers</span>
@@ -1490,13 +1517,13 @@ Kwik4 was under build4 folder and no choice was available</p></blockquote><ul><l
 </span></span><span style=display:flex><span>  <span style=color:#00a8c8>local</span> <span style=color:#111>bg</span> <span style=color:#f92672>=</span> <span style=color:#111>sceneGroup</span><span style=color:#111>[</span><span style=color:#d88200>&#34;bg&#34;</span><span style=color:#111>]</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#111>bg.name</span><span style=color:#111>)</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>end</span>
-</span></span></code></pre></div></li></ul><hr><h2 id=new-features>New Features</h2><h3 id=uxp-1>UXP</h3><ul><li><p>Validate Names: layer names in Japanese Kana</p><ul><li>symbols are converted to &lsquo;_&rsquo;</li><li>&lsquo;レイヤー 1&rsquo; is converted to &lsquo;reiya_1&rsquo;</li></ul></li><li><p>Layer Groups: publish images of a nested layer group.</p></li></ul><h3 id=kwik-editor-in-solar2d>Kwik Editor in Solar2D</h3><p>animation, button, layer repleacements(spritesheet,video, particles) are editied with Kwik Editor in Solar2D.</p><p>It helpes to change values of components properties easily, or add/attach a component class to a layer visually for designers to do a no-code editing</p><blockquote><p>Kwik5 is aimed to be a low code tool faster to work with .lua code easily and directly. See the next Lua section</p></blockquote><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>1. kwik&rsquo;s component panel saves props to .kwk(XML)<br>2. Publish .lua from .kwk</td><td style=text-align:left>1. UXP Publish code(.lua) as base<br>2. Create/modify .lua for animation, button .. with Kwik editor in Solar2D simulator<br><br>For developers, use a text editor to edit .lua directly</td></tr></tbody></table><h3 id=lua-1>Lua</h3><blockquote><p>Kwik4 had .kwk xml to hold a properties/values of a Kwik project. Kwik5 uses .lua mainly</p></blockquote><ul><li><p>App/{bookName}/scenes/index.lua</p><p>you can add your own(custom) page to the index.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scenes</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span></code></pre></div></li></ul><hr><h2 id=new-features>New Features</h2><h3 id=uxp-1>UXP</h3><ul><li><p>Validate Names: layer names in Japanese Kana</p><ul><li>symbols are converted to &lsquo;_&rsquo;</li><li>&lsquo;レイヤー 1&rsquo; is converted to &lsquo;reiya_1&rsquo;</li></ul></li><li><p>Layer Groups: publish images of a nested layer group.</p></li></ul><h3 id=kwik-editor-in-solar2d>Kwik Editor in Solar2D</h3><p>animation, button, layer repleacements(spritesheet,video, particles) are editied with Kwik Editor in Solar2D.</p><p>It helpes to change values of components properties easily, or add/attach a component class to a layer visually for designers to do a no-code editing</p><blockquote><p>Kwik5 is aimed to be a low code tool faster to work with .lua code easily and directly. See the next Lua section</p></blockquote><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>1. kwik&rsquo;s component panel saves props to .kwk(XML)<br>2. Publish .lua from .kwk</td><td style=text-align:left>1. UXP Publish code(.lua) as base<br>2. Create/modify .lua for animation, button .. with Kwik editor in Solar2D simulator<br><br>For developers, use a text editor to edit .lua directly</td></tr></tbody></table><h3 id=lua-1>Lua</h3><blockquote><p>Kwik4 had .kwk xml to hold a properties/values of a Kwik project. Kwik5 uses .lua mainly</p></blockquote><ul><li><p>App/{bookName}/index.lua</p><p>you can add your own(custom) page to the index.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scenes</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span><span style=color:#d88200>&#34;page1&#34;</span><span style=color:#111>,</span>
 </span></span><span style=display:flex><span><span style=color:#d88200>&#34;page2&#34;</span><span style=color:#111>,</span>
 </span></span><span style=display:flex><span><span style=color:#d88200>&#34;yourPageName&#34;</span>
 </span></span><span style=display:flex><span><span style=color:#111>}</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>scenes</span>
-</span></span></code></pre></div></li><li><p>App/{bookName}/scenes/{pageName}/index.lua</p><p>layers form photoshop(images) and other resouces are separated.</p><ul><li><p>you can add your own(custom) layers to the layers table</p><ul><li><p>nested layres are supported</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span></code></pre></div></li><li><p>App/{bookName}/components/{pageName}/index.lua</p><p>layers form photoshop(images) and other resouces are separated.</p><ul><li><p>you can add your own(custom) layers to the layers table</p><ul><li><p>nested layres are supported</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>...</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>{</span> <span style=color:#111>title</span> <span style=color:#f92672>=</span> <span style=color:#111>{}},</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>{</span>
@@ -1509,21 +1536,21 @@ Kwik4 was under build4 folder and no choice was available</p></blockquote><ul><l
 </span></span><span style=display:flex><span><span style=color:#75715e>--</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scene</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#39;controller.scene&#39;</span><span style=color:#111>page</span><span style=color:#111>(</span><span style=color:#111>sceneName</span><span style=color:#111>,</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;page1&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>bg</span><span style=color:#f92672>=</span><span style=color:#111>{}</span> <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>gotoBtn</span><span style=color:#f92672>=</span><span style=color:#111>{}</span> <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>title</span><span style=color:#f92672>=</span><span style=color:#111>{}</span> <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>customLayerName</span><span style=color:#f92672>=</span><span style=color:#111>{}</span> <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>       <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>audios</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>groups</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>timers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>variables</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>pages</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#d88200>&#34;yourComponentName&#34;</span>  <span style=color:#111>}</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>events</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>commnands</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>onInit</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#111>scene</span><span style=color:#111>)</span> <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;onInit&#34;</span><span style=color:#111>)</span> <span style=color:#00a8c8>end</span>
 </span></span><span style=display:flex><span><span style=color:#111>})</span>
 </span></span><span style=display:flex><span><span style=color:#75715e>--</span>
@@ -1532,12 +1559,12 @@ Kwik4 was under build4 folder and no choice was available</p></blockquote><ul><l
 </span></span><span style=display:flex><span>  <span style=color:#111>...</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>{</span> <span style=color:#111>title</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span> <span style=color:#111>class</span><span style=color:#f92672>=</span><span style=color:#111>{</span><span style=color:#d88200>&#34;animation&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;button&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;yourClass&#34;</span><span style=color:#111>}},</span>
 </span></span><span style=display:flex><span><span style=color:#111>}</span>
-</span></span></code></pre></div></li><li><p>components</p><blockquote><p>Kwik4&rsquo;s audio, group, timer, varaible are treated as components in a scene in Kwik5</p></blockquote><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span></code></pre></div></li><li><p>components</p><blockquote><p>Kwik4&rsquo;s audio, group, timer, varaible are treated as components in a scene in Kwik5</p></blockquote><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>{</span>  <span style=color:#111>bg</span><span style=color:#f92672>=</span><span style=color:#111>{}</span> <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>{</span>  <span style=color:#111>gotoBtn</span><span style=color:#f92672>=</span><span style=color:#111>{}</span> <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>      <span style=color:#111>{</span>  <span style=color:#111>title</span><span style=color:#f92672>=</span><span style=color:#111>{}</span> <span style=color:#111>},</span>
-</span></span><span style=display:flex><span><span style=color:#111>},</span>
-</span></span><span style=display:flex><span><span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>audios</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>long</span>  <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;longOne&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;longTwo&#34;</span> <span style=color:#111>},</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>short</span> <span style=color:#f92672>=</span><span style=color:#111>{</span><span style=color:#d88200>&#34;shortOne&#34;</span><span style=color:#111>,</span><span style=color:#d88200>&#34;shortTwo&#34;</span><span style=color:#111>}</span> <span style=color:#111>,</span>
@@ -1547,7 +1574,7 @@ Kwik4 was under build4 folder and no choice was available</p></blockquote><ul><l
 </span></span><span style=display:flex><span>  <span style=color:#111>timers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;timerOne&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;timerTwo&#34;</span><span style=color:#111>},</span>
 </span></span><span style=display:flex><span>  <span style=color:#111>variables</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;varOne&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;varTwo&#34;</span><span style=color:#111>},</span>
 </span></span><span style=display:flex><span><span style=color:#111>},</span>
-</span></span></code></pre></div></li><li><p>common component examples</p><ul><li>navigation<ul><li>WASD key navigation</li><li>swipes</li><li>thumbnails</li></ul></li><li>bookstore navigation</li></ul></li><li><h4 id=events>Events</h4><p>App/{bookName}/scenes/{pageName}/<strong>index.lua</strong> has events too.</p><p>For example, panelOne.OK event that comes from a button in panelOne. It fires OK event, and actions code in panelOne.OK.lua in App/{bookName}/commnads/{pageName} folder will be exectued.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>page</span> <span style=color:#111>sceneName</span> <span style=color:#f92672>=</span> <span style=color:#111>...</span>
+</span></span></code></pre></div></li><li><p>common component examples</p><ul><li>navigation<ul><li>WASD key navigation</li><li>swipes</li><li>thumbnails</li></ul></li><li>bookstore navigation</li></ul></li><li><h4 id=commands>Commands</h4><p>App/{bookName}/components/{pageName}/<strong>index.lua</strong> has commnands for events.</p><p>For example, panelOne.OK event that comes from a button in panelOne. It fires OK event, and actions code in panelOne.OK.lua in App/{bookName}/commnads/{pageName} will be exectued.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>page</span> <span style=color:#111>sceneName</span> <span style=color:#f92672>=</span> <span style=color:#111>...</span>
 </span></span><span style=display:flex><span><span style=color:#75715e>--</span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scene</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#39;controller.scene&#39;</span><span style=color:#111>page</span><span style=color:#111>(</span><span style=color:#111>sceneName</span><span style=color:#111>,</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;page1&#34;</span><span style=color:#111>,</span>
@@ -1558,7 +1585,7 @@ Kwik4 was under build4 folder and no choice was available</p></blockquote><ul><l
 </span></span><span style=display:flex><span>    <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>...</span>
 </span></span><span style=display:flex><span>    <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>events</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>commnands</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;panelOne.OK&#34;</span><span style=color:#111>,</span>
 </span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;panelOne.Cancel&#34;</span><span style=color:#111>,</span>
 </span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;timerOne&#34;</span><span style=color:#111>,</span>
