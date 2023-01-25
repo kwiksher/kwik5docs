@@ -510,7 +510,347 @@ Designer --- tools
 Designer --- Photoshop
 
 Developer --- VSCode
-</code></pre><p>rest api</p><blockquote><p>pegasus is runningin Editor</p></blockquote><ol><li><p>run Editor</p></li><li><p>upload an image to pegasus server</p><ul><li>save it assets/images/book/</li><li>create display.object</li><li>.json</li></ul></li></ol><p>Kwik Visual Editor</p><ol><li><p>outputs images/json to App/book</p></li><li><p>run App/book</p></li></ol></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/new_features/>New Features</small><h2 id=new-features>New Features</h2><p>Solar2D API to be included</p><ul><li><p>Audio</p><ul><li>seek</li><li>rewind</li><li>cross fade function</li></ul></li><li><p>Social</p><ul><li>twitter</li><li>facebook</li><li>instagram</li></ul></li><li><p>transition.*</p><ul><li>chaining them</li></ul></li><li><p>mesh</p></li><li><p>2.5D — Perspective and Depth</p></li><li><p>game controllers</p></li></ul><p>Solar2D video texture</p><ul><li><a href=https://github.com/ANSH3LL/plugin_movie>https://github.com/ANSH3LL/plugin_movie</a></li></ul><p>Tiled</p><ul><li><p><a href=https://forums.solar2d.com/t/smooth-scrolling-of-top-down-tiled-map/150199/2>https://forums.solar2d.com/t/smooth-scrolling-of-top-down-tiled-map/150199/2</a></p><p>&ldquo;cull based on a 3x3 area of sub-screens centered around player. "</p></li><li><p><a href=https://gamedev.stackexchange.com/questions/83253/is-there-any-way-to-load-pieces-of-a-tile-map-as-and-when-needed-and-not-the-en>https://gamedev.stackexchange.com/questions/83253/is-there-any-way-to-load-pieces-of-a-tile-map-as-and-when-needed-and-not-the-en</a></p></li><li><p><a href=https://www.dynetisgames.com/2018/02/24/manage-big-maps-phaser-3/>https://www.dynetisgames.com/2018/02/24/manage-big-maps-phaser-3/</a></p><ul><li>A tool to split an existing Tiled tilemap into chunks</li><li>How to reason about chunks based on their ID’s and the world dimensions</li><li>How to load and destroy them on the fly using Phaser 3</li></ul></li></ul><p>Texture atlas function in kwik?</p><ul><li><p><a href=https://github.com/shama/atlaspack>https://github.com/shama/atlaspack</a></p></li><li><p><a href=http://free-tex-packer.com/>http://free-tex-packer.com/</a></p></li><li><p><a href=https://github.com/odrick/free-tex-packer>https://github.com/odrick/free-tex-packer</a></p></li><li><p><a href=https://github.com/richardjdare/Atlasmaker>https://github.com/richardjdare/Atlasmaker</a></p></li><li><p><a href=https://github.com/soimy/atlasify>https://github.com/soimy/atlasify</a> ⭐️</p><ul><li><a href=https://github.com/soimy/maxrects-packer>https://github.com/soimy/maxrects-packer</a></li></ul></li></ul><p>Audio sprites?</p><ul><li><a href=https://medium.com/game-development-stuff/how-to-create-audiosprites-to-use-with-howler-js-beed5d006ac1>https://medium.com/game-development-stuff/how-to-create-audiosprites-to-use-with-howler-js-beed5d006ac1</a></li></ul><hr><p>Interactive</p><ul><li>texture atlas &ndash; Spine</li><li>spritesheet &ndash; Adobe Animate</li><li>movie &ndash; Adobe Animate</li></ul><p>Lottie ts to lua? ⭐️</p><ul><li><a href=https://github.com/bytedance/lottiefy>https://github.com/bytedance/lottiefy</a></li><li><a href=https://github.com/airbnb/lottie-web>https://github.com/airbnb/lottie-web</a></li><li><a href=https://github.com/LottieFiles>https://github.com/LottieFiles</a></li><li><a href=https://lottiefiles.com/what-is-lottie>https://lottiefiles.com/what-is-lottie</a></li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/>Project Model</small><h2 id=project-model>Project Model</h2><p>test/base-proj/</p><ul><li><p>Photoshop/bookshop</p><pre tabindex=0><code>├── bookFree
+</code></pre><p>rest api</p><blockquote><p>pegasus is runningin Editor</p></blockquote><ol><li><p>run Editor</p></li><li><p>upload an image to pegasus server</p><ul><li>save it assets/images/book/</li><li>create display.object</li><li>.json</li></ul></li></ol><p>Kwik Visual Editor</p><ol><li><p>outputs images/json to App/book</p></li><li><p>run App/book</p></li></ol></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/class/>Class Diagrams</small><h1 id=class-diagrams>Class Diagrams</h1></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/class/class_animation/>Animation Editor</small><pre tabindex=0><code class=language-mermaid data-lang=mermaid>classDiagram
+
+editorIndex
+editorIndex *-- menu : 1. User clicks Layer
+commands o-- selectBook
+commands o-- selectPage
+commands o-- selectLayer
+commands o-- selectTool
+
+
+class selectors{
+  - List: App, Book,Page
+  - List: Layer, Audio, Group, Timer ..
+  + projectPageSelector
+  + componentSelector
+  - componentHandler()
+}
+
+class selectorBase{
+  + selectorIcon
+  + entries
+  + onClick()
+}
+
+selectors &lt;|..selectorBase: 1.1 onClick calls componentHandler
+
+menu *-- selectors
+
+selectors ..&gt; store :1.2 commandHandler sets Layer entries
+
+class commands {
+  + page
+  + book
+  + layer
+  * class
+  store.set()
+}
+
+class selectTool {
+  controller:command()
+}
+
+class editorAnimation {
+  + layerTable as selectbox
+  + controlbox
+  + buttons
+  + controller
+}
+
+class layerTable {
+  + name
+  + class entries: animation, interaction, replacement
+  create() displays name and class entries
+  oncllick() name for propsTable, animation for editorAnimation
+}
+
+class layerTableCommands{
+  + commandHandler
+  + commandHanderClass
+}
+
+class selectLayer {
+  propsTable:setValue(decoded)
+  propsTable:show()
+  propsButtons:show()
+}
+
+class propsTable {
+  can be editable
+}
+
+propsTable *-- buttons
+
+selectLayer ..&gt;propsTable
+
+layerTable *--layerTableCommands
+
+class controller {
+
+  selectbox.classEditorHandler()
+  -&gt; reset()
+  -&gt; setValue()
+  -&gt; redraw()
+
+  command()
+    -&gt; util.decode(params)
+    -&gt; selectbox:setValue(decoded)
+    -&gt; controlbox:didHide(UI)
+    -&gt; controlbox:destroy(UI)
+    -&gt; controlbox:init(UI)
+    -&gt; controlbox:setValue(decoded)
+    -&gt; controlbox:create(UI)
+    -&gt; controlbox:didShow(UI)
+    -&gt; controlbox:show()
+    -&gt; onCompletebox:show()
+    -&gt; buttons:show()
+}
+
+
+editorAnimation *-- layerTable
+
+editorAnimation &lt;|.. controller
+
+layerTable &lt;|.. baseTable : create() is overrided in layerTable
+
+editorAnimation *-- conrolbox
+
+conrolbox &lt;|.. baseProps
+
+class baseTable {
+  + entries
+  commandHandler()
+  store.listener()
+  render()
+}
+
+class BTree{
+  setCondition()
+  setActionStatus()
+}
+
+layerTableCommands ..&gt; BTree : 2. User clicks a animation entry &lt;br&gt; 2.1 BTree select animation TRUE
+
+BTree ..&gt; commands : 2.2. load animation (Activated) &lt;br&gt;2.3.1 selectTool for animation class
+
+commands ..&gt; selectTool: 2.5. select animation
+selectTool ..&gt; controller: 2.5 calls command() to display animationEditor
+
+store ..&gt; baseTable : 1.3. calls listenr in baseTable
+
+class selectbox{
+  + setTemplate()
+  + commandHandler()
+}
+
+editorAnimation *-- selectbox : User clicks an animation entry
+
+selectbox --&gt; controller : commandHandler calls classEdtiorHandler
+</code></pre></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/class/class_group/>Group Editor</small><ul><li><p>menu.controller.selector.selectGroup is linked to group.controller.selectGroup</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>instance</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#34;components.editor.group.controller.selectGroup&#34;</span><span style=color:#111>)</span>
+</span></span></code></pre></div></li></ul><pre tabindex=0><code class=language-mermaid data-lang=mermaid>classDiagram
+
+commands o-- selectLayer
+commands o-- selectGroup
+
+
+selectors ..&gt; store
+
+selectGroup --&gt; _selectGroup
+
+class _selectGroup{
+  &lt;&lt;Controller&gt;&gt;
+  decodede = util.read
+  layersbox store.set(decodede)
+  layersTable store.set(decoded)
+  return instance.new()
+}
+
+class add{
+    &lt;&lt;Controller&gt;&gt;
+  layersbox:set(decodede)
+  layersTable:set(decoded)
+}
+
+class remove{
+    &lt;&lt;Controller&gt;&gt;
+  layersbox:set(decodede)
+  layersTable:set(decoded)
+}
+
+class editorGroup {
+  + groupTable as selectbox
+  + controlbox
+  + buttons
+  + layersbox
+  + groupTable
+}
+
+class groupTable {
+  + groups
+  oncllick()
+}
+
+class layersbox {
+  + layers
+  setValue() override
+}
+
+layersbox &lt;|.. targetbox
+layersbox &lt;|.. targetboxMulti
+targetboxMulti --&gt; util
+
+class targetboxMulti{
+  commandHandler() override
+}
+
+class util {
+  + setSelection()
+}
+
+class layersTable {
+  + layers
+  scrollView = widget.newDragItemsScrollView()
+}
+
+class dragitemscrollview{
+  &lt;&lt;ext&gt;&gt;
+}
+
+layersTable --&gt; dragitemscrollview
+layersTable --&gt; util
+
+groupTable ..&gt; BTree
+
+editorGroup *-- groupTable
+
+editorGroup *.. layersbox
+
+editorGroup *.. layersTable
+
+editorGroup o.. add
+editorGroup o.. remove
+editorGroup o.. _selectGroup
+
+
+groupTable &lt;|.. baseTable
+
+editorGroup *-- conrolbox
+
+conrolbox &lt;|.. baseProps
+
+
+BTree ..&gt; commands
+
+commands ..&gt; selectGroup
+_selectGroup ..&gt; layersbox
+
+_selectGroup ..&gt; layersTable
+
+store ..&gt; baseTable
+
+class selectGroup{
+  require(group.controller.selectGroup)
+}
+</code></pre></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/class/class/>Timer Editor</small><pre tabindex=0><code class=language-mermaid data-lang=mermaid>classDiagram
+
+editorIndex
+editorIndex *-- menu : 1. User clicks Timer
+commands o-- selectBook
+commands o-- selectPage
+commands o-- selectLayer
+commands o-- selectTimer
+
+
+class selectors{
+  - List: App, Book,Page
+  - List: Layer, Audio, Group, Timer ..
+  + projectPageSelector
+  + componentSelector
+  - componentHandler()
+}
+
+class selectorBase{
+  + selectorIcon
+  + entries
+  + onClick()
+}
+
+selectors &lt;|..selectorBase: 1.1 onClick calls componentHandler
+
+menu *-- selectors
+
+selectors ..&gt; store :1.2 commandHandler sets Timer entries
+
+class commands {
+  + page
+  + book
+  + layer
+  * class
+  store.set()
+}
+
+class selectTimer {
+  controller:command()
+}
+
+class editorTimer {
+  + timerTable as selectbox
+  + controlbox
+  + buttons
+  + controller
+}
+
+class timerTable {
+  oncllick()
+}
+
+class controller {
+  command()
+    - util.decode(params)
+    - controlbox:didHide(UI)
+    - controlbox:destroy(UI)
+    - controlbox:init(UI)
+    - controlbox:setValue(decoded)
+    - controlbox:create(UI)
+    - controlbox:didShow(UI)
+    - controlbox:show()
+    - onCompletebox:show()
+    - buttons:show()
+}
+
+timerTable ..&gt; BTree: 2. User clicks a timer entry &lt;br&gt; 2.1 BTree select timer TRUE
+
+editorTimer *-- timerTable
+
+editorTimer &lt;|.. controller
+
+timerTable &lt;|.. baseTable
+
+editorTimer *-- conrolbox
+
+conrolbox &lt;|.. baseProps
+
+class baseTable {
+  + entries
+  commandHandler()
+  store.listener()
+  render()
+}
+
+class BTree{
+  setCondition()
+  setActionStatus()
+}
+
+BTree ..&gt; commands : 2.2. load timer (Activated) &lt;br&gt; 2.3 menu/controller/selettor/selectTimer
+
+commands ..&gt; selectTimer: 2.5. select timer
+selectTimer ..&gt; controller: 2.5 calls command() to display timerEditor
+
+store ..&gt; baseTable : 1.3. calls listenr in baseTable
+</code></pre><p><a href=https://zenn.dev/taroman_zenn/articles/3c811b1245240d>https://zenn.dev/taroman_zenn/articles/3c811b1245240d</a></p></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/new_features/>New Features</small><h2 id=new-features>New Features</h2><p>Solar2D API to be included</p><ul><li><p>Audio</p><ul><li>seek</li><li>rewind</li><li>cross fade function</li></ul></li><li><p>Social</p><ul><li>twitter</li><li>facebook</li><li>instagram</li></ul></li><li><p>transition.*</p><ul><li>chaining them</li></ul></li><li><p>mesh</p></li><li><p>2.5D — Perspective and Depth</p></li><li><p>game controllers</p></li></ul><p>Solar2D video texture</p><ul><li><a href=https://github.com/ANSH3LL/plugin_movie>https://github.com/ANSH3LL/plugin_movie</a></li></ul><p>Tiled</p><ul><li><p><a href=https://forums.solar2d.com/t/smooth-scrolling-of-top-down-tiled-map/150199/2>https://forums.solar2d.com/t/smooth-scrolling-of-top-down-tiled-map/150199/2</a></p><p>&ldquo;cull based on a 3x3 area of sub-screens centered around player. "</p></li><li><p><a href=https://gamedev.stackexchange.com/questions/83253/is-there-any-way-to-load-pieces-of-a-tile-map-as-and-when-needed-and-not-the-en>https://gamedev.stackexchange.com/questions/83253/is-there-any-way-to-load-pieces-of-a-tile-map-as-and-when-needed-and-not-the-en</a></p></li><li><p><a href=https://www.dynetisgames.com/2018/02/24/manage-big-maps-phaser-3/>https://www.dynetisgames.com/2018/02/24/manage-big-maps-phaser-3/</a></p><ul><li>A tool to split an existing Tiled tilemap into chunks</li><li>How to reason about chunks based on their ID’s and the world dimensions</li><li>How to load and destroy them on the fly using Phaser 3</li></ul></li></ul><p>Texture atlas function in kwik?</p><ul><li><p><a href=https://github.com/shama/atlaspack>https://github.com/shama/atlaspack</a></p></li><li><p><a href=http://free-tex-packer.com/>http://free-tex-packer.com/</a></p></li><li><p><a href=https://github.com/odrick/free-tex-packer>https://github.com/odrick/free-tex-packer</a></p></li><li><p><a href=https://github.com/richardjdare/Atlasmaker>https://github.com/richardjdare/Atlasmaker</a></p></li><li><p><a href=https://github.com/soimy/atlasify>https://github.com/soimy/atlasify</a> ⭐️</p><ul><li><a href=https://github.com/soimy/maxrects-packer>https://github.com/soimy/maxrects-packer</a></li></ul></li></ul><p>Audio sprites?</p><ul><li><a href=https://medium.com/game-development-stuff/how-to-create-audiosprites-to-use-with-howler-js-beed5d006ac1>https://medium.com/game-development-stuff/how-to-create-audiosprites-to-use-with-howler-js-beed5d006ac1</a></li></ul><hr><p>Interactive</p><ul><li>texture atlas &ndash; Spine</li><li>spritesheet &ndash; Adobe Animate</li><li>movie &ndash; Adobe Animate</li></ul><p>Lottie ts to lua? ⭐️</p><ul><li><a href=https://github.com/bytedance/lottiefy>https://github.com/bytedance/lottiefy</a></li><li><a href=https://github.com/airbnb/lottie-web>https://github.com/airbnb/lottie-web</a></li><li><a href=https://github.com/LottieFiles>https://github.com/LottieFiles</a></li><li><a href=https://lottiefiles.com/what-is-lottie>https://lottiefiles.com/what-is-lottie</a></li></ul></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/design/project_model/>Project Model</small><h2 id=project-model>Project Model</h2><p>test/base-proj/</p><ul><li><p>Photoshop/bookshop</p><pre tabindex=0><code>├── bookFree
 │   ├── page1.psd
 │   ├── page2.psd
 ├── bookOne
@@ -1499,7 +1839,167 @@ Select a layer or an event to review. You can edit values of properties</p><p>TO
 </span></span><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scene</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#39;components.kwik.scene&#39;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>(</span><span style=color:#111>sceneName</span><span style=color:#111>,</span> <span style=color:#111>model</span><span style=color:#111>)</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>scene</span>
-</span></span></code></pre></div><hr><h3 id=generate_scene_index-tool>generate_scene_index tool</h3><ol><li><p>create .lua for commands or components</p></li><li><p>run the follwoing tool to update scenes/pageX/index.lua to append the new .lua to the index.lua</p><p><strong>/develop/Solar2D/tools/generate_scene_index</strong> is a Solar2D application. You can open the main.lua in Solar2D simulator.</p><p>the table in the index.lua is updated by iterating files in App/bookX/components and bookX/commands</p></li></ol><hr></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/introduction/>Introduction</small><h1 id=introduction>Introduction</h1><nav id=TableOfContents><ul><li><a href=#modified>Modified</a><ul><li><a href=#uxp>UXP</a></li><li><a href=#folder-structure>Folder structure</a></li><li><a href=#lua>Lua</a></li></ul></li><li><a href=#new-features>New Features</a><ul><li><a href=#uxp-1>UXP</a></li><li><a href=#kwik-editor-in-solar2d>Kwik Editor in Solar2D</a></li><li><a href=#lua-1>Lua</a></li><li><a href=#bookstore>Bookstore</a></li></ul></li></ul></nav><h2 id=modified>Modified</h2><h3 id=uxp>UXP</h3><ul><li><p>Open</p><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>the psd files are under Kwik/{Project Name} folder.</td><td style=text-align:left>Please choose a folder that has the psf files to be published</td></tr></tbody></table></li><li><p>Solar2D Project</p><blockquote><p>this tells where to publish images of a PSD to a solar2D project
+</span></span></code></pre></div><hr><h3 id=generate_scene_index-tool>generate_scene_index tool</h3><ol><li><p>create .lua for commands or components</p></li><li><p>run the follwoing tool to update scenes/pageX/index.lua to append the new .lua to the index.lua</p><p><strong>/develop/Solar2D/tools/generate_scene_index</strong> is a Solar2D application. You can open the main.lua in Solar2D simulator.</p><p>the table in the index.lua is updated by iterating files in App/bookX/components and bookX/commands</p></li></ol><hr></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/get_started/unittest/>Unit Test</small><h1 id=unit-test>Unit Test</h1><nav id=TableOfContents><ul><li><a href=#examples>Examples</a><ul><li><a href=#cmponentseditortestssuite_controllerlua>cmponents/editor/tests/suite_controller.lua</a></li><li><a href=#cmponentseditortestssuite_selectorlua>cmponents/editor/tests/suite_selector.lua</a></li></ul></li></ul></nav><ol><li><p>components/editor/index.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>unitTestOn</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>true</span>
+</span></span></code></pre></div></li><li><p>components/editor/tests/index.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>require</span> <span style=color:#d88200>&#34;extlib.lunatest&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>M</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>run</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>function</span> <span style=color:#111>(</span><span style=color:#111>props</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;============ lunatest =============&#34;</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>lunatest.suite</span><span style=color:#111>(</span><span style=color:#d88200>&#34;components.editor.tests.suite_controller&#34;</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>lunatest.suite</span><span style=color:#111>(</span><span style=color:#d88200>&#34;components.editor.tests.suite_selector&#34;</span><span style=color:#111>,</span> <span style=color:#111>props</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>lunatest.run</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;============   end    =============&#34;</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span><span style=color:#111>}</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>M</span>
+</span></span></code></pre></div></li></ol><h2 id=examples>Examples</h2><h3 id=cmponentseditortestssuite_controllerlua>cmponents/editor/tests/suite_controller.lua</h3><p>it tests editor/controller/index.lua</p><ul><li><p>controller:render(book, page, layer, tool, class, props)</p></li><li><p>controller:save(book, page, layer,tool, nil, props )
+assert_string(dst, &ldquo;fail&rdquo;)</p></li><li><p>&mldr;</p></li></ul><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>module</span><span style=color:#111>(...,</span> <span style=color:#111>package.seeall</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>function</span> <span style=color:#75af00>suite_setup</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>controller</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span> <span style=color:#d88200>&#34;components.editor.controller.index&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>files</span> <span style=color:#f92672>=</span> <span style=color:#111>{}</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>updatedScene</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>nil</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>function</span> <span style=color:#75af00>setup</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>book</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;bookFree&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>page</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;page1&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>tool</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;interaction&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>layer</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;butWhite&#34;</span>  <span style=color:#75715e>-- Update scenes.components.layers.butWhite with the props</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>class</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;button&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>props</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#111>name</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;helloBTN&#34;</span><span style=color:#111>,</span> <span style=color:#111>class</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;button&#34;</span><span style=color:#111>,</span> <span style=color:#111>kind</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;tap&#34;</span><span style=color:#111>,</span> <span style=color:#111>actionName</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;onClick&#34;</span><span style=color:#111>,</span> <span style=color:#111>over</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;helloOver&#34;</span><span style=color:#111>,</span> <span style=color:#111>btaps</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#111>mask</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;&#34;</span><span style=color:#111>}</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>scene</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;canvas&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>back</span><span style=color:#f92672>=</span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>                            <span style=color:#111>}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>butBlue</span><span style=color:#f92672>=</span><span style=color:#111>{</span> <span style=color:#111>class</span><span style=color:#f92672>=</span><span style=color:#111>{</span><span style=color:#d88200>&#34;button&#34;</span><span style=color:#111>},</span> <span style=color:#111>{</span><span style=color:#111>A</span><span style=color:#f92672>=</span><span style=color:#111>{}},</span> <span style=color:#111>{</span><span style=color:#111>B</span><span style=color:#f92672>=</span><span style=color:#111>{}}</span>
+</span></span><span style=display:flex><span>                            <span style=color:#111>}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>          <span style=color:#111>{</span>  <span style=color:#111>butWhite</span><span style=color:#f92672>=</span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>                            <span style=color:#111>}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>audios</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>groups</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>timers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>variables</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>others</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>  <span style=color:#111>}</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>commands</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#d88200>&#34;blueBTN&#34;</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>onInit</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#111>scene</span><span style=color:#111>)</span> <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;onInit&#34;</span><span style=color:#111>)</span> <span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>}</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>function</span> <span style=color:#75af00>teardown</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>function</span> <span style=color:#75af00>test_render</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span>  <span style=color:#00a8c8>local</span> <span style=color:#111>dst</span> <span style=color:#f92672>=</span> <span style=color:#111>controller</span><span style=color:#111>:</span><span style=color:#111>render</span><span style=color:#111>(</span><span style=color:#111>book</span><span style=color:#111>,</span> <span style=color:#111>page</span><span style=color:#111>,</span> <span style=color:#111>layer</span><span style=color:#111>,</span> <span style=color:#111>tool</span><span style=color:#111>,</span> <span style=color:#111>class</span><span style=color:#111>,</span> <span style=color:#111>props</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>assert_string</span><span style=color:#111>(</span><span style=color:#111>dst</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;fail&#34;</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span>  <span style=color:#00a8c8>local</span> <span style=color:#111>path</span> <span style=color:#f92672>=</span> <span style=color:#111>system.pathForFile</span><span style=color:#111>(</span><span style=color:#111>dst</span><span style=color:#111>,</span> <span style=color:#111>system.TemporaryDirectory</span> <span style=color:#111>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#00a8c8>local</span> <span style=color:#111>file</span> <span style=color:#f92672>=</span> <span style=color:#111>io.open</span><span style=color:#111>(</span> <span style=color:#111>path</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;r&#34;</span> <span style=color:#111>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>assert_userdata</span><span style=color:#111>(</span><span style=color:#111>file</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;fail&#34;</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>files</span><span style=color:#111>[</span><span style=color:#f92672>#</span><span style=color:#111>files</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span><span style=color:#111>]</span> <span style=color:#f92672>=</span> <span style=color:#111>dst</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>end</span>
+</span></span></code></pre></div><hr><h3 id=cmponentseditortestssuite_selectorlua>cmponents/editor/tests/suite_selector.lua</h3><p>automatically it loads eventOne.json in page1</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span> <span style=color:#00a8c8>local</span> <span style=color:#111>M</span> <span style=color:#f92672>=</span> <span style=color:#111>{}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>local</span> <span style=color:#111>selectors</span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>local</span> <span style=color:#111>UI</span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>local</span> <span style=color:#111>bookTable</span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>local</span> <span style=color:#111>pageTable</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>function</span> <span style=color:#75af00>M</span><span style=color:#111>.</span><span style=color:#75af00>init</span><span style=color:#111>(</span><span style=color:#111>props</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>selectors</span> <span style=color:#f92672>=</span> <span style=color:#111>props.selectors</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>UI</span>        <span style=color:#f92672>=</span> <span style=color:#111>props.UI</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>bookTable</span> <span style=color:#f92672>=</span> <span style=color:#111>props.bookTable</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>pageTable</span> <span style=color:#f92672>=</span> <span style=color:#111>props.pageTable</span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>function</span> <span style=color:#75af00>M</span><span style=color:#111>.</span><span style=color:#75af00>suite_setup</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>selectors.projectPageSelector</span><span style=color:#111>:</span><span style=color:#111>show</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>selectors.projectPageSelector</span><span style=color:#111>:</span><span style=color:#111>onClick</span><span style=color:#111>(</span><span style=color:#00a8c8>true</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>   <span style=color:#75715e>--</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>UI.scene</span><span style=color:#111>.</span><span style=color:#111>app</span><span style=color:#111>:</span><span style=color:#111>dispatchEvent</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>     <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;editor.selector.selectApp&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>     <span style=color:#111>UI</span> <span style=color:#f92672>=</span> <span style=color:#111>UI</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>}</span>
+</span></span><span style=display:flex><span>   <span style=color:#75715e>-- appFolder = system.pathForFile(&#34;App&#34;, system.ResourceDirectory) -- default</span>
+</span></span><span style=display:flex><span>   <span style=color:#75715e>-- useTinyfiledialogs = false -- default</span>
+</span></span><span style=display:flex><span>   <span style=color:#75715e>---</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>bookTable</span><span style=color:#111>:</span><span style=color:#111>commandHandler</span><span style=color:#111>({</span><span style=color:#111>book</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;bookFree&#34;</span><span style=color:#111>},</span> <span style=color:#00a8c8>nil</span><span style=color:#111>,</span>  <span style=color:#00a8c8>true</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>pageTable</span><span style=color:#111>:</span><span style=color:#111>commandHandler</span><span style=color:#111>({</span><span style=color:#111>page</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;page1&#34;</span><span style=color:#111>},</span><span style=color:#00a8c8>nil</span><span style=color:#111>,</span>  <span style=color:#00a8c8>true</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>function</span> <span style=color:#75af00>M</span><span style=color:#111>.</span><span style=color:#75af00>setup</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>function</span> <span style=color:#75af00>M</span><span style=color:#111>.</span><span style=color:#75af00>teardown</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> <span style=color:#75715e>-- function M.test_component()</span>
+</span></span><span style=display:flex><span> <span style=color:#75715e>--     selectors.projectPageSelector:show()</span>
+</span></span><span style=display:flex><span> <span style=color:#75715e>-- end</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>function</span> <span style=color:#75af00>M</span><span style=color:#111>.</span><span style=color:#75af00>test_action</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>selectors.componentSelector</span><span style=color:#111>:</span><span style=color:#111>show</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>selectors.componentSelector</span><span style=color:#111>:</span><span style=color:#111>onClick</span><span style=color:#111>(</span><span style=color:#00a8c8>true</span><span style=color:#111>,</span>  <span style=color:#d88200>&#34;actionTable&#34;</span><span style=color:#111>)</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>UI.editor</span><span style=color:#111>.</span><span style=color:#111>currentAction</span>  <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;eventOne&#34;</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>UI.scene</span><span style=color:#111>.</span><span style=color:#111>app</span><span style=color:#111>:</span><span style=color:#111>dispatchEvent</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>     <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;editor.action.selectAction&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>     <span style=color:#111>UI</span> <span style=color:#f92672>=</span> <span style=color:#111>UI</span>
+</span></span><span style=display:flex><span>   <span style=color:#111>}</span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> <span style=color:#00a8c8>return</span> <span style=color:#111>M</span>
+</span></span></code></pre></div><img src=../img/2023-01-25-12-22-11.png width=600></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/get_started/vscode/>Visual Studio Code</small><h2 id=vs-code>VS Code</h2><p>the following extensions helps your coding with Solar2D simulator.</p><ul><li>Solar2D Autocomplete</li><li>Solar2d Companion for Visual Studio Code</li><li>Local Lua Debugger</li><li>Run Terminal Command</li></ul><h2 id=local-lua-debugger>Local Lua Debugger</h2><p>For debugging with Local Lua Deubgger, launch.json should be placed in your workspace folder. For instance,</p><img src=../img/2022-12-26-13-41-14.png width=600>
+<img src=../img/2022-12-26-13-41-51.png width=600><p>Assuming Kwik projects are located in ~/Kwik folder and this is your workplace folder of Visual Studio Code. launch.json will be created under .vscode/ folder</p><ul><li><p>~/Kwik/.vscode/launch.json</p><blockquote><p>Corona Simulator.app is specified and ${file} is in the last argurment</p></blockquote><p>this is for Mac</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span>  <span style=color:#d88200>&#34;version&#34;</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#d88200>&#34;0.2.0&#34;</span><span style=color:#960050;background-color:#1e0010>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#d88200>&#34;configurations&#34;</span><span style=color:#960050;background-color:#1e0010>:</span> <span style=color:#111>[</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>&#34;name&#34;</span><span style=color:#111>:</span> <span style=color:#d88200>&#34;Debug&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>&#34;type&#34;</span><span style=color:#111>:</span> <span style=color:#d88200>&#34;lua-local&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>&#34;request&#34;</span><span style=color:#111>:</span> <span style=color:#d88200>&#34;launch&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;program&#34;</span><span style=color:#111>:</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>&#34;command&#34;</span><span style=color:#111>:</span> <span style=color:#d88200>&#34;/Applications/Corona/Corona Simulator.app/Contents/MacOS/Corona Simulator&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;args&#34;</span><span style=color:#111>:</span> <span style=color:#111>[</span>
+</span></span><span style=display:flex><span>          <span style=color:#d88200>&#34;-no-console&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#d88200>&#34;YES&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#d88200>&#34;-debug&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#d88200>&#34;1&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#d88200>&#34;-project&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#d88200>&#34;${file}&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#111>]</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>}</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>]</span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>}</span>
+</span></span></code></pre></div><p>for Windwos</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&#34;version&#34;</span><span style=color:#111>:</span> <span style=color:#d88200>&#34;0.2.0&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>&#34;configurations&#34;</span><span style=color:#111>:</span> <span style=color:#111>[{</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;name&#34;</span><span style=color:#111>:</span> <span style=color:#d88200>&#34;Debug&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;type&#34;</span><span style=color:#111>:</span> <span style=color:#d88200>&#34;lua-local&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;request&#34;</span><span style=color:#111>:</span> <span style=color:#d88200>&#34;launch&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>&#34;program&#34;</span><span style=color:#111>:</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;command&#34;</span><span style=color:#111>:</span> <span style=color:#d88200>&#34;C:\\Program Files (x86)\\Corona Labs\\Corona\\Corona Simulator.exe&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>&#34;args&#34;</span><span style=color:#111>:</span> <span style=color:#111>[</span>
+</span></span><span style=display:flex><span>        <span style=color:#d88200>&#34;/no-console&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#d88200>&#34;/debug&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#d88200>&#34;${file}&#34;</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>]</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>}]</span>
+</span></span><span style=display:flex><span><span style=color:#111>}</span>
+</span></span></code></pre></div></li><li><p>SingleBook project contains Photsohop/book/*.psd and lua files under Solar2D/src folder</p><ul><li>~/Kwik/SingleBook/Solar2D/src/main.lua</li></ul><img src=../img/2022-12-26-13-47-35.png width=300></li><li><p>open main.lua in Visual Studio Code and press F5 (Run > Start Debugging)</p><p>main.lua needs lldebugger.start()</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>if</span> <span style=color:#111>os.getenv</span><span style=color:#111>(</span><span style=color:#d88200>&#34;LOCAL_LUA_DEBUGGER_VSCODE&#34;</span><span style=color:#111>)</span> <span style=color:#f92672>==</span> <span style=color:#d88200>&#34;1&#34;</span> <span style=color:#00a8c8>then</span>
+</span></span><span style=display:flex><span>  <span style=color:#00a8c8>local</span> <span style=color:#111>lldebugger</span> <span style=color:#f92672>=</span> <span style=color:#111>loadfile</span><span style=color:#111>(</span><span style=color:#111>os.getenv</span><span style=color:#111>(</span><span style=color:#d88200>&#34;LOCAL_LUA_DEBUGGER_FILEPATH&#34;</span><span style=color:#111>))()</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>lldebugger.start</span><span style=color:#111>()</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>end</span>
+</span></span></code></pre></div></li></ul><hr><h2 id=run-terminal-command>Run Terminal Command</h2><p>this is a utility to run terminal commands. You can select a folder and right click opens a dialog to select a terminal command</p><img src=../img/2022-12-26-13-58-22.png width=300>
+<img src=../img/2022-12-26-13-58-56.png width=600><p>You can add a terminal command to settings.json</p><img src=../img/2022-12-26-13-59-41.png width=500>
+<img src=../img/2022-12-26-14-00-39.png width=500><p>for Mac</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;command&#34;</span><span style=color:#111>:</span><span style=color:#d88200>&#34;\&#34;/Applications/Corona/Corona Simulator.app/Contents/MacOS/Corona Simulator\&#34; ./ -no-console YES&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span> <span style=color:#f92672>&#34;name&#34;</span><span style=color:#111>:</span><span style=color:#d88200>&#34;Solar2D&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#111>}</span><span style=color:#960050;background-color:#1e0010>,</span>
+</span></span></code></pre></div></div><hr><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3"><small id=/kwik5docs/introduction/>Introduction</small><h1 id=introduction>Introduction</h1><nav id=TableOfContents><ul><li><a href=#modified>Modified</a><ul><li><a href=#uxp>UXP</a></li><li><a href=#folder-structure>Folder structure</a></li><li><a href=#lua>Lua</a></li></ul></li><li><a href=#new-features>New Features</a><ul><li><a href=#uxp-1>UXP</a></li><li><a href=#kwik-editor-in-solar2d>Kwik Editor in Solar2D</a></li><li><a href=#lua-1>Lua</a></li><li><a href=#bookstore>Bookstore</a></li></ul></li></ul></nav><h2 id=modified>Modified</h2><h3 id=uxp>UXP</h3><ul><li><p>Open</p><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>the psd files are under Kwik/{Project Name} folder.</td><td style=text-align:left>Please choose a folder that has the psf files to be published</td></tr></tbody></table></li><li><p>Solar2D Project</p><blockquote><p>this tells where to publish images of a PSD to a solar2D project
 Kwik4 was under build4 folder and no choice was available</p></blockquote><ul><li><p>New</p><p>creates a book folder under App folder. A book has scenes(pages). Each scene is genereted from each psd file.</p></li><li><p>Select</p><p>you can select a book where a psd is published as a scene(page).</p><ul><li>App/{bookName}</li></ul></li></ul></li></ul><h3 id=folder-structure>Folder structure</h3><ul><li><p>Book > scene (page) > layer</p><p>names of psd files are used to create a scene lua file for Solar2D composer</p><br><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>pageOne.psd uses &ldquo;page01&rdquo;<br>- assets/images/p1<br>- components/page01<br>- commands/page01<br>- views/page01Scene.lua.</td><td style=text-align:left>pageOne.psd uses &ldquo;pageOne&rdquo;<br>- assets/images/pageOne<br>- components/pageOne<br>- commands/pageOne<br>- components/pageOne/index.lua</td></tr></tbody></table></li><li><p>dist folder</p><table><thead><tr><th style=text-align:left>kwik4</th><th style=text-align:left>kwik5</th></tr></thead><tbody><tr><td style=text-align:left>build4<br>- assets/images/p1<br>- components/page01<br>- commands/page01<br>- views/page01Scene.lua.</td><td style=text-align:left>App/{bookName}<br>- assets/images/pageOne<br>- components/pageOne<br>- commands/pageOne<br>- components/pageOne/index.lua<br><br>commands/common<br>components/common<br>components/bookstore</td></tr></tbody></table><blockquote><p>bookshelf is renamed to bookstore that is an enhancement of the kwik4&rsquo;s bookshefl imlementation (it was provided with kwikshelf.plugin)</p></blockquote></li></ul><h3 id=lua>Lua</h3><ul><li><p>main.lua</p><p>you can load a book project with the following code.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#34;controller.index&#34;</span><span style=color:#111>).</span><span style=color:#111>bootstrap</span><span style=color:#111>({</span><span style=color:#111>name</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;bookFree&#34;</span><span style=color:#111>,</span> <span style=color:#111>sceneIndex</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span> <span style=color:#111>})</span>
 </span></span></code></pre></div><p>sceneIndex is defined in App/{bookName}/index.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scenes</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#d88200>&#34;page1&#34;</span><span style=color:#111>,</span>

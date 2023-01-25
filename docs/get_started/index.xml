@@ -23,4 +23,13 @@ This tool visually edits Soar2D/src files of a Kwik project and is harnessed by 
 ↑ Select a layer or an event to review. You can edit values of properties
 TODO each kwik component with default values
 TODO ui components like checkbox/selectors &amp;hellip; for each component ⭐️
-react compnents on webview &amp;ndash; can be shared with UXP panel which may send params via http to pegasus in kwik editor</description></item></channel></rss>
+react compnents on webview &amp;ndash; can be shared with UXP panel which may send params via http to pegasus in kwik editor</description></item><item><title>Unit Test</title><link>https://kwiksher.github.io/kwik5docs/get_started/unittest/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/unittest/</guid><description>Unit Test Examples cmponents/editor/tests/suite_controller.lua cmponents/editor/tests/suite_selector.lua components/editor/index.lua
+local unitTestOn = true components/editor/tests/index.lua
+require &amp;#34;extlib.lunatest&amp;#34; local M = { run = function (props) print(&amp;#34;============ lunatest =============&amp;#34;) lunatest.suite(&amp;#34;components.editor.tests.suite_controller&amp;#34;) lunatest.suite(&amp;#34;components.editor.tests.suite_selector&amp;#34;, props) lunatest.run() print(&amp;#34;============ end =============&amp;#34;) end } return M Examples cmponents/editor/tests/suite_controller.lua it tests editor/controller/index.lua
+controller:render(book, page, layer, tool, class, props)
+controller:save(book, page, layer,tool, nil, props ) assert_string(dst, &amp;ldquo;fail&amp;rdquo;)
+&amp;hellip;
+module(..., package.seeall) function suite_setup() controller = require &amp;#34;components.editor.controller.index&amp;#34; files = {} updatedScene = nil end function setup() book = &amp;#34;bookFree&amp;#34; page = &amp;#34;page1&amp;#34; tool = &amp;#34;interaction&amp;#34; layer = &amp;#34;butWhite&amp;#34; -- Update scenes.</description></item><item><title>Visual Studio Code</title><link>https://kwiksher.github.io/kwik5docs/get_started/vscode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/vscode/</guid><description>VS Code the following extensions helps your coding with Solar2D simulator.
+Solar2D Autocomplete Solar2d Companion for Visual Studio Code Local Lua Debugger Run Terminal Command Local Lua Debugger For debugging with Local Lua Deubgger, launch.json should be placed in your workspace folder. For instance,
+Assuming Kwik projects are located in ~/Kwik folder and this is your workplace folder of Visual Studio Code. launch.json will be created under .vscode/ folder
+~/Kwik/.vscode/launch.json</description></item></channel></rss>
