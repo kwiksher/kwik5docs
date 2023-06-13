@@ -22,4 +22,10 @@ selectApp selectBook selectPage ref edtior.tests
 pegasus harness receives the request in REST format (json)
 dispatch events to commands
 selectXXX reads App/bookX/pageX/index.lua or models/pageX/.json files, and the data are stored in nanstores for components such bookStore, pageStore, layerStore, audioStore
-Response of http Rest in pegasus are retreived by nanostores:get(xxxStore)</description></item></channel></rss>
+Response of http Rest in pegasus are retreived by nanostores:get(xxxStore)</description></item><item><title>REST API</title><link>https://kwiksher.github.io/kwik5docs/implementation/rest_api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/implementation/rest_api/</guid><description>Rest API server/tests/*.http
+App/skelton/page
+this book/page is an empty but it loads the server in editor.index
+function M:didShow(UI) ... elseif httpServerOn then --------- pegasus init with -------- require(&amp;#34;server.index&amp;#34;).run{ selectors = selectors, UI = UI, bookTable = bookTable, pageTable = pageTable, layerTable = layerTable } end ... App/Transition2/page
+this is a page without a kwik index model for testing composer.gotoScene
+App/bookFree/page1
+this is a kwip page. It has the index model. the page is loaded with app.</description></item></channel></rss>
