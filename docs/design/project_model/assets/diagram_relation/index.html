@@ -1,0 +1,377 @@
+<!doctype html><html><head><title>Kwik</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=revised content="2023-11-26T11:29:42 UTC"><title>Asset and Component Releation :: Kwik</title><link rel="shortcut icon" href=/kwik5docs/images/favicon.png type=image/x-icon><link href=/kwik5docs/css/nucleus.css rel=stylesheet><link href=/kwik5docs/css/font-awesome.min.css rel=stylesheet><link href=/kwik5docs/css/featherlight.min.css rel=stylesheet><link href=/kwik5docs/css/auto-complete.css rel=stylesheet><link href=/kwik5docs/theme-flex/style.css rel=stylesheet><link rel=stylesheet href=/kwik5docs/css/bootstrap.min.css><meta name=description content></head><body data-url=/kwik5docs/design/project_model/assets/diagram_relation/><header><div class=logo><a class=baselink href=https://kwiksher.github.io/kwik5docs/>Kwik</a></div><div class=burger><a href=javascript:void(0); style=font-size:15px>&#9776;</a></div><nav class=shortcuts><li role><a href=https://github.com/kwiksher/ rel=noopener><i class='fa fa-github'></i> <label>Github repo</label></a></li><li role><a href=https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip rel=noopener><i class='fa fa-cloud-download'></i> <label>Download</label></a></li><li role><a href=https://gohugo.io/ rel=noopener><i class='fa fa-bookmark'></i> <label>Hugo Documentation</label></a></li><li role><a href=/kwik5docs/credits rel=noopener><i class='fa fa-bullhorn'></i> <label>Credits</label></a></li></nav></header><article><aside><ul class=menu><li data-nav-id=https://kwiksher.github.io/kwik5docs/introduction/ class="dd-item haschildren"><div><a href=/kwik5docs/introduction/>Introduction</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/introduction/sponsor/ class=dd-item><div><a href=/kwik5docs/introduction/sponsor/></a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/ class="dd-item haschildren"><div><a href=/kwik5docs/get_started/>Get Started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/step1/ class=dd-item><div><a href=/kwik5docs/get_started/step1/>Step 1 - UXP
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/step2/ class=dd-item><div><a href=/kwik5docs/get_started/step2/>Step2 - Solar2D
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/editor_screen/ class=dd-item><div><a href=/kwik5docs/get_started/editor_screen/>Kwik Editor Screen Orientation
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/naming_rule/ class=dd-item><div><a href=/kwik5docs/get_started/naming_rule/>PSD Naming Rule
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/screen_size_orientation/ class=dd-item><div><a href=/kwik5docs/get_started/screen_size_orientation/>PSD Screen Size Orientation
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/solar2d_template/ class=dd-item><div><a href=/kwik5docs/get_started/solar2d_template/>Solar2D Template
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/components/ class=dd-item><div><a href=/kwik5docs/get_started/components/>Components
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/component_with_asset/ class=dd-item><div><a href=/kwik5docs/get_started/component_with_asset/>Component & Asset
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/custom_class/ class=dd-item><div><a href=/kwik5docs/get_started/custom_class/>Custom Class
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/events/ class=dd-item><div><a href=/kwik5docs/get_started/events/>Commands & Events
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/import_component/ class=dd-item><div><a href=/kwik5docs/get_started/import_component/>Import component Layer
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/tools/ class="dd-item haschildren"><div><a href=/kwik5docs/get_started/tools/>Tools</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/tools/httpyac/ class=dd-item><div><a href=/kwik5docs/get_started/tools/httpyac/>httpYac REST API
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/tools/unittest/ class=dd-item><div><a href=/kwik5docs/get_started/tools/unittest/>Unit Test
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/tools/vscode/ class=dd-item><div><a href=/kwik5docs/get_started/tools/vscode/>Visual Studio Code
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/get_started/tools/audacity/ class=dd-item><div><a href=/kwik5docs/get_started/tools/audacity/>Audacity
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/ class="dd-item haschildren"><div><a href=/kwik5docs/design/>Design</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/architecture/ class=dd-item><div><a href=/kwik5docs/design/architecture/>Architecure
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/ class="dd-item haschildren"><div><a href=/kwik5docs/design/project_model/>Project Model</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/photoshop/ class=dd-item><div><a href=/kwik5docs/design/project_model/photoshop/>Photoshop File
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/icons/ class=dd-item><div><a href=/kwik5docs/design/project_model/icons/>Icons Launch/Splash screens
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/content/ class=dd-item><div><a href=/kwik5docs/design/project_model/content/>Content X Structure
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/assets/ class="dd-item haschildren"><div><a href=/kwik5docs/design/project_model/assets/>Assets</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/assets/diagram_relation/ class=dd-item><div><a href=/kwik5docs/design/project_model/assets/diagram_relation/>Asset and Component Releation
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/assets/audio/ class=dd-item><div><a href=/kwik5docs/design/project_model/assets/audio/>Audio
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/assets/particles/ class=dd-item><div><a href=/kwik5docs/design/project_model/assets/particles/>Particles
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/assets/spritesheet/ class=dd-item><div><a href=/kwik5docs/design/project_model/assets/spritesheet/>Spritesheet
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/assets/video/ class=dd-item><div><a href=/kwik5docs/design/project_model/assets/video/>Video
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/assets/web/ class=dd-item><div><a href=/kwik5docs/design/project_model/assets/web/>Web
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/commands/ class="dd-item haschildren"><div><a href=/kwik5docs/design/project_model/commands/>Commands</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/commands/editor/ class=dd-item><div><a href=/kwik5docs/design/project_model/commands/editor/>action editor
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/commands/ui/ class=dd-item><div><a href=/kwik5docs/design/project_model/commands/ui/>UI
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/commands/canvas/ class=dd-item><div><a href=/kwik5docs/design/project_model/commands/canvas/>canvas
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/commands/screenshot/ class=dd-item><div><a href=/kwik5docs/design/project_model/commands/screenshot/>screenshot
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/ class="dd-item haschildren"><div><a href=/kwik5docs/design/project_model/components/>Components</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/image/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/image/>Layer
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/animation/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/animation/>Animation
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/audio/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/audio/>Audio
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/button/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/button/>Button
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/canvas/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/canvas/>Canvas
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/group/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/group/>Group
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/particles/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/particles/>Particles
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/spritesheet/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/spritesheet/>Spritesheet
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/sync_audio_text/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/sync_audio_text/>Sync Audio&Text
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/timer/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/timer/>Timer
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/components/video/ class=dd-item><div><a href=/kwik5docs/design/project_model/components/video/>Video
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/settings/ class="dd-item haschildren"><div><a href=/kwik5docs/design/project_model/settings/>Settings</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/settings/ios/ class=dd-item><div><a href=/kwik5docs/design/project_model/settings/ios/>iOS
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/settings/android/ class=dd-item><div><a href=/kwik5docs/design/project_model/settings/android/>android
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/settings/macos/ class=dd-item><div><a href=/kwik5docs/design/project_model/settings/macos/>macOS
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/settings/tvos/ class=dd-item><div><a href=/kwik5docs/design/project_model/settings/tvos/>tvOS
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/settings/win32/ class=dd-item><div><a href=/kwik5docs/design/project_model/settings/win32/>Win32
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/settings/html5/ class=dd-item><div><a href=/kwik5docs/design/project_model/settings/html5/>HTML5
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/settings/linux/ class=dd-item><div><a href=/kwik5docs/design/project_model/settings/linux/>Linux
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/template/ class=dd-item><div><a href=/kwik5docs/design/project_model/template/>Template strurcture
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/project_model/template_model/ class=dd-item><div><a href=/kwik5docs/design/project_model/template_model/>Template Model
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/tools/ class="dd-item haschildren"><div><a href=/kwik5docs/design/tools/>Tools</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/tools/builder/ class=dd-item><div><a href=/kwik5docs/design/tools/builder/>Command line Build
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/tools/plugins/ class=dd-item><div><a href=/kwik5docs/design/tools/plugins/>UXP Plugins
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/tools/editor/ class=dd-item><div><a href=/kwik5docs/design/tools/editor/>Editor
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/tools/rest_server/ class=dd-item><div><a href=/kwik5docs/design/tools/rest_server/>REST Server
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/tools/utilities/ class=dd-item><div><a href=/kwik5docs/design/tools/utilities/>Utilities
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/workflow/ class="dd-item haschildren"><div><a href=/kwik5docs/design/workflow/>Workflow</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/workflow/lua/ class=dd-item><div><a href=/kwik5docs/design/workflow/lua/>Lua Code
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/workflow/workflow/ class=dd-item><div><a href=/kwik5docs/design/workflow/workflow/>REST API
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/class/ class="dd-item haschildren"><div><a href=/kwik5docs/design/class/>Class Diagrams</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/class/class_animation/ class=dd-item><div><a href=/kwik5docs/design/class/class_animation/>Animation Editor
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/class/class_group/ class=dd-item><div><a href=/kwik5docs/design/class/class_group/>Group Editor
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/class/class/ class=dd-item><div><a href=/kwik5docs/design/class/class/>Timer Editor
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/sample-projects/ class=dd-item><div><a href=/kwik5docs/design/sample-projects/>Sample Projects</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/design/new_features/ class=dd-item><div><a href=/kwik5docs/design/new_features/>New Features
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/bookstore/ class="dd-item haschildren"><div><a href=/kwik5docs/bookstore/>Bookstore</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/bookstore/components/ class=dd-item><div><a href=/kwik5docs/bookstore/components/>Components
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/bookstore/steps/ class=dd-item><div><a href=/kwik5docs/bookstore/steps/>Steps
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/bookstore/server/ class=dd-item><div><a href=/kwik5docs/bookstore/server/>Book Server
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/bookstore/simulator/ class=dd-item><div><a href=/kwik5docs/bookstore/simulator/>Simulator
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/bookstore/versions/ class=dd-item><div><a href=/kwik5docs/bookstore/versions/>Book Versions
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/implementation/ class="dd-item haschildren"><div><a href=/kwik5docs/implementation/>Implementation</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/implementation/asset_editor/ class=dd-item><div><a href=/kwik5docs/implementation/asset_editor/>Asset Editor
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/implementation/audio_editor/ class=dd-item><div><a href=/kwik5docs/implementation/audio_editor/>Audio Editor
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/implementation/adding_component/ class=dd-item><div><a href=/kwik5docs/implementation/adding_component/>Adding A Component
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/implementation/btree/ class=dd-item><div><a href=/kwik5docs/implementation/btree/>Behavior Tree
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/implementation/replacement_editor/ class=dd-item><div><a href=/kwik5docs/implementation/replacement_editor/>Replacement Editor
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/implementation/selectors/ class=dd-item><div><a href=/kwik5docs/implementation/selectors/>Selectors
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/implementation/rest_server/ class=dd-item><div><a href=/kwik5docs/implementation/rest_server/>REST Server
+</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/implementation/rest_api/ class="dd-item haschildren"><div><a href=/kwik5docs/implementation/rest_api/>REST API</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/implementation/rest_api/put/ class=dd-item><div><a href=/kwik5docs/implementation/rest_api/put/>PUT
+</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/ai/ class="dd-item haschildren"><div><a href=/kwik5docs/ai/>Generative AI</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://kwiksher.github.io/kwik5docs/ai/audio/ class=dd-item><div><a href=/kwik5docs/ai/audio/>Audio</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/ai/image/ class=dd-item><div><a href=/kwik5docs/ai/image/>Image</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/ai/particles/ class=dd-item><div><a href=/kwik5docs/ai/particles/>Particles</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/ai/spritesheet/ class=dd-item><div><a href=/kwik5docs/ai/spritesheet/>Spritesheet</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/ai/video/ class=dd-item><div><a href=/kwik5docs/ai/video/>Video</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/dao/ class=dd-item><div><a href=/kwik5docs/dao/>DAO</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://kwiksher.github.io/kwik5docs/all/ class=dd-item><div><a href=/kwik5docs/all/>all</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul><section></section></aside><section class=page><div class=nav-select><center>Navigation :
+<select onchange="location.href=this.value"><option value=/kwik5docs/introduction/>
+Introduction</option><option value=/kwik5docs/get_started/>
+Get Started</option><option value=/kwik5docs/design/>
+Design</option><option value=/kwik5docs/design/architecture/>- Architecure</option><option value=/kwik5docs/design/project_model/>
+-
+Project Model</option><option value=/kwik5docs/design/project_model/photoshop/>-- Photoshop File</option><option value=/kwik5docs/design/project_model/icons/>-- Icons Launch/Splash screens</option><option value=/kwik5docs/design/project_model/content/>-- Content X Structure</option><option value=/kwik5docs/design/project_model/assets/>
+--
+Assets</option><option value=/kwik5docs/design/project_model/assets/diagram_relation/ selected>--- Asset and Component Releation</option><option value=/kwik5docs/design/project_model/assets/audio/>--- Audio</option><option value=/kwik5docs/design/project_model/assets/particles/>--- Particles</option><option value=/kwik5docs/design/project_model/assets/spritesheet/>--- Spritesheet</option><option value=/kwik5docs/design/project_model/assets/video/>--- Video</option><option value=/kwik5docs/design/project_model/assets/web/>--- Web</option><option value=/kwik5docs/design/project_model/commands/>
+--
+Commands</option><option value=/kwik5docs/design/project_model/components/>
+--
+Components</option><option value=/kwik5docs/design/project_model/settings/>
+--
+Settings</option><option value=/kwik5docs/design/project_model/template/>-- Template strurcture</option><option value=/kwik5docs/design/project_model/template_model/>-- Template Model</option><option value=/kwik5docs/design/tools/>
+-
+Tools</option><option value=/kwik5docs/design/workflow/>
+-
+Workflow</option><option value=/kwik5docs/design/class/>
+-
+Class Diagrams</option><option value=/kwik5docs/design/sample-projects/>
+-
+Sample Projects</option><option value=/kwik5docs/design/new_features/>- New Features</option><option value=/kwik5docs/bookstore/>
+Bookstore</option><option value=/kwik5docs/implementation/>
+Implementation</option><option value=/kwik5docs/ai/>
+Generative AI</option><option value=/kwik5docs/dao/>
+DAO</option><option value=/kwik5docs/all/>
+all</option></select></center></div><div><div class=searchbox><input data-search-input id=search-by type=text placeholder></div></div><div align=right>Last Modified: 2023-09-16</div><p>Asset and Component Releation</p><pre tabindex=0><code class=language-mermaid data-lang=mermaid>graph RL
+
+
+subgraph editor
+  tool[video replacement tool]
+  tool -.- default([defautprops])
+  readAssetFunc[readAsset]
+end
+
+subgraph App.bookX
+  subgraph assets
+    short_ballsCollision.mp3
+    video.mp4
+    json[(assets.json for editor)]
+  end
+
+  subgraph components.pageX
+    audio_short_ballsCollision.lua
+    subgraph layers
+      bg.lua
+      imageOne.lua -.- layerProps([props table])
+      imageOne_video.lua -.- videoProps([props table])
+    end
+  end
+end
+
+readAssetFunc -. 1. traverse with lfs .-&gt; App.bookX
+readAssetFunc -. 2. generate .-&gt; json
+YourInput -. 3.selecting layer&lt;br&gt;and video .-&gt; tool
+tool -. 4-1.read/write .- json
+json -. 4-2.link for publish .- video.mp4
+tool -. 5.render when publshing .-&gt; imageOne_video.lua
+
+subgraph photoshop
+  kwik([kwik plugin])
+end
+generativeAI[[Generative AI]]
+
+kwik -. images .-&gt; assets
+kwik -. lua files .-&gt; layers
+
+generativeAI -. images audios videos .-&gt; assets
+</code></pre><ul><li>assets.json from the lua table editor.assets<div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>audios</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>fonts</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>-- images = {}</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>particles</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>sprites</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>videos</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;videoA.mp4&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>path</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;videos&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>links</span> <span style=color:#f92672>=</span> <span style=color:#111>{{</span><span style=color:#111>page</span><span style=color:#f92672>=</span> <span style=color:#d88200>&#34;page01&#34;</span><span style=color:#111>,</span> <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;imageOne&#34;</span><span style=color:#111>}},</span>
+</span></span><span style=display:flex><span>            <span style=color:#111>{</span><span style=color:#111>page</span><span style=color:#f92672>=</span> <span style=color:#d88200>&#34;page02&#34;</span><span style=color:#111>,</span> <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;iamgeTwo&#34;</span><span style=color:#111>}}}</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>},</span>
+</span></span><span style=display:flex><span><span style=color:#111>}</span>
+</span></span></code></pre></div></li></ul><hr><p>Four ways to compose layers with assets.</p><ol><li>plugin in photoshop > editor > layer replacement</li><li>vs code to compose index.lua manually</li><li>vs code to compose assets.json</li><li>httYac to compose index.lua</li></ol><h2 id=plugin-in-photoshop--editor--layer-replacement>plugin in photoshop > editor > layer replacement</h2><ol><li>Kwik plugin in Photoshop to publish images and lua files</li><li>put media files into App.bookX/assets folder</li><li>use Kwik Visual Editor<ol><li><p>select a layer</p></li><li><p>select a layer replacement tool (ex video tool)</p></li><li><p>save the props of video replacement</p><p>the selected layer is linked to the selected media</p></li><li><p>pubish</p></li></ol></li></ol><p>//TODO screenshots</p><p>//TODO readAsset to merge/validate assets.json with /components/pageX/index.lua?</p><h3 id=editor-logic>editor logic</h3><ul><li>assets.json is generated with readAsset()</li><li>//<strong>TBI</strong> it appends a layer&rsquo;s name to links table when user set an asset to a layer replacement</li><li>pageX/index.lua and layers/layer_xxx.lua are updated for the component</li></ul><hr><h2 id=vs-code-to-compose-indexlua-manually>vs code to compose index.lua manually</h2><ol><li>put media files into App.bookX/assets folder</li></ol><blockquote><p>assets.json will be generated automatically by editor</p></blockquote><ol><li><p>vs code to compose App/booxX/components/pageX/index.lua</p><p>add a layer element to components.layers table with a class (ex &ldquo;video&rdquo;)</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>scene</span> <span style=color:#f92672>=</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#39;controller.scene&#39;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>(</span><span style=color:#111>sceneName</span><span style=color:#111>,</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;page1&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>components</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>            <span style=color:#111>{</span>  <span style=color:#111>bg</span><span style=color:#f92672>=</span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>                              <span style=color:#111>}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>            <span style=color:#111>{</span>  <span style=color:#111>layerOne</span><span style=color:#f92672>=</span><span style=color:#111>{</span> <span style=color:#111>class</span><span style=color:#f92672>=</span><span style=color:#111>{</span><span style=color:#d88200>&#34;video&#34;</span><span style=color:#111>}</span> <span style=color:#111>}</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>audios</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>groups</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>timers</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>variables</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>      <span style=color:#111>page</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#111>}</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>commands</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span> <span style=color:#d88200>&#34;eventOne&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;eventTwo&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;act01&#34;</span> <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>onInit</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#111>scene</span><span style=color:#111>)</span> <span style=color:#111>print</span><span style=color:#111>(</span><span style=color:#d88200>&#34;onInit&#34;</span><span style=color:#111>)</span> <span style=color:#00a8c8>end</span>
+</span></span><span style=display:flex><span><span style=color:#111>})</span>
+</span></span></code></pre></div></li><li><p>App/booX/comonents/pageX/layers</p><p>add the lua files with the props</p><ul><li>layerOne.lua<div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>layerProps</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>blendMode</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;normal&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>height</span>    <span style=color:#f92672>=</span>  <span style=color:#ae81ff>1280</span> <span style=color:#f92672>-</span> <span style=color:#ae81ff>0</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>width</span>     <span style=color:#f92672>=</span> <span style=color:#ae81ff>1920</span> <span style=color:#f92672>-</span> <span style=color:#ae81ff>0</span> <span style=color:#111>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>kind</span>      <span style=color:#f92672>=</span> <span style=color:#111>pixel</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>name</span>      <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;bg&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>type</span>      <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;png&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>x</span>         <span style=color:#f92672>=</span> <span style=color:#ae81ff>1920</span> <span style=color:#f92672>+</span> <span style=color:#111>(</span><span style=color:#ae81ff>0</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1920</span><span style=color:#111>)</span><span style=color:#f92672>/</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>y</span>         <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>+</span> <span style=color:#111>(</span><span style=color:#ae81ff>1280</span> <span style=color:#f92672>-</span> <span style=color:#ae81ff>0</span><span style=color:#111>)</span><span style=color:#f92672>/</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>alpha</span>     <span style=color:#f92672>=</span> <span style=color:#ae81ff>100</span><span style=color:#f92672>/</span><span style=color:#ae81ff>100</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>}</span>
+</span></span></code></pre></div></li><li>layerOne_video.lua<div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#00a8c8>local</span> <span style=color:#111>props</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>actionName</span>    <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;{{actionName}}&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>delay</span>         <span style=color:#f92672>=</span> <span style=color:#111>{{</span><span style=color:#111>delay</span><span style=color:#111>}},</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>iterations</span>    <span style=color:#f92672>=</span> <span style=color:#111>{{</span><span style=color:#111>iterations</span><span style=color:#111>}},</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>name</span>          <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;{{name}}&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span><span style=color:#111>}</span>
+</span></span><span style=display:flex><span><span style=color:#00a8c8>return</span> <span style=color:#111>require</span><span style=color:#111>(</span><span style=color:#d88200>&#34;components.kwik.layer_video&#34;</span><span style=color:#111>).</span><span style=color:#111>new</span><span style=color:#111>(</span><span style=color:#111>props</span><span style=color:#111>)</span>
+</span></span></code></pre></div></li></ul></li></ol><h3 id=editor-logic-1>editor logic</h3><p>when Solar2D simulator refreshes automatically, and then editor read pageX/index.lua for updating assets.json</p><p>readAsset() uses lfs to read media files in App.bookX/assets folder, and generate layer names of links table for assets.json out of pageX/index.lua</p><hr><h2 id=vs-code-to-compose-assetsjson>vs code to compose assets.json</h2><p>you can scafold .lua files with the asset command/bat. The asset_lua_generator(.command/.bat) generates lua files into the following directories with assets.json/yml/lua</p><ul><li><p>App/booxX/components/pageX/index.lua</p></li><li><p>App/booX/comonents/pageX/layers/layerX.lua</p></li><li><p>App/booX/comonents/pageX/layers/layerX_xxx.lua</p><p>assets.lua</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#111>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>audios</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>fonts</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>-- images = {}</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>particles</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>sprites</span> <span style=color:#f92672>=</span> <span style=color:#111>{},</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>videos</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>name</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;videoA.mp4&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>path</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;videos&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>links</span> <span style=color:#f92672>=</span> <span style=color:#111>{{</span><span style=color:#111>page</span><span style=color:#f92672>=</span> <span style=color:#d88200>&#34;page01&#34;</span><span style=color:#111>,</span> <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;imageOne&#34;</span><span style=color:#111>}},</span>
+</span></span><span style=display:flex><span>            <span style=color:#111>{</span><span style=color:#111>page</span><span style=color:#f92672>=</span> <span style=color:#d88200>&#34;page02&#34;</span><span style=color:#111>,</span> <span style=color:#111>layers</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span><span style=color:#d88200>&#34;iamgeTwo&#34;</span><span style=color:#111>}}}</span>
+</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
+</span></span><span style=display:flex><span>  <span style=color:#111>},</span>
+</span></span><span style=display:flex><span><span style=color:#111>}</span>
+</span></span></code></pre></div></li></ul><ol><li><p>put media files into App.bookX/assets folder</p></li><li><p>prepare assets.json (yml, lua are supported) to spefify layers with media files</p></li><li><p>scafold with the asset_lua_generator in the vs code terminal</p></li><li><p>edit each lua manually for positions and props</p><blockquote><p>you may use common/align.lua for auto layout</p></blockquote><blockquote><p>or use editor/httpYac to modify the props of layers and components</p></blockquote><p>// TODO Move/Transform tool in editor</p><p>// TODO asset_lua_generator</p></li></ol><h3 id=note>note</h3><p>if you don&rsquo;t use kwik plugin in Photoshop, scafolding with assets.json will help you work wtih media files</p><p>if layes are not found in page/index.lua, sset_lua_generator will add them to index.lua</p><blockquote><p>you can use asset_lua_generator after publshing images/lua files from Kwik plugin in Photoshop, and then manually associateing layers and media files for replacements</p></blockquote><p>if you run asset_lua_generator for the second time, it will not overwirte existing lua files. It will scafold a new lua file for a new component which is not found in pageX/index.lua</p><hr><h2 id=httpyac-to-compose-indexlua>httpYac to compose index.lua</h2><ol><li><p>put media files into App.bookX/assets folder</p></li><li><p>put (create) a layer and layer_xxx lua files with httpYac</p><pre tabindex=0><code>## PUT
+
+### creates a new lua file in App directory if not exist. scafolding a lua file
+
+@host=http://localhost:9090
+
+GET /app
+###
+GET /book
+PUT /book
+GET /book/page01
+
+### update index.lua too
+PUT /book/page01/newLayer
+PUT /book/page01/newLayer/?class=video
+</code></pre><pre tabindex=0><code>POST/book/page01/newLayer
+Content-Type: application/yaml
+{
+  alpha=0.5
+  x=display.contentCenterX
+  y=display.contentCenterY
+  width=100
+  height=100
+}
+</code></pre></li><li><p>post(update) a layer with class</p><pre tabindex=0><code>
+GET /book/assets
+
+POST /book/page/newLayer/?class=video
+
+url: video.mp4
+
+POST /book/page/newLayer/?class=video
+
+url:  https://kwiksher.com/tutorials/Video/kwikplant.mp4
+</code></pre></li></ol><p>//TODO update assets.json</p><hr><p>memo</p><pre tabindex=0><code>      selectors.tree new, modiy, delete (hide filter for selectbox)
+      show (doGet)  &gt; assetsTable
+        /book/assets
+        /book/assets/audios
+        /book/assets/audios/short
+        /book/assets/audios/long
+        /book/assets/audios/sync
+        /book/assets/images
+        /book/assets/sprites
+        /book/assets/videos
+
+
+        lua table (asset.json) will be saved into asset folder
+
+        file info(fixed props) // should we reference props table in App/bookX/components/pageX?
+                               // yes, they are tangible props of a component in a page
+          - audio_props.lua
+          ```
+            audioProps = {
+              language    = nil,
+              folder = nil,
+              filename = &#34;alphabet.mp3&#34;,
+              sentenceDir = &#34;alphabet&#34;,
+            }
+
+            textProps = {
+              filename = &#34;alphabet.txt&#34;,
+            }
+          ```
+
+         - spritesheet_props.lua
+          ```
+          {
+              filename = &#34;butflysprite.png&#34;,
+              sheetInfo = {
+                width = 188,
+                height = 188,
+                sheetWidth = 376,
+                sheetHeight = 188,
+              }
+          }
+          ```
+
+         - video_props.lua
+         ```
+         ```
+
+
+      doPut
+        assets audio, video, spritesheet, synctext
+        fetch it from url
+          openapi plugin whisper with timecode? ⭐️
+        dummy assets from sample and rename to use it
+
+      doPost for an asset to preview?
+        this needs a position to tell where to insert it in layers&#39;tree so use
+
+          ```
+          POST /book/page/newLayer/?class=video
+
+          file: video.mp4
+
+          ```
+
+          save it to App/book/models/assets.json
+
+          lfs to traverse files in asset folder  except images. This table is also updated from replacement tools
+          for instance, user selects a video replacement and choose a videoA.mp4 to layerOne on page1,
+
+            - page1/layerA_video.jspn
+
+            - assets.json
+              ```
+              {
+                audios = {},
+                fonts = {},
+                -- images = {}
+                particles = {},
+                sprites = {},
+                videos = {
+                  {
+                    name = &#34;videoA.mp4&#34;,
+                    path = &#34;videos&#34;,
+                    links = {{page= &#34;page01&#34;, layers = {&#34;imageOne&#34;}},
+                            {page= &#34;page02&#34;, layers = {&#34;iamgeTwo&#34;}}}
+                  },
+                },
+              }
+              ```
+
+          editor &gt; assets
+            - select
+
+              videoA.mp4 layers = page1/layerOne,  page2/layerTwo
+
+              option only current page
+
+            - add
+
+                a new layer is added to index.lua with the asset class with deafult props on a current page
+
+            - modify
+
+               edit and save properties
+
+            - delete
+              remove layers, option to delete from a disk
+
+    doPost
+      for transition2.to, it needs a generic form
+
+      PUT to set a class for a layer
+        - add it to index.lua, model.json
+        - scafold layer_class.lua with a template
+
+        it entry exists, and no params, get values from controller (controlProps) which has been updated by POST?
+
+      POST to add properties
+        GUI
+
+      if it is not one of kwik&#39;s classes, first create a new custom class
+
+        PUT components/custom/newClass
+
+        this class.lua does not have a template, props is a lua table that can be encoded into json
+</code></pre><div class=chevrons><div id=navigation><a class="nav nav-prev" href=/kwik5docs/design/project_model/assets/ title=Assets><i class="fa fa-chevron-left"></i><label>Assets</label></a>
+<a class="nav nav-next" href=/kwik5docs/design/project_model/assets/audio/ title=Audio style=margin-right:0><label>Audio</label><i class="fa fa-chevron-right"></i></a></div></div></section></article><footer><div class=footline><div class=date><i class='fa fa-calendar'></i> 16/09/2023</div><div class=github-link><a href=https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/design/project_model/assets/diagram_relation.md target=blank><i class="fa fa-code-fork"></i></a></div></div><div></div></footer><script src=/kwik5docs/js/jquery-2.x.min.js></script>
+<script type=text/javascript>var baseurl="https://kwiksher.github.io/kwik5docs/"</script><script src=/kwik5docs/js/clipboard.min.js></script>
+<script src=/kwik5docs/js/featherlight.min.js></script>
+<script type=text/javascript src=/kwik5docs/js/lunr.min.js></script>
+<script type=text/javascript src=/kwik5docs/js/auto-complete.js></script>
+<script type=text/javascript src=/kwik5docs/js/search.js></script>
+<script src=/kwik5docs/theme-flex/script.js></script>
+<script src=https://kwiksher.github.io/kwik5docs/js/scripts.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.3/mermaid.min.js crossorigin=anonymous></script>
+<script>mermaid.init(void 0,".language-mermaid")</script></body></html>
