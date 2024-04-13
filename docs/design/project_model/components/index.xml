@@ -32,7 +32,7 @@ layer_spritesheet
 module
 components.kwik.layer_spritesheet editor
 components.editor.replacement
-. ├── controller │ ├── add.lua │ ├── cancel.lua │ ├── delete.lua │ ├── index.lua │ ├── save.lua │ └── select.lua ├── index.lua ├── listButtons.lua ├── listPropsTable.lua ├── listbox.lua ├── model.lua ├── onCompletebox.lua ├── particles │ └── controller └── videobox.lua defaults</description></item><item><title>Sync Audio&amp;Text</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/components/sync_audio_text/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/components/sync_audio_text/</guid><description>Sync Audio &amp;amp; Text A: alphabet B: i am cat C: my name is kwik D: my father is nice TODO
+. ├── controller │ ├── add.lua │ ├── cancel.lua │ ├── delete.lua │ ├── index.lua │ ├── save.lua │ └── select.lua ├── index.lua ├── listButtons.lua ├── listPropsTable.lua ├── listbox.lua ├── model.lua ├── onCompletebox.lua ├── particles │ └── controller └── videobox.lua defaults</description></item><item><title>Sync Audio&amp;Text</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/components/sync_audio_text/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/components/sync_audio_text/</guid><description>TableOfContents ▼ Sync Audio &amp;amp; Text A: alphabet B: i am cat C: my name is kwik D: my father is nice TODO
 the latest model defaults.sync has audioProps and textProps but UI does not have them yet
 update page3/layers
 alphabet_sync.lua, iamacat_sync.lua mynameiskwik_sync.lua props.text &amp;ndash;&amp;gt; props.line

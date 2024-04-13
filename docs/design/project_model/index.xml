@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Project Model on Kwik</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/</link><description>Recent content in Project Model on Kwik</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/design/project_model/index.xml" rel="self" type="application/rss+xml"/><item><title>Photoshop File</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/photoshop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/photoshop/</guid><description>Photoshop File https://www.ios-resolution.com/
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kwik Project Model on Kwik</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/</link><description>Recent content in Kwik Project Model on Kwik</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/design/project_model/index.xml" rel="self" type="application/rss+xml"/><item><title>Photoshop File</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/photoshop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/photoshop/</guid><description>Photoshop File https://www.ios-resolution.com/
 iPhone 13 Pro Max 1284x2778
 iPad Pro 2048 x 2732
 iPhone X 1125 x 2436
@@ -13,7 +13,10 @@ background
 iPhone X 1440 × 2772
 https://forums.solar2d.com/t/how-to-define-application-working-area-on-the-screen/351066/11
 https://forums.solar2d.com/t/safe-area-on-iphone-x-and-11-problem/353608
-https://github.com/SpyricGames/Solar2D-Plugins-Public</description></item><item><title>Icons Launch/Splash screens</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/icons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/icons/</guid><description>https://forums.solar2d.com/t/new-icon-size-for-ios/354492
+https://github.com/SpyricGames/Solar2D-Plugins-Public
+note
+https://www.photoshopessentials.com/basics/pixels-image-size-resolution-photoshop/
+resolution only affects the size of the printed version of the image. It has no effect at all when viewing the image on screen.</description></item><item><title>Icons Launch/Splash screens</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/icons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/icons/</guid><description>https://forums.solar2d.com/t/new-icon-size-for-ios/354492
 114x114 iOS loads Apple’s launch images of LaunchScreen.storyboardc made by Xcode. You can create it with Xcode.
 On Android:
 Start App Show the default splash screen App&amp;rsquo;s first screen shows. On iOS:
