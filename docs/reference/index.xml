@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reference on Kwik</title><link>https://kwiksher.github.io/kwik5docs/reference/</link><description>Recent content in Reference on Kwik</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>RPG Maker MV</title><link>https://kwiksher.github.io/kwik5docs/reference/rpg/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/reference/rpg/</guid><description>RPG Maker TableOfContents ▼ RPG MakerMV RPG Maker MV&amp;rsquo;s battle system FLUX.1 &amp;gt; HX80G RPG MakerMV RPG workflow analysis how to apply it for Kwik
+dialogue fountain screen writing &amp;gt; json/yaml/lua &amp;gt; dialogue port scene/dialogue to a kwik5 component startProcessing()
+battle RPG MV &amp;raquo; HX80G
+RPG Maker MV&amp;rsquo;s battle system https://forums.solar2d.com/t/source-code-for-my-rpg-game/356530 https://forums.rpgmakerweb.com/index.php?threads/mv-battle-system-resources-tga.122960/
+Side View Battle System
+Active Turn System
+Chrono Trigger Battle system
+Tactics Battle System
+Linear battle system
+https://plaza.komodo.jp/products/rpg-maker-mv</description></item></channel></rss>
