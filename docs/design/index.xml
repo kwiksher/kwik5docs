@@ -1,6 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Design on Kwik</title><link>https://kwiksher.github.io/kwik5docs/design/</link><description>Recent content in Design on Kwik</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/design/index.xml" rel="self" type="application/rss+xml"/><item><title>Architecure</title><link>https://kwiksher.github.io/kwik5docs/design/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/architecture/</guid><description>Architecure UXP panel
-flowchart LR Designer((fas:fa-user Designer)) Developer((fas:fa-user Developer)) User((fas:fa-user User or AI)) subgraph Photoshop[Photoshop UXP] graphics(images/lua renderer&amp;lt;br&amp;gt;scaffolder) end subgraph Editor[Kwik Visual Editor] subgraph App assets[(assets/images&amp;lt;br&amp;gt;models/json)] lua[(Source .lua)] end tools(GUI tools&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;renderer&amp;lt;br&amp;gt;scaffolder) httpServer RestApi(RestApi&amp;lt;br&amp;gt;transform&amp;lt;br&amp;gt;animation) RestApi -.- tools end subgraph RestApi[REST API] form(Properties &amp;lt;br&amp;gt; CRUD) end subgraph VSCode httpYac(httpYac) coding end Photoshop -.img/json.-&amp;gt; assets RestApi &amp;lt;-.img/json.-&amp;gt; httpServer httpServer &amp;lt;-.-&amp;gt; assets httpServer -.- tools tools -.- App User -.- Browser Browser-.maybe in future.- RestApi httpYac -.</description></item><item><title>Kwik Exporter Plugin for Photoshop</title><link>https://kwiksher.github.io/kwik5docs/design/plugins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/plugins/</guid><description>Kwik Exporter Plugin for Photoshop Kwik4 created a project folder where psd files are placed. Kwik5 you can creat a folder for your psd files on your own. When Kwik Exporter opens, it asks for the folder location.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Design :: Kwik</title><link>https://kwiksher.github.io/kwik5docs/design/index.html</link><description>Design Project model
+robotlegs template components commands Tools
+image exporter
+PS/XD UXP
+visual editor (frontEnd)
+Solar2D
+live editor (Maybe) React
+uxp plugin for Ps or XD web app REST server
+pegasus-harness
+pegasus-launcher
+frontEnd app sends REST API requests to harness of pegasus lua server
+this server offers the renderer of .lua for components and commands
+other tools
+generate_scene_index Sample projects
+Image Exporter plugin for Adobe Photoshop
+Project Model
+sample-projects/Pegasus
+test/base-proj/Solar2D/App/bookFree</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/design/index.xml" rel="self" type="application/rss+xml"/><item><title>Architecure</title><link>https://kwiksher.github.io/kwik5docs/design/architecture/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/architecture/index.html</guid><description>Architecure UXP panel
+flowchart LR Designer((fas:fa-user Designer)) Developer((fas:fa-user Developer)) User((fas:fa-user User or AI)) subgraph Photoshop[Photoshop UXP] graphics(images/lua renderer&lt;br>scaffolder) end subgraph Editor[Kwik Visual Editor] subgraph App assets[(assets/images&lt;br>models/json)] lua[(Source .lua)] end tools(GUI tools&lt;br>&lt;br>renderer&lt;br>scaffolder) httpServer RestApi(RestApi&lt;br>transform&lt;br>animation) RestApi -.- tools end subgraph RestApi[REST API] form(Properties &lt;br> CRUD) end subgraph VSCode httpYac(httpYac) coding end Photoshop -.img/json.-> assets RestApi &lt;-.img/json.-> httpServer httpServer &lt;-.-> assets httpServer -.- tools tools -.- App User -.- Browser Browser-.maybe in future.- RestApi httpYac -.- RestApi coding -.- lua RestApi -.- assets Designer --- tools Designer --- Photoshop Developer --- VSCode Rest api</description></item><item><title>Kwik Editor</title><link>https://kwiksher.github.io/kwik5docs/design/editor/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/editor/index.html</guid><description>Kwik Visual Editor Kwik functions
+Command
+File
+(TBI) Project New
+scafold app/bookX
+Project Open
+Project Recent
+(TBI) Page New
+bookX/index.lua for user to change the order of pages
+local scenes = { "page1", "page2", "page3", "page4", "canvas", "pageTimer", "pageVariable", "page_portrait" } return scenes (TBI) New layer as Shape
+add Icon
+props {rect, circle, text, image}
+local layerProps = { shape = "rect" height = 100, width = 100 , x = 100, y = 100, alpha = 1, blendMode = "normal", name = "myShape", } Shape uses fill to use an optional image file for texture</description></item><item><title>Kwik Exporter Plugin for Photoshop</title><link>https://kwiksher.github.io/kwik5docs/design/plugins/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/plugins/index.html</guid><description>Kwik Exporter Plugin for Photoshop Kwik4 created a project folder where psd files are placed. Kwik5 you can creat a folder for your psd files on your own. When Kwik Exporter opens, it asks for the folder location.
 Steps to publsh images of layers of . psd files
 Manually create a project folder with Finder(mac) or Explorer (win), and put your psd files there.
-In Photoshop, extension &amp;gt; Kwik
-Open button for selecting your folder of .</description></item></channel></rss>
+In Photoshop, extension > Kwik
+Open button for selecting your folder of .psd files</description></item><item><title>Kwik Project Model</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/index.html</guid><description>Project Model test/base-proj/
+Photoshop/bookshop
+├── bookFree │ ├── page1.psd │ ├── page2.psd ├── bookOne ├── page1.psd └── page2.psd Solar2D
+TODO add a layer group
+. ├── AndroidResources ├── App │ ├── bookFree │ ├── assets │ │ ├── images │ │ │ ├── page1 │ │ │ │ ├── bg.png │ │ │ │ ├── bg@2x.png │ │ │ │ ├── bg@4x.png │ │ │ │ ├── gotoBtn.png │ │ │ │ ├── gotoBtn@2x.png │ │ │ │ ├── gotoBtn@4x.png │ │ │ │ ├── title.png │ │ │ │ ├── title@2x.png │ │ │ │ └── title@4x.png │ │ │ ├── page2 │ │ └── thumbnails │ ├── commands │ │ ├── page1 │ │ │ ├── eventOne.lua │ │ │ └── eventTwo.lua │ │ └── page2 │ ├── components │ │ ├── page1 │ │ │ ├── audios │ | | ├── layers │ | | │ ├── bg.lua │ | | │ ├── gotoBtn.lua │ | | │ ├── gotoBtn_animation.lua │ | | │ ├── index.lua │ | | │ ├── title.lua │ | | │ └── title_animation.lua │ │ │ ├── groups │ │ │ ├── page │ │ │ ├── times │ │ │ └── variables │ | ├── page2 │ │ └── index.lua │ ├── models │ ├── page1 │ │ ├── audios │ │ ├── layers │ │ ├── groups │ │ ├── page │ │ ├── times │ │ ├── variables │ │ ├── bg.json │ │ ├── commands │ │ │ └── eventOne.json │ │ ├── gotoBtn.json │ │ ├── gotoBtn_animation.json │ │ ├── index.json │ │ ├── title.json │ │ └── title_animation.json │ └── page2 │ ├── Images.xcassets ├── LaunchScreen.storyboardc ├── assets ├── build.settings ├── commands │ ├── app │ ├── common │ │ └── myEvent.lua │ └── kwik ├── components │ ├── bookstore │ ├── common │ │ ├── bookstoreNavigation.lua │ │ ├── index.lua │ │ ├── keyboardNavigation.lua │ │ ├── myComponent.lua │ │ └── thumbnailNavigation.lua │ ├── editor │ └── kwik ├── config.lua ├── controller ├── en.lproj ├── extlib ├── lib ├── mySplashScreen.png └── main.lua</description></item><item><title>REST API</title><link>https://kwiksher.github.io/kwik5docs/design/api/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/api/index.html</guid><description>Tools Exporrter plugin for PS, XD
+UXP
+export images export source code traverse photoshop layers
+components/pageX/layers/**/*.lua
+kwik-exporter\src\photoshop\publishCode.ts
+traverse App/contentX/
+commands/pageX/ for envets components/pageX for components such as audios,groups .. components/pageX/layers from Photoshop and attached animation, button generate_scene_index\generate_models.lua
+merge the both results to ouput components/pageX/index.lua ⭐️
+local sceneName = ... -- local scene = require('controller.scene').new(sceneName, { name = "page01", components = { layers = {{bg = {}}, {layerX = {class={button}}}}, audios = {}, groups = {}, others = {}, timers = {}, variables = {} }, commands = {"bg.clickLayer"}, onInit = function(scene) print("onInit") end }) return scene develop/UXP/kwik-exporter
+A layer set is exported as one single image if assets/images/pageX has the foler with the same name of the layer set.</description></item><item><title>Sample Projects</title><link>https://kwiksher.github.io/kwik5docs/design/sample-projects/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/sample-projects/index.html</guid><description>Sample Projects sample-projects/SingleBook sample-projects/Pegasus sample-projects/Misc/Transition2 sample-projects/MusicLibrary sample-projects/MultilingualBook sample-projects/GameCenter</description></item><item><title>Solar2D</title><link>https://kwiksher.github.io/kwik5docs/design/solar2d/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/solar2d/index.html</guid><description>Solar2D</description></item><item><title>Workflow</title><link>https://kwiksher.github.io/kwik5docs/design/workflow/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/workflow/index.html</guid><description>Workflow Overview
+put .png/.jpg into App/contentX/assets/images manually or use kwik-export plugin for Ps/XD to publish images to App folder
+images without coordinates images with coordinates from Ps, XD with kwik-export plugin models/assets/images/*.json kwik-editor traverses the assets folder to output .json for models and .lua for scenes/pageX and components/pageX
+kwik-generate-model kwik-generate-index kwik-scaffold-lua you can edit props or positions of images or attach a type of class such as animation, button …</description></item></channel></rss>

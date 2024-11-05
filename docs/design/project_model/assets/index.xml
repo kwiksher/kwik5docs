@@ -1,20 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Assets on Kwik</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/</link><description>Recent content in Assets on Kwik</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/design/project_model/assets/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset and Component Releation</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/diagram_relation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/assets/diagram_relation/</guid><description>Asset and Component Releation
-graph RL subgraph editor tool[video replacement tool] tool -.- default([defautprops]) readAssetFunc[readAsset] end subgraph App.bookX subgraph assets short_ballsCollision.mp3 video.mp4 json[(assets.json for editor)] end subgraph components.pageX audio_short_ballsCollision.lua subgraph layers bg.lua imageOne.lua -.- layerProps([props table]) imageOne_video.lua -.- videoProps([props table]) end end end readAssetFunc -. 1 traverse with lfs .-&amp;gt; App.bookX readAssetFunc -. 2 generate .-&amp;gt; json YourInput -. 3 selecting layer &amp;lt;br&amp;gt; and video .-&amp;gt; tool tool -. 4-1 read/write .</description></item><item><title>Audio</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/audio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/assets/audio/</guid><description>Audio asset long short sync A wordTouch: clicking a word in a line, one mp3 for one word is played
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Assets :: Kwik</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/index.html</link><description>Assets audios
+long
+short
+sync
+en jp http://kwiksher.com/doc/kwik_toolset/layers_and_replacements/sync_audio_and_text/#working-with-audacity
+(fonts)
+(images)
+(pageX) particles
+https://forums.solar2d.com/t/roaming-gamer-particle-editor-2-now-free/342432
+http://www.effecthub.com/
+sprites
+(thumbnails)
+videos
+www
+TBI
+SVG, WEBP and QOI
+https://forums.solar2d.com/t/graphics-extensions-for-solar2d/354890
+https://github.com/ANSH3LL/Graphics-Extensions-for-Solar2D
+Webp
+https://developers.google.com/speed/webp https://www.profuture.co.jp/mk/column/40040 QOI
+https://qoiformat.org/
+https://qiita.com/yuji_yasuhara/items/98973742caafc82c2696
+TODO: resvg for macOS/iOS
+https://github.com/phoboslab/qoi https://github.com/RazrFalcon/resvg https://github.com/yisibl/resvg-js https://github.com/nothings/stb/blob/master/stb_image.h https://github.com/webmproject/libwebp physics
+Physics editor
+https://www.codeandweb.com/physicseditor
+collision editor in tile map editor
+https://doc.mapeditor.org/en/stable/manual/editing-tilesets/#tile-collision-editor
+joints?
+https://github.com/labolado/Labo-2D-Game-Level-Editor-For-Solar2D/tree/master
+path animation
+normal map
+Kwik4 how to use a normal map for dynamic lighting effect
+Spirte Illuminator to create a normal map https://www.codeandweb.com/spriteilluminator</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/design/project_model/assets/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset and Component Releation</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/diagram_relation/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/assets/diagram_relation/index.html</guid><description>Asset and Component Releation
+graph RL subgraph editor tool[video replacement tool] tool -.- default([defautprops]) readAssetFunc[readAsset] end subgraph App.bookX subgraph assets short_ballsCollision.mp3 video.mp4 json[(assets.json for editor)] end subgraph components.pageX audio_short_ballsCollision.lua subgraph layers bg.lua imageOne.lua -.- layerProps([props table]) imageOne_video.lua -.- videoProps([props table]) end end end readAssetFunc -. 1 traverse with lfs .-> App.bookX readAssetFunc -. 2 generate .-> json YourInput -. 3 selecting layer &lt;br> and video .-> tool tool -. 4-1 read/write .- json json -. 4-2 link for publish .- video.mp4 tool -. 5 render when publshing .-> imageOne_video.lua subgraph photoshop kwik([kwik plugin]) end generativeAI[[Generative AI]] kwik -. images .-> assets kwik -. lua files .-> layers generativeAI -. images audios videos .-> assets assets.json from the lua table editor.assets { audios = {}, fonts = {}, -- images = {} particles = {}, sprites = {}, videos = { { name = "videoA.mp4", path = "videos", links = {{page= "page01", layers = {"imageOne"}}, {page= "page02", layers = {"iamgeTwo"}}} }, }, } Four ways to compose layers with assets.</description></item><item><title>Audio</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/audio/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/assets/audio/index.html</guid><description>Audio asset long short sync A wordTouch: clicking a word in a line, one mp3 for one word is played
 file structure (physical)
 TODO:rename sentenceDir to wordTouch?
 ── sync ├── alphabet │ ├── a.mp3 │ ├── b.mp3 │ └── c.mp3 ├── alphabet.mp3 ├── alphabet.txt lua table (logic)
-audioProps = { language = nil, folder = nil, filename = &amp;#34;alphabet.mp3&amp;#34;, sentenceDir = &amp;#34;alphabet&amp;#34;, } textProps = { filename = &amp;#34;alphabet.txt&amp;#34;, } alphabet.</description></item><item><title>Particles</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/particles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/assets/particles/</guid><description>Particles asset</description></item><item><title>Spritesheet</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/spritesheet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/assets/spritesheet/</guid><description>Spritsheet asset
+audioProps = { language = nil, folder = nil, filename = "alphabet.mp3", sentenceDir = "alphabet", } textProps = { filename = "alphabet.txt", } alphabet.txt
+0.000 0.500 A 0.500 1.000 B 1.000 1.500 C B en and jp</description></item><item><title>Particles</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/particles/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/assets/particles/index.html</guid><description>Particles asset</description></item><item><title>Spritesheet</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/spritesheet/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/assets/spritesheet/index.html</guid><description>Spritsheet asset
 TODO rename it as Imagesheet?
 Sample slots.png
 slots imagesheet is donwloaded from https://roaminggamer.github.io/RGDocs/pages/Plugins/texturepackerhelpers/ https://github.com/roaminggamer/RG_FreeStuff/raw/master/myPluginSamples/texturepackerhelpers/sample.zip
-{ filename = &amp;#34;slots.png&amp;#34;, sheetInfo = &amp;#34;slots.lua&amp;#34;, } Sample butflysprite.png
+{ filename = "slots.png", sheetInfo = "slots.lua", } Sample butflysprite.png
 Frame 188 x 188
 Sheet Width 376 Height 188
-{ filename = &amp;#34;butflysprite.png&amp;#34;, sheetInfo = { width = 188, height = 188, sheetWidth = 376, sheetHeight = 188, } } the above example has sheetInfo value but it could be empty for the first time when user just puts an imagesheet file in the assets folder.</description></item><item><title>Video</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/video/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/assets/video/</guid><description>Video asset
+{ filename = "butflysprite.png", sheetInfo = { width = 188, height = 188, sheetWidth = 376, sheetHeight = 188, } } the above example has sheetInfo value but it could be empty for the first time when user just puts an imagesheet file in the assets folder. The sheet info is specified by Spritesheet replacment tool in editor later.</description></item><item><title>Video</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/video/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/assets/video/index.html</guid><description>Video asset
 Local App/bookX/assets/video folder
 ── video ├── videoA.mp4 ├── animals ├─ cat.mp4 ├─ dog.mp4 lua table
-{ isLocal = true, url = &amp;#34;videoA.mp4&amp;#34;, } { isLocal = true, url = &amp;#34;animals/dog.mp4&amp;#34;, } Remote https://kwiksher.com/tutorials/Video/kwikplant.mp4
-{ isLocal = false, url = &amp;#34;https://kwiksher.com/tutorials/Video/kwikplant.mp4&amp;#34;, }</description></item><item><title>Web</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/web/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/assets/web/</guid><description>Web html asset
+{ isLocal = true, url = "videoA.mp4", } { isLocal = true, url = "animals/dog.mp4", } Remote https://kwiksher.com/tutorials/Video/kwikplant.mp4
+{ isLocal = false, url = "https://kwiksher.com/tutorials/Video/kwikplant.mp4", }</description></item><item><title>Web</title><link>https://kwiksher.github.io/kwik5docs/design/project_model/assets/web/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/design/project_model/assets/web/index.html</guid><description>Web html asset
 youtube sample
 http://kwiksher.com/tutorials/Video/youtube.html
 Vue sample?
