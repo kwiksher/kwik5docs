@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>REST API :: Kwik</title><link>https://kwiksher.github.io/kwik5docs/design/api/index.html</link><description>Tools Exporrter plugin for PS, XD
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>REST API :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/design/api/index.html</link><description>Tools Exporrter plugin for PS, XD
 UXP
 export images export source code traverse photoshop layers
 components/pageX/layers/**/*.lua
