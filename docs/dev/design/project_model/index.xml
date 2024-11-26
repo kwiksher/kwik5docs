@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kwik Project Model :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/dev/design/project_model/index.html</link><description>Project Model test/base-proj/
+Photoshop/bookshop
+├── bookFree │ ├── page1.psd │ ├── page2.psd ├── bookOne ├── page1.psd └── page2.psd Solar2D
+TODO add a layer group
+. ├── AndroidResources ├── App │ ├── bookFree │ ├── assets │ │ ├── images │ │ │ ├── page1 │ │ │ │ ├── bg.png │ │ │ │ ├── bg@2x.png │ │ │ │ ├── bg@4x.png │ │ │ │ ├── gotoBtn.png │ │ │ │ ├── gotoBtn@2x.png │ │ │ │ ├── gotoBtn@4x.png │ │ │ │ ├── title.png │ │ │ │ ├── title@2x.png │ │ │ │ └── title@4x.png │ │ │ ├── page2 │ │ └── thumbnails │ ├── commands │ │ ├── page1 │ │ │ ├── eventOne.lua │ │ │ └── eventTwo.lua │ │ └── page2 │ ├── components │ │ ├── page1 │ │ │ ├── audios │ | | ├── layers │ | | │ ├── bg.lua │ | | │ ├── gotoBtn.lua │ | | │ ├── gotoBtn_animation.lua │ | | │ ├── index.lua │ | | │ ├── title.lua │ | | │ └── title_animation.lua │ │ │ ├── groups │ │ │ ├── page │ │ │ ├── times │ │ │ └── variables │ | ├── page2 │ │ └── index.lua │ ├── models │ ├── page1 │ │ ├── audios │ │ ├── layers │ │ ├── groups │ │ ├── page │ │ ├── times │ │ ├── variables │ │ ├── bg.json │ │ ├── commands │ │ │ └── eventOne.json │ │ ├── gotoBtn.json │ │ ├── gotoBtn_animation.json │ │ ├── index.json │ │ ├── title.json │ │ └── title_animation.json │ └── page2 │ ├── Images.xcassets ├── LaunchScreen.storyboardc ├── assets ├── build.settings ├── commands │ ├── app │ ├── common │ │ └── myEvent.lua │ └── kwik ├── components │ ├── bookstore │ ├── common │ │ ├── bookstoreNavigation.lua │ │ ├── index.lua │ │ ├── keyboardNavigation.lua │ │ ├── myComponent.lua │ │ └── thumbnailNavigation.lua │ ├── editor │ └── kwik ├── config.lua ├── controller ├── en.lproj ├── extlib ├── lib ├── mySplashScreen.png └── main.lua</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/dev/design/project_model/index.xml" rel="self" type="application/rss+xml"/><item><title>Photoshop File</title><link>https://kwiksher.github.io/kwik5docs/dev/design/project_model/photoshop/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/design/project_model/photoshop/index.html</guid><description>Photoshop File https://www.ios-resolution.com/
+iPhone 13 Pro Max	1284x2778
+iPad Pro 2048 x 2732
+iPhone X 1125 x 2436
+iPhone 11 Pro 1242 x 2688
+https://forums.solar2d.com/t/iphone-11-pro-max-screen-shots-in-simulator/151266/11
+Kwik4 Ulitimate Config
+1280 x 1920
+https://kwiksher.com/doc/getting_startted/guidelines/blend_mode/
+https://kwiksher.com/doc/getting_startted/guidelines/screenshot/
+background
+1440 x 2280
+iPhone X 1440 × 2772
+https://forums.solar2d.com/t/how-to-define-application-working-area-on-the-screen/351066/11
+https://forums.solar2d.com/t/safe-area-on-iphone-x-and-11-problem/353608
+https://github.com/SpyricGames/Solar2D-Plugins-Public
+note
+https://www.photoshopessentials.com/basics/pixels-image-size-resolution-photoshop/
+resolution only affects the size of the printed version of the image. It has no effect at all when viewing the image on screen.</description></item><item><title>Icons Launch/Splash screens</title><link>https://kwiksher.github.io/kwik5docs/dev/design/project_model/icons/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/design/project_model/icons/index.html</guid><description>https://forums.solar2d.com/t/new-icon-size-for-ios/354492
+114x114 iOS loads Apple’s launch images of LaunchScreen.storyboardc made by Xcode. You can create it with Xcode.
+On Android:
+Start App Show the default splash screen App’s first screen shows. On iOS:
+Start App Show Apple’s launch images Show the default splash screen App’s first screen shows. Kwik4 https://kwiksher.com/doc/kwik_toolset/project_and_pages/project_properties/publish/
+Copy these png files to ./build folders ?
+iOS
+https://docs.coronalabs.com/guide/distribution/buildSettings/index.html#custom-app-icons
+├── Images.xcassets ├── AppIcon.appiconset │ ├── Contents.json │ ├── Icon-1024.png │ ├── Icon-120.png │ ├── Icon-152.png │ ├── Icon-167.png │ ├── Icon-180.png │ ├── Icon-40.png │ ├── Icon-58.png │ ├── Icon-76.png │ ├── Icon-80.png │ └── Icon-87.png └── Contents.json ├── launchimage-master ├── Launch.png ├── Launch@2x.png ├── Launch@3x.png ├── LaunchImage ├── LaunchImage.xcodeproj └── README.md Android</description></item><item><title>Content X Structure</title><link>https://kwiksher.github.io/kwik5docs/dev/design/project_model/content/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/design/project_model/content/index.html</guid><description>Content X Structure test/base-proj/Solar2D/editor.template
+obsolete develop/UXP/kwik-exporter/plugin/kwik/base-proj/Solar2D/editor.template
+. ├── assets │ ├── audios │ │ ├── long │ │ ├── short │ │ └── sync │ │ ├── en │ │ ├── jp │ ├── fonts │ ├── images │ │ └── pageX │ ├── model.json │ ├── particles │ ├── sprites │ ├── thumbnails │ ├── videos │ └── www ├── build.settings ├── commands │ └── pageX ├── components │ └── pageX │ ├── audios │ ├── layers │ │ ├── layer_image.lua │ ├── groups │ ├── page │ │ └── controllers │ ├── timers │ ├── variables │ └──index.lua ├── config.lua ├── mediators ├── models example bookFree/page1</description></item><item><title>Assets</title><link>https://kwiksher.github.io/kwik5docs/dev/design/project_model/assets/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/design/project_model/assets/index.html</guid><description>Assets audios
+long
+short
+sync
+en jp http://kwiksher.com/doc/kwik_toolset/layers_and_replacements/sync_audio_and_text/#working-with-audacity
+(fonts)
+(images)
+(pageX) particles
+https://forums.solar2d.com/t/roaming-gamer-particle-editor-2-now-free/342432
+http://www.effecthub.com/
+sprites
+(thumbnails)
+videos
+www
+TBI
+SVG, WEBP and QOI
+https://forums.solar2d.com/t/graphics-extensions-for-solar2d/354890
+https://github.com/ANSH3LL/Graphics-Extensions-for-Solar2D
+Webp
+https://developers.google.com/speed/webp https://www.profuture.co.jp/mk/column/40040 QOI
+https://qoiformat.org/
+https://qiita.com/yuji_yasuhara/items/98973742caafc82c2696
+TODO: resvg for macOS/iOS
+https://github.com/phoboslab/qoi https://github.com/RazrFalcon/resvg https://github.com/yisibl/resvg-js https://github.com/nothings/stb/blob/master/stb_image.h https://github.com/webmproject/libwebp physics
+Physics editor
+https://www.codeandweb.com/physicseditor
+collision editor in tile map editor
+https://doc.mapeditor.org/en/stable/manual/editing-tilesets/#tile-collision-editor
+joints?
+https://github.com/labolado/Labo-2D-Game-Level-Editor-For-Solar2D/tree/master
+path animation
+normal map
+Kwik4 how to use a normal map for dynamic lighting effect
+Spirte Illuminator to create a normal map https://www.codeandweb.com/spriteilluminator</description></item><item><title>Commands</title><link>https://kwiksher.github.io/kwik5docs/dev/design/project_model/commands/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/design/project_model/commands/index.html</guid><description>Commands editor.action.model M.commands = { action = { play = {_trigger = ""}, playAll = {actions = {}, random = true}, }, animation = { pause = {_target = ""}, resume = {_target = ""}, play = {_target = ""}, playAll = { animations = {}} }, audio = { record = { duration = 0, mmFile = "", malfa = "", audiotype = "" }, muteUnmute = { _target = {} }, play = { _target = "", type = "", channel = "", repeatable = "", delay = "", loop = "", fade = "", volume = "", tm = "", -- timer id _trigger = "", }, rewind = { _target = "", type = "", channel = "", repeatable = "", }, ... template/commands/pageX/actionX.lua local ActionCommand = {} local AC = require("commands.kwik.actionCommand") --- function ActionCommand:new() local command = {} -- function command:execute(params) local UI = params.UI local sceneGroup = UI.scene.view local layers = UI.layers local obj = params.obj {{#actions}} {{#animation}} -- -- target layer :sceneGroup[layerName] -- target animation : layer.animations[index] -- {{#pause}} AC.Animation:pause("{{target}}") {{/pause}} {{#resume}} AC.Animation:resume("{{target}}") {{/resume}} {{#play}} AC.Animation:play("{{target}}", {{index}}) {{/play}} {{/animation}} {{#button}} {{#onOff}} AC.Button:onOff("{{target}}", {{enable}}, {{toggle}} ) -- enable, toggle {{/onOff}} {{/button}} {{/actions}} end return setmetatable( command, {__index=AC}) end commands.kwik.actionCommand animationAction.lua</description></item><item><title>Components</title><link>https://kwiksher.github.io/kwik5docs/dev/design/project_model/components/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/design/project_model/components/index.html</guid><description>Components template.components.pageX.index
+local sceneName = ... -- local scene = require('controller.scene').new(sceneName, { name = "{{name}}", components = { layers = { {{#layers}} {{>recursive}} {{/layers}} }, audios = { {{#audios}} long={ {{#long}} "{{.}}", {{/long}} }, short={ {{#short}}"{{.}}", {{/short}} } {{/audios}} }, groups = { {{#groups}} "{{.}}", {{/groups}} }, timers = { {{#timers}} "{{.}}", {{/timers}} }, variables = { {{#variables}} "{{.}}", {{/variables}} }, page = { {{#page}}"{{.}}", {{/page}} } }, commands = { {{#events}} "{{.}}", {{/events}} }, onInit = function(scene) print("onInit") end }) -- return scene editor.util
+please notice saveLua func uses model.components
+function M.renderIndex(book, page, model) local dst = "App/"..book.."/"..page .."/components/index.lua" local tmplt = "editor.template/components/pageX/index.lua" ... ... M.saveLua(tmplt, dst, {name = model.name, events = model.commands, layers = model.components.layers, audios = model.components.audios, timers = model.components.timers, groups = model.components.groups, variables = model.components.variables, page = model.components.page, }, partial) return dst end bookFree.timer.index
+local sceneName = ... -- local scene = require('controller.scene').new(sceneName, { name = "timer", components = { layers = { { bg={} }, }, audios = {}, groups = {}, timers = {"timerOne", "timerTwo"}, variables = {"varOne", "varTwo"}, page = {} }, commands = { "timerAction", "variableAction", }, onInit = function(scene) print("onInit") end }) -- return scene example bookFree/timer</description></item><item><title>Settings</title><link>https://kwiksher.github.io/kwik5docs/dev/design/project_model/settings/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/design/project_model/settings/index.html</guid><description>Settings https://docs.coronalabs.com/guide/distribution/buildSettings/index.html
+https://docs.coronalabs.com/guide/distribution/advancedSettings/index.html
+When orientation supports both of landscape and portrait, the main content area (a display group) should be translated to the center of screen.
+each layers generated from Photoshop has fixed number of coordiate (x, y), for instance the center position of landscape 1920x1080 is at (1920/2, 1080/2) in landscape. If the actual device is rotated to portrait, the center position is (1080/2, 1920/2), for screen rotation event is detected, let’s move each layer by (1920/2 - 1080/2, 1080/2- 1920/2)</description></item><item><title>Template strurcture</title><link>https://kwiksher.github.io/kwik5docs/dev/design/project_model/template/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/design/project_model/template/index.html</guid><description>template structure ├── App ├── contentX ├── assets │ ├── audios │ │ ├── short │ │ ├── long │ │ └── sync │ ├── images │ └── model.json ├── commands │ └── pageX ├── components │ ├── pageX │ │ ├── audios │ │── layers │ │ ├── animations │ │ ├── images │ │ ├── interactions │ │ ├── physics │ │ └── replacements │ ├── groups │ ├── page │ ├── timers │ ├── variables │ └── index.lua │ ├── defaults │ ├── audio_properties.xml │ ├── layer_properties.xml │ ├── linear_anim_properties.xml │ └── spritesheet_properties.xml ├── models ├── assets │ ├── audios │ │ ├── short │ │ ├── long │ │ └── sync │ ├── index.json │ ├── particles │ ├── sprites │ ├── videos │ └── www ├── lproj └── pageX ├── components │ ├── audios │ ├── layers │ ├── groups │ ├── page │ ├── timers │ └── variables ├── commands ├── index.json</description></item><item><title>Template Model</title><link>https://kwiksher.github.io/kwik5docs/dev/design/project_model/template_model/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/design/project_model/template_model/index.html</guid><description>Code Template Model assets/model/schema
+embedded in codes – TBI to be extracted
+external codes - export it to .lua or can be imported directly physics path read2me - timecodes spritesheet info TODO:add ext codes
+extCodes libs p1 user_codes.lua ext_001.lua ext_002.lua commands/ button_name_001.lua action_name_001.lua user_codes.lua p2/ => build4/
+```lua function ActionCommand:new() local command = {} -- function command:execute(params) local UI = params.UI local sceneGroup = UI.scene.view local layer = UI.layer local phase = params.event.phase local event = params.event {{#vvar}} {{vvar}} {{/vvar}} {{#arqCode}} {{arqCode}} {{/arqCode}} end return command end ``` or ext_lib_codes.lua ``` local _K = require "Application" {{#extLib}} local {{name}} = requireKwik("{{libname}}") {{/extLib}} -- {{#TV}} local kInputDevices = require("extlib.tv.kInputDevices") {{/TV}} function _M:localVars(UI) local sceneGroup = UI.scene.view local layer = UI.layer {{#extCodeTop}} {{ccode}} {{arqCode}} {{/extCodeTop}} end ``` model.json</description></item></channel></rss>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Replacement Tools :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/componentview/replacement/index.html</link><description/><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/kwik_editor/componentview/replacement/index.xml" rel="self" type="application/rss+xml"/><item><title>Spritesheet</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/componentview/replacement/spritesheet/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/kwik_editor/componentview/replacement/spritesheet/index.html</guid><description>There are two ways to begin making a sprite.
+select a imagesheet in asset table
+then select a layer by clicing _target property. select a layer for spritesheet replacement, then click spritesheet replacement tool, and select a spritesheet image by clicing _filename property.
+Spitesheet has one of sheetType
+uniform-sized
+a png file. you need to set each width/height of sprite manually in the properties panel.
+texture packer
+the pair if imagesheet png and lua (frames data). You can specify the lua file in sheetInfo property.</description></item></channel></rss>

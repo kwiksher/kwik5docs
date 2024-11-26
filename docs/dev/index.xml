@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dev memo :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/dev/index.html</link><description/><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Design</title><link>https://kwiksher.github.io/kwik5docs/dev/design/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/design/index.html</guid><description>Design Project model
+robotlegs template components commands Tools
+image exporter
+PS/XD UXP
+visual editor (frontEnd)
+Solar2D
+live editor (Maybe) React
+uxp plugin for Ps or XD web app REST server
+pegasus-harness
+pegasus-launcher
+frontEnd app sends REST API requests to harness of pegasus lua server
+this server offers the renderer of .lua for components and commands
+other tools
+generate_scene_index Sample projects
+Image Exporter plugin for Adobe Photoshop
+Project Model
+sample-projects/Pegasus
+test/base-proj/Solar2D/App/bookFree</description></item><item><title>Bookstore</title><link>https://kwiksher.github.io/kwik5docs/dev/bookstore/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/bookstore/index.html</guid><description>Bookstore TODO
+library.psd, dialog.psd, textLabels.psd page_custscene.psd
+restore.psd showOverlay will be used
+library filter
+All/Downloaded/NotPurchased build.settings
+omit editor.template/assets library page portrait
+restore
+download all status recovered (downloaded) book scroll view for library/table page
+UXP
+cp components/bookstore/booktoreX.lua to bookTOC/scenes/library
+add filter in library page
+Can create a storybook like? navigation bar?
+Test versions
+Bookstore app contains the multiple kwik projects(books) inside. The lua files of each book are embedded in the app binary but the assets such as images, audio files of each book are not embedded in the app binary. They are downloadable from a web server. Due to Apple’s regulation, Solar2D does not allow to load the lua files (programming code) via Internet. The lua files must be embedded in the app binary but the other assets can be transfered from http server to the app.</description></item><item><title>Implementation</title><link>https://kwiksher.github.io/kwik5docs/dev/implementation/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/implementation/index.html</guid><description>TODO
+editor/controller/save.lua editor/parts/controller/properties/save.lua implementation Details the following functions in editor.controller.index class are mainly used for CRUD of json/lua files in select, save, delete etc. See editor.controller.save.
+separate controllers for the audio, group, timer and variable components are implemented i.e
+useClassEditorProps setValue render save read select (read) See editor.parts.controller directory. selectXXX lua reads json and displays a UI table. The data is passed by nanostore such as bookStore:set, pageStore:set.
+nanostore is used as an experimental usage</description></item><item><title>Solar2D Linux</title><link>https://kwiksher.github.io/kwik5docs/dev/linux/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/linux/index.html</guid><description>Solar2D Linux raspi4 - debian 12(raspi os/bookworm) gcc-12 clang-14 jetson - ubuntu 20.04 Focal (skip because of gcc-9) raspi5 - ubuntu 22.04 Jammy gcc-11, kernel is build with gcc-12 ubuntu 22.10 kinetic
+https://gitlab.com/freedesktop-sdk/freedesktop-sdk/-/releases
+ubuntu 22.08 (Kinetic): Based on Debian 12 (Bookworm) GNOME 43
+/Users/ymmtny/Documents/work/Solar2DTux/
+platform/linux/Solar2DBuilder/test
+hello
+../linux/bin/Solar2DBuilder build --lua "args_arm.lua" local params = { platform='linux', arch = 'arm', -- armhf, arm64, x86_64, amd64 appName='hello', appVersion='1.0', dstPath='.', projectPath='./HelloWorld', linuxtemplate='../linux/bin/Resources/template_arm.tgz', } return params platform/linux/buildx build.sh
+docker run --rm --name builder -it -v $(pwd):/solar2d -v ¥ $(pwd)/platform/linux/buildx/entrypoint.sh:/entrypoint.sh ¥ --entrypoint /entrypoint.sh ¥ --platform linux/arm64 gcc:12-bookworm entorypoint.sh</description></item></channel></rss>

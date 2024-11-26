@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kwik Editor :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/dev/design/editor/index.html</link><description>Kwik Visual Editor Kwik functions
+Command
+File
+(TBI) Project New
+scafold app/bookX
+Project Open
+Project Recent
+(TBI) Page New
+bookX/index.lua for user to change the order of pages
+local scenes = { "page1", "page2", "page3", "page4", "canvas", "pageTimer", "pageVariable", "page_portrait" } return scenes (TBI) New layer as Shape
+add Icon
+props {rect, circle, text, image}
+local layerProps = { shape = "rect" height = 100, width = 100 , x = 100, y = 100, alpha = 1, blendMode = "normal", name = "myShape", } Shape uses fill to use an optional image file for texture</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/dev/design/editor/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
