@@ -2,7 +2,15 @@
 the images and lua files of a psd are published under App folder
 kwik5 {{anonymous}} {{anonymous}}/Photoshop/{{Book Name}}//*.psd {{anonymous}}/Solar2D {{anonymous}}/Solar2D/App/{{Book Name}}/assets/images {{anonymous}}/Solar2D/App/{{Book Name}}/components/{{Page}} Exporter in Photoshop Photsohop Files > Open button
 kwik5 Please choose a folder that has the psf files with Open button Solar2D Project > Select Book
-kwik5 Please choose a folder with Select Book button where to publish images of a PSD in Solar2D project Publish</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/introduction/index.xml" rel="self" type="application/rss+xml"/><item><title>Updates from Kwik4 to Kwik5</title><link>https://kwiksher.github.io/kwik5docs/introduction/updated_features/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/introduction/updated_features/index.html</guid><description>What are udated from Kwik4 to Kwik5?
+kwik5 Please choose a folder with Select Book button where to publish images of a PSD in Solar2D project Publish</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/introduction/index.xml" rel="self" type="application/rss+xml"/><item><title>Structure Breakdown</title><link>https://kwiksher.github.io/kwik5docs/introduction/structure/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/introduction/structure/index.html</guid><description>Photoshop layer normal
+book1/ page1.psd layer1 layer1_1 layer1_2 layer2 page2.psd one .psd makes a omposer.scene of Solar2D
+lang code
+book1/ page1.psd layer1 en jp sp layer2 layer is displayed according to language choise of user.
+Solar2D display.newGroup is available for layer management
+group layer1 layer2 Layer image is replaced with the following media
+imagesheet(spritesheet) video particles web map Layer can be configured with
+button animation physics Other Solar2D components
+audio short (event) long (stream) sync (audio and text) timer imported See the detain in [get_started/import_component/]</description></item><item><title>Updates from Kwik4 to Kwik5</title><link>https://kwiksher.github.io/kwik5docs/introduction/updated_features/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/introduction/updated_features/index.html</guid><description>What are udated from Kwik4 to Kwik5?
 Kwik Project File location
 the images and lua files of a psd are published under App folder
 kwik4 kwik5 ~/Documents/Kwik/{{Project Name}} {{anonymous}} ~/Documents/Kwik/{{Project Name}}/*.psd {{anonymous}}/Photoshop/{{Book Name}}//*.psd ~/Documents/Kwik/{{Project Name}}/build4 {{anonymous}}/Solar2D ~/Documents/Kwik/{{Project Name}}/build4/assets/images {{anonymous}}/Solar2D/App/{{Book Name}}/assets/images ~/Documents/Kwik/{{Project Name}}/build4/components/{{Page}} {{anonymous}}/Solar2D/App/{{Book Name}}/components/{{Page}} Exporter in Photoshop Photsohop Files > Open button
