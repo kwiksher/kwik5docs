@@ -24,4 +24,11 @@ vscode://file/{full path to file} extensions the following extensions helps your
 Solar2D Autocomplete
 Solar2d Companion for Visual Studio Code
 Solar2D hex to normalized color
-color = #fff -- becomes color = { 1.00, 1.00, 1.00 } color = #f8af -- becomes color = { 1.00, 0.53, 0.67, 1.00 } color = #ff80a040 -- becomes color = { 1.00, 0.50, 0.63, 0.25 Local Lua Debugger</description></item><item><title>Audacity</title><link>https://kwiksher.github.io/kwik5docs/get_started/tools/audacity/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/tools/audacity/index.html</guid><description>https://manual.audacityteam.org/man/label_tracks.html</description></item></channel></rss>
+color = #fff -- becomes color = { 1.00, 1.00, 1.00 } color = #f8af -- becomes color = { 1.00, 0.53, 0.67, 1.00 } color = #ff80a040 -- becomes color = { 1.00, 0.50, 0.63, 0.25 Local Lua Debugger</description></item><item><title>Audacity</title><link>https://kwiksher.github.io/kwik5docs/get_started/tools/audacity/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/tools/audacity/index.html</guid><description>https://manual.audacityteam.org/man/label_tracks.html
+Audacity To create the timecode file, use Lavel function in Audacity. You can download Audacity from here https://sourceforge.net/projects/audacity/
+Open an audio file
+Drag the time with mouse to select the wave area.
+Tracks > Add lable at selection (Command + B on Mac, Ctr+B on Win)
+File > Export
+File > Export Lable
+Using the mouse, select part of the wave (this is a manual step and may be repetitive until you correctly select the word you want) for the first word</description></item></channel></rss>

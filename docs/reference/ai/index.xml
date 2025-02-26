@@ -29,7 +29,11 @@ Video RunwayML Gen2 ⭐️
 https://generativeai.pub/gen-1-an-amazing-new-generative-ai-video-technology-bb776f5fe8cc https://thebridge.jp/2023/06/runway-triples-valuation-in-150-days https://techcrunch.com/2023/06/09/runways-gen-2-shows-the-limitations-of-todays-text-to-video-tech/ Stable Diffusion https://chmod774.com/draw-things-stable-diffusion/</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/reference/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Audio</title><link>https://kwiksher.github.io/kwik5docs/reference/ai/audio/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/reference/ai/audio/index.html</guid><description>how to get an audio file
 long short sync audio timecode with text How to Convert Text to Speech in Python
 gTTS pyttsx3 openai Huggingface Transformers tts
-https://elevenlabs.io/text-to-speech https://ttsmaker.com/#google_vignette https://ttsmp3.com/ online
+https://elevenlabs.io/text-to-speech
+https://ttsmaker.com/#google_vignette
+私の 父さん は すてき => ttsmaker-file-2025-2-26-10-52-48.mp3 mv TTS/ttsmaker-file-2025-2-26-10-52-48.mp3 Solar2D/kwik-editor-proj/Solar2D/App/lingualSample/assets/audios/sync/ja/my_father_is_nice.mp3
+https://ttsmp3.com/
+online
 elevnlabs offline
 espeak ng
 https://www.rcnp.osaka-u.ac.jp/~kohda/linux/espeak.html

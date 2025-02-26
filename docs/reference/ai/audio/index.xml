@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Audio :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/reference/ai/audio/index.html</link><description>how to get an audio file
 long short sync audio timecode with text How to Convert Text to Speech in Python
 gTTS pyttsx3 openai Huggingface Transformers tts
-https://elevenlabs.io/text-to-speech https://ttsmaker.com/#google_vignette https://ttsmp3.com/ online
+https://elevenlabs.io/text-to-speech
+https://ttsmaker.com/#google_vignette
+私の 父さん は すてき => ttsmaker-file-2025-2-26-10-52-48.mp3 mv TTS/ttsmaker-file-2025-2-26-10-52-48.mp3 Solar2D/kwik-editor-proj/Solar2D/App/lingualSample/assets/audios/sync/ja/my_father_is_nice.mp3
+https://ttsmp3.com/
+online
 elevnlabs offline
 espeak ng
 https://www.rcnp.osaka-u.ac.jp/~kohda/linux/espeak.html
@@ -31,4 +35,9 @@ Specially if you are working with large messages (which was our case). A good al
 [WebSockets library written in C] (https://github.com/vrtql/websockets)</description></item><item><title>eSpeak NG</title><link>https://kwiksher.github.io/kwik5docs/reference/ai/audio/espeak-ng/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/reference/ai/audio/espeak-ng/index.html</guid><description>eSpeak NG create timecodes from fountain script
 lib/timecodes.lua editor/tests/suite_lingual_page2.lua create a wav and convert with fmpeg to mp3
 develop/Misc/espeak_ng suite_lingual_page2.lua test_timecodes foutnain text
-NEO Wait. Who was it? Who was the man? She leans close, her lips almost touching his ear as she whispers. TRINITY You know who. She turns and he watches her melt into the shifting wall of bodies. A SOUND RISES steadily, growing out of the music, pressing in on Neo until it is all he can hear as we -- CUT TO: INT. NEO'S APARTMENT The sound is an ALARM CLOCK, slowly dragging Neo to consciousness. He strains to read the clock face: 9:15 A.M. NEO Shitshitshit. ttimecodes by characters</description></item></channel></rss>
+NEO Wait. Who was it? Who was the man? She leans close, her lips almost touching his ear as she whispers. TRINITY You know who. She turns and he watches her melt into the shifting wall of bodies. A SOUND RISES steadily, growing out of the music, pressing in on Neo until it is all he can hear as we -- CUT TO: INT. NEO'S APARTMENT The sound is an ALARM CLOCK, slowly dragging Neo to consciousness. He strains to read the clock face: 9:15 A.M. NEO Shitshitshit. ttimecodes by characters</description></item><item><title>Open JTalk</title><link>https://kwiksher.github.io/kwik5docs/reference/ai/audio/openj_talk/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/reference/ai/audio/openj_talk/index.html</guid><description>To convert the text in the array into Japanese and use Open JTalk to create MP3 files for each entry, follow these steps:
+Install
+Ubuntu/Devian (WSL2)
+sudo apt update sudo apt install open-jtalk open-jtalk-mecab-naist-jdic hts-voice-nitech-jp-atr503-m001 Mac
+brew install open-jtalk 1. Translate the Text into Japanese Here’s the translated text in Japanese:
+text_with_timestamps = [ (0, 1.6, "待って。誰だった？"), (2.6, 4.2, "その男は誰？"), (5.2, 9.6, "彼女は身を乗り出し、唇がほとんど彼の耳に触れるほど近づいて囁く。"), (10.6, 11, "囁く。"), (41.8, 42.2, "しまったしまったしまった。") ] 2. Install Open JTalk If you haven’t already installed Open JTalk, follow these steps:</description></item></channel></rss>
