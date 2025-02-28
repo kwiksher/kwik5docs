@@ -12,8 +12,27 @@ New Project Open canvas.psd file. The psd size is for 1024x768 so let’s create
 It is a good practice to click Publish button after you loaded a PSD file into Kwik to make sure every layer name is valid and then you turn it of exporting image. Now you can work to create animations, interactions etc</description></item><item><title>Keyboard</title><link>https://kwiksher.github.io/kwik5docs/tutorial/keyboard/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/keyboard/index.html</guid><description>Keyboard The demo file in this tutorial was created by Leonardo Amora, owner of http://www.amoraleite.com You can download the source files here. Updated for Kwik5
 TODO zip https://www.kwiksher.com/tutorials/Kwik5/Keyboard.zip User clicks the button 1, 2 or 3 to match the number at Tip: 33133211 and You Won!! is displayed
 you can extend it, as adding 4, 5, 6,,,0 or alphabets characters to make it a full software keyboard!
-The psd size is updated for 1920x1080. See page1.pst in Photoshop/Keyboar folder.</description></item><item><title>Scroll Images And Text</title><link>https://kwiksher.github.io/kwik5docs/tutorial/scroll_images_and_text/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/scroll_images_and_text/index.html</guid><description>Learn how to use features: Scroll and Text replacements. You can find a sample page in interaction > scroll page
+The psd size is updated for 1920x1080. See page1.pst in Photoshop/Keyboar folder.</description></item><item><title>Multi-lingual sample</title><link>https://kwiksher.github.io/kwik5docs/tutorial/lingualsample/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/lingualsample/index.html</guid><description>Fix to retrive font name to kwik editor’s textProps Page2 Photoshop Before using multi-Language feature in kwik editor, it is necessary for kwik exporter in Photoshop publishes images for each langauge.
+create a layer group, and create layers nameed with languiage codes select a layer group and use kwik exporter: Layer Groups > Unmerge For example, lingualSample/page2.psd has four layer groups:father, flyOver, fly and which. All of them have “en”, “jp”, “sp” and “pt” layer</description></item><item><title>Snowman sample</title><link>https://kwiksher.github.io/kwik5docs/tutorial/snowman/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/snowman/index.html</guid><description>page2 shared asset for tree layers background as jpeg group animation path anim In Snowman sample, you will learn the following common techniques of Kwik
+You can download the tutorial file from
+https://www.kwiksher.com/tutorials/Kwik4/SnowMan.zip this .psd is 768 x 1024 of Kwik4, so it should be enlarged 1920x1280, you may use Kwik ATN.
+these are main layers
+page1 snowman house tree text start Snowman animation Try the followin settings with Shake</description></item><item><title>Scroll Images And Text</title><link>https://kwiksher.github.io/kwik5docs/tutorial/scroll_images_and_text/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/scroll_images_and_text/index.html</guid><description>Learn how to use features: Scroll and Text replacements. You can find a sample page in interaction > scroll page
 Scroll Images Create a group
 Create a new group in the editor. rect1, rect2 and rect3 into a new group. Select the three rectangles in the layer table, then click create group from project and pages
 Save it. The name is “group0” (defalut name automatically assigned)
-name: group0 Create a scroll widget</description></item></channel></rss>
+name: group0 Create a scroll widget</description></item><item><title>Samples</title><link>https://kwiksher.github.io/kwik5docs/tutorial/samples/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/samples/index.html</guid><description>TODO Page:audio, group, … TODO copy&amp;pate page/component/action Total: 93 scenes across all categories.
+Animation (9)
+blink, bounce, filter, linear, path, pulse, rotation, switch, tremble
+Book (3)
+landscape, portrait, shape
+Interaction (10)
+button, canvas, drag, parallax, pinch, scroll_text, scroll_image, shake, spin, swipe
+Keyboard (1)
+page1
+KwikTheCat (7)
+page1, page2, page3, page4, page5, page6, page12
+LingualSample (4)
+page1, page2, page3, page4
+Page (7)
+addCode, audio, group, lang, properties, timer, variable</description></item></channel></rss>

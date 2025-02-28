@@ -1,0 +1,8 @@
+.popup-image {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.popup-image:hover {
+  transform: scale(1.05);
+}
