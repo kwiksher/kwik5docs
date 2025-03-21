@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Page View :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/page/index.html</link><description>book table project folder > Solar2D > App Solar2D/main.lua is loaded with editing true, it will show book/page tables.
+You can add book foldes to be ignored in App/bookstore.lua
+local M = { bookignored = {"book1", "mybook", "kwikTheCat"} } icons Page lock you can click lock icon on the top of page table. When the simulator is reloaded, it will navigate to the locked page for editing.
+not locked
+locked
+Setting Actually this is a book setting. Name and Orientation are viewed.</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/kwik_editor/page/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

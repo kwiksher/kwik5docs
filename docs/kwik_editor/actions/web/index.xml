@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/web/index.html</link><description>Web
+Go to URL</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/kwik_editor/actions/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Go To URL</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/web/go_to_url/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/web/go_to_url/index.html</guid><description>Go To URL
+opens the URL as webpopup
+Go to: enter the full url for example http://www.kwiksher.com</description></item></channel></rss>

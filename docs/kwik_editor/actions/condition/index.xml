@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Conditions :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/condition/index.html</link><description>Conditions
+IF Else End IF</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/kwik_editor/actions/condition/index.xml" rel="self" type="application/rss+xml"/><item><title>If</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/condition/if/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/condition/if/index.html</guid><description>If
+creates the first step of a condition. For the condition, you can use a pre-made variable or an expression.
+Parameters are:
+Variable: lists all variables (you must use a variable or an expression);
+Expression: formula/code that needs to be compared (you must use a variable or an expression);
+Operator: lists all available operators for the condition;
+Comparison: formula/code that to be compared against the variable/expression above;
+(optional) Enable second condition: if checked, the second condition below will be checked also;</description></item><item><title>Else</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/condition/else/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/condition/else/index.html</guid><description>Else
+creates an optional second step of a condition. Like the IF, you can use a pre-made variable or an expression.
+Parameters are:
+Simple/Advanced: a simple Else sets the comparison to “if the condition above is ok: do A, ELSE: do B”. An advanced Else reads this way: “if the condition above is ok: do A, ELSE if the condition below is correct: do B”;
+Variable: lists all variables (you must use a variable or an expression);</description></item><item><title>End If</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/condition/end_if/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/condition/end_if/index.html</guid><description>End If
+ends the condition (last step)</description></item></channel></rss>

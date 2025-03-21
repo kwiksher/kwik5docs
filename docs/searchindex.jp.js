@@ -45,7 +45,7 @@ var relearn_searchindex = [
     "description": "properties inifinty orientation layerAsBg rendering as jpeg alignment blendMdde language addCode Properties The following properties can be set for each layer: M.properties = { {{#properties}} blendMode = \"{{blendMode}}\", height = {{height}}, width = {{width}} , kind = \"{{kind}}\", name = \"{{name}}\", type = \"{{type}}\", x = {{x}}, y = {{y}}, alpha = {{alpha}}, -- align = \"{{align}}\", randXStart = {{randXStart}}, randXEnd = {{randXEnd}}, randYStart = {{randYStart}}, randYEnd = {{randYEnd}}, --, xScale = {{xScale}}, yScale = {{yScale}}, rotation = {{rotation}}, --, --- {{/properties}} } mX, mY: coordinate in the simulator, (x,y) is coordinate from photoshop layer properties Language Before using multi-Language feature in kwik editor, it is necessary for kwik exporter in Photoshop publishes images for each langauge.",
     "tags": [],
     "title": "Layer Properties",
-    "uri": "/kwik5docs/kwik_editor/componentview/layer/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/layer/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D",
@@ -53,7 +53,7 @@ var relearn_searchindex = [
     "description": "book table project folder \u003e Solar2D \u003e App Solar2D/main.lua is loaded with editing true, it will show book/page tables.\nYou can add book foldes to be ignored in App/bookstore.lua\nlocal M = { bookignored = {\"book1\", \"mybook\", \"kwikTheCat\"} } icons Page lock you can click lock icon on the top of page table. When the simulator is reloaded, it will navigate to the locked page for editing.\nnot locked\nlocked\nSetting Actually this is a book setting. Name and Orientation are viewed.",
     "tags": [],
     "title": "Page View",
-    "uri": "/kwik5docs/kwik_editor/pageview/index.html"
+    "uri": "/kwik5docs/kwik_editor/page/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Implementation \u003e REST API",
@@ -77,12 +77,12 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Component View",
-    "uri": "/kwik5docs/kwik_editor/componentview/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/index.html"
   },
   {
     "breadcrumb": "About Kwik",
-    "content": "System requirements Adobe Photoshop\nhttps://www.adobe.com/products/photoshop.html\n(optional)UXP Developer Tool\nProducts \u003e UXP for Adobe Photoshop \u003e Plugins \u003e Quickstart Guide \u003e Developer Tool \u003e Installation\nSolar2D\nGetting Started\nInstalling Solar2D — macOS Installing Solar2D — Windows Building \u0026 Distribution explains the following platform’s dependencies\nApple iOS macOS AppleTV Android KindleFire Win32 Visual Studio Code\nhttps://code.visualstudio.com/download\nthere is a command in Kwik editor to open a .lua file for editing in vscode. So please use Visual Studo Code for editing a Solar2D project\nKwik Tools Kwik expoter extension in Photoshop\nSolar2D Simulator with Kwik Editor\ngraph TB subgraph Solar2D subgraph App src[[soruce \u003cbr\u003e Lua files]] subgraph Assets media[(media \u003cbr\u003e .mp3 .wav \u003cbr\u003e .mp4 .mov )] images end end subgraph KwikEditor anim(animation tool) button(button tool) audio(audio tool) video(video tool) etc( phsics, timer, var ..) end end subgraph Photoshop PSD[[PSF files]] Kwik((extension \u003cbr\u003eKwik Expoter)) end PSD -.-\u003e Kwik Kwik -.-\u003e images Kwik -.-\u003e src kwik5_project_yyyymmdd.zip\nname description path note kwik exporter photoshop extension UXP/com.kwiksher.kwik5.exporter-ps_PS.ccx double click .ccx to install the extension to Photsohop Photoshop folder photoshop files should be in a folder Photoshop/book/landscape.psd\nPhotsohop/book/portrait.psd you can open .psd files by kwik epporter extension panel Solar2D project solar2d project for kwik framework Solar2D open main.lua in Solar2D folder with Solar2D Simulator Folder structure in kwik5_project_yyyymmdd.zip\nDownloadables where to check the version number? Kwik5 Tool Release kwik5_project_yyyymmdd.zip\nTODO https://github.com/kwiksher/kwik5tmplt/releases/kwik5_project_yyyymmdd.zip extract .zip and you find the following files/folders for kwik project\nBookServer Photoshop book landscape.psd portrait.psd icon desktop icon_splash_launch-assets icon_splash_launch.psd Solar2D App/book editor main.lua ... UXP com.kwiksher.kwik5.exporter-ps_PS.ccx Photoshop/book\nportrait.psd and landscape.psd in Photoshop/book are explain in Get Started \u003e PSD Screen Size Orientation\nPhotsohop/icon\nthis folder contains a sample psd and files for creating icons for application of iOS, Android, macOS, Win32. See Get Started \u003e App Icon Launch/Splash image\nSolar2D project\nUXP/com.kwiksher.kwik5.exporter-ps_PS.ccx\nhow to update the tool Solar2D project with the editor enabled will automatically donwload and install the latest templates and the framework files.\nWhen com.kwiksher.kwik5.exporter-ps_PS.ccx is updated, a message appears for you to install the the .ccx file to Photoshop. Double click the .ccx\nTODO .ccx to be downloaded from Release instead of exporter_20241111-2115.zip Kwik5 Tool Dev dev release contains unit testing sample books/pages\nhttps://github.com/kwiksher/kwik5tmplt/archive/refs/heads/develop.zip\nPlease extract the zip to a folder, and run Solar2D/main.lua to see the samples in kwik editor\nTODO updated Photoshop files to include unit testing .psd files ├── BookServer ├── Photoshop | ├── icon | ├── keyboard | ├── kwikTheCat │ └── lingualSample │ ├── Solar2D │ ├── App | | ├── animation | | ├── asset | | ├── interaction | | ├── ... │ │ └── shape │ ├── assets │ ... │ └──UXP/kwik-exporter/main.js etc Tutorial covers how each sample is made with kwik exporter \u0026 editor\nPhotoshop/*.psd files and published lua files in App/keyboard, kwikTheCat, lingualSample are updated with git push by kwiksher\nAt the time of git pushing, Solar2D folder has been updated locally by Solar2D/installer module, so the latest modules of kwik5 are included.\nUXP/kwik-exporter raw files are also included in the zip. You can use UXP developer tool to load it. If you don’t like to use UXP Developer Tool, use com.kwiksher.kwik5.exporter-ps_PS.ccx in the zip file of Kwik5 Tool Release.\nGithub for developers if you want to clone github repo\nhttps://github.com/kwiksher/kwik5tmplt\nwhen .ccx is built, UXP/kwik-exporter/kwik/base-proj should be aliased to Solar2D/ folder. Then you can load the exporter with UXP Developer Tool.\ncopy_photoshop.command and copy_solar2d.command. It will copy Photoshop and Soalr2D folder to kwik/base-proj\nBookServer Photoshop Solar2D main.lua UXP kwik-exporter manifest.json kwik/base-proj \u003c=== created by .command copy_photoshop.command copy_solar2d.command When you launch, Solar2D/main.lua in the simulator,\nthe installer module inside fetches/updates the files from github/kwiksher/kwik5tmplt\nframework_20240904-1529.zip editor_20240724-2246.zip template_20241109-2228.zip kwik-exporter_yyyymmdd-hhmm.zip kwik-xeus_yyymmdd-hhmm.zip kwik samples in Photoshop and Solar2D/App folders are not updated by the instaler module. Download them from kwik5tmplt repository manually or pull the latest https://github.com/kwiksher/kwik5tmplt\nyou may disable auto-update in the editor by commeting in main.lua\nrequire(\"components.common.myComponent\") system.setTapDelay( 0.2 ) -- -- require(\"installer.index\").init() -- A project folder you may rename “book” in Photshop and Solar2D/App folder to an appropriate one such “game”, “myBook” etc.. and put your psd files into it.\n├── BookServer ├── Photoshop │ └── book │ ├── landscape.psd │ └── portrait.psd ├── Solar2D │ ├── App │ │ └── book \u003c==== the published images/lua files are inside this folder │ ├── assets │ ├── commands │ ├── controller │ ├── components │ ├── editor │ ├── en.lproj │ ├── extlib │ ├── installer │ ├── Images.xcassets │ ├── LaunchScreen.storyboardc │ ├── jp.lproj │ ├── plugin │ ├── template │ ├── test │ ├── server │ ├── build.settings │ ├── config.lua │ ├── Icon-osx.icns │ ├── Icon-win32.ico │ ├── LaunchScreen.storyboardc │ ├── main.lua │ ├── main.lua.debug │ └── mySplashScreen.png │ └── UXP ├── kwik-exporter │ ├── icons │ ├── main.js │ ├── main.js.LICENSE.txt │ └── manifest.json └── com.kwiksher.kwik5.exporter-ps_PS.ccx bookstore.lua\nyou can specify folder names of book to be ignored in bookstore.lua\nthe following book folders exist in kwik5tmplt repository.\nlocal M = { bookignored = {\"animation\", \"asset\", \"interaction\", \"keyboard\", \"lingualSample\", \"mybook\", \"page\", \"physics\", \"replacement\", \"shape\", } }",
-    "description": "System requirements Adobe Photoshop\nhttps://www.adobe.com/products/photoshop.html\n(optional)UXP Developer Tool\nProducts \u003e UXP for Adobe Photoshop \u003e Plugins \u003e Quickstart Guide \u003e Developer Tool \u003e Installation\nSolar2D\nGetting Started\nInstalling Solar2D — macOS Installing Solar2D — Windows Building \u0026 Distribution explains the following platform’s dependencies\nApple iOS macOS AppleTV Android KindleFire Win32 Visual Studio Code\nhttps://code.visualstudio.com/download\nthere is a command in Kwik editor to open a .lua file for editing in vscode. So please use Visual Studo Code for editing a Solar2D project",
+    "content": "kwik plugin update TODO .ccx to be downloaded from Release instead of exporter_20241111-2115.zip where to check the version number? TODO https://github.com/kwiksher/kwik5tmplt/releases/kwik5_project_yyyymmdd.zip System requirements Adobe Photoshop\nhttps://www.adobe.com/products/photoshop.html\n(optional)UXP Developer Tool\nProducts \u003e UXP for Adobe Photoshop \u003e Plugins \u003e Quickstart Guide \u003e Developer Tool \u003e Installation\nSolar2D\nGetting Started\nInstalling Solar2D — macOS Installing Solar2D — Windows Building \u0026 Distribution explains the following platform’s dependencies\nApple iOS macOS AppleTV Android KindleFire Win32 Visual Studio Code\nhttps://code.visualstudio.com/download\nthere is a command in Kwik editor to open a .lua file for editing in vscode. So please use Visual Studo Code for editing a Solar2D project\nKwik Tools Kwik expoter extension in Photoshop\nSolar2D Simulator with Kwik Editor\ngraph TB subgraph Solar2D subgraph App src[[soruce \u003cbr\u003e Lua files]] subgraph Assets media[(media \u003cbr\u003e .mp3 .wav \u003cbr\u003e .mp4 .mov )] images end end subgraph KwikEditor anim(animation tool) button(button tool) audio(audio tool) video(video tool) etc( phsics, timer, var ..) end end subgraph Photoshop PSD[[PSF files]] Kwik((extension \u003cbr\u003eKwik Expoter)) end PSD -.-\u003e Kwik Kwik -.-\u003e images Kwik -.-\u003e src kwik5_project_yyyymmdd.zip\nname description path note kwik exporter photoshop extension UXP/com.kwiksher.kwik5.exporter-ps_PS.ccx double click .ccx to install the extension to Photsohop Photoshop folder photoshop files should be in a folder Photoshop/book/landscape.psd\nPhotsohop/book/portrait.psd you can open .psd files by kwik epporter extension panel Solar2D project solar2d project for kwik framework Solar2D open main.lua in Solar2D folder with Solar2D Simulator Folder structure in kwik5_project_yyyymmdd.zip\nDownloadables https://github.com/kwiksher/kwik5tmplt/releases/kwik5_project_yyyymmdd.zip\nKwik5 Tool Release kwik5_project_yyyymmdd.zip\nextract .zip and you find the following files/folders for kwik project\nBookServer Photoshop book landscape.psd portrait.psd icon desktop icon_splash_launch-assets icon_splash_launch.psd Solar2D App/book main.lua build.settings config.lua ... UXP com.kwiksher.kwik5.exporter-ps_PS.ccx build.settigns has kwik plugin\nsettings = { plugins = { [\"plugin.zip\"] = { publisherId = \"com.coronalabs\", }, [\"plugin.kwik\"] = { publisherId = \"com.kwiksher\", }, main.lua enable autoUpdate()\nkwik.autoUpdate() Photoshop/book\nportrait.psd and landscape.psd in Photoshop/book are explain in Get Started \u003e PSD Screen Size Orientation\nPhotsohop/icon\nthis folder contains a sample psd and files for creating icons for application of iOS, Android, macOS, Win32. See Get Started \u003e App Icon Launch/Splash image\nSolar2D project\nUXP/com.kwiksher.kwik5.exporter-ps_PS.ccx\nhow to update the tool Solar2D project with the kwik plugin will automatically donwload and install the latest templates and the framework files if there is an update with a notification\nWhen com.kwiksher.kwik5.exporter-ps_PS.ccx is updated, a message appears for you to install the the .ccx file to Photoshop. Double click the .ccx\nKwik5 Tool Dev dev release contains unit testing sample books/pages\nhttps://github.com/kwiksher/kwik5tmplt/archive/refs/heads/develop.zip\nPlease extract the zip to a folder, and run Solar2D/main.lua to see the samples in kwik editor\nTODO updated Photoshop files to include unit testing .psd files ├── BookServer ├── Photoshop | ├── icon | ├── keyboard | ├── kwikTheCat │ └── lingualSample │ ├── Solar2D │ ├── App | | ├── animation | | ├── asset | | ├── interaction │ │ └── shape │ ├── assets │ ├── plugin | | ├── kwik | | | ├── template | | | ... | | └── kwik.lua | ├── build.settings | ├── main.lua │ ... │ └──UXP/kwik-exporter/main.js etc main.lua disable autoUpdate()\n-- kwik.autoUpdate() Tutorial covers how each sample is made with kwik exporter \u0026 editor\nPhotoshop/*.psd files and published lua files in App/keyboard, kwikTheCat, lingualSample are updated with git push by kwiksher\nAt the time of git pushing, Solar2D folder has been updated locally by Solar2D/installer module, so the latest modules of kwik5 are included.\nUXP/kwik-exporter raw files are also included in the zip. You can use UXP developer tool to load it. If you don’t like to use UXP Developer Tool, use com.kwiksher.kwik5.exporter-ps_PS.ccx in the zip file of Kwik5 Tool Release.\nGithub for developers if you want to clone github repo\nhttps://github.com/kwiksher/kwik5tmplt\nwhen .ccx is built, UXP/kwik-exporter/kwik/base-proj should be aliased to Solar2D/ folder. Then you can load the exporter with UXP Developer Tool.\ncopy_photoshop.command and copy_solar2d.command. It will copy Photoshop and Soalr2D folder to kwik/base-proj\nBookServer Photoshop Solar2D main.lua UXP kwik-exporter manifest.json kwik/base-proj \u003c=== created by .command copy_photoshop.command copy_solar2d.command When you launch, Solar2D/main.lua in the simulator,\nthe installer module inside fetches/updates the files from github/kwiksher/kwik5tmplt\nframework_20240904-1529.zip editor_20240724-2246.zip template_20241109-2228.zip kwik-exporter_yyyymmdd-hhmm.zip kwik-xeus_yyymmdd-hhmm.zip kwik samples in Photoshop and Solar2D/App folders are not updated by the instaler module. Download them from kwik5tmplt repository manually or pull the latest https://github.com/kwiksher/kwik5tmplt\nyou may disable auto-update in the editor by commeting in main.lua\nrequire(\"components.common.myComponent\") system.setTapDelay( 0.2 ) -- -- require(\"installer.index\").init() -- A project folder you may rename “book” in Photshop and Solar2D/App folder to an appropriate one such “game”, “myBook” etc.. and put your psd files into it.\n├── BookServer ├── Photoshop │ └── book │ ├── landscape.psd │ └── portrait.psd ├── Solar2D │ ├── App │ │ └── book \u003c==== the published images/lua files are inside this folder │ ├── LaunchScreen.storyboardc │ ├── Images.xcassets │ ├── jp.lproj │ ├── plugin | │ ├── assets | │ ├── extlib | │ ├── installer | │ ├── commands | │ ├── controller | │ ├── components | │ ├── editor | │ ├── en.lproj │ | ├── template | │ ├── test | │ └── server │ ├── build.settings │ ├── config.lua │ ├── Icon-osx.icns │ ├── Icon-win32.ico │ ├── LaunchScreen.storyboardc │ ├── main.lua │ ├── main.lua.debug │ └── mySplashScreen.png │ └── UXP ├── kwik-exporter │ ├── icons │ ├── main.js │ ├── main.js.LICENSE.txt │ └── manifest.json └── com.kwiksher.kwik5.exporter-ps_PS.ccx bookstore.lua\nyou can specify folder names of book to be ignored in bookstore.lua\nthe following book folders exist in kwik5tmplt repository.\nlocal M = { bookignored = {\"animation\", \"asset\", \"interaction\", \"keyboard\", \"lingualSample\", \"mybook\", \"page\", \"physics\", \"replacement\", \"shape\", } }",
+    "description": "kwik plugin update TODO .ccx to be downloaded from Release instead of exporter_20241111-2115.zip where to check the version number? TODO https://github.com/kwiksher/kwik5tmplt/releases/kwik5_project_yyyymmdd.zip System requirements Adobe Photoshop\nhttps://www.adobe.com/products/photoshop.html\n(optional)UXP Developer Tool\nProducts \u003e UXP for Adobe Photoshop \u003e Plugins \u003e Quickstart Guide \u003e Developer Tool \u003e Installation\nSolar2D\nGetting Started\nInstalling Solar2D — macOS Installing Solar2D — Windows Building \u0026 Distribution explains the following platform’s dependencies\nApple iOS macOS AppleTV Android KindleFire Win32 Visual Studio Code",
     "tags": [],
     "title": "Get Started",
     "uri": "/kwik5docs/get_started/index.html"
@@ -101,7 +101,7 @@ var relearn_searchindex = [
     "description": "Icon Name Asset Icon Name Asset Counter Sprite assets/sprites DynamicText Sync assets/audios/sync InputText Text Map Vector Mask assets/images Video assets/videos Multiplier Web assets/wwww Particles assets/particles Mask TODO When a mask is created, animation should be applied to the mask object\nfunction M:didShow(UI) local obj = UI.sceneGroup[self.properties.target] timer.performWithDelay(1000, function() obj.group.maskScaleX = obj.group.maskScaleX * 1.5 obj.group.maskScaleY = obj.group.maskScaleY * 1.5 end, 5) end ref /Applications/Corona/SampleCode/Graphics/Flashlight/main.lua",
     "tags": [],
     "title": "Replacement Tools",
-    "uri": "/kwik5docs/kwik_editor/componentview/replacement/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/replacement/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Component View \u003e Replacement Tools",
@@ -109,7 +109,7 @@ var relearn_searchindex = [
     "description": "There are two ways to begin making a sprite.\nselect a imagesheet in asset table\nthen select a layer by clicking _target property. select a layer for spritesheet replacement, then click spritesheet replacement tool, and select a spritesheet image by clicking _filename property.\nSpitesheet has one of sheetType\nuniform-sized\na png file. you need to set each width/height of sprite manually in the properties panel.\ntexture packer\nthe pair if imagesheet png and lua (frames data). You can specify the lua file in sheetInfo property.",
     "tags": [],
     "title": "Spritesheet",
-    "uri": "/kwik5docs/kwik_editor/componentview/replacement/spritesheet/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/replacement/spritesheet/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Bookstore",
@@ -141,7 +141,7 @@ var relearn_searchindex = [
     "description": "Animation Tools Reference Name Icon Description Linear Creates a smooth, direct animation from one point to another. Blink Makes an object appear and disappear repeatedly. Bounce Simulates a bouncing effect. Filter Applies animated visual filters to an object. Path Animates an object along a defined path. Pulse Creates a growing and shrinking effect. Rotation Rotates an object. Shake Simulates a shaking motion. Switch Switches between different states or images. Layer Animation Group Animation group animation and layer animation to member of a group works together.",
     "tags": [],
     "title": "Animation Tools",
-    "uri": "/kwik5docs/kwik_editor/componentview/animation/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/animation/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D",
@@ -149,7 +149,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Asset View",
-    "uri": "/kwik5docs/kwik_editor/assetview/index.html"
+    "uri": "/kwik5docs/kwik_editor/assets/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Bookstore",
@@ -176,6 +176,14 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/get_started/step2/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Get Started",
+    "content": "Android\nkeytool -genkey -v -keyalg RSA -keystore ‾yyyyy/xxxx.keystore -alias [アプリ名] -validity 10000 keytool -importkeystore -srckeystore “/Users/ymmtny/Creative Cloud Files Company Account YMMTNY@GMAIL.COM 0FDB0B254C58F0C30A04B82D@AdobeID/kwiksher/kwikbookshelf.keystore” -destkeystore “/Users/ymmtny/Creative Cloud Files Company Account YMMTNY@GMAIL.COM 0FDB0B254C58F0C30A04B82D@AdobeID/kwiksher/kwikbookshelf.keystore” -deststoretype pkcs12\nkeytool -importkeystore -srckeystore kwikBuild.keystore -destkeystore kwikBuild.keystore -deststoretype pkcs12\nadb devices\nif unautohried, enable usb debug and then try it again\nadb install -r .apk\nadb logcat | grep “Corona :”\nmac\nopen \"corona://open?url=file:///$(pwd)/\u0026skin=kwikEditorLandscape\u0026no-console=YES\u0026no-welcome=YES\" open \"corona://open?url=file:///$(pwd)/\u0026skin=iPadPro\u0026no-console=YES\u0026no-welcome=YES\" open \"corona://open?url=file:///$(pwd)/\u0026skin=iPhoneX\u0026no-console=YES\u0026no-welcome=YES\" power shell\nStart-Process \"file:///$((Get-Item -Path .\\).FullName)\" “C:\\Program Files\\Corona Labs\\Corona\\Corona Simulator.exe” /skin=“iPhone X” /no-console “C:\\path\\to\\your\\project\\main.lua”\nstartSolar2D.bat\n@echo off set APP_NAME=Corona Simulator.exe set APP_FOLDER=C:\\Program Files (x86)\\Corona Labs\\Corona\\ cd %APP_FOLDER% rem /f first word for /f %%i in ('tasklist 2^\u003e^\u00261') do ( if /i %%i==Corona ( taskkill /im \"Corona Simulator.exe\" /f taskkill /im \"Corona.Console.exe\" /f goto ENDLOOP; ) ) :ENDLOOP {{^closeCorona}} {{#tmp}} start \"\" \"{{corona}}\" \"{{projPath}}\\temp\\main.lua\" {{/tmp}} {{^tmp}} start \"\" \"{{corona}}\" \"{{projPath}}\\build4\\main.lua\" {{/tmp}} {{/closeCorona}}",
+    "description": "Android\nkeytool -genkey -v -keyalg RSA -keystore ‾yyyyy/xxxx.keystore -alias [アプリ名] -validity 10000 keytool -importkeystore -srckeystore “/Users/ymmtny/Creative Cloud Files Company Account YMMTNY@GMAIL.COM 0FDB0B254C58F0C30A04B82D@AdobeID/kwiksher/kwikbookshelf.keystore” -destkeystore “/Users/ymmtny/Creative Cloud Files Company Account YMMTNY@GMAIL.COM 0FDB0B254C58F0C30A04B82D@AdobeID/kwiksher/kwikbookshelf.keystore” -deststoretype pkcs12\nkeytool -importkeystore -srckeystore kwikBuild.keystore -destkeystore kwikBuild.keystore -deststoretype pkcs12\nadb devices\nif unautohried, enable usb debug and then try it again\nadb install -r .apk\nadb logcat | grep “Corona :”\nmac\nopen \"corona://open?url=file:///$(pwd)/\u0026skin=kwikEditorLandscape\u0026no-console=YES\u0026no-welcome=YES\" open \"corona://open?url=file:///$(pwd)/\u0026skin=iPadPro\u0026no-console=YES\u0026no-welcome=YES\" open \"corona://open?url=file:///$(pwd)/\u0026skin=iPhoneX\u0026no-console=YES\u0026no-welcome=YES\" power shell\nStart-Process \"file:///$((Get-Item -Path .\\).FullName)\" “C:\\Program Files\\Corona Labs\\Corona\\Corona Simulator.exe” /skin=“iPhone X” /no-console “C:\\path\\to\\your\\project\\main.lua”",
+    "tags": [],
+    "title": "Solar2D Simulator Build",
+    "uri": "/kwik5docs/get_started/step3_build/index.html"
+  },
+  {
     "breadcrumb": "About Kwik",
     "content": "",
     "description": "",
@@ -189,7 +197,7 @@ var relearn_searchindex = [
     "description": "Interaction Tools Reference Name Icon Description Button Interactive element that triggers actions when tapped or clicked Canvas Drawing area that allows free-form content creation and manipulation Drag Enables objects to be moved around the screen with touch/mouse input Parallax Creates depth illusion by moving layers at different speeds during scrolling Pinch Allows scaling objects larger or smaller using two-finger pinch gestures Scroll Creates scrollable content areas that extend beyond the visible screen Shake Detects device shaking motion to trigger interactions Spin Enables rotation of objects through circular finger/mouse movements Swipe Detects directional swipe gestures to navigate or trigger actions Additional Settings useStrinctBounds",
     "tags": [],
     "title": "Interaction Tools",
-    "uri": "/kwik5docs/kwik_editor/componentview/interaction/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/interaction/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Component View \u003e Physics Tools",
@@ -197,7 +205,7 @@ var relearn_searchindex = [
     "description": "joints https://docs.coronalabs.com/guide/physics/physicsJoints/index.html\npivot bodyA\nbounce = 1\ndensity = 1\nfriction = 1\ngravityScale = 1\nisSensor = true\nradius = 0 –0 means use object width/2 if cirlce is selected\nshape =“rectangle”, – “circle”, – rectangle, path\ntype = “static” – kinematic, static, dynamic\nbodyB\nbounce = 1\ndensity = 1\nfriction = 1\ngravityScale = 1\nisSensor = false\nradius = 0, –0 means use object width/2 if cirlce is selected\nshape =“rectangle”, – “circle”, – rectangle, path",
     "tags": [],
     "title": "Joints",
-    "uri": "/kwik5docs/kwik_editor/componentview/physics/joints/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/physics/joints/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Get Started",
@@ -221,7 +229,7 @@ var relearn_searchindex = [
     "description": "Physics Tools Reference Name Icon Description Physics Body Defines the physical properties of an object, enabling it to interact with the physics engine. Physics Collision Sets up collision properties between objects. Physics Force Applies forces to objects, influencing their movement and behavior. Physics Joint Connects two physics bodies together, creating constraints and relationships between them. Physics Properties Modifies global physics properties. joints https://docs.coronalabs.com/guide/physics/physicsJoints/index.html\npivot bodyA",
     "tags": [],
     "title": "Physics Tools",
-    "uri": "/kwik5docs/kwik_editor/componentview/physics/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/physics/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Get Started",
@@ -253,7 +261,7 @@ var relearn_searchindex = [
     "description": "Shapes Shape Tools Reference Name Icon Description Rectangle Creates a rectangular shape. Ellipse Creates an elliptical shape. Text Creates a text element. Image Creates an image element. Context Menu Edit move\nscale\nrotate\nImage picker for rectangle for insntace, you can set an image (.png) to image \u003e imageFile property with the imageFolder\nimageFile: title2.png imageFolder: App/shape/asset/image For convinience, you can click imageFile property, and Thumnail appears for you to select one. The images in the thumbnail panel are retrived from App/{{book}}/assets/{{page}}/images folder. You can manually copy\u0026paste your images to the assets/{{page}}/images folder",
     "tags": [],
     "title": "Shape Tools",
-    "uri": "/kwik5docs/kwik_editor/componentview/shape/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/shape/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model",
@@ -328,6 +336,14 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/implementation/app_life_circle/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Physics",
+    "content": "Apply Force\nadds an amount of force to the selected body from the list.\nParameters are:\nBody: lists all available bodies in the current page;\nAdd amount of force in X and Y: sets the amount of force to be applied in axis X and Y.",
+    "description": "Apply Force\nadds an amount of force to the selected body from the list.\nParameters are:\nBody: lists all available bodies in the current page;\nAdd amount of force in X and Y: sets the amount of force to be applied in axis X and Y.",
+    "tags": [],
+    "title": "Apply Force",
+    "uri": "/kwik5docs/kwik_editor/actions/physics/apply_force/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design",
     "content": "Architecure UXP panel\nflowchart LR Designer((fas:fa-user Designer)) Developer((fas:fa-user Developer)) User((fas:fa-user User or AI)) subgraph Photoshop[Photoshop UXP] graphics(images/lua renderer\u003cbr\u003escaffolder) end subgraph Editor[Kwik Visual Editor] subgraph App assets[(assets/images\u003cbr\u003emodels/json)] lua[(Source .lua)] end tools(GUI tools\u003cbr\u003e\u003cbr\u003erenderer\u003cbr\u003escaffolder) httpServer RestApi(RestApi\u003cbr\u003etransform\u003cbr\u003eanimation) RestApi -.- tools end subgraph RestApi[REST API] form(Properties \u003cbr\u003e CRUD) end subgraph VSCode httpYac(httpYac) coding end Photoshop -.img/json.-\u003e assets RestApi \u003c-.img/json.-\u003e httpServer httpServer \u003c-.-\u003e assets httpServer -.- tools tools -.- App User -.- Browser Browser-.maybe in future.- RestApi httpYac -.- RestApi coding -.- lua RestApi -.- assets Designer --- tools Designer --- Photoshop Developer --- VSCode Rest api\npegasus is runningin Editor\nrun Editor\nupload an image to pegasus server\nsave it assets/images/book/ create display.object .json Kwik Visual Editor\noutputs images/json to App/book\nrun App/book\nData store\nA Kwik Project flowchart RL subgraph Editor[kwik editor] subgraph nanostores layerstore[layers] actions assets audios end GUI[ menu \u003e Layer] subgraph asset assetSelectBox classProps buttons end subgraph parts selectors bookTable pageTable layerTable propsTable buttons subgraph controller selectLayer end controller -.- selectors end selectors -. 1 click .- GUI subgraph action actionTable actionCommandTable actionPropsTable end subgraph classEditors subgraph animation selectBox classProps controller end audio end controller template scripts end subgraph framework controller subgraph components_kwik[components] bookstore common[Common \u003cbr\u003e myClass] custom layer anim button end command_kwik[command] plugin extlib end subgraph App/bookX assets subgraph components page(pageX.index \u003cbr\u003e - layers \u003cbr\u003e - audios \u003cbr\u003e - ........) end subgraph commands pageX end scene(index.lua returns scenes as pageXs) end Select Layer to load the layer table\nflowchart RL subgraph Editor[kwik editor] GUI[ menu \u003e Layer] subgraph asset assetSelectBox classProps buttons end action classEditors subgraph parts selectors bookTable pageTable layerTable propsTable buttons subgraph controller selectLayer end controller -.- selectors end selectors -. 1 click .- GUI controller template scripts subgraph nanostores layerstore[layers data] actions assets audios end end subgraph framework end subgraph App/bookX assets subgraph components page(pageX.index \u003cbr\u003e - layers \u003cbr\u003e - audios \u003cbr\u003e - ........) end subgraph commands pageX end scene(index.lua returns scenes as pageXs) end selectLayer -. 2 read .-\u003e components selectLayer -. 3 set .-\u003e layerstore layerTable -. 4 listening for createTable .- layerstore layers lua -\u003e framework.components.layer -\u003e view (App.pageX.layers) layers data -\u003e nanostore -\u003e view (editro.layersTable)",
     "description": "Architecure UXP panel\nflowchart LR Designer((fas:fa-user Designer)) Developer((fas:fa-user Developer)) User((fas:fa-user User or AI)) subgraph Photoshop[Photoshop UXP] graphics(images/lua renderer\u003cbr\u003escaffolder) end subgraph Editor[Kwik Visual Editor] subgraph App assets[(assets/images\u003cbr\u003emodels/json)] lua[(Source .lua)] end tools(GUI tools\u003cbr\u003e\u003cbr\u003erenderer\u003cbr\u003escaffolder) httpServer RestApi(RestApi\u003cbr\u003etransform\u003cbr\u003eanimation) RestApi -.- tools end subgraph RestApi[REST API] form(Properties \u003cbr\u003e CRUD) end subgraph VSCode httpYac(httpYac) coding end Photoshop -.img/json.-\u003e assets RestApi \u003c-.img/json.-\u003e httpServer httpServer \u003c-.-\u003e assets httpServer -.- tools tools -.- App User -.- Browser Browser-.maybe in future.- RestApi httpYac -.- RestApi coding -.- lua RestApi -.- assets Designer --- tools Designer --- Photoshop Developer --- VSCode Rest api",
@@ -349,7 +365,31 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Audio",
-    "uri": "/kwik5docs/kwik_editor/componentview/page/audio/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/page/audio/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Auto Play\nenables the auto turn of pages (this is useful, for example, if you want to play a slide show or play a story without manual interaction).\nParameters are:\nChange page after: enter the amount of seconds – if the length of an audio playing in the scene is bigger than the time set here, Kwik will change the default timer for that particular page only to the length of the audio plus 1 second;\nGo to NEXT page automatically: starts the first transition immediately, going to the next page.",
+    "description": "Auto Play\nenables the auto turn of pages (this is useful, for example, if you want to play a slide show or play a story without manual interaction).\nParameters are:\nChange page after: enter the amount of seconds – if the length of an audio playing in the scene is bigger than the time set here, Kwik will change the default timer for that particular page only to the length of the audio plus 1 second;",
+    "tags": [],
+    "title": "Auto Play",
+    "uri": "/kwik5docs/kwik_editor/actions/page/auto_play/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Canvas",
+    "content": "Brush Color\nsets the color of a brush. You must have Flash properly set in order to use this interaction, otherwise your content will not be saved.",
+    "description": "Brush Color\nsets the color of a brush. You must have Flash properly set in order to use this interaction, otherwise your content will not be saved.",
+    "tags": [],
+    "title": "Brush Color",
+    "uri": "/kwik5docs/kwik_editor/actions/canvas/brush_color/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Monetization",
+    "content": "Buy a product\nability to purchase an item.\nParameters are:\nProduct: lists with all available products for purchase;\nHide button after purchase: if checked, do not show the ability to purchase the same item anymore;",
+    "description": "Buy a product\nability to purchase an item.\nParameters are:\nProduct: lists with all available products for purchase;\nHide button after purchase: if checked, do not show the ability to purchase the same item anymore;",
+    "tags": [],
+    "title": "Buy Product",
+    "uri": "/kwik5docs/kwik_editor/actions/monetization/buy_product/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Solar2D",
@@ -358,6 +398,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Command line Build",
     "uri": "/kwik5docs/dev/design/solar2d/builder/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Common\nAuto Play Read to Me Go to Page Edit Image Play Action Play Multiplier Play Random Rate App Reload Page Show/Hide Show/Hide Navigation",
+    "description": "Common\nAuto Play Read to Me Go to Page Edit Image Play Action Play Multiplier Play Random Rate App Reload Page Show/Hide Show/Hide Navigation",
+    "tags": [],
+    "title": "Common",
+    "uri": "/kwik5docs/kwik_editor/actions/common/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Get Started",
@@ -376,11 +424,19 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/design/project_model/content/index.html"
   },
   {
-    "breadcrumb": "About Kwik \u003e Dev memo",
-    "content": "steps\ncloud: kwik-visual-code repo\nUXP kwik-visual-code \u003e develop \u003eUXP gh action: kwik exporter to build the plugin/main.js cloud: kwik5tmplt\ngh acton: release Manually build kwik5tmplt to build .ccx\npull the latest develop branch. it contains the built UXP files.\nrun the following copy commands\nUXP/kwik-exporter/kwik/base-proj is copied to Solar2D/ folder.\ncd UXP source ./copy_photoshop.command source ./copy_solar2d.command UXP Developer Tool \u003e package it\nkwik-exporter.ccx zip the local kwik5tmplt as kwik5_project_yyyymmdd-hhmm.zip\nRelease the following zip files are downloaded and updated automatically in Solar2D simulator with the editor enabled\nhttps://github.com/kwiksher/kwik5tmplt/releases\neditor_20240724-2246.zip exporter_20241111-2115.zip framework_20240904-1529.zip template_20241112-1133.zip com.kwiksher.kwik5.exporter-ps_PS.ccx these are created by .github/workflows/release.yaml\n- name: Archive Release exporter uses: TheDoctor0/zip-release@0.7.6 with: type: 'zip' directory: UXP path: kwik-exporter filename: ${{ env.RELEASE_FILENAME_exporter }} exclusions: '*.git*' - name: Archive Release exporter ccx uses: TheDoctor0/zip-release@0.7.6 with: type: 'zip' directory: UXP path: ${{env.CCX_NAME}} filename: ${{ env.CCX_NAME}}.exporter-ps_PS.ccx exclusions: '*.git*' ... ... ... - name: Create Release id: create_release uses: softprops/action-gh-release@v2 with: tag_name: ${{ env.CURRENT_DATETIME }} name: ${{ env.CURRENT_DATETIME }} draft: false prerelease: false files: | Solar2D/*.zip UXP/*.zip push UXP to kwik5tmplt graph LR develop[kwik-visual-code \u003e develop \u003eUXP \u003e kwik-exporter] kwik5template develop -. kwik-exporter yaml pushes .-\u003e kwik5template kwik-exporter.yaml\n- name: Install dependencies \u0026 Build run: | npm install cp -f patches_backup/*.ts node_modules/react-uxp-spectrum/dist/ npm run prod working-directory: ./develop/UXP/kwik-exporter - name: Clone Repository kwik5tmplt uses: GuillaumeFalourd/clone-github-repo-action@v2.3 with: depth: 1 branch: 'develop' owner: 'kwiksher' repository: 'kwik5tmplt' - name: List files run: | cp -rf develop/UXP/kwik-exporter/dist/* kwik5tmplt/UXP/kwik-exporter cp -rf develop/UXP/kwik-exporter/plugin/* kwik5tmplt/UXP/kwik-exporter cd kwik5tmplt git config --global user.email \"yamamoto@kwiksher.com\" git config --global user.name \"kwiksher\" git add -f UXP/kwik-exporter/* git commit -m \"Update kwik exporter\" - name: Push to Repository kwwik5tmplt run: | cd kwik5tmplt git remote set-url origin https://x-access-token:${{ secrets.API_TOKEN_GITHUB }}@github.com/kwiksher/kwik5tmplt.git git push",
-    "description": "steps\ncloud: kwik-visual-code repo\nUXP kwik-visual-code \u003e develop \u003eUXP gh action: kwik exporter to build the plugin/main.js cloud: kwik5tmplt\ngh acton: release Manually build kwik5tmplt to build .ccx\npull the latest develop branch. it contains the built UXP files.\nrun the following copy commands\nUXP/kwik-exporter/kwik/base-proj is copied to Solar2D/ folder.\ncd UXP source ./copy_photoshop.command source ./copy_solar2d.command UXP Developer Tool \u003e package it\nkwik-exporter.ccx zip the local kwik5tmplt as kwik5_project_yyyymmdd-hhmm.zip\nRelease the following zip files are downloaded and updated automatically in Solar2D simulator with the editor enabled",
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Timer",
+    "content": "Create Timer\ncreates a new timer (based on a previously created action) and starts it.",
+    "description": "Create Timer\ncreates a new timer (based on a previously created action) and starts it.",
     "tags": [],
-    "title": "Deplyment",
+    "title": "Create Timer",
+    "uri": "/kwik5docs/kwik_editor/actions/timer/create/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Dev memo",
+    "content": "There are the two files\nkwik-exporter: com.kwiksher.kwik5.exporter_PS.ccx plugin.kwik: plugin.data.tgz kwik-visual-code: kwik-expoter\nkwik-visual-code/develop/UXP/kwik-exporter yarn build git commit and push gh action: Deploy Kwik Exporter kwik/base-proj is compiled in template-proj from sample-book’s gh action, and pluin’s gh action at the time of push or the workflow-dispatch manually\nkwik5-plugin\ngit commit and push gh action: Deploy Kwik Solar2D base-proj kwik5-sample-book: Photoshop and App/book\ngit commit and push gh action: Deploy Kwik Solar2D base-proj kwik5-template-project: build .ccx and then release\nthe .ccx depends on kwik-visual-code: kwik-expporter, kwik5-plugin and kwik5-sample-book: main.lua etc with App/book\nkwik5-plugin_build: plugin-kwik.data.tgz\n./build.sh to upload it this has the symbolic link to kwik5-plugin, so just build the tgz of the latest lua files\ngraph LR subgraph plugin[kwik5-plugin] src_lua[src ] plugin-yaml[[gh action: push ]] end plugin_build([kwik5-plugin_build \u003cbr\u003e local]) subgraph UXP[kwik-visual-code] develop/UXP/src UXP-yaml[[gh action: build]] end subgraph kwik5-project-template subgraph Solar2D App(App main.lua etc) end subgraph exporter[UXP: kwik-exporter] src[kwik/base-proj/\u003cbr\u003eSolar2D/App main.lua etc] src_template[kwik/base-proj/\u003cbr\u003eSolar2D \u003cbr\u003e plugin/kwik/template] mainjs[main.js icons \u003cbr\u003e manifest.json] src_photoshop(kwik/base-proj/\u003cbr\u003ePhotoshop) end subgraph book[Photoshop:book] landscape.psd portrait.psd icon/ kwik_ATN/ end subgraph release-binaries plugin-kwik.data.tgz install.sh ccx[com.kwiksher.kwik5 \u003cbr\u003eexporter-ps_PS.ccx] end ghaction[[release.yaml]] end subgraph samples[kwik5 sample books] photoshopBook[Photoshop/book icon kwikATN] appBook[App/book \u003cbr\u003e main.lua etc] gh-base-proj[[gh action yaml]] end gh-base-proj --o appBook gh-base-proj --o photoshopBook gh-base-proj -. psd \u0026 lua .-\u003e exporter gh-base-proj -. psd .-\u003e book gh-base-proj -. lua .-\u003e Solar2D UXP-yaml -. gh action build .-\u003e mainjs ghaction --o exporter ghaction -.-\u003e ccx plugin -.-\u003e plugin_build -. upload .-\u003e plugin-kwik.data.tgz plugin-yaml -. gh action:push \u003cbr\u003e template files .-\u003e src_template plugin --o samples kwik exporter UXP to kwik5-project-template/UXP\nfrom kwik-visual-code/UXP/kwik-expoter\nto kwik5-project-template\nkwik5-plugin template to kwik5-project-template/UXP/kwik-exporter/\nfrom kwik5-plugin\nto kwik5-project-template\nkwik5-sample-books’s psds and App/book to kwik5-project-template\nfrom kwik5-sample-books\nto kwik5-project-template\nsteps cloud: kwik-visual-code repo\nUXP kwik-visual-code \u003e develop \u003eUXP\ngh action: kwik exporter to build the plugin/main.js\ngh action: build.sh for building the plugin.data.tgz\n``` cd kwik-editor_plugin build.sh push lua/kwik5.lua, kwik5/* to kwik5tmplt/plugin/ ``` cloud: kwik5-projec-template repo\ntar -czvf plugin.data.tgz -C Solar2D/plugin .\nsed main.lua enable autoUpdate() remove plugin dir in Solar2D for UXP and kwik5_project_yyyymmdd.zip UXP/copy_solar2d.command, cp template from plugin/kwik/template, don’t copy plugin kwik.autoUpdate() gh acton: release.yaml\ncreate .ccx with plugin/main.js and kwik/\n- name: Rename for ccx run: | cd UXP mv ${{env.CCX_Dir}} ${{env.CCX_NAME}} - name: Archive Release exporter ccx uses: TheDoctor0/zip-release@0.7.6 with: type: 'zip' directory: UXP path: ${{env.CCX_NAME}} filename: ${{ env.CCX_NAME}}.exporter_PS.ccx exclusions: '*.git*' - name: Create Release id: create_release uses: softprops/action-gh-release@v2 with: tag_name: ${{ env.CURRENT_DATETIME }} name: ${{ env.CURRENT_DATETIME }} draft: false prerelease: false files: | UXP/*.ccx Or manually build .ccx from kwik5-projec-template repo\npull the latest develop branch. it contains the built UXP files.\nrun the following copy commands\nUXP/kwik-exporter/kwik/base-proj is copied to Solar2D/ folder.\ncd UXP cp kwik-exporter com.kwiksher.kwik5 UXP Developer Tool \u003e package it\ncom.kwiksher.kwik5.exporter_PS.ccx\nRelease the following zip files are downloaded and updated automatically in Solar2D simulator with the editor enabled\nhttps://github.com/kwiksher/kwik5-project-template/releases\ncom.kwiksher.kwik5.exporter-ps_PS.ccx\nthe ccx is created by .github/workflows/release.yaml, and the plugin.data.tgz is manullay built locally and uploaded by build.sh in kwik5-plugin_build to append it to the latest release\nuser uses the install_plugin.sh in kwik5-project-template repo.\nhttps://github.com/kwiksher/kwik5-project-template/releases/latest\ncom.kwiksher.kwik5.exporter_PS.ccx\nplugin.data.tgz\ntar -xzf plugin.data.tgz -C ~/Library/Application\\ Support/Corona/Simulator/Plugins/plugin memo : push UXP to kwik5-plugin graph LR develop[kwik-visual-code \u003e develop \u003eUXP \u003e kwik-exporter] develop -. kwik-exporter yaml pushes .-\u003e kwik5-prject-template kwik-exporter.yaml\n- name: Install dependencies \u0026 Build run: | npm install cp -f patches_backup/*.ts node_modules/react-uxp-spectrum/dist/ npm run prod working-directory: ./develop/UXP/kwik-exporter ... ... - name: List files run: | mkdir -p kwik5-project-template/UXP/kwik-exporter cp -rf develop/UXP/kwik-exporter/dist/* kwik5-project-template/UXP/kwik-exporter cp -rf develop/UXP/kwik-exporter/plugin/* kwik5-project-template/UXP/kwik-exporter cd kwik5-project-template git config --global user.email \"yamamoto@kwiksher.com\" git config --global user.name \"kwiksher\" git add -f UXP/kwik-exporter/* git commit -m \"Update kwik exporter\" - name: Push changes uses: ad-m/github-push-action@master with: github_token: ${{ secrets.API_TOKEN_GITHUB }} branch: develop directory: kwik5-project-template repository: kwiksher/kwik5-project-template",
+    "description": "There are the two files\nkwik-exporter: com.kwiksher.kwik5.exporter_PS.ccx plugin.kwik: plugin.data.tgz kwik-visual-code: kwik-expoter\nkwik-visual-code/develop/UXP/kwik-exporter yarn build git commit and push gh action: Deploy Kwik Exporter kwik/base-proj is compiled in template-proj from sample-book’s gh action, and pluin’s gh action at the time of push or the workflow-dispatch manually\nkwik5-plugin\ngit commit and push gh action: Deploy Kwik Solar2D base-proj kwik5-sample-book: Photoshop and App/book\ngit commit and push gh action: Deploy Kwik Solar2D base-proj kwik5-template-project: build .ccx and then release",
+    "tags": [],
+    "title": "Deployment",
     "uri": "/kwik5docs/dev/deployment/index.html"
   },
   {
@@ -390,6 +446,30 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Design",
     "uri": "/kwik5docs/dev/design/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Code",
+    "content": "Edit Variable\nchanges the content of a previously created variable.\nParameters are:\nVariable: lists all variables; Value: entry for the new variable content.",
+    "description": "Edit Variable\nchanges the content of a previously created variable.\nParameters are:\nVariable: lists all variables; Value: entry for the new variable content.",
+    "tags": [],
+    "title": "Edit Variable",
+    "uri": "/kwik5docs/kwik_editor/actions/code/edit_variable/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Web",
+    "content": "Go To URL\nopens the URL as webpopup\nGo to: enter the full url for example http://www.kwiksher.com",
+    "description": "Go To URL\nopens the URL as webpopup\nGo to: enter the full url for example http://www.kwiksher.com",
+    "tags": [],
+    "title": "Go To URL",
+    "uri": "/kwik5docs/kwik_editor/actions/web/go_to_url/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Conditions",
+    "content": "If\ncreates the first step of a condition. For the condition, you can use a pre-made variable or an expression.\nParameters are:\nVariable: lists all variables (you must use a variable or an expression);\nExpression: formula/code that needs to be compared (you must use a variable or an expression);\nOperator: lists all available operators for the condition;\nComparison: formula/code that to be compared against the variable/expression above;\n(optional) Enable second condition: if checked, the second condition below will be checked also;\n(optional) AND/OR: operator for the second condition;\n(optional) Variable: lists all variables (you must use a variable or an expression);\n(optional) Expression: formula/code that needs to be compared (you must use a variable or an expression);\n(optional) Operator: lists all available operators for the condition;\n(optional) Comparison: formula/code that to be compared against the variable/expression above;",
+    "description": "If\ncreates the first step of a condition. For the condition, you can use a pre-made variable or an expression.\nParameters are:\nVariable: lists all variables (you must use a variable or an expression);\nExpression: formula/code that needs to be compared (you must use a variable or an expression);\nOperator: lists all available operators for the condition;\nComparison: formula/code that to be compared against the variable/expression above;\n(optional) Enable second condition: if checked, the second condition below will be checked also;",
+    "tags": [],
+    "title": "If",
+    "uri": "/kwik5docs/kwik_editor/actions/condition/if/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design",
@@ -416,6 +496,14 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/design/project_model/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Dev memo \u003e Deployment",
+    "content": "https://github.com/solar2d/plugin-template\nplugin/kwikEditor\n_kwikPath = \"plugin/kwikEditor/\" kwikPath = system.pathForFile(kwikPath, system.ResourceDirectory) -- -- kwikPath: /Users/ymmtny/Documents/GitHub/kwik-visual-code/develop/Solar2D/kwik-editor_plugin/. -- kwikRoot = \"plugin.kwikEditor.\" pacage.path these folders in plugin/kwikEditor are required from App/**/*.lua\nlocal folders = { \".\", \"commands\", \"commands/app\", \"commands/common\", \"commands/kwik\", \"components\", \"components/bookstore\", \"components/bookstore/controller\", \"components/bookstore/model\", \"components/bookstore/smc\", \"components/bookstore/view\", \"components/common\", \"components/custom\", \"components/kwik\", \"components/mui\", \"controller\", \"extlib\", \"extlib/com\", \"extlib/com/gieson\", \"extlib/lustache\", \"extlib/materialui\", \"extlib/materialui/material-design-icons\", \"extlib/nanostores\", \"extlib/nanostores/lib\", \"extlib/nanostores/scripts\", \"extlib/plugin\", \"extlib/plugin/mouseHover\", \"extlib/pretty\", \"extlib/pretty/json\", \"extlib/robotlegs\", \"extlib/spyric\", \"extlib/transition2lib\", \"installer\", \"installer/lustache\", \"installer/Skins\", \"lib\", } require for extlib lib.original_require = require require = function(...) local modName = ... -- modName = modName:gsub(\"com.gieson\", \"extlib.com.gieson\") -- modName = modName:gsub(\"Tools\", \"extlib.com.gieson.Tools\") -- modName = modName:gsub(\"TouchHandlerObj\", \"extlib.com.gieson.TouchHandlerObj\") modName = modName:gsub(\"checks\", kwikRoot..\"extlib.checks\") modName = modName:gsub(\"metalua.\", kwikRoot..\"extlib.metalua.\") modName = modName:gsub(\"materialui\", kwikRoot..\"extlib.materialui\") modName = modName:gsub(\"nanostores.index\", \"nanostores.nanostores\") modName = modName:gsub(\"lib.clean%-stores\", kwikRoot..\"extlib.nanostores.lib.clean-stores\") modName = modName:gsub(\"lib.create%-derived\", kwikRoot..\"extlib.nanostores.lib.create-derived\") modName = modName:gsub(\"lib.create%-map\", kwikRoot..\"extlib.nanostores.lib.create-map\") modName = modName:gsub(\"lib.create%-store\", kwikRoot..\"extlib.nanostores.lib.create-store\") modName = modName:gsub(\"lib.define%-map\", kwikRoot..\"extlib.nanostores.lib.define-map\") modName = modName:gsub(\"lib.effect\", kwikRoot..\"extlib.nanostores.lib.effect\") modName = modName:gsub(\"lib.get%-value\", kwikRoot..\"extlib.nanostores.lib.get-value\") modName = modName:gsub(\"lib.keep%-active\", kwikRoot..\"extlib.nanostores.lib.keep-active\") modName = modName:gsub(\"lib.lualib_bundle\", kwikRoot..\"extlib.nanostores.lib.lualib_bundle\") modName = modName:gsub(\"lib.update\", kwikRoot..\"extlib.nanostores.lib.update\") return lib.original_require(modName) end contorller.Application.newModule\nfor example, editor/layerTable.lua\nlocal name = ... local parent, root = newModule(name) -- -- parent: plugin.kwikEditor.editor.parts.\troot: plugin.kwikEditor.editor. -- local Props = { name = \"layerTable\", anchorName = \"selectLayer\", id = \"layer\" } local M = require(parent ..\"baseTable\").new(Props) local commands = require(parent..\"layerTableCommands\") build.sh is modified\nskip template folder tar -czvf plugin.data.tgz -C ./build/plugins/2017.3032/lua/lua_51/plugin . install\ntar -xzf plugin.data.tgz -C ~/Library/Application\\ Support/Corona/Simulator/Plugins/plugin for downloading from simulator?\ntar -czvf data.tgz -C ./build/plugins/2017.3032/lua . makeself not work well\nmakeself plugin_bundle/ kwikEditor_plugin_installer.sh \"Solar2D Plugin Installer\" ./installer.sh",
+    "description": "https://github.com/solar2d/plugin-template\nplugin/kwikEditor\n_kwikPath = \"plugin/kwikEditor/\" kwikPath = system.pathForFile(kwikPath, system.ResourceDirectory) -- -- kwikPath: /Users/ymmtny/Documents/GitHub/kwik-visual-code/develop/Solar2D/kwik-editor_plugin/. -- kwikRoot = \"plugin.kwikEditor.\" pacage.path these folders in plugin/kwikEditor are required from App/**/*.lua\nlocal folders = { \".\", \"commands\", \"commands/app\", \"commands/common\", \"commands/kwik\", \"components\", \"components/bookstore\", \"components/bookstore/controller\", \"components/bookstore/model\", \"components/bookstore/smc\", \"components/bookstore/view\", \"components/common\", \"components/custom\", \"components/kwik\", \"components/mui\", \"controller\", \"extlib\", \"extlib/com\", \"extlib/com/gieson\", \"extlib/lustache\", \"extlib/materialui\", \"extlib/materialui/material-design-icons\", \"extlib/nanostores\", \"extlib/nanostores/lib\", \"extlib/nanostores/scripts\", \"extlib/plugin\", \"extlib/plugin/mouseHover\", \"extlib/pretty\", \"extlib/pretty/json\", \"extlib/robotlegs\", \"extlib/spyric\", \"extlib/transition2lib\", \"installer\", \"installer/lustache\", \"installer/Skins\", \"lib\", } require for extlib lib.original_require = require require = function(...) local modName = ... -- modName = modName:gsub(\"com.gieson\", \"extlib.com.gieson\") -- modName = modName:gsub(\"Tools\", \"extlib.com.gieson.Tools\") -- modName = modName:gsub(\"TouchHandlerObj\", \"extlib.com.gieson.TouchHandlerObj\") modName = modName:gsub(\"checks\", kwikRoot..\"extlib.checks\") modName = modName:gsub(\"metalua.\", kwikRoot..\"extlib.metalua.\") modName = modName:gsub(\"materialui\", kwikRoot..\"extlib.materialui\") modName = modName:gsub(\"nanostores.index\", \"nanostores.nanostores\") modName = modName:gsub(\"lib.clean%-stores\", kwikRoot..\"extlib.nanostores.lib.clean-stores\") modName = modName:gsub(\"lib.create%-derived\", kwikRoot..\"extlib.nanostores.lib.create-derived\") modName = modName:gsub(\"lib.create%-map\", kwikRoot..\"extlib.nanostores.lib.create-map\") modName = modName:gsub(\"lib.create%-store\", kwikRoot..\"extlib.nanostores.lib.create-store\") modName = modName:gsub(\"lib.define%-map\", kwikRoot..\"extlib.nanostores.lib.define-map\") modName = modName:gsub(\"lib.effect\", kwikRoot..\"extlib.nanostores.lib.effect\") modName = modName:gsub(\"lib.get%-value\", kwikRoot..\"extlib.nanostores.lib.get-value\") modName = modName:gsub(\"lib.keep%-active\", kwikRoot..\"extlib.nanostores.lib.keep-active\") modName = modName:gsub(\"lib.lualib_bundle\", kwikRoot..\"extlib.nanostores.lib.lualib_bundle\") modName = modName:gsub(\"lib.update\", kwikRoot..\"extlib.nanostores.lib.update\") return lib.original_require(modName) end contorller.Application.newModule",
+    "tags": [],
+    "title": "kwikEditor Plugin",
+    "uri": "/kwik5docs/dev/deployment/kwikeditor_plugin/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model \u003e Components",
     "content": "Layer page1\npage4 for demonstrating layers and groups\nlocal sceneName = ... -- local scene = require('controller.scene').new(sceneName, { name = \"page4\", components = { layers = { { bg={} }, { copyright={} }, { star={} }, { GroupA={ { Ellipse = {} }, { SubA = { { Triangle = {} }, } }, } }, { hello={} }, }, audios = {}, groups = {\"SubA\", \"GroupA\", \"myGroup\" }, timers = {}, variables = {}, page = {} }, commands = { -- \"myAction\", \"myEvents.testHandler\", }, onInit = function(scene) print(\"onInit\") end }) -- return scene scenes/pageX/background.lua\nlocal _K = require \"Application\" local _M = require(\"components.kwik.layer_image\").new() _M.weight = 1 local Props = { blendMode = \"normal\", height = 520, width = 1000, kind = pixel, name = \"bg\", x = 1000 -1000/2, y = 520/2, alpha = 100/100, } -- _M.imageWidth = Props.width/4 _M.imageHeight = Props.height/4 _M.mX, _M.mY = _K.ultimatePosition(Props.x, Props.y, \"\") _M.randXStart = _K.ultimatePosition() _M.randXEnd = _K.ultimatePosition() _M.dummy, _M.randYStart = _K.ultimatePosition(0, ) _M.dummy, _M.randYEnd = _K.ultimatePosition(0, ) _M.infinityDistance = (parseValue() or 0)/4 .... .... .... -- function _M:localVars(UI) end -- function _M:localPos(UI) end -- function _M:didShow(UI) end -- function _M:toDispose(UI) end -- function _M:toDestory() end -- return _M ‘_M.weight = num’ controlls the order of display objects for kwik-genereate-index tool that outputs scenes/pageX/index.lua\nscenes/pageX/groupOne/index.lua\n_M = {} _M.weight = 1 -- -- this index.lua is for kwik-generate-model -- you may put additional code here -- return _M scenes/pageX/groupOne/imageOne.lua\nlocal _K = require \"Application\" local _M = require(\"components.kwik.layer_image\").new() _M.weight = 1 local Props = { ... .... } scenes/pageX/groupOne/imageTwo.lua\nlocal _K = require \"Application\" local _M = require(\"components.kwik.layer_image\").new() _M.weight = 2 local Props = { ... .... } scenes/pageX/index.lua\nBottom to Top order\n{ name = \"pageX\", layers = { {background={}}, {groupOne = { {imageTwo}, {imageOne}, }}, }, components = {}, events = {}, }",
     "description": "Layer page1\npage4 for demonstrating layers and groups\nlocal sceneName = ... -- local scene = require('controller.scene').new(sceneName, { name = \"page4\", components = { layers = { { bg={} }, { copyright={} }, { star={} }, { GroupA={ { Ellipse = {} }, { SubA = { { Triangle = {} }, } }, } }, { hello={} }, }, audios = {}, groups = {\"SubA\", \"GroupA\", \"myGroup\" }, timers = {}, variables = {}, page = {} }, commands = { -- \"myAction\", \"myEvents.testHandler\", }, onInit = function(scene) print(\"onInit\") end }) -- return scene scenes/pageX/background.lua\nlocal _K = require \"Application\" local _M = require(\"components.kwik.layer_image\").new() _M.weight = 1 local Props = { blendMode = \"normal\", height = 520, width = 1000, kind = pixel, name = \"bg\", x = 1000 -1000/2, y = 520/2, alpha = 100/100, } -- _M.imageWidth = Props.width/4 _M.imageHeight = Props.height/4 _M.mX, _M.mY = _K.ultimatePosition(Props.x, Props.y, \"\") _M.randXStart = _K.ultimatePosition() _M.randXEnd = _K.ultimatePosition() _M.dummy, _M.randYStart = _K.ultimatePosition(0, ) _M.dummy, _M.randYEnd = _K.ultimatePosition(0, ) _M.infinityDistance = (parseValue() or 0)/4 .... .... .... -- function _M:localVars(UI) end -- function _M:localPos(UI) end -- function _M:didShow(UI) end -- function _M:toDispose(UI) end -- function _M:toDestory() end -- return _M ‘_M.weight = num’ controlls the order of display objects for kwik-genereate-index tool that outputs scenes/pageX/index.lua",
@@ -432,6 +520,70 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/design/workflow/lua/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Animation",
+    "content": "Play Animation\nplay the selected animation from the list – only animations set to “Wait request” show in the list.",
+    "description": "Play Animation\nplay the selected animation from the list – only animations set to “Wait request” show in the list.",
+    "tags": [],
+    "title": "Play Animation",
+    "uri": "/kwik5docs/kwik_editor/actions/animation/play/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Audio",
+    "content": "Play Audio\nplay the selected audio from the list.\nControls is added in Kwik4",
+    "description": "Play Audio\nplay the selected audio from the list.\nControls is added in Kwik4",
+    "tags": [],
+    "title": "Play Audio",
+    "uri": "/kwik5docs/kwik_editor/actions/audio/play/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Countdown",
+    "content": "Play Countdown\nplays the selected countdown replacement from the list.",
+    "description": "Play Countdown\nplays the selected countdown replacement from the list.",
+    "tags": [],
+    "title": "Play Countdown",
+    "uri": "/kwik5docs/kwik_editor/actions/countdown/play/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Filter",
+    "content": "Filter Play\nplays filter/generator/composer animation.",
+    "description": "Filter Play\nplays filter/generator/composer animation.",
+    "tags": [],
+    "title": "Play Filter",
+    "uri": "/kwik5docs/kwik_editor/actions/filter/play/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Multiplier",
+    "content": "Multiplier Play\nplays a pre-made Multiplier set to Wait request.\nMultiplier: list with all available multipliers;",
+    "description": "Multiplier Play\nplays a pre-made Multiplier set to Wait request.\nMultiplier: list with all available multipliers;",
+    "tags": [],
+    "title": "Play Multiplier",
+    "uri": "/kwik5docs/kwik_editor/actions/multipliers/play/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Particles",
+    "content": "Particles Play\nplays particle",
+    "description": "Particles Play\nplays particle",
+    "tags": [],
+    "title": "Play Particles",
+    "uri": "/kwik5docs/kwik_editor/actions/particles/play/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Sprite",
+    "content": "Play Sprite\nplays the selected sprite sheet replacement from the list.",
+    "description": "Play Sprite\nplays the selected sprite sheet replacement from the list.",
+    "tags": [],
+    "title": "Play Sprite",
+    "uri": "/kwik5docs/kwik_editor/actions/sprite/play/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Video",
+    "content": "Play Video\nplays the selected video from the list.",
+    "description": "Play Video\nplays the selected video from the list.",
+    "tags": [],
+    "title": "Play Video",
+    "uri": "/kwik5docs/kwik_editor/actions/video/play/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design",
     "content": "Tools Exporrter plugin for PS, XD\nUXP\nexport images export source code traverse photoshop layers\ncomponents/pageX/layers/**/*.lua\nkwik-exporter\\src\\photoshop\\publishCode.ts\ntraverse App/contentX/\ncommands/pageX/ for envets components/pageX for components such as audios,groups .. components/pageX/layers from Photoshop and attached animation, button generate_scene_index\\generate_models.lua\nmerge the both results to ouput components/pageX/index.lua ⭐️\nlocal sceneName = ... -- local scene = require('controller.scene').new(sceneName, { name = \"page01\", components = { layers = {{bg = {}}, {layerX = {class={button}}}}, audios = {}, groups = {}, others = {}, timers = {}, variables = {} }, commands = {\"bg.clickLayer\"}, onInit = function(scene) print(\"onInit\") end }) return scene develop/UXP/kwik-exporter\nA layer set is exported as one single image if assets/images/pageX has the foler with the same name of the layer set.\nexport images\nexport props\noutput .json/.lua develop\\UXP\\kwik-exporter\\plugin\\kwik\\templates\\components\\\nlayer_image.json layer_image.lua (TODO) Update develop\\Solar2D\\template to sync with the two files.\n(TODO) UXP/plugin/kwik/template is a clone of template/App/contentX\n├─Solar2D │ ├─robotlegs │ │ ├─App │ │ │ ├─book │ │ │ │ ├─assets │ │ │ │ │ ├─images │ │ │ │ │ │ └─page01 │ │ │ │ ├─commands │ │ │ │ │ └─page01 │ │ │ │ │ └─layers │ │ │ │ ├─components │ │ │ │ │ └─page01 │ │ │ │ ├──models │ │ │ │ └─page01 │ ├─template │ │ ├─App │ │ │ └─contentX │ │ │ ├─assets │ │ │ ├─commands │ │ │ │ └─pageX │ │ │ ├─components │ │ │ │ ├─pageX │ │ │ │ │ ├─audios │ │ │ │ │ ├─layers │ │ │ │ │ │ ├─animations │ │ │ │ │ │ ├─images │ │ │ │ │ │ ├─interactions │ │ │ │ │ │ ├─physics │ │ │ │ │ │ └─replacements │ │ │ │ │ │ ├─particles │ │ │ │ │ │ ├─sprites │ │ │ │ │ │ ├─syncAudioText │ │ │ │ │ │ ├─videos │ │ │ │ │ │ └─www │ │ │ │ │ ├─groups │ │ │ │ │ ├─page │ │ │ │ │ │ ├─controls │ │ │ │ │ ├─timers │ │ │ │ │ └─variables │ │ │ │ └─store ? │ │ │ ├─models │ │ │ │ └─pageX │ │ │ │ ├─commands │ │ │ │ └─components │ └─tools │ ├─kwik-editor └─UXP └─kwik-exporter ├─plugin │ ├─icons │ └─kwik │ ├─templates │ │ ├─components │ │ │ └─kwik │ │ ├─model │ │ │ ├─components │ │ │ ├─events │ │ │ └─layers │ │ └─scenes Editor\nSolar2D Desktop App\n/develop/Solar2D/tools/kwik-editor (Maybe) Web App (React)\nREST Server\nreceives Props and Commands and then renders .lua/.json\n/develop/Solar2D/tools/pegasus-harness\n/develop/Solar2D/tools/pegasus-launcher\nUtilities\ngenerating scene/pageX/index.lua\nthe table in the index.lua is created by interating files in editor.template/components and template/commands\nscafolding (optional)\nit outputs .lua files to components and commands folder by reading scene/pageX/index.lua\n/develop/Solar2D/tools/generate_scene_index",
     "description": "Tools Exporrter plugin for PS, XD\nUXP\nexport images export source code traverse photoshop layers\ncomponents/pageX/layers/**/*.lua\nkwik-exporter\\src\\photoshop\\publishCode.ts\ntraverse App/contentX/\ncommands/pageX/ for envets components/pageX for components such as audios,groups .. components/pageX/layers from Photoshop and attached animation, button generate_scene_index\\generate_models.lua\nmerge the both results to ouput components/pageX/index.lua ⭐️\nlocal sceneName = ... -- local scene = require('controller.scene').new(sceneName, { name = \"page01\", components = { layers = {{bg = {}}, {layerX = {class={button}}}}, audios = {}, groups = {}, others = {}, timers = {}, variables = {} }, commands = {\"bg.clickLayer\"}, onInit = function(scene) print(\"onInit\") end }) return scene develop/UXP/kwik-exporter\nA layer set is exported as one single image if assets/images/pageX has the foler with the same name of the layer set.",
@@ -446,6 +598,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "REST API",
     "uri": "/kwik5docs/dev/design/workflow/workflow/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Language",
+    "content": "Set Language\nsets the project language from the selected language from the list.",
+    "description": "Set Language\nsets the project language from the selected language from the list.",
+    "tags": [],
+    "title": "Set Language",
+    "uri": "/kwik5docs/kwik_editor/actions/language/set_language/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model \u003e Assets",
@@ -584,6 +744,14 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/design/project_model/components/animation/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Animation\nPlay Animation Pause Animation Resume Animation",
+    "description": "Animation\nPlay Animation Pause Animation Resume Animation",
+    "tags": [],
+    "title": "Animation",
+    "uri": "/kwik5docs/kwik_editor/actions/animation/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Implementation \u003e Class Diagrams",
     "content": "classDiagram editorIndex editorIndex *-- menu : 1. User clicks Layer commands o-- selectBook commands o-- selectPage commands o-- selectLayer commands o-- selectTool class selectors{ - List: App, Book,Page - List: Layer, Audio, Group, Timer .. + projectPageSelector + componentSelector - componentHandler() } class selectorBase{ + selectorIcon + entries + onClick() } selectors \u003c|..selectorBase: 1.1 onClick calls componentHandler menu *-- selectors selectors ..\u003e store :1.2 commandHandler sets Layer entries class commands { + page + book + layer * class store.set() } class selectTool { controller:command() } class editorAnimation { + layerTable as selectbox + controlbox + buttons + controller } class layerTable { + name + class entries: animation, interaction, replacement create() displays name and class entries oncllick() name for propsTable, animation for editorAnimation } class layerTableCommands{ + commandHandler + commandHanderClass } class selectLayer { propsTable:setValue(decoded) propsTable:show() propsButtons:show() } class propsTable { can be editable } propsTable *-- buttons selectLayer ..\u003epropsTable layerTable *--layerTableCommands class controller { selectbox.classEditorHandler() -\u003e reset() -\u003e setValue() -\u003e redraw() command() -\u003e util.decode(params) -\u003e selectbox:setValue(decoded) -\u003e controlbox:didHide(UI) -\u003e controlbox:destroy(UI) -\u003e controlbox:init(UI) -\u003e controlbox:setValue(decoded) -\u003e controlbox:create(UI) -\u003e controlbox:didShow(UI) -\u003e controlbox:show() -\u003e onCompletebox:show() -\u003e buttons:show() } editorAnimation *-- layerTable editorAnimation \u003c|.. controller layerTable \u003c|.. baseTable : create() is overrided in layerTable editorAnimation *-- conrolbox conrolbox \u003c|.. baseProps class baseTable { + entries commandHandler() store.listener() render() } class BTree{ setCondition() setActionStatus() } layerTableCommands ..\u003e BTree : 2. User clicks a animation entry \u003cbr\u003e 2.1 BTree select animation TRUE BTree ..\u003e commands : 2.2. load animation (Activated) \u003cbr\u003e2.3.1 selectTool for animation class commands ..\u003e selectTool: 2.5. select animation selectTool ..\u003e controller: 2.5 calls command() to display animationEditor store ..\u003e baseTable : 1.3. calls listenr in baseTable class selectbox{ + setTemplate() + commandHandler() } editorAnimation *-- selectbox : User clicks an animation entry selectbox --\u003e controller : commandHandler calls classEdtiorHandler",
     "description": "classDiagram editorIndex editorIndex *-- menu : 1. User clicks Layer commands o-- selectBook commands o-- selectPage commands o-- selectLayer commands o-- selectTool class selectors{ - List: App, Book,Page - List: Layer, Audio, Group, Timer .. + projectPageSelector + componentSelector - componentHandler() } class selectorBase{ + selectorIcon + entries + onClick() } selectors \u003c|..selectorBase: 1.1 onClick calls componentHandler menu *-- selectors selectors ..\u003e store :1.2 commandHandler sets Layer entries class commands { + page + book + layer * class store.set() } class selectTool { controller:command() } class editorAnimation { + layerTable as selectbox + controlbox + buttons + controller } class layerTable { + name + class entries: animation, interaction, replacement create() displays name and class entries oncllick() name for propsTable, animation for editorAnimation } class layerTableCommands{ + commandHandler + commandHanderClass } class selectLayer { propsTable:setValue(decoded) propsTable:show() propsButtons:show() } class propsTable { can be editable } propsTable *-- buttons selectLayer ..\u003epropsTable layerTable *--layerTableCommands class controller { selectbox.classEditorHandler() -\u003e reset() -\u003e setValue() -\u003e redraw() command() -\u003e util.decode(params) -\u003e selectbox:setValue(decoded) -\u003e controlbox:didHide(UI) -\u003e controlbox:destroy(UI) -\u003e controlbox:init(UI) -\u003e controlbox:setValue(decoded) -\u003e controlbox:create(UI) -\u003e controlbox:didShow(UI) -\u003e controlbox:show() -\u003e onCompletebox:show() -\u003e buttons:show() } editorAnimation *-- layerTable editorAnimation \u003c|.. controller layerTable \u003c|.. baseTable : create() is overrided in layerTable editorAnimation *-- conrolbox conrolbox \u003c|.. baseProps class baseTable { + entries commandHandler() store.listener() render() } class BTree{ setCondition() setActionStatus() } layerTableCommands ..\u003e BTree : 2. User clicks a animation entry \u003cbr\u003e 2.1 BTree select animation TRUE BTree ..\u003e commands : 2.2. load animation (Activated) \u003cbr\u003e2.3.1 selectTool for animation class commands ..\u003e selectTool: 2.5. select animation selectTool ..\u003e controller: 2.5 calls command() to display animationEditor store ..\u003e baseTable : 1.3. calls listenr in baseTable class selectbox{ + setTemplate() + commandHandler() } editorAnimation *-- selectbox : User clicks an animation entry selectbox --\u003e controller : commandHandler calls classEdtiorHandler",
@@ -600,12 +768,28 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/implementation/audio_editor/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Physics",
+    "content": "Body Type\nchanges body type of physics\nBody to select a physics body Type to select static, dynamic, kinematic",
+    "description": "Body Type\nchanges body type of physics\nBody to select a physics body Type to select static, dynamic, kinematic",
+    "tags": [],
+    "title": "Body Type",
+    "uri": "/kwik5docs/kwik_editor/actions/physics/body_type/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo",
     "content": "Bookstore TODO\nlibrary.psd, dialog.psd, textLabels.psd page_custscene.psd\nrestore.psd showOverlay will be used\nlibrary filter\nAll/Downloaded/NotPurchased build.settings\nomit editor.template/assets library page portrait\nrestore\ndownload all status recovered (downloaded) book scroll view for library/table page\nUXP\ncp components/bookstore/booktoreX.lua to bookTOC/scenes/library\nadd filter in library page\nCan create a storybook like? navigation bar?\nTest versions\nBookstore app contains the multiple kwik projects(books) inside. The lua files of each book are embedded in the app binary but the assets such as images, audio files of each book are not embedded in the app binary. They are downloadable from a web server. Due to Apple’s regulation, Solar2D does not allow to load the lua files (programming code) via Internet. The lua files must be embedded in the app binary but the other assets can be transfered from http server to the app.\nA library page controls which book to be loaded with In App Purchase. User clicks a book icon on thubnail view on a library page, and a purchase dialog appears if user wants to buy one. A project called bookTOC(Table Of Content) contains library.psd and dialog.psd\nWhen you like to add new books, you need to update the model.lua of bookTOC to include a new book information.\nYou can create as many as books but Bookstore is not designed to hold hundreds of books.\nSample file Please download the sample project from here.\nPhotoshop ├── bookFree │ ├── page1.psd │ └── page2.psd ├── bookOne │ ├── page1.psd │ └── page2.psd └── bookTOC ├── dialog.psd └── library.psd Solar2D ├── App │ ├── bookFree │ ├── bookOne │ └── bookTOC │ ├── components | ├── bookstore | └── model.lua └── main.lua BookServer ├── compress_assets | └── main.lua └── bookstore ├── bookFree └── bookOne BooKServer\ncopy_books script archives each assets.zip of books into BookServer/bookstore folder.\nUsing node.js, install http-server and run\ncd BookServer http-server Set the url of http://localhost:8080/bookstore to Solar2D/components/bookstore/model.lua\nlocal M = require(\"components.bookstore.model.base\") -- M.debug = true M.URL = \"http://localhost:8080/bookstore/\" ... ... Solar2D\nOpen main.lua with the simulator Solar2D Solar2D project has main.lua in the root directory.\n├─App │ ├─book01 │ ├─book02 │ └─bookTOC ├─extlib ├─lib build.settings config.lua main.lua main.lua\nThere is just one line to load “bookTOC” book\nrequire(\"controller.index\").bootstrap({name=\"bookTOC\", sceneIndex = 1}) -- scenes.index App/bookTOC/scenes/index.lua has a table of page names, so sceneIdex = 1 means to open library page.\nlocal scenes = { \"library\", \"dialog\" } return scenes build.settings\nYou may need to add permissions for your app. The following permissions are default\nandroid = { usesPermissions = { \"android.permission.INTERNET\", \"android.permission.WRITE_EXTERNAL_STORAGE\", \"com.android.vending.BILLING\", }, }, config.lua\nplease add google license key for android device.\nlicense = { google = { key = \"Please set your google license key\", }, }, bookTOC library.psd shows the thumbnail of books and the buttons for purchase and download\nEach {{bookName}}Icon\nit is a placeholder and the following layers are copied to the position of each {{bookName}}Icon\ndownloadBtn savedBtn savingTxt purchaseBtn restoreBtn\nit restores a book purchased history from one of online store(Apple, Google, Amazon)\ndilaog.psd shows a book image and the IAP buttons and information text\ndownloadBtn savedBtn savingTxt purchaseBtn infoTxt hideOverlayBtn bookFree page1.psd\npage2.psd\nshows the following goto buttons\nGoto TOC\nGOto page1\nGoto Next Book\nbookOne page1.psd\npage2.psd Goto TOC GOto Title Goto Previous Book BookServer Please use the script to zip the image, audio files as zip files\ncompress_assets/main.lua for Corona Simulator\ncommand.setServerFolder(\"macos\", \"bookstore\") --command.setServerFolder(\"win32\", \"bookstore\") local books = { {project = \"bookFree\", serverFolder = \"bookFree\"}, {project = \"bookOne\", serverFolder = \"bookOne\"}, } local onLineImages = { {project = \"bookFree\", serverFolder = \"bookFree\", image = \"assets/images/page1/bg@4x.png\"}, {project = \"bookOne\", serverFolder = \"bookOne\", image = \"assets/images/page1/bg@4x.png\"}, } ... ...",
     "description": "Bookstore TODO\nlibrary.psd, dialog.psd, textLabels.psd page_custscene.psd\nrestore.psd showOverlay will be used\nlibrary filter\nAll/Downloaded/NotPurchased build.settings\nomit editor.template/assets library page portrait\nrestore\ndownload all status recovered (downloaded) book scroll view for library/table page\nUXP\ncp components/bookstore/booktoreX.lua to bookTOC/scenes/library\nadd filter in library page\nCan create a storybook like? navigation bar?\nTest versions\nBookstore app contains the multiple kwik projects(books) inside. The lua files of each book are embedded in the app binary but the assets such as images, audio files of each book are not embedded in the app binary. They are downloadable from a web server. Due to Apple’s regulation, Solar2D does not allow to load the lua files (programming code) via Internet. The lua files must be embedded in the app binary but the other assets can be transfered from http server to the app.",
     "tags": [],
     "title": "Bookstore",
     "uri": "/kwik5docs/dev/bookstore/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Canvas",
+    "content": "Brush Size\nsets the size of a brush.",
+    "description": "Brush Size\nsets the size of a brush.",
+    "tags": [],
+    "title": "Brush Size",
+    "uri": "/kwik5docs/kwik_editor/actions/canvas/brush_size/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model",
@@ -624,12 +808,28 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/tutorial/drawing_canvas/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Conditions",
+    "content": "Else\ncreates an optional second step of a condition. Like the IF, you can use a pre-made variable or an expression.\nParameters are:\nSimple/Advanced: a simple Else sets the comparison to “if the condition above is ok: do A, ELSE: do B”. An advanced Else reads this way: “if the condition above is ok: do A, ELSE if the condition below is correct: do B”;\nVariable: lists all variables (you must use a variable or an expression);\nExpression: formula/code that needs to be compared (you must use a variable or an expression);\nOperator: lists all available operators for the condition;\nComparison: formula/code that to be compared against the variable/expression above;\n(optional) Enable second condition: if checked, the second condition below will be checked also;\n(optional) AND/OR: operator for the second condition;\n(optional) Variable: lists all variables (you must use a variable or an expression);\n(optional) Expression: formula/code that needs to be compared (you must use a variable or an expression);\n(optional) Operator: lists all available operators for the condition;\n(optional) Comparison: formula/code that to be compared against the variable/expression above;",
+    "description": "Else\ncreates an optional second step of a condition. Like the IF, you can use a pre-made variable or an expression.\nParameters are:\nSimple/Advanced: a simple Else sets the comparison to “if the condition above is ok: do A, ELSE: do B”. An advanced Else reads this way: “if the condition above is ok: do A, ELSE if the condition below is correct: do B”;\nVariable: lists all variables (you must use a variable or an expression);",
+    "tags": [],
+    "title": "Else",
+    "uri": "/kwik5docs/kwik_editor/actions/condition/else/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Code",
+    "content": "External Code\nshows a panel for external code entry. You must have Flash properly set in order to use this interaction, otherwise your content will not be saved.",
+    "description": "External Code\nshows a panel for external code entry. You must have Flash properly set in order to use this interaction, otherwise your content will not be saved.",
+    "tags": [],
+    "title": "External Code",
+    "uri": "/kwik5docs/kwik_editor/actions/code/external_code/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Component View",
     "content": "Toolbar \u003e Group\nicons\nnew group trash New/Modify members of a group are chosen from layer table on the left.\nLayer table \u003c- -\u003e Group member table\nuse left/right arrow buttons to add/remove between layer table and group-member table.\nAdd/Remove icons\nGroup properties\nname\nalpha\nisLuaTable: false\nif true, display.newGroup is not created, a normal lua table is internally created, and you can use it with your external code.\nyou can access the group with UI.groups, it can be a displayGroup or a normal lua table which contains the layer names of text string.\nlocal myGroup = UI.groups[\"myGroup\"] rotation\nxScale\nyScale\nApp/book/components/page/groups/myGroup.lua\nlocal props = { name = \"myGroup\", members = { \"GroupA.SubA.Triangle\", \"GroupA.Ellipse\", }, properties = { alpha = NIL, xScale = NIL, yScale = NIL, rotation = NIL, isLuaTable = false } } if props.properteis.isLuaTable then UI.groups[props.name] = props.members else UI.groups[props.name] = display.newGroup() ... end return require(\"components.kwik.page_group\").set(props) Group Table\nApp/book/componets/page/index.lua\ngroups are rendered after layers. There is not GUI to change the order of groups. You may change the order of entries of groups manually in vscode.\nlocal sceneName = ... local model = { --name = \"\", components = { layers = { ... ... }, audios = { }, groups = { {myGroup={}} }, timers = { }, variables = { }, joints = { }, page = { } }, ... ... Context Menu (ToDo) New Rename Edit In vscode Copy Paste Delete Animation/Interaction All animations: Linear Blink Bounce Pulse Rotation Tremble Switch Filter Path will work with a group\nInteractions: Button, Drag, Pinch, Swipe works with a group.\nLayer replacements (spritesheet etc) are not supprted",
     "description": "Toolbar \u003e Group\nicons\nnew group trash New/Modify members of a group are chosen from layer table on the left.\nLayer table \u003c- -\u003e Group member table\nuse left/right arrow buttons to add/remove between layer table and group-member table.\nAdd/Remove icons\nGroup properties\nname\nalpha\nisLuaTable: false\nif true, display.newGroup is not created, a normal lua table is internally created, and you can use it with your external code.",
     "tags": [],
     "title": "Group",
-    "uri": "/kwik5docs/kwik_editor/componentview/page/group/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/page/group/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Implementation \u003e Class Diagrams",
@@ -648,12 +848,84 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/design/project_model/settings/ios/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Animation",
+    "content": "Pause Animation\nplay the selected animation from the list – only animations set to “Wait request” show in the list.",
+    "description": "Pause Animation\nplay the selected animation from the list – only animations set to “Wait request” show in the list.",
+    "tags": [],
+    "title": "Pause Animation",
+    "uri": "/kwik5docs/kwik_editor/actions/animation/pause/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Audio",
+    "content": "Pause Audio\npause the selected audio from the list.",
+    "description": "Pause Audio\npause the selected audio from the list.",
+    "tags": [],
+    "title": "Pause Audio",
+    "uri": "/kwik5docs/kwik_editor/actions/audio/pause/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Filter",
+    "content": "Filter Pause\npauses filter/generator/composer animation.",
+    "description": "Filter Pause\npauses filter/generator/composer animation.",
+    "tags": [],
+    "title": "Pause Filter",
+    "uri": "/kwik5docs/kwik_editor/actions/filter/pause/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Sprite",
+    "content": "Pause Sprite\npauses the selected sprite sheet replacement from the list.",
+    "description": "Pause Sprite\npauses the selected sprite sheet replacement from the list.",
+    "tags": [],
+    "title": "Pause Sprite",
+    "uri": "/kwik5docs/kwik_editor/actions/sprite/pause/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Timer",
+    "content": "Pause Timer\npauses the selected timer from the list.",
+    "description": "Pause Timer\npauses the selected timer from the list.",
+    "tags": [],
+    "title": "Pause Timer",
+    "uri": "/kwik5docs/kwik_editor/actions/timer/pause/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Video",
+    "content": "Pause Video\npauses the selected video from the list.",
+    "description": "Pause Video\npauses the selected video from the list.",
+    "tags": [],
+    "title": "Pause Video",
+    "uri": "/kwik5docs/kwik_editor/actions/video/pause/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e REST API",
     "content": "Rest Server See get_started/custom_class as well\nGET\nreturns .json of layer components(classes) or events/commands. It also returns default values of compoent properties\n@host=http://localhost:9090 ### run pegasus server if not running, and return books GET /app ### GET /bookFree ### GET /bookFree/page1 ### selectLayer GET /bookFree/page1/title ### GET /bookFree/page1/title/linear POST\nreceives Props of layers and Commands and then renders .lua components/commands. It also stores the request params in .json\n### modify layer props POST /bookFree/page1/title/?command=preview Content-Type: application/yaml { alpha=0.5 } ### save layer props with the current value POST /bookFree/page1/title/?command=save Content-Type: application/yaml PUT\ncreates a new lua file in App directory if not exist. scafolding a lua file\nGET /app ### GET /newBook PUT /newBook PUT /newBook/newPage ### update index.lua too PUT /newBook/newPage/newLayer PUT /newBook/newPage/newLayer/?class=linear ### custom class GET /components/custom PUT /components/custom/newClass PUT /newBook/newPage/newLayer/?class=newClass ### events GET /newBook/commands/newPage PUT /newBook/commands/newPage/newEvent DELETE\nremoves a lua file\n### DELETE /newBook/newPage/newLayer DELETE /newBook/newPage/newLayer/?class=linear ### custom class? DELETE /components/custom/newClass DELETE /newBook/newPage/newLayer/?class=newClass ### events DELETE /newBook/commands/newPage/newEvent",
     "description": "Rest Server See get_started/custom_class as well\nGET\nreturns .json of layer components(classes) or events/commands. It also returns default values of compoent properties\n@host=http://localhost:9090 ### run pegasus server if not running, and return books GET /app ### GET /bookFree ### GET /bookFree/page1 ### selectLayer GET /bookFree/page1/title ### GET /bookFree/page1/title/linear POST\nreceives Props of layers and Commands and then renders .lua components/commands. It also stores the request params in .json\n### modify layer props POST /bookFree/page1/title/?command=preview Content-Type: application/yaml { alpha=0.5 } ### save layer props with the current value POST /bookFree/page1/title/?command=save Content-Type: application/yaml PUT",
     "tags": [],
     "title": "REST Server",
     "uri": "/kwik5docs/dev/design/api/rest_server/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Monetization",
+    "content": "Restore Product\nrestores all previous in-app purchases.",
+    "description": "Restore Product\nrestores all previous in-app purchases.",
+    "tags": [],
+    "title": "Restore Products",
+    "uri": "/kwik5docs/kwik_editor/actions/monetization/restore_product/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Particles",
+    "content": "Particles Stop\nstops particles",
+    "description": "Particles Stop\nstops particles",
+    "tags": [],
+    "title": "Sop Particles",
+    "uri": "/kwik5docs/kwik_editor/actions/particles/stop/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Multiplier",
+    "content": "Multiplier Stop\nstops Multiplier",
+    "description": "Multiplier Stop\nstops Multiplier",
+    "tags": [],
+    "title": "Stop Multiplier",
+    "uri": "/kwik5docs/kwik_editor/actions/multipliers/stop/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Implementation \u003e Class Diagrams",
@@ -680,6 +952,14 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/design/project_model/components/audio/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Audio\nPlay Pause Resume Rewind Stop Set Volume Mute/Unmute Read to Me Play Read to Me Play Sync Record Audio",
+    "description": "Audio\nPlay Pause Resume Rewind Stop Set Volume Mute/Unmute Read to Me Play Read to Me Play Sync Record Audio",
+    "tags": [],
+    "title": "Audio",
+    "uri": "/kwik5docs/kwik_editor/actions/audio/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model \u003e Commands",
     "content": "Canvas Action Command action editor \u003e Interactions \u003e Canvas\n//defined in editor.action.model.lua\nM.commands{ ... canvas = { brush = { size = {size = 10, alpha = 1}, color = {0,0,0,1} }, erase = {}, undo = {}, redo = {} }, ... ```",
     "description": "Canvas Action Command action editor \u003e Interactions \u003e Canvas\n//defined in editor.action.model.lua\nM.commands{ ... canvas = { brush = { size = {size = 10, alpha = 1}, color = {0,0,0,1} }, erase = {}, undo = {}, redo = {} }, ... ```",
@@ -688,12 +968,44 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/design/project_model/commands/canvas/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Conditions",
+    "content": "End If\nends the condition (last step)",
+    "description": "End If\nends the condition (last step)",
+    "tags": [],
+    "title": "End If",
+    "uri": "/kwik5docs/kwik_editor/actions/condition/end_if/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Canvas",
+    "content": "Erase Canvas\nclean the canvas area.",
+    "description": "Erase Canvas\nclean the canvas area.",
+    "tags": [],
+    "title": "Erase Canvas",
+    "uri": "/kwik5docs/kwik_editor/actions/canvas/erase_canvas/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Go To Page\ngoes to a different page.\nParameters are:\nPage Transition: list of available transitions;\nWait seconds before switch page: time to wait before moving to the other page. Sometimes it is useful to wait a few seconds to end animations or audio playing;\nSelect Page – Go to: inform the target page. Besides the page name, you can set NEXT and/or PREVIOUS.\nNEXT PREVIOUS {{page name}}",
+    "description": "Go To Page\ngoes to a different page.\nParameters are:\nPage Transition: list of available transitions;\nWait seconds before switch page: time to wait before moving to the other page. Sometimes it is useful to wait a few seconds to end animations or audio playing;\nSelect Page – Go to: inform the target page. Besides the page name, you can set NEXT and/or PREVIOUS.\nNEXT PREVIOUS {{page name}}",
+    "tags": [],
+    "title": "Go To Page",
+    "uri": "/kwik5docs/kwik_editor/actions/page/go_to_page/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo",
     "content": "TODO\neditor/controller/save.lua editor/parts/controller/properties/save.lua implementation Details the following functions in editor.controller.index class are mainly used for CRUD of json/lua files in select, save, delete etc. See editor.controller.save.\nseparate controllers for the audio, group, timer and variable components are implemented i.e\nuseClassEditorProps setValue render save read select (read) See editor.parts.controller directory. selectXXX lua reads json and displays a UI table. The data is passed by nanostore such as bookStore:set, pageStore:set.\nnanostore is used as an experimental usage\nselectApp.lua\nlocal appFolder = params.appFolder or system.pathForFile( \"App\", system.ResourceDirectory ) if params.useTinyfiledialogs then appFolder = tfd.selectFolderDialog({ title = \"select App folder\", default_path = path }) -- print(\"\", appFolder) end if success then local books = {} for file in lfs.dir( appFolder ) do if util.isDir(file) then -- print(\"\", \"Found file: \" .. file ) -- set them to nanostores if file:len() \u003e 3 and file ~=\"kwikEditor\" then table.insert(books, {name = file, path= util.PATH(appFolder..\"/\"..file)}) end end end if #books \u003e 0 then UI.editor.bookStore:set(books) end selectBook.lua\nlocal path =system.pathForFile( \"App/\"..bookName..\"/models\", system.ResourceDirectory) UI.editor.currentBook = bookName local success = lfs.chdir( path ) -- isDir works with current dir if success then local pages = {} for file in lfs.dir( path ) do if util.isDir(file) then -- set them to nanostores if file:len() \u003e 3 and file ~='assets' then table.insert(pages, {name = file, path= util.PATH(path..\"/\"..file)}) end end end if #pages \u003e 0 then UI.editor.pageStore:set(pages) end end selectPage.lua\nif params.page:len() \u003e 0 and UI.page ~= params.page then local app = App.get() app:showView(\"components.\" .. params.page .. \".index\", {effect = \"slideDown\"}) end selectLayer.lua\nlocal path = system.pathForFile( \"App/\"..UI.editor.currentBook..\"/models/\"..UI.page ..\"/\"..params.path..getFileName(layerName, className)..\".json\", system.ResourceDirectory) ... propsTable:setValue(decoded) ... instead of nanostore, a traditional set/get functions are used here\nselectTool.lua\nthis loads class’s properties of a layer\nif params.layer then -- this measn user clicks one of class, anim, button, drag ... UI.editor.currentLayer = params.layer end tool.controller:read(UI.editor.currentBook, UI.page, UI.editor.currentLayer, params.isNew, params.class) if params.isNew then it loads default values to propsTable\nedtior.controller.index\nfunction M:read(book, page, layer, isNew, class) print(\"read\", page, layer, isNew, class) -- the values are used in useClassEdtiorProps() self.page = page self.layer = layer self.isNew = isNew self.class = class if isNew then local path = \"editor.template.components.pageX.\"..self.layerTool..\".defaults.\"..class local template = require(path) self:reset() self:setValue(template, nil, true) self:redraw() elseif layer then -- this comes from clicking layerTable.class local layerName = layer or \"index\" --local path = page ..\"/\"..layerName..\"_\"..self.layerTool..\".json\" local path = system.pathForFile( \"App/\"..book..\"/models/\"..page ..\"/\"..layerName..\"_\"..self.layerTool..\".json\", system.ResourceDirectory) if self.lastSelection ~= path then self.lastSelection = path local decoded, pos, msg = json.decodeFile( path ) if not decoded then print( \"Decode failed at \"..tostring(pos)..\": \"..tostring(msg) ) else print( \"File successfully decoded!\" ) end self:reset() self:setValue(decoded, 1) self:redraw() else self.view.isNew = true toolbar:toogleToolMap() end end end For layer’s class, the json is retrived by tool.controller:read above and the read function calls setValue(decoded) inside to display the data to controlProps table.\neditor.controller.index\nfunction M:setValue(decoded, index, template) if decoded == nil then return end if not template then print(json.encode(decoded[index])) self.selectbox:setValue(decoded, index) -- \"linear 1\", \"rotation 1\" ... self.controlProps:setValue(decoded[index].controls) self.onCompletebox:setValue(decoded[index].actionName) else self.selectbox:setTemplate(decoded) -- \"linear 1\", \"rotation 1\" ... self.controlProps:setValue(decoded.controls) self.onCompletebox:setValue(decoded.actionName) end end generic setValue is implemented in edtior.controller.index, and components can have own setValue for their UI table. for instance,\neditor/animation/controller.lua editor/replacement/controller/index.lua editor.controller.index\nthe command() reads json with util.decode() from params.\nfunction M:command() local instance = require(\"commands.kwik.baseCommand\").new( function (params) local UI = params.UI local name = params[params.class] or \"\" local decoded = util.decode(params) -- this reads models/xx.json -- print(\"From selectors\") self.controlProps:didHide(UI) self.controlProps:destroy(UI) self.controlProps:init(UI) self.controlProps:setValue(decoded) self.controlProps.isNew = params.isNew -- self.controlProps:create(UI) self.controlProps:didShow(UI) -- -- self:show() self.controlProps:show() self.onCompletebox:show() self.buttons:show() ... util.decode function M.decode(params) local UI = params.UI if params.isNew then local path = \"editor.template.components.pageX.\"..params.class..\".defaults.\"..params.class return require(path) elseif params.isDelete then print(params.class, \"delete\") return {} else local name = params[params.class] or \"\" if params.subclass then name = params.subclass..\"/\"..name end local path = system.pathForFile( \"App/\"..UI.editor.currentBook..\"/models/\"..UI.page ..\"/\"..params.class..\"s/\"..name..\".json\", system.ResourceDirectory) decoded, pos, msg = json.decodeFile( path ) if not decoded then print( \"Decode failed at \"..tostring(pos)..\": \"..tostring(msg), path ) decoded = {} end return decoded or {} end end selectAudio.lua\nrequire(“editor.audio.index”).controller:command()\nselectTimer.lua\nrequire(“editor.timer.index”).controller:command()\nselectVariable.lua\nrequire(“editor.variable.index”).controller:command()\nselectGroup.lua\nrequire(“editor.group.controller.selectGroup”)\nselectGroup returns a command() for Group\nlocal command = function (params) local UI = params.UI local name = params.group or \"\" print (params.class) print(\"selectGroup\", name, path, params.show) --print(debug.traceback()) local tableData if params.isNew then local boxData = util.read( UI.editor.currentBook, UI.page) -- tableData = { name = \"(new-group)\", layers = {}, children = {}, alpha = nil, xScale = nil, yScale = nil, rotation = nil, isLuaTable = nll } UI.editor.groupLayersStore:set(tableData) -- layersTable UI.editor.layerJsonStore:set(boxData.layers) -- layersbox elseif params.isDelete then elseif name:len() \u003e 0 then -- -- layersTable -- local path = system.pathForFile( \"App/\"..UI.editor.currentBook..\"/models/\"..UI.page ..\"/groups/\"..name..\".json\", system.ResourceDirectory) tableData, pos, msg = json.decodeFile( path ) if not tableData then print( \"Decode failed at \"..tostring(pos)..\": \"..tostring(msg), path ) tableData = {} end -- -- layersbox -- local boxData = util.read( UI.editor.currentBook, UI.page, function(parent, name) -- let's remove entries of tableData from boxData -- layers = [\"GroupA.Ellipse\", \"GroupA.SubA.Triangle\"] for i=1, #tableData.layers do local _name = tableData.layers[i] if parent then if parent ..\".\"..name == _name then return true end elseif name == _name then return true end end return false end) UI.editor.layerJsonStore:set(boxData.layers) -- layersbox UI.editor.groupLayersStore:set(tableData) -- layersTable end -- editor:show() selectPageIcons.lua\nlocal command = function (params) ... local path = system.pathForFile( \"App/\"..UI.editor.currentBook..\"/models/settings.json\", system.ResourceDirectory) ... settingsTable:setValue(decoded) ... create a new component from toolbar\nselectToolbar.lua UI.scene.model UI.scene.model is set when selectPage is called\nlocal scene = require('controller.scene').new(sceneName, { name = \"page1\", components = { layers = { { bg={ } }, { gotoBtn={ --class={\"animation\"} } }, { title={ class={\"linear\"} } }, }, audios = {}, groups = {}, timers = {}, variables = {}, page = { } }, commands = { \"eventOne\", \"eventTwo\", \"act01\" }, onInit = function(scene) print(\"onInit\") end }) util.read() function parses “App/”..book..\"/models/\"..page ..\"/index.json\"\n... ret.layers = parser(decoded) ... setFiles(ret.audios, \"/audios/short\") setFiles(ret.audios, \"/audios/long\") setFiles(ret.groups, \"/groups\") setFiles(ret.commands, \"/commands\") return ret { layers = { {name = \"layerOne\", parent=\"\", children = { {name=\"childOne}, parent=\"layerOne\", children = {}} } }, {name = \"layerTwo\", parent=\"\", children = {}}, }, audios = {} } save (write) CRUD operations on json/lua files are mainly for commands and components in a selected page\nthe editor does not support to create a new entry of App, Book, Page. The properties can be modified for App, Book, Page.\ncreate/update a layer class get props render App/booxX/components/pageX/layers/XXX.lua save it as a json file util.createIndexModel returns the updated scene model if a classname for a layer is newly added layer names must be unique in a scene model.\n```lua util.createIndexModel(UI.scene.model, UI.editor.currentLayer, classname) ``` ```lua scene = { name = \"canvas\", components = { layers = { { back={ } }, { butBlue={ class={\"button\"}, {A={}}, {B={}} } }, { butWhite={ } }, }, audios = { }, groups = { }, timers = { }, variables = { }, others = { } }, } ``` - render App.booxX.components.pageX.index.lua - save json editor.controller.save local name = ... local parent, root = parent_root(name) local util = require(\"editor.util\") local json = require(\"json\") -- -- save command performs on one entry. -- If user switch to another entry without saving, the previous change will be lost. -- local instance = require(\"commands.kwik.baseCommand\").new( function(params) local UI = params.UI local props = params.props local tool = UI.editor:getTool(props.class) -- each tool.contoller can overide render/save. So page tools of audio, group, timer should use own render/save if tool then local files = {} local toolName = UI.editor:getToolName(props.class) local filename = props.name local classname = props.class:lower() ------------- -- save lua files[#files+1] = tool.controller:render(UI.editor.currentBook, UI.page, UI.editor.currentLayer, toolName, classname, props) ----------- --- save json local decoded = params.decoded or {} decoded[props.index] = props -- files[#files+1] = tool.controller:save(UI.editor.currentBook, UI.page, UI.editor.currentLayer,toolName, decoded) ----------- --- Update components/pageX/index.lua model/pageX/index.json local updatedModel = util.createIndexModel(UI.scene.model, UI.editor.currentLayer, classname) files[#files+1] = tool.controller:renderIndex(UI.editor.currentBook, UI.page, updatedModel) files[#files+1] = tool.controller:saveIndex(UI.editor.currentBook, UI.page, UI.editor.currentLayer,classname, updatedModel) ---------- -- publish util.executePubish(files) else print(\"tool not found for\", props.class) end end ) -- return instance assets media files of audio, layer replacements(video, spritesheet, particle, syncText, web) in App/bookX/assets folder are indexed with linked layers in assets.json\nSo tool.controller:save() also performs a write operation on assets.json",
     "description": "TODO\neditor/controller/save.lua editor/parts/controller/properties/save.lua implementation Details the following functions in editor.controller.index class are mainly used for CRUD of json/lua files in select, save, delete etc. See editor.controller.save.\nseparate controllers for the audio, group, timer and variable components are implemented i.e\nuseClassEditorProps setValue render save read select (read) See editor.parts.controller directory. selectXXX lua reads json and displays a UI table. The data is passed by nanostore such as bookStore:set, pageStore:set.\nnanostore is used as an experimental usage",
     "tags": [],
     "title": "Implementation",
     "uri": "/kwik5docs/dev/implementation/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Physics",
+    "content": "Invert Gravity\ninverts the gravity of the selected body from the list.",
+    "description": "Invert Gravity\ninverts the gravity of the selected body from the list.",
+    "tags": [],
+    "title": "Invert Gravity",
+    "uri": "/kwik5docs/kwik_editor/actions/physics/invert_gravity/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Tutorial",
@@ -718,6 +1030,46 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Multi-lingual sample",
     "uri": "/kwik5docs/tutorial/lingualsample/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Animation",
+    "content": "Resume Animation\nplay the selected animation from the list – only animations set to “Wait request” show in the list.",
+    "description": "Resume Animation\nplay the selected animation from the list – only animations set to “Wait request” show in the list.",
+    "tags": [],
+    "title": "Resume Animation",
+    "uri": "/kwik5docs/kwik_editor/actions/animation/resume/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Audio",
+    "content": "Resume Audio\nresume the selected audio from the list.",
+    "description": "Resume Audio\nresume the selected audio from the list.",
+    "tags": [],
+    "title": "Resume Audio",
+    "uri": "/kwik5docs/kwik_editor/actions/audio/resume/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Filter",
+    "content": "Filter Resume\nresumes filter/generator/composer animation.",
+    "description": "Filter Resume\nresumes filter/generator/composer animation.",
+    "tags": [],
+    "title": "Resume Filter",
+    "uri": "/kwik5docs/kwik_editor/actions/filter/resume/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Timer",
+    "content": "Resume Timer\nresumes the selected timer from the list.",
+    "description": "Resume Timer\nresumes the selected timer from the list.",
+    "tags": [],
+    "title": "Resume Timer",
+    "uri": "/kwik5docs/kwik_editor/actions/timer/resume/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Video",
+    "content": "Rewind Video\nrewinds the selected video from the list.",
+    "description": "Rewind Video\nrewinds the selected video from the list.",
+    "tags": [],
+    "title": "Rewind Video",
+    "uri": "/kwik5docs/kwik_editor/actions/video/rewind/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model \u003e Commands",
@@ -749,7 +1101,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Timer",
-    "uri": "/kwik5docs/kwik_editor/componentview/page/timer/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/page/timer/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model \u003e Settings",
@@ -784,6 +1136,22 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/design/project_model/components/button/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Filter",
+    "content": "Filter Cancel\ncancels filter/generator/composer animation.",
+    "description": "Filter Cancel\ncancels filter/generator/composer animation.",
+    "tags": [],
+    "title": "Cancel Filter",
+    "uri": "/kwik5docs/kwik_editor/actions/filter/cancel/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Timer",
+    "content": "Cancel Timer\ncancels the selected timer from the list.",
+    "description": "Cancel Timer\ncancels the selected timer from the list.",
+    "tags": [],
+    "title": "Cancel Timer",
+    "uri": "/kwik5docs/kwik_editor/actions/timer/cancel/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model \u003e Components",
     "content": "Canvas PSD\nbookFree \u003e canvas Unit Test\neditor.test.suite_canvas Kwik4\ncomponents.kwik.layer_canvas.lua index\nApp/bookFree/canvas genereated from editor.template.componetns/pageX/index.lua\n{ name = \"pageX\", components = { layers = { { back={ } }, { painting={} }, { butBlue={ class={\"button\"}} }, { butWhite={class={\"button\"}} }, { butOrange={class={\"button\"}} }, { butCamera={class={\"button\"}} }, { butLarge={class={\"button\"}} }, { butMedium={class={\"button\"}} }, { bigCandice={class={\"button\"}} }, { Candice={class = {\"canvas\"}}, }, }, commands = {}, } editor/template/components/pageX/interaction/defaults/canvas.lua\n// TODO add attributes\nlocal M = { name = \"canvas\", class=\"canvas\", controls = { isActive = true } } return M template\neditor/template/components/pageX/interaction/layer_canvas\n//TODO create it from kwik4’s components.kwik.layer_canvas.lua\nlocal name = ... local parent,root = parent_root(name) local layerProps = require(parent..\"{{layer}}\") local M = { name =\"{{name}}\", class = \"{{class}}\", -- button, drag, canvas ... -- {{#controls}} UI.canvas.name = \"UI.canvas\" UI.canvas.cR, UI.canvas.cG, UI.canvas.cB = {{bc}} UI.canvas.brushSize = {{bs}} UI.canvas.brushAlpha = 1 UI.canvas.lineTable = {} UI.canvas.undone = {} {{/controls}} layerProps = layerProps } function M:create(UI) local sceneGroup = UI.scene.view local obj = self:createCanvas(UI) UI.layers[self.name] = obj sceneGroup[self.name] = obj sceneGroup:insert(obj) end ... ... return require(\"components.kwik.layer_canvas\").new(M) module\ncomponents.kwik.layer_canvas\" editor\n// editor.ihdex:getTool() returns a component editor from id of editor.model\ncomponents.editor.interaction.index\n// TODO implement a color selector for the attributes with Color\naction commands Please see design/project_model/commands/canvas and screenshot",
     "description": "Canvas PSD\nbookFree \u003e canvas Unit Test\neditor.test.suite_canvas Kwik4\ncomponents.kwik.layer_canvas.lua index\nApp/bookFree/canvas genereated from editor.template.componetns/pageX/index.lua\n{ name = \"pageX\", components = { layers = { { back={ } }, { painting={} }, { butBlue={ class={\"button\"}} }, { butWhite={class={\"button\"}} }, { butOrange={class={\"button\"}} }, { butCamera={class={\"button\"}} }, { butLarge={class={\"button\"}} }, { butMedium={class={\"button\"}} }, { bigCandice={class={\"button\"}} }, { Candice={class = {\"canvas\"}}, }, }, commands = {}, } editor/template/components/pageX/interaction/defaults/canvas.lua\n// TODO add attributes\nlocal M = { name = \"canvas\", class=\"canvas\", controls = { isActive = true } } return M template\neditor/template/components/pageX/interaction/layer_canvas\n//TODO create it from kwik4’s components.kwik.layer_canvas.lua\nlocal name = ... local parent,root = parent_root(name) local layerProps = require(parent..\"{{layer}}\") local M = { name =\"{{name}}\", class = \"{{class}}\", -- button, drag, canvas ... -- {{#controls}} UI.canvas.name = \"UI.canvas\" UI.canvas.cR, UI.canvas.cG, UI.canvas.cB = {{bc}} UI.canvas.brushSize = {{bs}} UI.canvas.brushAlpha = 1 UI.canvas.lineTable = {} UI.canvas.undone = {} {{/controls}} layerProps = layerProps } function M:create(UI) local sceneGroup = UI.scene.view local obj = self:createCanvas(UI) UI.layers[self.name] = obj sceneGroup[self.name] = obj sceneGroup:insert(obj) end ... ... return require(\"components.kwik.layer_canvas\").new(M) module",
@@ -792,12 +1160,28 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/design/project_model/components/canvas/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "canvas\nBrush Color Brush Size Erase Canvas Take Screen Shot Undo",
+    "description": "canvas\nBrush Color Brush Size Erase Canvas Take Screen Shot Undo",
+    "tags": [],
+    "title": "Canvas",
+    "uri": "/kwik5docs/kwik_editor/actions/canvas/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Reference \u003e Generative AI",
     "content": "WorkFlow Eagle API https://developer.eagle.cool/plugin-api graph TB subgraph assets[App/book/assets] subgraph audios short long subgraph sync mp3 timecode[timecode txt] end end subgraph images page1 page2 page3 end subgraph videos end subgraph spreadsheets end end descriptors -.-\u003e prompts-.-\u003e AI -. files .-\u003e Adobe creatorA((generative artist)) --\u003e notebook creatorA --\u003edescriptors subgraph Adobe[Media Files Library] Photoshop Illustrator Animate Premiere AfterEffects Audition end Photoshop -.-\u003e UXP UXP[kwik extension] -. png jpg path .-\u003eimages Animate -.-\u003e spreadsheets Premiere -.-\u003e videos AfterEffects-.-\u003evideos Audition -.- audios Illustrator -. svg, png, jpg .-\u003eimages creatorC((content creator)) -.-\u003e Adobe generative AI graph TB subgraph descriptors[media descriptors] fountain[fountain screenplay] description[image/video/audio descriptions] end subgraph notebook[jupyter notebook] python[python scripts/curl/wget ..] prompts OCR text[extracted text] OCR-.-\u003etext end subgraph AI[gen AI] SML eleventhLabs suno stableDiffusion[SD/Midjourney] end SML -. anew or refined .-\u003edescriptors subgraph assets[App/book/assets] subgraph audios short long subgraph sync mp3 timecode[timecode txt] end end subgraph images page1 page2 page3 end subgraph videos end subgraph spreadsheets end end descriptors -.-\u003e prompts-.-\u003e AI -. files .-\u003e Adobe[(Media Files Library)] creatorA((generative artist)) --\u003e notebook creatorA --\u003edescriptors Adobe -. publish .-\u003e assets App/book/assets/model.lua\nlocal M = { -- audios = {}, sprites = {}, -- videos = {} audios = { { name = \"click.mp3\", path = \"audios/short\", links = {{page = \"page1\"}, {page = \"page2\"}} } }, videos = { { name = \"videoA.mp4\", path = \"videos\", links = { {page= \"page01\", layers = {\"layerA1\", \"layerA10\"}}, {page= \"page02\", layers = {\"layerA2\", \"layerA20\"}} }, }, { name = \"videoB.mp4\", path = \"videos\", links = {{page= \"page01\", layers = {\"layerB\"}}} } }, } return M links are updated when creating/deleting a compoenet(audio, video etc) in kwik editor\nread with self.assetsSelector:onClick or selectBook.loadPage()\neditor/assets/index.lua\nlocal function readAsset(path, folder, map, parent) -- print(path..\"/\"..folder) local entries = {} local success = lfs.chdir( path..\"/\"..folder ) if success then for file in lfs.dir( path..\"/\"..folder ) do if util.isDir(file) and file~=\".\" and file~=\"..\" then -- print(\"\", \"@Found dir \" .. file ) local children = readAsset(path..\"/\"..folder, file, map, folder) for i=1, #children do entries[#entries + 1] = children[i] end elseif file~=\".\" and file~=\"..\" and file:find(\".lua\") == nil and file:find(\"@\") == nil and file:find(\".json\") == nil then local mapEntry = map[file] if mapEntry == nil then if parent==nil then entries[#entries + 1] = {name=file, path=folder, links={}} else local v = parent..\"/\"..folder entries[#entries + 1] = {name=file, path=v:gsub(\"audios/\",\"\"), links={}} end else mapEntry.isExist = true entries[#entries + 1] = {name=mapEntry.name, path=mapEntry.path, links=mapEntry.links} end end end lfs.chdir( path ) end return entries end Image Tile View extension\nEagle\nsearch “-” excludes a word\n“-@” excludes @2x, @4x\nshortcut for search is commnad + F\nit shows text file too",
     "description": "WorkFlow Eagle API https://developer.eagle.cool/plugin-api graph TB subgraph assets[App/book/assets] subgraph audios short long subgraph sync mp3 timecode[timecode txt] end end subgraph images page1 page2 page3 end subgraph videos end subgraph spreadsheets end end descriptors -.-\u003e prompts-.-\u003e AI -. files .-\u003e Adobe creatorA((generative artist)) --\u003e notebook creatorA --\u003edescriptors subgraph Adobe[Media Files Library] Photoshop Illustrator Animate Premiere AfterEffects Audition end Photoshop -.-\u003e UXP UXP[kwik extension] -. png jpg path .-\u003eimages Animate -.-\u003e spreadsheets Premiere -.-\u003e videos AfterEffects-.-\u003evideos Audition -.- audios Illustrator -. svg, png, jpg .-\u003eimages creatorC((content creator)) -.-\u003e Adobe generative AI graph TB subgraph descriptors[media descriptors] fountain[fountain screenplay] description[image/video/audio descriptions] end subgraph notebook[jupyter notebook] python[python scripts/curl/wget ..] prompts OCR text[extracted text] OCR-.-\u003etext end subgraph AI[gen AI] SML eleventhLabs suno stableDiffusion[SD/Midjourney] end SML -. anew or refined .-\u003edescriptors subgraph assets[App/book/assets] subgraph audios short long subgraph sync mp3 timecode[timecode txt] end end subgraph images page1 page2 page3 end subgraph videos end subgraph spreadsheets end end descriptors -.-\u003e prompts-.-\u003e AI -. files .-\u003e Adobe[(Media Files Library)] creatorA((generative artist)) --\u003e notebook creatorA --\u003edescriptors Adobe -. publish .-\u003e assets App/book/assets/model.lua",
     "tags": [],
     "title": "CMS",
     "uri": "/kwik5docs/reference/ai/cms/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Edit Image\nmoves, flips, rotates or (re) scales a layer, page or group.\nParameters are:\nLayer/Page/Group to be moved/scaled;\nMove X/Y: position, in pixels, where the object should be moved;\nScale W/H: scale, in percentage. The lock button sets both scales to the same value;\nFlip Horizontal: flip the selection horizontally;\nFlip Vertical: flip the selection vertically;\nRotate: rotates the image according the angle specified here;",
+    "description": "Edit Image\nmoves, flips, rotates or (re) scales a layer, page or group.\nParameters are:\nLayer/Page/Group to be moved/scaled;\nMove X/Y: position, in pixels, where the object should be moved;\nScale W/H: scale, in percentage. The lock button sets both scales to the same value;\nFlip Horizontal: flip the selection horizontally;\nFlip Vertical: flip the selection vertically;\nRotate: rotates the image according the angle specified here;",
+    "tags": [],
+    "title": "Edit Image",
+    "uri": "/kwik5docs/kwik_editor/actions/image/edit_image/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Reference \u003e Generative AI \u003e Audio",
@@ -825,8 +1209,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "About Kwik \u003e Reference",
-    "content": "Generative AI Creating assets\nhttps://deepai.org/api-docs\nAdobe PS generative fill\nExpress Add On ⭐️\nhttps://firefly.adobe.com/\nPr\nhttps://creativecloud.adobe.com/cc/discover/article/convert-speech-to-text?locale=en Podcast\nhttps://podcast.adobe.com/ ⭐️ Audio Misc\nPodcast talk\nhttps://wavve.co/ ⭐️\naudacity 47% audition 33.3\nhttps://twitter.com/MomochiYorozu/status/1660251437644017664?t=QD6pQBMi5VPy_-Ik0JYhiw\u0026s=19\nText to audio\nhttps://huggingface.co/spaces/haoheliu/audioldm-text-to-audio-generation\nhttps://text-to-audio.github.io/\nhttps://github.com/suno-ai/bark\nhttps://www.suno.ai/\nhttps://huggingface.co/spaces/suno/bark https://kurokumasoft.com/2023/06/06/bark-ai/ Free Sound Effects\nhttps://soundbible.com/ ⭐️ Adobe Audition\nhttps://helpx.adobe.com/audition/using/text-to-speeech.html https://www.adobe.com/products/audition/offers/AdobeAuditionDLCSFX.html How to organize\nhttps://producer.musicradiocreative.com/how-to-best-organize-your-sound-effects-music-in-adobe-audition/\nhttps://blog.prosoundeffects.com/how-to-find-the-right-sound-effects\nhttps://blog.prosoundeffects.com/how-to-use-sound-effects\nprosoundeffects.com SoundQ software ⭐️ Whisper\nhttps://community.openai.com/t/whisper-api-a-timecodes-b-how-good-is-open-source-vs-api/163882/5\nhttps://github.com/m-bain/whisperX\nhttps://huggingface.co/spaces/openai/whisper/discussions/71\nVideo RunwayML Gen2 ⭐️\nhttps://generativeai.pub/gen-1-an-amazing-new-generative-ai-video-technology-bb776f5fe8cc https://thebridge.jp/2023/06/runway-triples-valuation-in-150-days https://techcrunch.com/2023/06/09/runways-gen-2-shows-the-limitations-of-todays-text-to-video-tech/ Stable Diffusion https://chmod774.com/draw-things-stable-diffusion/\nPhotoshopの画像生成AIがすごい　ついに商用利用もスタートへ\n人物を切り抜いて、背景だけを生成させた場合は、AdobeFireflyの方が圧倒的に自然\nhttps://k-tai.watch.impress.co.jp/docs/column/stapa/1497045.html\n「DiffusionBee」　Macで手軽にStable Diffusion DreamStudio SD開発元であるStability AIが提供するAI画像生成サービス Automatic1111\n【超初心者向け】Stable Diffusionのインストール方法（Automatic1111）\nhttps://ascii.jp/elem/000/004/142/4142488/\nLinuxの場合、16GBのVRAMを搭載した互換性のあるAMD製グラフィックボード\nDreamStudio\nStability for Photoshop\nPrice\nLoRA\nhttps://huggingface.co/blog/lora\nLow-Rank Adaptation of Large Language Models\nhttps://freeblog-video.com/stable-diffusion_lora/\nEagle\nhttps://eagle.cool/\nhttps://github.com/bbc-mc/sdweb-eagle-pnginfo/blob/master/README.ja.md\nControlNet https://github.com/Mikubill/sd-webui-controlnet\nControlNetのScribbleでキャラデザ\n輪郭やポーズから思い通りの絵\nラフ画から詳細な線画、カラーイラスト画像\nCloud Providers https://softwarekeep.com/help-center/best-cloud-provider-for-stable-diffusion\nGoogle Colab Pro RunPod Vast.ai RunDiffusion AWS 画像生成モデルを使ったゲーム - vast.ai\nhttps://www.reddit.com/r/StableDiffusion/comments/13i7yel/anyone_with_experience_running_sd_on_colab_runpod/\nhttps://www.reddit.com/r/StableDiffusion/comments/xl8lsn/best_way_cheapest_way_to_run_stable_diffusion_in/\nhttps://pencilcase.ai/\nONE PAYMENT FOR 24 HOURS\nAzure HPC VMでStable Diffusionする\n200円/時間ぐらい Mac Studioで描かせると、7分55秒 Azure VMだと 16秒 Machine Specs 画像生成AIに2度目の革命を起こした「ControlNet」\n512x768ドットをアップスケールして2倍の1024x1536ドットで出力する場合、 1枚当たりの生成時間は、以前「画像生成AI 速いマシンは世界が違う」で紹介した DAIVのNVIDIA GeForce RTX4090（VRAM 24GB）搭載機で1分22秒。VRAMの使用率は約65% https://zenn.dev/karaage0703/articles/bf86fe4946417b\nCPU\tIntel Core i 7 メモリ\t32GB GPU\tNVIDIA RTX3060(12GB) WindowsでもNVIDIA Dockerを入れたら動きました Stable Diffusionなどの画像生成AI、84,800円（税込）のMac miniがコスパ最強\n内蔵GPUで爆速動作するよ\nアップルが公式移植している\n当然ながらGeForce RTX 4090なんかと比べれば劇遅だけど、コスパと消費電力では圧倒している。\nmac mini16GBでautomatic1111動かして512x512の画像で１枚40秒\n現状3060のほうが断然速いよ　RTX3060で4秒なので約10倍\nhttps://note.com/nice_ixia735/n/nc623d9583357\nM2 Macbook Pro 14inc だいたい１分弱で画像が生成 AMDのRadeon系GPU搭載のゲーミングミニPCでAIイラストが生成できる\nRadeon系GPU 約10万円 ゲーミングミニPCの「HX80G」 約24秒 ASUS Zenbook Pro 14 OLED\n10枚のイラスト生成にかかった時間は148秒\nタブレットPCをパワーアップ──最強の外付けGPUユニット「ROG XG Mobile GC33Y」を試す\nROG Flow Z13 ROG XG Mobile Jetson AGX Orin\nhttps://forums.developer.nvidia.com/t/stable-diffusion-on-jetson-agx-orin-and-xavier/229800",
-    "description": "Generative AI Creating assets\nhttps://deepai.org/api-docs\nAdobe PS generative fill\nExpress Add On ⭐️\nhttps://firefly.adobe.com/\nPr\nhttps://creativecloud.adobe.com/cc/discover/article/convert-speech-to-text?locale=en Podcast\nhttps://podcast.adobe.com/ ⭐️ Audio Misc\nPodcast talk\nhttps://wavve.co/ ⭐️\naudacity 47% audition 33.3\nhttps://twitter.com/MomochiYorozu/status/1660251437644017664?t=QD6pQBMi5VPy_-Ik0JYhiw\u0026s=19\nText to audio\nhttps://huggingface.co/spaces/haoheliu/audioldm-text-to-audio-generation\nhttps://text-to-audio.github.io/\nhttps://github.com/suno-ai/bark\nhttps://www.suno.ai/\nhttps://huggingface.co/spaces/suno/bark https://kurokumasoft.com/2023/06/06/bark-ai/ Free Sound Effects\nhttps://soundbible.com/ ⭐️ Adobe Audition\nhttps://helpx.adobe.com/audition/using/text-to-speeech.html https://www.adobe.com/products/audition/offers/AdobeAuditionDLCSFX.html How to organize\nhttps://producer.musicradiocreative.com/how-to-best-organize-your-sound-effects-music-in-adobe-audition/\nhttps://blog.prosoundeffects.com/how-to-find-the-right-sound-effects\nhttps://blog.prosoundeffects.com/how-to-use-sound-effects\nprosoundeffects.com SoundQ software ⭐️ Whisper\nhttps://community.openai.com/t/whisper-api-a-timecodes-b-how-good-is-open-source-vs-api/163882/5\nhttps://github.com/m-bain/whisperX\nhttps://huggingface.co/spaces/openai/whisper/discussions/71\nVideo RunwayML Gen2 ⭐️\nhttps://generativeai.pub/gen-1-an-amazing-new-generative-ai-video-technology-bb776f5fe8cc https://thebridge.jp/2023/06/runway-triples-valuation-in-150-days https://techcrunch.com/2023/06/09/runways-gen-2-shows-the-limitations-of-todays-text-to-video-tech/ Stable Diffusion https://chmod774.com/draw-things-stable-diffusion/",
+    "content": "Generative AI\nAs AI assistants and agents grow exponentially, they also replicate human creativity. While humans continue to evolve linearly, carrying forward our creative experiences from the past into the future, collaborating with AI introduces new creative experiences for us—perhaps AI feels the same way.\nCreating assets\nhttps://deepai.org/api-docs\nAdobe PS generative fill\nExpress Add On ⭐️\nhttps://firefly.adobe.com/\nPr\nhttps://creativecloud.adobe.com/cc/discover/article/convert-speech-to-text?locale=en Podcast\nhttps://podcast.adobe.com/ ⭐️ Audio Misc\nPodcast talk\nhttps://wavve.co/ ⭐️\naudacity 47% audition 33.3\nhttps://twitter.com/MomochiYorozu/status/1660251437644017664?t=QD6pQBMi5VPy_-Ik0JYhiw\u0026s=19\nText to audio\nhttps://huggingface.co/spaces/haoheliu/audioldm-text-to-audio-generation\nhttps://text-to-audio.github.io/\nhttps://github.com/suno-ai/bark\nhttps://www.suno.ai/\nhttps://huggingface.co/spaces/suno/bark https://kurokumasoft.com/2023/06/06/bark-ai/ Free Sound Effects\nhttps://soundbible.com/ ⭐️ Adobe Audition\nhttps://helpx.adobe.com/audition/using/text-to-speeech.html https://www.adobe.com/products/audition/offers/AdobeAuditionDLCSFX.html How to organize\nhttps://producer.musicradiocreative.com/how-to-best-organize-your-sound-effects-music-in-adobe-audition/\nhttps://blog.prosoundeffects.com/how-to-find-the-right-sound-effects\nhttps://blog.prosoundeffects.com/how-to-use-sound-effects\nprosoundeffects.com SoundQ software ⭐️ Whisper\nhttps://community.openai.com/t/whisper-api-a-timecodes-b-how-good-is-open-source-vs-api/163882/5\nhttps://github.com/m-bain/whisperX\nhttps://huggingface.co/spaces/openai/whisper/discussions/71\nVideo RunwayML Gen2 ⭐️\nhttps://generativeai.pub/gen-1-an-amazing-new-generative-ai-video-technology-bb776f5fe8cc https://thebridge.jp/2023/06/runway-triples-valuation-in-150-days https://techcrunch.com/2023/06/09/runways-gen-2-shows-the-limitations-of-todays-text-to-video-tech/ Stable Diffusion https://chmod774.com/draw-things-stable-diffusion/\nPhotoshopの画像生成AIがすごい　ついに商用利用もスタートへ\n人物を切り抜いて、背景だけを生成させた場合は、AdobeFireflyの方が圧倒的に自然\nhttps://k-tai.watch.impress.co.jp/docs/column/stapa/1497045.html\n「DiffusionBee」　Macで手軽にStable Diffusion DreamStudio SD開発元であるStability AIが提供するAI画像生成サービス Automatic1111\n【超初心者向け】Stable Diffusionのインストール方法（Automatic1111）\nhttps://ascii.jp/elem/000/004/142/4142488/\nLinuxの場合、16GBのVRAMを搭載した互換性のあるAMD製グラフィックボード\nDreamStudio\nStability for Photoshop\nPrice\nLoRA\nhttps://huggingface.co/blog/lora\nLow-Rank Adaptation of Large Language Models\nhttps://freeblog-video.com/stable-diffusion_lora/\nEagle\nhttps://eagle.cool/\nhttps://github.com/bbc-mc/sdweb-eagle-pnginfo/blob/master/README.ja.md\nControlNet https://github.com/Mikubill/sd-webui-controlnet\nControlNetのScribbleでキャラデザ\n輪郭やポーズから思い通りの絵\nラフ画から詳細な線画、カラーイラスト画像\nCloud Providers https://softwarekeep.com/help-center/best-cloud-provider-for-stable-diffusion\nGoogle Colab Pro RunPod Vast.ai RunDiffusion AWS 画像生成モデルを使ったゲーム - vast.ai\nhttps://www.reddit.com/r/StableDiffusion/comments/13i7yel/anyone_with_experience_running_sd_on_colab_runpod/\nhttps://www.reddit.com/r/StableDiffusion/comments/xl8lsn/best_way_cheapest_way_to_run_stable_diffusion_in/\nhttps://pencilcase.ai/\nONE PAYMENT FOR 24 HOURS\nAzure HPC VMでStable Diffusionする\n200円/時間ぐらい Mac Studioで描かせると、7分55秒 Azure VMだと 16秒 Machine Specs 画像生成AIに2度目の革命を起こした「ControlNet」\n512x768ドットをアップスケールして2倍の1024x1536ドットで出力する場合、 1枚当たりの生成時間は、以前「画像生成AI 速いマシンは世界が違う」で紹介した DAIVのNVIDIA GeForce RTX4090（VRAM 24GB）搭載機で1分22秒。VRAMの使用率は約65% https://zenn.dev/karaage0703/articles/bf86fe4946417b\nCPU\tIntel Core i 7 メモリ\t32GB GPU\tNVIDIA RTX3060(12GB) WindowsでもNVIDIA Dockerを入れたら動きました Stable Diffusionなどの画像生成AI、84,800円（税込）のMac miniがコスパ最強\n内蔵GPUで爆速動作するよ\nアップルが公式移植している\n当然ながらGeForce RTX 4090なんかと比べれば劇遅だけど、コスパと消費電力では圧倒している。\nmac mini16GBでautomatic1111動かして512x512の画像で１枚40秒\n現状3060のほうが断然速いよ　RTX3060で4秒なので約10倍\nhttps://note.com/nice_ixia735/n/nc623d9583357\nM2 Macbook Pro 14inc だいたい１分弱で画像が生成 AMDのRadeon系GPU搭載のゲーミングミニPCでAIイラストが生成できる\nRadeon系GPU 約10万円 ゲーミングミニPCの「HX80G」 約24秒 ASUS Zenbook Pro 14 OLED\n10枚のイラスト生成にかかった時間は148秒\nタブレットPCをパワーアップ──最強の外付けGPUユニット「ROG XG Mobile GC33Y」を試す\nROG Flow Z13 ROG XG Mobile Jetson AGX Orin\nhttps://forums.developer.nvidia.com/t/stable-diffusion-on-jetson-agx-orin-and-xavier/229800",
+    "description": "Generative AI\nAs AI assistants and agents grow exponentially, they also replicate human creativity. While humans continue to evolve linearly, carrying forward our creative experiences from the past into the future, collaborating with AI introduces new creative experiences for us—perhaps AI feels the same way.\nCreating assets\nhttps://deepai.org/api-docs\nAdobe PS generative fill\nExpress Add On ⭐️\nhttps://firefly.adobe.com/\nPr\nhttps://creativecloud.adobe.com/cc/discover/article/convert-speech-to-text?locale=en Podcast\nhttps://podcast.adobe.com/ ⭐️ Audio Misc\nPodcast talk\nhttps://wavve.co/ ⭐️\naudacity 47% audition 33.3",
     "tags": [],
     "title": "Generative AI",
     "uri": "/kwik5docs/reference/ai/index.html"
@@ -880,12 +1264,28 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/reference/ai/particles/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Animation",
+    "content": "Play Random\nplays animation at random\nAdd icon to add animation. You need to create animations in advance Play Once. A played animation won’t be chosen to play again",
+    "description": "Play Random\nplays animation at random\nAdd icon to add animation. You need to create animations in advance Play Once. A played animation won’t be chosen to play again",
+    "tags": [],
+    "title": "Play Random",
+    "uri": "/kwik5docs/kwik_editor/actions/animation/random/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Implementation",
     "content": "Replacement Editor listbox and listButtons for syncText and Spreadsheet User can create mutliple sprites as seqeunce data from a spresheet(imageSheet) , and for Sync Audio \u0026 Text, one line of text consists of words.\nspitesheet model\nsequenceData = { { name = \"default\", count = 2, loopCount = 0, loopDirection = \"forward\", -- reverse after last frame pause = false, start = 1, time = 1000, }, { name = \"test\", frames = {1,2}, loopCount = 0, loopDirection = \"forward\", -- reverse after last frame pause = false, time = 1000, } sync audio model for “A B C”\nM.line = { { start = 0, out = 1000, dur = 0, name = \"A\", file = \"a.mp3\", action = \"onComplete\"}, { start = 1000, out = 2000, dur = 0, name = \"B\", file = \"b.mp3\", action = \"onComplete\"}, { start = 2000, out = 3000, dur = 0, name = \"C\", file = \"c.mp3\", action = \"onComplete\"}, } These arrays of data are displayed by listbox.lua and add/save/delete/select are handled in replacement.controller.add, replacement.controller.save, replecment.controller.delete, replacment.controller.select respectively.\nM.commands = {\"delete\", \"save\", \"cancel\", \"select\", \"add\"} --- function M:init(UI) local app = App.get() for i = 1, #self.commands do app.context:mapCommand( \"editor.replacement.list.\" .. self.commands[i], \"editor.replacement.controller.\" .. self.commands[i] ) end end -- an optimized imagesheet from texture packer automatically // TBI a tool for imagesheet ref: https://kwiksher.com/doc/kwik_tutorial/animations/working_with_spritesheet/#b-if-you-are-using-an-optimized-file-from-texture-packer //TBI the sequence data is generated by frames' data in sheetInfo lua? //if asset.json's sheetInfo is text string, it is from texture packer ``` { filename = \"slots.png\", sheetInfo = \"slots.lua\", } ``` Kwik needs these entry in sequence data to create each sprite ``` Name:bird Start Frame 1 Frame Count 1 Length 1 sec Name:cat Start Frame 2 Frame Count 1 Length 1 sec ``` the table of frames is exported from Texturepacker ```lua frames = { { -- bird x=2, y=2, width=191, height=222, sourceX = 1, sourceY = 1, sourceWidth = 192, sourceHeight = 223 }, ''' //TBI editor.template.components.pageX.replacement.defaults.spritesheet // the sheetInfo for a Same size frames sheet should be a table Now ``` local M = { name = \"spritesheet\", class = \"spritesheet\", type = \"uniform-sized\", -- TexturePacker, Animate controls = { filename = \"imagesheet.png\", sheetInfo = \"spritesheet\", ``` Update it as same as sheetInfo in assets.json ``` sheetInfo = { width = 188, height = 188, sheetWidth = 376, sheetHeight = 188, }, ``` save with the listbox value, save for a replacement component is as normal as the other components. editor.controller.save is processed and retrives useClassEditorProps() in replacment.controller.index\n// TBI? listbox getValue in userClassEditorProps // suite_page1_replacements.lua does not have unit tests for saving spreadsheet/video. It has “editor.replacement.list.save” though.",
     "description": "Replacement Editor listbox and listButtons for syncText and Spreadsheet User can create mutliple sprites as seqeunce data from a spresheet(imageSheet) , and for Sync Audio \u0026 Text, one line of text consists of words.\nspitesheet model\nsequenceData = { { name = \"default\", count = 2, loopCount = 0, loopDirection = \"forward\", -- reverse after last frame pause = false, start = 1, time = 1000, }, { name = \"test\", frames = {1,2}, loopCount = 0, loopDirection = \"forward\", -- reverse after last frame pause = false, time = 1000, } sync audio model for “A B C”",
     "tags": [],
     "title": "Replacement Editor",
     "uri": "/kwik5docs/dev/implementation/replacement_editor/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Audio",
+    "content": "Rewind Audio\nrewind the selected audio from the list.",
+    "description": "Rewind Audio\nrewind the selected audio from the list.",
+    "tags": [],
+    "title": "Rewind Audio",
+    "uri": "/kwik5docs/kwik_editor/actions/audio/rewind/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Implementation",
@@ -909,7 +1309,15 @@ var relearn_searchindex = [
     "description": "TODO\nbook: replacement\npage: sync alphabet.mp3 alphabet/a.mp3, b.mp3, c.mp3 page: snowman ohno in assets/audios/sync/snowman lingualSample\npage2: my_father_nice sync/en, ja, pt, sp .mp3/.txt page3: two sync2audio texts: i am a cat, my name is kwik page4: multi lingual two sync2audio texts how to make time codes\naudacity fountain script \u003e lib/timecodes.lua how to make a mp3 by a tts\nhttps://ttsmaker.com/#google_vignette https://ttsmp3.com/ espeak ng Open JTalk book: elevenlab",
     "tags": [],
     "title": "Sync Audio and Text",
-    "uri": "/kwik5docs/kwik_editor/componentview/replacement/sync_audio_and_text/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/replacement/sync_audio_and_text/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Canvas",
+    "content": "Take Screen Shot\ntake a screenshot of the canvas (automatically remove all buttons in the page for the screenshot). Image will be saved in the Camera Roll folder of the device. An alert will appear after the recording.\nParameters are:\nPlay shutter audio: if checked, plays an audio simulating a real camera shutter, to provide feedback to the user;\nAlert title: title of the alert window;\nAlert message: content of the alert window.",
+    "description": "Take Screen Shot\ntake a screenshot of the canvas (automatically remove all buttons in the page for the screenshot). Image will be saved in the Camera Roll folder of the device. An alert will appear after the recording.\nParameters are:\nPlay shutter audio: if checked, plays an audio simulating a real camera shutter, to provide feedback to the user;\nAlert title: title of the alert window;\nAlert message: content of the alert window.",
+    "tags": [],
+    "title": "Take Screen Shot",
+    "uri": "/kwik5docs/kwik_editor/actions/canvas/take_screen_shot/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model",
@@ -925,7 +1333,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Variable",
-    "uri": "/kwik5docs/kwik_editor/componentview/page/variable/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/page/variable/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Reference \u003e Generative AI",
@@ -952,12 +1360,28 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/implementation/class/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Code\nEdit Variable External Code Restart Track Variable",
+    "description": "Code\nEdit Variable External Code Restart Track Variable",
+    "tags": [],
+    "title": "Code",
+    "uri": "/kwik5docs/kwik_editor/actions/code/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Reference",
     "content": "DAO\nCrypto transaction NFT Digital Certificate NFT OpenSea graphics assets from books | Interactive Picture/Video Book IAP per book download AI generated video/images/stories Genre Artist/Author Way of Life to earn Art like DJ/VJ kwik app graphics -- nft market Lulu, possible trees, Will Terry etc free to play free to edit a page component and Share \u0026 Earn! playing piano to configure animation parameters draw to earn needs GPU brushes HX80G/StableDiffusion/ControlNet コミティア",
     "description": "DAO\nCrypto transaction NFT Digital Certificate NFT OpenSea graphics assets from books | Interactive Picture/Video Book IAP per book download AI generated video/images/stories Genre Artist/Author Way of Life to earn Art like DJ/VJ kwik app graphics -- nft market Lulu, possible trees, Will Terry etc free to play free to edit a page component and Share \u0026 Earn! playing piano to configure animation parameters draw to earn needs GPU brushes HX80G/StableDiffusion/ControlNet コミティア",
     "tags": [],
     "title": "DAO",
     "uri": "/kwik5docs/reference/dao/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Enable Or Disable Button\ntoggles a button enabled or disabled\nEnable/Disable Dropdown listbox to select a button",
+    "description": "Enable Or Disable Button\ntoggles a button enabled or disabled\nEnable/Disable Dropdown listbox to select a button",
+    "tags": [],
+    "title": "Enable Or Disable Button",
+    "uri": "/kwik5docs/kwik_editor/actions/button/enable_disable_button/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model \u003e Settings",
@@ -985,7 +1409,7 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Implementation",
-    "content": "Rest Server editor.pegasus\npegasus is a open-souce lua http-server\nhttpYac in vscode to send a REST request to editor.pegasus\nselectPage.http\nthis calls these commnands in editor\nselectApp selectBook selectPage ref edtior.tests\npegasus harness receives the request in REST format (json)\ndispatch events to commands\nselectXXX reads App/bookX/pageX/index.lua or models/pageX/.json files, and the data are stored in nanstores for components such bookStore, pageStore, layerStore, audioStore\nResponse of http Rest in pegasus are retreived by nanostores:get(xxxStore)\nselectLayer.http - Read\nselect a layer and shows the properties\nselectTool.http - Write\nattach a tool (animation) to a selected layer\ngraph LR subgraph vscode httpYac end subgraph solar2D pegasus subgraph commands selectApp selectBook selectPage selectLayer selectTool[selectTool \u003cbr\u003e new or update class props] end subgraph controllers_save updateIndex[index model \u003cbr\u003e layer model] save[save .json] render[render lua] updateIndex -.-\u003e render updateIndex -.-\u003e save end subgraph nanosotres bookStore pageStore layerStore end subgraph UI bookTable pageTable layerTable subgraph animation selectBox contropProps pointABBox onCompletebox end subgraph audio selectBox_[selectBox] contropProps_[controlProps] onCompletebox_[onCompletebox] end end subgraph models subgraph runtime lua[pageX.index \u003cbr\u003e \u003cbr\u003e scene.components \u003cbr\u003e - layers \u003cbr\u003e - audios \u003cbr\u003e\u003cbr\u003e layerX.lua \u003cbr\u003e layerX_anim.lua] end subgraph persistent json[models/pageX/.json] layerX.json layerX_anim.json end end end httpYac -.- pegasus pegasus -. 1.onGet.-\u003eselectLayer selectLayer -. read .- lua lua -. 1.onGet set .-\u003e layerStore selectLayer -. show .- layerTable layerStore -. 1.onGet subscribed data.-\u003e layerTable selectTool -. nanostores get .- layerStore selectTool -.read class.- lua save -. write .- json save -. write .- layerX_anim.json save -. write .- layerX.json render -.write .- lua pegasus -. 2-1.onPost class.-\u003eselectTool pegasus -. 2-2.onPost save.-\u003eupdateIndex layerX_anim.json -.setValue .-\u003e contropProps lua -. read .- layerX.json lua -. 2-1 onPost read .- layerX_anim.json",
+    "content": "Rest Server editor.pegasus\npegasus is a open-souce lua http-server\nhttpYac in vscode to send a REST request to editor.pegasus\nselectPage.http\nthis calls these commnands in editor\nselectApp selectBook selectPage ref edtior.tests\npegasus harness receives the request in REST format (json)\ndispatch events to commands\nselectXXX reads App/bookX/pageX/index.lua or models/pageX/.json files, and the data are stored in nanstores for components such bookStore, pageStore, layerStore, audioStore\nResponse of http Rest in pegasus are retreived by nanostores:get(xxxStore)\nselectLayer.http - Read\nselect a layer and shows the properties\nselectTool.http - Write\nattach a tool (animation) to a selected layer\ngraph LR subgraph vscode httpYac end subgraph solar2D pegasus subgraph commands selectApp selectBook selectPage selectLayer selectTool[selectTool \u003cbr\u003e new or update class props] end subgraph controllers_save updateIndex[index model \u003cbr\u003e layer model] save[save .json] render[render lua] updateIndex -.-\u003e render updateIndex -.-\u003e save end subgraph nanosotres bookStore pageStore layerStore end subgraph UI bookTable pageTable layerTable subgraph animation selectBox contropProps pointABBox onCompletebox end subgraph audio selectBox_[selectBox] contropProps_[controlProps] onCompletebox_[onCompletebox] end end subgraph models subgraph runtime lua[pageX.index \u003cbr\u003e \u003cbr\u003e scene.components \u003cbr\u003e - layers \u003cbr\u003e - audios \u003cbr\u003e\u003cbr\u003e layerX.lua \u003cbr\u003e layerX_anim.lua] end subgraph persistent json[models/pageX/.json] layerX.json layerX_anim.json end end end httpYac -.- pegasus pegasus -. 1 onGet .-\u003eselectLayer selectLayer -. read .- lua lua -. 1 onGet set .-\u003e layerStore selectLayer -. show .- layerTable layerStore -. 1 onGet subscribed data.-\u003e layerTable selectTool -. nanostores get .- layerStore selectTool -.read class.- lua save -. write .- json save -. write .- layerX_anim.json save -. write .- layerX.json render -.write .- lua pegasus -. 2-1 onPost class.-\u003eselectTool pegasus -. 2-2 onPost save.-\u003eupdateIndex layerX_anim.json -.setValue .-\u003e contropProps lua -. read .- layerX.json lua -. 2-1 onPost read .- layerX_anim.json",
     "description": "Rest Server editor.pegasus\npegasus is a open-souce lua http-server\nhttpYac in vscode to send a REST request to editor.pegasus\nselectPage.http\nthis calls these commnands in editor\nselectApp selectBook selectPage ref edtior.tests\npegasus harness receives the request in REST format (json)\ndispatch events to commands\nselectXXX reads App/bookX/pageX/index.lua or models/pageX/.json files, and the data are stored in nanstores for components such bookStore, pageStore, layerStore, audioStore\nResponse of http Rest in pegasus are retreived by nanostores:get(xxxStore)",
     "tags": [],
     "title": "REST Server",
@@ -1016,6 +1440,14 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/dev/design/project_model/components/spritesheet/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Audio",
+    "content": "Stop Audio\nstop the selected audio from the list.",
+    "description": "Stop Audio\nstop the selected audio from the list.",
+    "tags": [],
+    "title": "Stop Audio",
+    "uri": "/kwik5docs/kwik_editor/actions/audio/stop/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model",
     "content": "Code Template Model assets/model/schema\nembedded in codes – TBI to be extracted\nexternal codes - export it to .lua or can be imported directly physics path read2me - timecodes spritesheet info TODO:add ext codes\nextCodes libs p1 user_codes.lua ext_001.lua ext_002.lua commands/ button_name_001.lua action_name_001.lua user_codes.lua p2/ =\u003e build4/\n```lua function ActionCommand:new() local command = {} -- function command:execute(params) local UI = params.UI local sceneGroup = UI.scene.view local layer = UI.layer local phase = params.event.phase local event = params.event {{#vvar}} {{vvar}} {{/vvar}} {{#arqCode}} {{arqCode}} {{/arqCode}} end return command end ``` or ext_lib_codes.lua ``` local _K = require \"Application\" {{#extLib}} local {{name}} = requireKwik(\"{{libname}}\") {{/extLib}} -- {{#TV}} local kInputDevices = require(\"extlib.tv.kInputDevices\") {{/TV}} function _M:localVars(UI) local sceneGroup = UI.scene.view local layer = UI.layer {{#extCodeTop}} {{ccode}} {{arqCode}} {{/extCodeTop}} end ``` model.json\n{ \"page\":1,\"alias\":\"title\",\"isTmplt\":false, \"audios\":[null], \"read2me\":[null], \"videos\":[null], \"PNGs\":[null], \"sprites\":[null], \"particles\":[null], \"WWW\":[null], \"thumbnails\":[null], \"images\":[ \"bg@4x.png\", \"bg@2x.png\", \"bg.png\", null ], \"shared\":[ null ] } { \"page\":{{page}},\"alias\":\"{{alias}}\",\"isTmplt\":{{isTmplt}}, {{#layers}} \"{{layer}}\":{ \"x\":{{x}}, \"y\":{{y}}, \"width\":{{width}}, \"height\":{{height}}, \"alpha\":{{alpha}}, \"ext\":\"{{ext}}\" }, {{/layers}} \"audios\":[ {{#audios}}\"{{filename}}\",{{/audios}} null], \"read2me\":[ {{#read2me}}{\"foldername\":\"{{foldername}}\", \"filenames\":[{{#filenames}}\"{{.}}\",{{/filenames}} null] },{{/read2me}} null], \"videos\":[ {{#videos}}\"{{filename}}\",{{/videos}} null], \"PNGs\":[ {{#PNGs}}\"{{foldername}}\",{{/PNGs}} null], \"sprites\":[ {{#sprites}}\"{{filename}}\",{{/sprites}} null], \"particles\":[ {{#particles}}{\"filename\":\"{{filename}}\",\"PNG\":\"{{PNG}}\"},{{/particles}} null], \"WWW\":[ {{#WWW}}{\"filename\":\"{{filename}}\",\"foldername\":\"{{foldername}}\"},{{/WWW}} null], \"thumbnails\":[ {{#thumbnails}}{{#filenames}}\"{{.}}\",{{/filenames}} {{/thumbnails}}null], \"images\":[ {{#images}} \"{{filename}}@4x.{{filetype}}\", \"{{filename}}@2x.{{filetype}}\", \"{{filename}}.{{filetype}}\", {{/images}} null ], \"shared\":[ {{#shared}} \"{{filename}}@4x.{{filetype}}\", \"{{filename}}@2x.{{filetype}}\", \"{{filename}}.{{filetype}}\", {{/shared}} null ] }",
     "description": "Code Template Model assets/model/schema\nembedded in codes – TBI to be extracted\nexternal codes - export it to .lua or can be imported directly physics path read2me - timecodes spritesheet info TODO:add ext codes\nextCodes libs p1 user_codes.lua ext_001.lua ext_002.lua commands/ button_name_001.lua action_name_001.lua user_codes.lua p2/ =\u003e build4/\n```lua function ActionCommand:new() local command = {} -- function command:execute(params) local UI = params.UI local sceneGroup = UI.scene.view local layer = UI.layer local phase = params.event.phase local event = params.event {{#vvar}} {{vvar}} {{/vvar}} {{#arqCode}} {{arqCode}} {{/arqCode}} end return command end ``` or ext_lib_codes.lua ``` local _K = require \"Application\" {{#extLib}} local {{name}} = requireKwik(\"{{libname}}\") {{/extLib}} -- {{#TV}} local kInputDevices = require(\"extlib.tv.kInputDevices\") {{/TV}} function _M:localVars(UI) local sceneGroup = UI.scene.view local layer = UI.layer {{#extCodeTop}} {{ccode}} {{arqCode}} {{/extCodeTop}} end ``` model.json",
@@ -1032,12 +1464,36 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/get_started/tools/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Canvas",
+    "content": "Undo\nremoves the last stroke.",
+    "description": "Undo\nremoves the last stroke.",
+    "tags": [],
+    "title": "Undo",
+    "uri": "/kwik5docs/kwik_editor/actions/canvas/undo/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e REST API",
     "content": "Utilities /develop/Solar2D/tools/yaml2lua\nthere is a vscode extention to convert yaml to json , json to yaml etc\n- name: Loading01 from: from to: x: 100 y: 100 alpha: 1 duration: 2000 xScale: 1.5 yScale: 1.5 rotation: 0 controls: restart: false easing: Linear reverse: false delay: 1000 loop: 1 angle: 45 xSwipe: 0 ySwipe: 0 referncePoint: Center breadcrumbs: dispose: true shape: \"\" color: - 1 - 0 - 1 interval: 300 time: 2000 width: 30 height: 30 lua\n{ breadcrumbs = { color = { 1, 0, 1 }, dispose = true, height = 30, interval = 300, shape = \"\", time = 2000, width = 30 }, controls = { referncePoint = \"Center\", angle = 45, delay = 1000, easing = \"Linear\", loop = 1, restart = false, reverse = false, xSwipe = 0, ySwipe = 0 }, from = \"from\", name = \"Loading01\", to = { alpha = 1, duration = 2000, rotation = 0, x = 100, xScale = 1.5, y = 100, yScale = 1.5 } } } /develop/Solar2D/tools/generate_scene_index (TODO update ⭐️)\ngenerating scene/pageX/index.lua\nindex.lua is created by iterating files from\nApp/conentX/scene/pageX App/contentX/components/pageX App/conentX/commands/pageX scafolding (optional)\nit outputs .lua files to components and commands folder by reading scene/pageX/index.lua",
     "description": "Utilities /develop/Solar2D/tools/yaml2lua\nthere is a vscode extention to convert yaml to json , json to yaml etc\n- name: Loading01 from: from to: x: 100 y: 100 alpha: 1 duration: 2000 xScale: 1.5 yScale: 1.5 rotation: 0 controls: restart: false easing: Linear reverse: false delay: 1000 loop: 1 angle: 45 xSwipe: 0 ySwipe: 0 referncePoint: Center breadcrumbs: dispose: true shape: \"\" color: - 1 - 0 - 1 interval: 300 time: 2000 width: 30 height: 30 lua\n{ breadcrumbs = { color = { 1, 0, 1 }, dispose = true, height = 30, interval = 300, shape = \"\", time = 2000, width = 30 }, controls = { referncePoint = \"Center\", angle = 45, delay = 1000, easing = \"Linear\", loop = 1, restart = false, reverse = false, xSwipe = 0, ySwipe = 0 }, from = \"from\", name = \"Loading01\", to = { alpha = 1, duration = 2000, rotation = 0, x = 100, xScale = 1.5, y = 100, yScale = 1.5 } } } /develop/Solar2D/tools/generate_scene_index (TODO update ⭐️)",
     "tags": [],
     "title": "Utilities",
     "uri": "/kwik5docs/dev/design/api/utilities/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Conditions\nIF Else End IF",
+    "description": "Conditions\nIF Else End IF",
+    "tags": [],
+    "title": "Conditions",
+    "uri": "/kwik5docs/kwik_editor/actions/condition/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Front Or Back\nbrings up a layer front or set it back\nTo Front/To Back Layer or Group dropdown listbox to select",
+    "description": "Front Or Back\nbrings up a layer front or set it back\nTo Front/To Back Layer or Group dropdown listbox to select",
+    "tags": [],
+    "title": "Front or Back",
+    "uri": "/kwik5docs/kwik_editor/actions/layer/front_back/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Get Started \u003e Tools",
@@ -1048,12 +1504,28 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/get_started/tools/httpyac/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Canvas",
+    "content": "redo\nrepeats the last stroke.",
+    "description": "redo\nrepeats the last stroke.",
+    "tags": [],
+    "title": "Redo",
+    "uri": "/kwik5docs/kwik_editor/actions/canvas/redo/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Implementation",
     "content": "Rest API server/tests/*.http\nApp/skelton/page\nthis book/page is an empty but it loads the server in editor.index\nfunction M:didShow(UI) ... elseif httpServerOn then --------- pegasus init with -------- require(\"server.index\").run{ selectors = selectors, UI = UI, bookTable = bookTable, pageTable = pageTable, layerTable = layerTable } end ... App/Transition2/page\nthis is a page without a kwik index model for testing composer.gotoScene\nApp/bookFree/page1\nthis is a kwip page. It has the index model. the page is loaded with app.showView()\nkwik scenes are attached with model from App/bookX/pageX/index.lua and\nlocal sceneName = ... -- local scene = require('controller.scene').new(sceneName, { name = \"page1\", components = { layers = { { bg={ } }, { gotoBtn={ --class={\"animation\"} } }, { title={ class={\"linear\"} } }, }, audios = {}, groups = {}, timers = {}, variables = {}, page = { } }, commands = { \"eventOne\", \"eventTwo\", \"act01\" }, onInit = function(scene) print(\"onInit\") end }) -- return scene the index.lua is loaded with app:showView()\nfunction app:showView(viewName, _options) self.currentViewName = viewName local scene = self.context.Router[viewName] if scene == ni then print(\"ERROR showView \", viewName ) return end local options = _options or {} options.params = options.params or {} scene.UI.page = scene.model.name options.params.sceneProps = {app =scene.app, classType = scene.classType, UI = scene.UI, model=scene.model, getCommands = scene.getCommands} composer.gotoScene(\"App.\"..self.props.appName..\".\"..viewName, options) end doGet/doPost are handled with server/harness.lua, that can access UI table\nfunction M:init(path, params) projRoot = path self.selectors = params.selectors self.UI = params.UI self.bookTable = params.bookTable self.pageTable = params.pageTable self.layerTable = params.layerTable end function M:dispatchEevnt(eventName, params) self.UI.scene.app:dispatchEvent { name = eventName, -- \"editor.selector.selectApp\", UI = self.UI, params = params } -- selectApp -- returns books -- end Transition2.page App/Transition2 is a normal page of Solar2D composer. It does not have a model of index.lua. We coulld load Transition2.page with composer.gotoScene but this way does not work with kwik model with compoennts/commands.\nSo let’s define I/F.\nhttpYac\n### for composer.gotoScene GET /Transition2/page ### selectLayer GET /Transition2/page/character ### POST /Transition2/page/character/transition2.to If index.lua is not found, it is a noraml composer page, and the following I/F are used for doGet and doPost\npage.lua\nfunction scene:getLayer(layerName) function scene:getFunc(funcName)",
     "description": "Rest API server/tests/*.http\nApp/skelton/page\nthis book/page is an empty but it loads the server in editor.index\nfunction M:didShow(UI) ... elseif httpServerOn then --------- pegasus init with -------- require(\"server.index\").run{ selectors = selectors, UI = UI, bookTable = bookTable, pageTable = pageTable, layerTable = layerTable } end ... App/Transition2/page\nthis is a page without a kwik index model for testing composer.gotoScene\nApp/bookFree/page1\nthis is a kwip page. It has the index model. the page is loaded with app.showView()\nkwik scenes are attached with model from App/bookX/pageX/index.lua and",
     "tags": [],
     "title": "REST API",
     "uri": "/kwik5docs/dev/implementation/rest_api/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Audio",
+    "content": "Set Volume\nset the channel volume of the selected audio from the list.",
+    "description": "Set Volume\nset the channel volume of the selected audio from the list.",
+    "tags": [],
+    "title": "Set Volume",
+    "uri": "/kwik5docs/kwik_editor/actions/audio/set_volume/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model \u003e Components",
@@ -1088,12 +1560,60 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/get_started/tools/xeus-lua-pegasus/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Countdown\nPlay Countdown",
+    "description": "Countdown\nPlay Countdown",
+    "tags": [],
+    "title": "Countdown",
+    "uri": "/kwik5docs/kwik_editor/actions/countdown/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Audio",
+    "content": "Mute On/Off\nmute/unmute all audio channels;",
+    "description": "Mute On/Off\nmute/unmute all audio channels;",
+    "tags": [],
+    "title": "Mute on/Off",
+    "uri": "/kwik5docs/kwik_editor/actions/audio/mute_unmute/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Play Action\nexecutes a pre-made action.\nParameters are:\nAction: list with all available actions;",
+    "description": "Play Action\nexecutes a pre-made action.\nParameters are:\nAction: list with all available actions;",
+    "tags": [],
+    "title": "Play Action",
+    "uri": "/kwik5docs/kwik_editor/actions/action/play_action/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Dev memo \u003e Design \u003e Kwik Project Model \u003e Components",
     "content": "Video UI\n(TBI) click the field name ‘url’ in the prop’s table to open asset table\ntemplate\neditor.template.components.pageX.videos.video\nlocal props = { actionName = \"{{actionName}}\", delay = {{delay}}, iterations = {{iterations}}, name = \"{{name}}\", } return require(\"components.kwik.layer_video\").new(props) Video Replacement allows you to configure a video that will appear in replacement of an image layer. For example, you can draw a blank rectangle image in photoshop, and then you publish images to Solar2D project.In Kwik visiual editor, select the blank rectanglelayer you want to replace for a video and click Video replacement on Kwik editor.\nProperties about the current layer content will appear when you click a layer in the list. It is important to match the same layer content size and position with the final video size.\nFile\nUse the Browser button to point to your external file (you may simply write an URL here if your video is available from a website, for example).\nWidth and Height\nthese fields allow you to change the auto captured layer settings.\nAuto Play\nWhen enabled, it will play the video in the moment the page starts.\nAction\nIt allows you to select an previously made action to be triggered when the video completes.\nLoop\nit loops the video playing.\nRewind at end\nthe video timeline is rewind back to the beginning.\nmodule\ncomponents.kwik.layer_video\nlocal M = {} ... ... function M:didShow(UI) self.videoObj = video.performWithDelay( self.delay, function() if self.actionName then UI.scene:dispatchEvent({name = self.actionName }) end end, self.iterations) end -- components.replacement.index components.editor.video.index\nlocal model = { id =\"video\", props = { {name=\"actionName\", value=\"\"}, {name=\"delay\", value=0}, {name=\"iterations\", value = 1}, {name=\"name\", value = \"\"}, } } components.editor.video.defaults\nthe order of the table must be as same as the model.props table in index and must be sorted in alphavetical order\nlocal M = { actionName = \"\", delay = 0, iterations = 1, name = \"video-new\", }",
     "description": "Video UI\n(TBI) click the field name ‘url’ in the prop’s table to open asset table\ntemplate\neditor.template.components.pageX.videos.video\nlocal props = { actionName = \"{{actionName}}\", delay = {{delay}}, iterations = {{iterations}}, name = \"{{name}}\", } return require(\"components.kwik.layer_video\").new(props) Video Replacement allows you to configure a video that will appear in replacement of an image layer. For example, you can draw a blank rectangle image in photoshop, and then you publish images to Solar2D project.In Kwik visiual editor, select the blank rectanglelayer you want to replace for a video and click Video replacement on Kwik editor.",
     "tags": [],
     "title": "Video",
     "uri": "/kwik5docs/dev/design/project_model/components/video/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D",
+    "content": "new folders in kwik5 layer\nshow_hide.md front_back.md action\nplay_action.md play_random.md page\ngo_to_page.md auto_play.md reload_page.md show_hide_navigation.md button\nenable_disable_button.md image\nedit_image.md Action/Button Window Icon Name Common Animation Audio Canvas Code Condition Countdown Filter In App Purchase Languages Monetization Multipilers Particles Physics Sprites Timers Video Web Common Auto Play Edit Image Enable/Disable Button Front/Back Go to Page Play Action Play Random Reload Page Show/Hide Show/Hide Navigation Rate App Screen Recording Animation Play Animation Pause Animation Resume Animation Play Animation Random Audio Play Audio Pause Audio Resume Audio Rewind Audio Stop Audio Set Volume Mute/Unmute Read to Me Play Read to Me Play Sync Record Audio Canvas Brush Color Brush Size Erase Canvas Take Screenshot Undo Redo Code Edit Variable External Code Restart Track Variable Condition IF Else End IF Countdown Play Countdown Filter Play Filter Pause Filter Resume Filter Cancel Filter Languages Set Language Monetization Buy Product Restore Purchases Multipliers Play Multiplier Stop Multiplier Particles Play Particles Stop Particles Physics Apply Force Body Type Invert Gravity Sprites Play Sprite Pause Sprite Timers Create Timer Pause Timer Resume Timer Cancel Timer Video Play Video Pause Video Rewind Video Web Go to URL",
+    "description": "new folders in kwik5 layer\nshow_hide.md front_back.md action\nplay_action.md play_random.md page\ngo_to_page.md auto_play.md reload_page.md show_hide_navigation.md button\nenable_disable_button.md image\nedit_image.md Action/Button Window Icon Name Common Animation Audio Canvas Code Condition Countdown Filter In App Purchase Languages Monetization Multipilers Particles Physics Sprites Timers Video Web Common Auto Play Edit Image Enable/Disable Button Front/Back Go to Page Play Action Play Random Reload Page Show/Hide Show/Hide Navigation Rate App Screen Recording Animation Play Animation Pause Animation Resume Animation Play Animation Random Audio Play Audio Pause Audio Resume Audio Rewind Audio Stop Audio Set Volume Mute/Unmute Read to Me Play Read to Me Play Sync Record Audio Canvas Brush Color Brush Size Erase Canvas Take Screenshot Undo Redo Code Edit Variable External Code Restart Track Variable Condition IF Else End IF Countdown Play Countdown Filter Play Filter Pause Filter Resume Filter Cancel Filter Languages Set Language Monetization Buy Product Restore Purchases Multipliers Play Multiplier Stop Multiplier Particles Play Particles Stop Particles Physics Apply Force Body Type Invert Gravity Sprites Play Sprite Pause Sprite Timers Create Timer Pause Timer Resume Timer Cancel Timer Video Play Video Pause Video Rewind Video Web Go to URL",
+    "tags": [],
+    "title": "Kwik Actions",
+    "uri": "/kwik5docs/kwik_editor/actions/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Filter\nPlay Pause Resume Cancel",
+    "description": "Filter\nPlay Pause Resume Cancel",
+    "tags": [],
+    "title": "Filter",
+    "uri": "/kwik5docs/kwik_editor/actions/filter/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Audio",
+    "content": "Read To Me\nthis action activate or deactivate the ability to “read to me” (when enabled, it will play the narration audio for the page) and go to the page.\nParameters are:\nEnable Read to Me: when enabled plays the narration audio of each page\nGo to NEXT page automatically: starts the first transition immediately, going to the next page.",
+    "description": "Read To Me\nthis action activate or deactivate the ability to “read to me” (when enabled, it will play the narration audio for the page) and go to the page.\nParameters are:\nEnable Read to Me: when enabled plays the narration audio of each page\nGo to NEXT page automatically: starts the first transition immediately, going to the next page.",
+    "tags": [],
+    "title": "Read To Me",
+    "uri": "/kwik5docs/kwik_editor/actions/audio/read_to_me/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Get Started \u003e Tools",
@@ -1117,7 +1637,15 @@ var relearn_searchindex = [
     "description": "Dynamic Text Replacement\nThe Dynamic Text Replacement window allows you to configure a text layer that will change content every time an associated variable changes its value.\nDynamic Text layers will not render as an image but as real text. Bee careful because text rendering differently in different platforms. It is always a good idea to test the final project in a real device.\nSelect the layer you want to add the Dynamic Text feature and click the Dynamic text replacement.",
     "tags": [],
     "title": "Dynamic Text Replacement",
-    "uri": "/kwik5docs/kwik_editor/componentview/replacement/dynamictext/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/replacement/dynamictext/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Language\nSet Language",
+    "description": "Language\nSet Language",
+    "tags": [],
+    "title": "Language",
+    "uri": "/kwik5docs/kwik_editor/actions/language/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Component View \u003e Replacement Tools",
@@ -1125,7 +1653,23 @@ var relearn_searchindex = [
     "description": "Sure! Here’s a brief overview of each emitter from the EmitterViewer directory:\nair_stars.json: Creates an effect with twinkling stars in the air. aurora_3b.json: Mimics the beautiful aurora borealis with colorful light waves. big_orange_flame.json: Produces a large, intense orange flame effect. blood.json: Simulates blood splatter. blue_galaxy.json: Forms a swirling blue galaxy. blue_vortex_field.json: Generates a vortex field with a blue hue. bp_firefly_final.json: Represents fireflies glowing intermittently. comet.json: Shows a comet streaking across the sky. crazy_blue.json: Creates a chaotic, vibrant blue pattern. electrons.json: Displays electrons moving in a dynamic, electrifying pattern. fireplace_flame.json: Produces a cozy fireplace flame effect. giving.json: Themed particles that give a sense of spreading or giving out. heart04.json: Forms hearts in various patterns. hongshizi.json: Displays red cross particles. im_seeing_stars.json: Generates a dizzying effect of stars. lava_flow.json: Simulates flowing lava. my_galaxy.json: Creates a personalized galaxy effect. real_popcorn.json: Simulates popping popcorn. smoke.json: Produces smoke rising. trippy.json: Creates a psychedelic, trippy visual effect. water_fountain.json: Forms a water fountain with particles mimicking splashes. waterfall.json: Displays a cascading waterfall effect. wdemitter.json: A generic emitter for various effects. Feel free to explore these effects and see which one fits your project best! Let me know if you need more detailed information about any specific emitter.",
     "tags": [],
     "title": "Particles",
-    "uri": "/kwik5docs/kwik_editor/componentview/replacement/particles/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/replacement/particles/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Play Random\nplays a different action, from a list of pre-made ones, in order or randomly.\nParameters are:\nAdd action (+) button: shows a list of pre-made actions;\nPlay random checkbox: if disabled, each action from the list will play in order.\nFor example, if list contains actions A, B and C, when executed the first time, action A will play. The second time, action B will play, and so on. If checked (to play randomly), an action will be randomly selected every time the interaction triggers.\nDelete button: remove the selected action from the list.",
+    "description": "Play Random\nplays a different action, from a list of pre-made ones, in order or randomly.\nParameters are:\nAdd action (+) button: shows a list of pre-made actions;\nPlay random checkbox: if disabled, each action from the list will play in order.\nFor example, if list contains actions A, B and C, when executed the first time, action A will play. The second time, action B will play, and so on. If checked (to play randomly), an action will be randomly selected every time the interaction triggers.",
+    "tags": [],
+    "title": "Play Random",
+    "uri": "/kwik5docs/kwik_editor/actions/action/play_random/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Audio",
+    "content": "Play Read To Me\nthis action plays the audio narration file of the page. This is different to “Read to Me” action that opens the page.",
+    "description": "Play Read To Me\nthis action plays the audio narration file of the page. This is different to “Read to Me” action that opens the page.",
+    "tags": [],
+    "title": "Play Read To Me",
+    "uri": "/kwik5docs/kwik_editor/actions/audio/play_read_to_me/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Reference \u003e Generative AI",
@@ -1149,7 +1693,31 @@ var relearn_searchindex = [
     "description": "Input Text Replacement\nThe Text Input Replacement window allows you to configure a text input field that will appear in replacement of the original layer content. For example, you can replace a blank rectangle image from your layer with a text input field in your final project. Select the layer you want to replace and click the Text input replacement. The following window appears:\nInformation about the current layer content will appear in the top of the window (position and size). It is important to match the same layer content size and position with the final map size.",
     "tags": [],
     "title": "Input Text Replacement",
-    "uri": "/kwik5docs/kwik_editor/componentview/replacement/inputtext/index.html"
+    "uri": "/kwik5docs/kwik_editor/components/replacement/inputtext/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Monetization\nBuy Product Restore Product",
+    "description": "Monetization\nBuy Product Restore Product",
+    "tags": [],
+    "title": "Monetization",
+    "uri": "/kwik5docs/kwik_editor/actions/monetization/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Audio",
+    "content": "Play Sync\nplay a synced text/audio layer",
+    "description": "Play Sync\nplay a synced text/audio layer",
+    "tags": [],
+    "title": "Play Sync",
+    "uri": "/kwik5docs/kwik_editor/actions/audio/play_sync/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Common",
+    "content": "Rate App\nopens review and ratings popup on the device.",
+    "description": "Rate App\nopens review and ratings popup on the device.",
+    "tags": [],
+    "title": "Rate App",
+    "uri": "/kwik5docs/kwik_editor/actions/common/rate_app/index.html"
   },
   {
     "breadcrumb": "About Kwik \u003e Reference",
@@ -1192,6 +1760,102 @@ var relearn_searchindex = [
     "uri": "/kwik5docs/get_started/tips/index.html"
   },
   {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Multiplier\nPlay Stop",
+    "description": "Multiplier\nPlay Stop",
+    "tags": [],
+    "title": "Multiplier",
+    "uri": "/kwik5docs/kwik_editor/actions/multipliers/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Audio",
+    "content": "Record Audio\nallows the recording of an audio file for the current page.\nParameters are:\nDuration: the amount of time the audio will be recorded;\nDim screen while recording: amount, in percentage, of screen-dimming to visually provide feedback that the audio is recording.\nYou can use external codes for better handling recording audio. Please check Advanced Recording",
+    "description": "Record Audio\nallows the recording of an audio file for the current page.\nParameters are:\nDuration: the amount of time the audio will be recorded;\nDim screen while recording: amount, in percentage, of screen-dimming to visually provide feedback that the audio is recording.\nYou can use external codes for better handling recording audio. Please check Advanced Recording",
+    "tags": [],
+    "title": "Record Audio",
+    "uri": "/kwik5docs/kwik_editor/actions/audio/record_audio/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Reload Page\nreloads the current page.",
+    "description": "Reload Page\nreloads the current page.",
+    "tags": [],
+    "title": "Reload Page",
+    "uri": "/kwik5docs/kwik_editor/actions/page/reload_page/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Particles\nPlay Stop",
+    "description": "Particles\nPlay Stop",
+    "tags": [],
+    "title": "Particles",
+    "uri": "/kwik5docs/kwik_editor/actions/particles/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Show/Hide\nshows or hides a layer, page or group.\nParameters are:\nShow/Hide radio buttons: show or hide the selection below;\nLayer/Page/Group radio buttons: selection of the object to be shown/hidden;\nToggle show/hide: when enabled, check if the object is hidden. If so, shows the object, if not, hides the object;\nDuration: transition time from fully shown to hidden (or vice-versa);\nDelay: time before the transition starts.",
+    "description": "Show/Hide\nshows or hides a layer, page or group.\nParameters are:\nShow/Hide radio buttons: show or hide the selection below;\nLayer/Page/Group radio buttons: selection of the object to be shown/hidden;\nToggle show/hide: when enabled, check if the object is hidden. If so, shows the object, if not, hides the object;\nDuration: transition time from fully shown to hidden (or vice-versa);\nDelay: time before the transition starts.",
+    "tags": [],
+    "title": "Show/Hide",
+    "uri": "/kwik5docs/kwik_editor/actions/layer/show_hide/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Physics\nApply Force Invert Gravity",
+    "description": "Physics\nApply Force Invert Gravity",
+    "tags": [],
+    "title": "Physics",
+    "uri": "/kwik5docs/kwik_editor/actions/physics/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Show/Hide Navigation\nshows/hide the navigation panel. If hidden, shows the navigation (or vice-versa).",
+    "description": "Show/Hide Navigation\nshows/hide the navigation panel. If hidden, shows the navigation (or vice-versa).",
+    "tags": [],
+    "title": "Show/Hide Navigation",
+    "uri": "/kwik5docs/kwik_editor/actions/page/show_hide_navigation/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Common",
+    "content": "Screen Recording\nYou must not use it for device build. This feature works with Corona simulator in order to create animated Gifs\nRecording On/Off Num of frames to capture Once recorded, you need to press Assemble PNG files icon on Kwik to create animated GIFs and PNGs. The button is next to Compress PNG icon",
+    "description": "Screen Recording\nYou must not use it for device build. This feature works with Corona simulator in order to create animated Gifs\nRecording On/Off Num of frames to capture Once recorded, you need to press Assemble PNG files icon on Kwik to create animated GIFs and PNGs. The button is next to Compress PNG icon",
+    "tags": [],
+    "title": "Screen Recording",
+    "uri": "/kwik5docs/kwik_editor/actions/common/screen_recording/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Sprite\nPlay Sprite Pause Sprite",
+    "description": "Sprite\nPlay Sprite Pause Sprite",
+    "tags": [],
+    "title": "Sprite",
+    "uri": "/kwik5docs/kwik_editor/actions/sprite/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Timer\nCreate Pause Resume Cancel",
+    "description": "Timer\nCreate Pause Resume Cancel",
+    "tags": [],
+    "title": "Timer",
+    "uri": "/kwik5docs/kwik_editor/actions/timer/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Video\nPlay Pause Rewind",
+    "description": "Video\nPlay Pause Rewind",
+    "tags": [],
+    "title": "Video",
+    "uri": "/kwik5docs/kwik_editor/actions/video/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions",
+    "content": "Web\nGo to URL",
+    "description": "Web\nGo to URL",
+    "tags": [],
+    "title": "Web",
+    "uri": "/kwik5docs/kwik_editor/actions/web/index.html"
+  },
+  {
     "breadcrumb": "About Kwik \u003e Get Started",
     "content": "UXP/kwik-exporter Open Adobe UXP Developer Tool\nAdd Plugin\nAdd Plugin to select develop/UXP/kwik-exporter/dist\nTODO alpla release folder structure may be different to the current develop\nLoad com.kiwksher.kwik5.dev-ps\nAdd Plugin by selecting develop/UXP/kwik-exporter/dist/manifest.json\nKwik Exporter Panel apppears",
     "description": "UXP/kwik-exporter Open Adobe UXP Developer Tool\nAdd Plugin\nAdd Plugin to select develop/UXP/kwik-exporter/dist\nTODO alpla release folder structure may be different to the current develop\nLoad com.kiwksher.kwik5.dev-ps\nAdd Plugin by selecting develop/UXP/kwik-exporter/dist/manifest.json\nKwik Exporter Panel apppears",
@@ -1222,6 +1886,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "categories",
     "uri": "/kwik5docs/categories/index.html"
+  },
+  {
+    "breadcrumb": "About Kwik \u003e Kwik Editor - Solar2D \u003e Kwik Actions \u003e Code",
+    "content": "Restart Track Variable\ncleans up the file who tracks variables.",
+    "description": "Restart Track Variable\ncleans up the file who tracks variables.",
+    "tags": [],
+    "title": "Restart Tracking Var",
+    "uri": "/kwik5docs/kwik_editor/actions/code/restart_track_variable/index.html"
   },
   {
     "breadcrumb": "About Kwik",

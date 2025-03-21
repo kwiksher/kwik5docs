@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monetization :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/monetization/index.html</link><description>Monetization
+Buy Product Restore Product</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/kwik_editor/actions/monetization/index.xml" rel="self" type="application/rss+xml"/><item><title>Buy Product</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/monetization/buy_product/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/monetization/buy_product/index.html</guid><description>Buy a product
+ability to purchase an item.
+Parameters are:
+Product: lists with all available products for purchase;
+Hide button after purchase: if checked, do not show the ability to purchase the same item anymore;</description></item><item><title>Restore Products</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/monetization/restore_product/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/monetization/restore_product/index.html</guid><description>Restore Product
+restores all previous in-app purchases.</description></item></channel></rss>

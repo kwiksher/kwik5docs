@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Physics :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/physics/index.html</link><description>Physics
+Apply Force Invert Gravity</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/kwik_editor/actions/physics/index.xml" rel="self" type="application/rss+xml"/><item><title>Apply Force</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/physics/apply_force/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/physics/apply_force/index.html</guid><description>Apply Force
+adds an amount of force to the selected body from the list.
+Parameters are:
+Body: lists all available bodies in the current page;
+Add amount of force in X and Y: sets the amount of force to be applied in axis X and Y.</description></item><item><title>Body Type</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/physics/body_type/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/physics/body_type/index.html</guid><description>Body Type
+changes body type of physics
+Body to select a physics body Type to select static, dynamic, kinematic</description></item><item><title>Invert Gravity</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/physics/invert_gravity/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/kwik_editor/actions/physics/invert_gravity/index.html</guid><description>Invert Gravity
+inverts the gravity of the selected body from the list.</description></item></channel></rss>
