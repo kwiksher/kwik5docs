@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Advanced Tips :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/advanced/index.html</link><description>Photoshop Layers fro mutiple languages normal
+book1/ page1.psd layer1 layer1_1 layer1_2 layer2 page2.psd one .psd makes a omposer.scene of Solar2D
+lang code
+book1/ page1.psd layer1 en jp sp layer2 layer is displayed according to language choise of user.
+Solar2D you can create a group of display.newGroup in Kwik editor
+groupA layer1 layer2 Layer image is replaced with the following media
+imagesheet(spritesheet) video particles web map Layer can be configured with</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/advanced/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

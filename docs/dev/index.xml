@@ -1,9 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dev memo :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/dev/index.html</link><description/><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Deployment</title><link>https://kwiksher.github.io/kwik5docs/dev/deployment/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/deployment/index.html</guid><description>There are the two files
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dev memo :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/dev/index.html</link><description>Xcode develop it as an iOS plugin that supports Simulator.
+Cloud Signing
+Flutterアプリ(iOS)へ、Cloud-managed certificatesで署名して、GitHub Actions経由で配信する Xcode14時代の証明書管理のベストプラクティス
+xcodeのAutomatically manage signing 個人のAppleIDを組織のApple Developer Programに招待 Distribution Profile ローカル AppStoreConnectの「User and Access」 > Access to to Cloud Managed Distribution Certificate」にチェック CI/CDサービスでの利用 Admin権限のAPIキーを発行 Apple Developer Programに開発メンバーを追加する方法
+Xcode Cloudの導入〜App Store Connectへアップロードする手順
+Solar2D Plugin submission
+https://docs.coronalabs.com/native/plugin/index.html https://docs.coronalabs.com/native/plugin/submission.html platform/resources pluginLocatorCustomURL
+https://docs.coronalabs.com/native/hostedPlugin.html</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Deployment</title><link>https://kwiksher.github.io/kwik5docs/dev/deployment/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/deployment/index.html</guid><description># Photoshop/Solar2D gh workflow run kwik-base-proj.yaml --repo kwiksher/kwik5-sample-books --ref develop # lua_modules/kwiksher/resouces/template gh workflow run kwik-base-proj.yaml --repo kwiksher/kwik5-plugin --ref develop # build main.js gh workflow run kwik-exporter.yaml --repo kwiksher/kwik-visual-code --ref develop # release .ccx gh workflow run release.yaml --repo kwiksher/kwik5-project-template --ref develop kwik5-plugin/kwik/test/github/release.http
+There are the two files
 kwik-exporter: com.kwiksher.kwik5.exporter_PS.ccx plugin.kwik: plugin.data.tgz kwik-visual-code: kwik-expoter
-kwik-visual-code/develop/UXP/kwik-exporter yarn build git commit and push gh action: Deploy Kwik Exporter kwik/base-proj is compiled in template-proj from sample-book’s gh action, and pluin’s gh action at the time of push or the workflow-dispatch manually
-kwik5-plugin
-git commit and push gh action: Deploy Kwik Solar2D base-proj kwik5-sample-book: Photoshop and App/book
-git commit and push gh action: Deploy Kwik Solar2D base-proj kwik5-template-project: build .ccx and then release</description></item><item><title>Design</title><link>https://kwiksher.github.io/kwik5docs/dev/design/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/design/index.html</guid><description>Design Project model
+kwik-visual-code/develop/UXP/kwik-exporter yarn build git commit and push gh action: Deploy Kwik Exporter kwik/base-proj is compiled in template-proj from sample-book’s gh action, and pluin’s gh action at the time of push or the workflow-dispatch manually</description></item><item><title>Design</title><link>https://kwiksher.github.io/kwik5docs/dev/design/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/design/index.html</guid><description>Design Project model
 robotlegs template components commands Tools
 image exporter
 PS/XD UXP
@@ -44,4 +49,14 @@ ubuntu 22.08 (Kinetic): Based on Debian 12 (Bookworm) GNOME 43
 platform/linux/Solar2DBuilder/test
 hello
 ../linux/bin/Solar2DBuilder build --lua "args_arm.lua" local params = { platform='linux', arch = 'arm', -- armhf, arm64, x86_64, amd64 appName='hello', appVersion='1.0', dstPath='.', projectPath='./HelloWorld', linuxtemplate='../linux/bin/Resources/template_arm.tgz', } return params platform/linux/buildx build.sh
-docker run --rm --name builder -it -v $(pwd):/solar2d -v ¥ $(pwd)/platform/linux/buildx/entrypoint.sh:/entrypoint.sh ¥ --entrypoint /entrypoint.sh ¥ --platform linux/arm64 gcc:12-bookworm entorypoint.sh</description></item></channel></rss>
+docker run --rm --name builder -it -v $(pwd):/solar2d -v ¥ $(pwd)/platform/linux/buildx/entrypoint.sh:/entrypoint.sh ¥ --entrypoint /entrypoint.sh ¥ --platform linux/arm64 gcc:12-bookworm entorypoint.sh</description></item><item><title>Plugin</title><link>https://kwiksher.github.io/kwik5docs/dev/plugin/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/plugin/index.html</guid><description>GitHub/Graphics-Extensions-for-Solar2D/package-plugin
+The following plugins are built for iOS/macOs by kwiksher
+plugin_movie
+https://github.com/kwiksher/plugin_movie
+plugin_gfxe
+https://github.com/kwiksher/Solar2D-Graphics-Extensions
+refer to @workspace/Solar2D-plugin_movie_kwiksher about the folder structure, can you setup new folders for poring @workspace/Graphics-Extensions-for-Solar2D to ios/mac?
+mac_template it is a skelton plugin for testing
+build.sh plugin_gfxe.lua shared/SimulatorPluginLibrary.cpp dependencies resvg-0.40.0 iOS: ios/build_resvg_ios.sh
+macOS: mac/build_resvg_mac.sh
+RUST_DIR="$PROJECT_DIR/dependencies/resvg-0.40.0" OUTPUT_DIR="$SCRIPT_DIR/lib" # For arm64 rustup target add aarch64-apple-ios cargo build --release --target aarch64-apple-ios --manifest-path "$RUST_DIR/crates/c-api/Cargo.toml" # For simulator (x86_64) rustup target add x86_64-apple-ios cargo build --release --target x86_64-apple-ios --manifest-path "$RUST_DIR/crates/c-api/Cargo.toml" # Create universal binary lipo -create \ "$RUST_DIR/target/aarch64-apple-ios/release/libresvg_capi.a" \ "$RUST_DIR/target/x86_64-apple-ios/release/libresvg_capi.a" \ -output "$OUTPUT_DIR/libresvg_universal.a" libdebp-1.2.3 iOS cd dependencies/libwebp-1.2.3 iosbuild.sh is modified for only iPhoneOS-V7-arm64</description></item></channel></rss>

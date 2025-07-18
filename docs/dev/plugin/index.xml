@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plugin :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/dev/plugin/index.html</link><description>GitHub/Graphics-Extensions-for-Solar2D/package-plugin
+The following plugins are built for iOS/macOs by kwiksher
+plugin_movie
+https://github.com/kwiksher/plugin_movie
+plugin_gfxe
+https://github.com/kwiksher/Solar2D-Graphics-Extensions
+refer to @workspace/Solar2D-plugin_movie_kwiksher about the folder structure, can you setup new folders for poring @workspace/Graphics-Extensions-for-Solar2D to ios/mac?
+mac_template it is a skelton plugin for testing
+build.sh plugin_gfxe.lua shared/SimulatorPluginLibrary.cpp dependencies resvg-0.40.0 iOS: ios/build_resvg_ios.sh
+macOS: mac/build_resvg_mac.sh
+RUST_DIR="$PROJECT_DIR/dependencies/resvg-0.40.0" OUTPUT_DIR="$SCRIPT_DIR/lib" # For arm64 rustup target add aarch64-apple-ios cargo build --release --target aarch64-apple-ios --manifest-path "$RUST_DIR/crates/c-api/Cargo.toml" # For simulator (x86_64) rustup target add x86_64-apple-ios cargo build --release --target x86_64-apple-ios --manifest-path "$RUST_DIR/crates/c-api/Cargo.toml" # Create universal binary lipo -create \ "$RUST_DIR/target/aarch64-apple-ios/release/libresvg_capi.a" \ "$RUST_DIR/target/x86_64-apple-ios/release/libresvg_capi.a" \ -output "$OUTPUT_DIR/libresvg_universal.a" libdebp-1.2.3 iOS cd dependencies/libwebp-1.2.3 iosbuild.sh is modified for only iPhoneOS-V7-arm64</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/dev/plugin/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

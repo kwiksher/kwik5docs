@@ -1,41 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Get Started :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/get_started/index.html</link><description>kwik plugin update TODO .ccx to be downloaded from Release instead of exporter_20241111-2115.zip where to check the version number? TODO https://github.com/kwiksher/kwik5tmplt/releases/kwik5_project_yyyymmdd.zip System requirements Adobe Photoshop
-https://www.adobe.com/products/photoshop.html
-(optional)UXP Developer Tool
-Products > UXP for Adobe Photoshop > Plugins > Quickstart Guide > Developer Tool > Installation
-Solar2D
-Getting Started
-Installing Solar2D — macOS Installing Solar2D — Windows Building &amp; Distribution explains the following platform’s dependencies
-Apple iOS macOS AppleTV Android KindleFire Win32 Visual Studio Code</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/get_started/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://kwiksher.github.io/kwik5docs/get_started/step0/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/step0/index.html</guid><description>Kwik exporter Download and unzip
-https://github.com/kwiksher/kwik5tmplt/releases/
-kwik5_project_yyyymmdd-hhmm.zip Click UXP > com.kwiksher.kwik5.dev-ps_PS.ccx
-Dialog appears, slect Install and Yes
-select Yes Open Photoshop, and you find Kwik Exporter in Plugin menu
-From Kwik Exporter Panel > Settings
-click Select Folder, and speficy a kwik5 project folder. back to Menu, and click Open
-click a .psd in the list, it will open the document
-there is one caveat here because of Photshop bug. We need to make it sure Quick Export As PNG works or not before using Kwik exporter.</description></item><item><title>Kwik Exporter</title><link>https://kwiksher.github.io/kwik5docs/get_started/step1/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/step1/index.html</guid><description>Kwik Exporter Panel This is the panel image of Kwik Exporter plugin in Photoshop
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Get Started :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/get_started/index.html</link><description>Kwik plugin update TODO: Download .ccx from Release instead of exporter_20241111-2115.zip Where to check the version number? Kwik Tools Overview Kwik Exporter extension for Photoshop
+Open from: Plugin > Kwik Exporter
+Solar2D Simulator with Kwik Editor
+Open from: Window > View As > Kwik Editor Landscape
+graph TB subgraph Solar2D subgraph App src[[source &lt;br> Lua files]] subgraph Assets media[(media &lt;br> .mp3 .wav &lt;br> .mp4 .mov )] images end end subgraph KwikEditor anim(animation tool) button(button tool) audio(audio tool) video(video tool) etc( phsics, timer, var ..) end end subgraph Photoshop PSD[[PSD files]] Kwik((extension &lt;br>Kwik Exporter)) end PSD -.-> Kwik Kwik -.-> images Kwik -.-> src kwik5 project template</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/get_started/index.xml" rel="self" type="application/rss+xml"/><item><title>Kwik Exporter</title><link>https://kwiksher.github.io/kwik5docs/get_started/step1/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/step1/index.html</guid><description>Kwik Exporter Panel This is the main panel for the Kwik Exporter plugin in Photoshop.
 Settings Photoshop Files Open
-You open a folder of yours which contains psd files.
-Reset checkbox
-it should be checked to browse &amp; select a folder, otherwise Select Book button uses the cached data
-you can select the following folder that comes with the two demo .psd filesw ith kwikconfig.json.
-sample-projects/SingleBook/photoshop
+Click “Open” to pick a folder containing your PSD files. The demo project includes two sample PSDs. A kwikconfig.json file will be created to save your settings.
+Double-click a PSD name in the list to open it in Photoshop.
+For example, the sample-projects/SingleBook/photoshop folder contains:
 landscape.psd
-protrait.psd
+portrait.psd
 kwikconfig.json
-{ "name":"book single", "output":"../../Solar2D/src/App/book", "pages":[ {"psd":"portrait.psd", "name":"portrait"} ], "ignored:"[ {"psd":"landscape.psd", "name":"landscape"}, ] } TODO Project Name Text Box to display a selected folder name as default.</description></item><item><title>Kwik Editor</title><link>https://kwiksher.github.io/kwik5docs/get_started/step2/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/step2/index.html</guid><description>you have published .psd files with kwik exporter. The images are the code for Solar2D are available in the output folder - App/book.
+{ "name": "book single", "output": "../../Solar2D/src/App/book", "pages": [ {"psd": "portrait.psd", "name": "portrait"} ], "ignored": [ {"psd": "landscape.psd", "name": "landscape"} ] } kwikconfig.json is automatically created in the selected folder to store the list of PSD files and the output path for your Solar2D project.</description></item><item><title>Kwik Editor</title><link>https://kwiksher.github.io/kwik5docs/get_started/step2/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/step2/index.html</guid><description>you have published .psd files with kwik exporter. The images are the code for Solar2D are available in the output folder - App/book.
 You can manually open Solar2D simulator with Solar2D/main.lua useually when not using kwik exporter in Photoshop.
 Solar2D Welcom Window > Open Project or in Finder, select main.lua and then click Corona Simulator in the context menu
 I use vscode’ extension Run Terminal to load the simualtor like this</description></item><item><title>Solar2D Simulator Build</title><link>https://kwiksher.github.io/kwik5docs/get_started/step3_build/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/step3_build/index.html</guid><description>Android
-keytool -genkey -v -keyalg RSA -keystore ‾yyyyy/xxxx.keystore -alias [アプリ名] -validity 10000 keytool -importkeystore -srckeystore “/Users/ymmtny/Creative Cloud Files Company Account YMMTNY@GMAIL.COM 0FDB0B254C58F0C30A04B82D@AdobeID/kwiksher/kwikbookshelf.keystore” -destkeystore “/Users/ymmtny/Creative Cloud Files Company Account YMMTNY@GMAIL.COM 0FDB0B254C58F0C30A04B82D@AdobeID/kwiksher/kwikbookshelf.keystore” -deststoretype pkcs12
-keytool -importkeystore -srckeystore kwikBuild.keystore -destkeystore kwikBuild.keystore -deststoretype pkcs12
-adb devices
+keytool -genkey -v -keyalg RSA -keystore ‾yyyyy/xxxx.keystore -alias [app name] -validity 10000 adb devices
 if unautohried, enable usb debug and then try it again
 adb install -r .apk
 adb logcat | grep “Corona :”
 mac
 open "corona://open?url=file:///$(pwd)/&amp;skin=kwikEditorLandscape&amp;no-console=YES&amp;no-welcome=YES" open "corona://open?url=file:///$(pwd)/&amp;skin=iPadPro&amp;no-console=YES&amp;no-welcome=YES" open "corona://open?url=file:///$(pwd)/&amp;skin=iPhoneX&amp;no-console=YES&amp;no-welcome=YES" power shell
-Start-Process "file:///$((Get-Item -Path .\).FullName)" “C:\Program Files\Corona Labs\Corona\Corona Simulator.exe” /skin=“iPhone X” /no-console “C:\path\to\your\project\main.lua”</description></item><item><title>Kwik Editor Screen Orientation</title><link>https://kwiksher.github.io/kwik5docs/get_started/editor_screen/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/editor_screen/index.html</guid><description>controller/scene.lua – sceneGroup is translated to the center
+Start-Process "file:///$((Get-Item -Path .\).FullName)" “C:\Program Files\Corona Labs\Corona\Corona Simulator.exe” /skin=“iPhone X” /no-console “C:\path\to\your\project\main.lua”
+startSolar2D.bat
+@echo off set APP_NAME=Corona Simulator.exe set APP_FOLDER=C:\Program Files (x86)\Corona Labs\Corona\ cd %APP_FOLDER% rem /f first word for /f %%i in ('tasklist 2^>^&amp;1') do ( if /i %%i==Corona ( taskkill /im "Corona Simulator.exe" /f taskkill /im "Corona.Console.exe" /f goto ENDLOOP; ) ) :ENDLOOP {{^closeCorona}} {{#tmp}} start "" "{{corona}}" "{{projPath}}\temp\main.lua" {{/tmp}} {{^tmp}} start "" "{{corona}}" "{{projPath}}\build4\main.lua" {{/tmp}} {{/closeCorona}}</description></item><item><title>Kwik Editor Screen Orientation</title><link>https://kwiksher.github.io/kwik5docs/get_started/editor_screen/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/editor_screen/index.html</guid><description>controller/scene.lua – sceneGroup is translated to the center
 function scene:create(event) if self.UI.props.appName == nil then self.calssType = event.params.sceneProps.classType self.UI = event.params.sceneProps.UI self.model = event.params.sceneProps.model self.getCommands = event.params.sceneProps.getCommands self.app = event.params.sceneProps.app end -- -- local sceneGroup = self.view -- this comes from composer --self.UI.sceneGroup = self.view -- self.UI.sceneGroup.x = display.contentCenterX self.UI.sceneGroup.y = display.contentCenterY self.UI.sceneGroup.anchorX = .5 self.UI.sceneGroup.anchorY = .5 self.view:insert(self.UI.sceneGroup) build.setting with landscape build.setting with portrait The editable tables for spritesheet, and sync text&amp;audio looks lik this</description></item><item><title>App Icon Launch/Splash image</title><link>https://kwiksher.github.io/kwik5docs/get_started/app_icon_launch_splash/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/app_icon_launch_splash/index.html</guid><description>Solar2D document: Building and Distribution Sample files
 Photoshop/icon/desktop
 Photoshop/icon/icon_splash_launch-assets

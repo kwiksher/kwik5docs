@@ -5,7 +5,7 @@ then select a layer by clicking _target property. select a layer for spritesheet
 Spitesheet has one of sheetType
 uniform-sized
 a png file. you need to set each width/height of sprite manually in the properties panel.
-texture packer
+sheetInfo - texture packer
 the pair if imagesheet png and lua (frames data). You can specify the lua file in sheetInfo property.</description></item><item><title>Sync Audio and Text</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/components/replacement/sync_audio_and_text/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/kwik_editor/components/replacement/sync_audio_and_text/index.html</guid><description>TODO
 book: replacement
 page: sync alphabet.mp3 alphabet/a.mp3, b.mp3, c.mp3 page: snowman ohno in assets/audios/sync/snowman lingualSample
