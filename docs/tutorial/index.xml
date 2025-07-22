@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/tutorial/index.html</link><description/><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Github Copilot</title><link>https://kwiksher.github.io/kwik5docs/tutorial/vscode_copilot/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/vscode_copilot/index.html</guid><description>https://www.youtube.com/watch?v=IP_zm1EWiP8
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Samples and Tutorials :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/tutorial/index.html</link><description>TODO Page:audio, group, … TODO copy&amp;pate page/component/action Samples https://github.com/kwiksher/kwik5-sample-books
+Total: 93 scenes across all categories.
+Animation (9) blink, bounce, filter, linear, path, pulse, rotation, switch, tremble
+Book (3) landscape, portrait, shape
+Interaction (10) button, canvas, drag, parallax, pinch, scroll_text, scroll_image, shake, spin, swipe
+Keyboard (1) page1
+KwikTheCat (7) page1, page2, page3, page4, page5, page6, page12
+LingualSample (4) page1, page2, page3, page4
+Page (7) addCode, audio, group, lang, properties, timer, variable</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Github Copilot</title><link>https://kwiksher.github.io/kwik5docs/tutorial/vscode_copilot/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/vscode_copilot/index.html</guid><description>https://www.youtube.com/watch?v=IP_zm1EWiP8
 To open the Solar2D simulator from your terminal, navigate to a Solar2D project folder that contains a main.lua file and run:
 open -a "Corona Simulator" main.lua Alternatively, use the Run Terminal Command feature in VSCode.
 To use Corona’s sample code as a reference for Copilot, create a symbolic link from /Applications/Corona/SampleCode to your project’s workspace. Open your terminal and run:
@@ -21,23 +29,4 @@ create a layer group, and create layers nameed with languiage codes select a lay
 Scroll Images Create a group
 Create a new group in the editor. rect1, rect2 and rect3 into a new group. Select the three rectangles in the layer table, then click create group from project and pages
 Save it. The name is “group0” (defalut name automatically assigned)
-name: group0 Create a scroll widget</description></item><item><title>svg viewer</title><link>https://kwiksher.github.io/kwik5docs/tutorial/gfxe_svg/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/gfxe_svg/index.html</guid><description>local gfxe = require('plugin.gfxe') --for k, v in pairs(gfxe) do print (k, type(v)) end local font local platform = system.getInfo('platform') if platform == 'android' then local asset_reader = require('plugin.AssetReader') font = asset_reader.Read('fonts/Inconsolata-Regular.ttf') else local file = io.open(system.pathForFile('fonts/Inconsolata-Regular.ttf'), 'rb') font = file:read('*a') file:close() end ------------------------------------------------------------------- local sizing = gfxe.newSizing() sizing.zoom = 2 sizing.crop = gfxe.CROP_TO_BBOX local svg1 = gfxe.newScalableImage( { -- filename = 'images/h350.svg' filename = 'images/test.svg' }, { fontData = font, fontFamily = 'Inconsolata' } ) svg1.x, svg1.y = display.contentCenterX, display.contentCenterY local isShiftDown = false local function onKey(event) print(event.keyName) if event.phase == "down" and event.keyName == "leftShift" or event.keyName == "rightShift" then isShiftDown = true elseif event.phase == "up" and event.keyName == "leftShift" or event.keyName == "rightShift" then isShiftDown = false end return false end Runtime:addEventListener("key", onKey) svg1:modify({ sizing = sizing:raw() }) svg1:addEventListener("tap", function(event) if isShiftDown then sizing.zoom = sizing.zoom - 1 else sizing.zoom = sizing.zoom + 1 end svg1:modify({ sizing = sizing:raw() }) end) -- Add touch event listener for moving svg1 by mouse/finger local dragStartX, dragStartY, svgStartX, svgStartY local function moveSVG(event) if event.phase == "began" then display.currentStage:setFocus(svg1) dragStartX = event.x dragStartY = event.y svgStartX = svg1.x svgStartY = svg1.y return true elseif event.phase == "moved" then local dx = event.x - dragStartX local dy = event.y - dragStartY svg1.x = svgStartX + dx svg1.y = svgStartY + dy return true elseif event.phase == "ended" or event.phase == "cancelled" then display.currentStage:setFocus(nil) return true end return false end svg1:addEventListener("touch", moveSVG)</description></item><item><title>Video Notes</title><link>https://kwiksher.github.io/kwik5docs/tutorial/video_notes/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/video_notes/index.html</guid><description>Photoshop transparent background
-https://www.youtube.com/watch?v=5ZiJ9_QNdRw
-To make a video background transparent in Photoshop, you can work with the video timeline feature and export it as a file that supports transparency. Here’s a brief overview:
-Open the video file in Photoshop.
-Work on the layers: Ensure the video’s layer is unlocked. Use selection tools like Quick Selection or the Lasso Tool to isolate the background.
-Create a mask: Add a layer mask to hide or remove the background. Adjust the mask as needed to refine the transparency.</description></item><item><title>Samples</title><link>https://kwiksher.github.io/kwik5docs/tutorial/samples/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/samples/index.html</guid><description>TODO Page:audio, group, … TODO copy&amp;pate page/component/action Total: 93 scenes across all categories.
-Animation (9)
-blink, bounce, filter, linear, path, pulse, rotation, switch, tremble
-Book (3)
-landscape, portrait, shape
-Interaction (10)
-button, canvas, drag, parallax, pinch, scroll_text, scroll_image, shake, spin, swipe
-Keyboard (1)
-page1
-KwikTheCat (7)
-page1, page2, page3, page4, page5, page6, page12
-LingualSample (4)
-page1, page2, page3, page4
-Page (7)
-addCode, audio, group, lang, properties, timer, variable</description></item></channel></rss>
+name: group0 Create a scroll widget</description></item></channel></rss>

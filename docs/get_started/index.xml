@@ -2,34 +2,7 @@
 Open from: Plugin > Kwik Exporter
 Solar2D Simulator with Kwik Editor
 Open from: Window > View As > Kwik Editor Landscape
-graph TB subgraph Solar2D subgraph App src[[source &lt;br> Lua files]] subgraph Assets media[(media &lt;br> .mp3 .wav &lt;br> .mp4 .mov )] images end end subgraph KwikEditor anim(animation tool) button(button tool) audio(audio tool) video(video tool) etc( phsics, timer, var ..) end end subgraph Photoshop PSD[[PSD files]] Kwik((extension &lt;br>Kwik Exporter)) end PSD -.-> Kwik Kwik -.-> images Kwik -.-> src kwik5 project template</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/get_started/index.xml" rel="self" type="application/rss+xml"/><item><title>Kwik Exporter</title><link>https://kwiksher.github.io/kwik5docs/get_started/step1/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/step1/index.html</guid><description>Kwik Exporter Panel This is the main panel for the Kwik Exporter plugin in Photoshop.
-Settings Photoshop Files Open
-Click “Open” to pick a folder containing your PSD files. The demo project includes two sample PSDs. A kwikconfig.json file will be created to save your settings.
-Double-click a PSD name in the list to open it in Photoshop.
-For example, the sample-projects/SingleBook/photoshop folder contains:
-landscape.psd
-portrait.psd
-kwikconfig.json
-{ "name": "book single", "output": "../../Solar2D/src/App/book", "pages": [ {"psd": "portrait.psd", "name": "portrait"} ], "ignored": [ {"psd": "landscape.psd", "name": "landscape"} ] } kwikconfig.json is automatically created in the selected folder to store the list of PSD files and the output path for your Solar2D project.</description></item><item><title>Kwik Editor</title><link>https://kwiksher.github.io/kwik5docs/get_started/step2/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/step2/index.html</guid><description>you have published .psd files with kwik exporter. The images are the code for Solar2D are available in the output folder - App/book.
-You can manually open Solar2D simulator with Solar2D/main.lua useually when not using kwik exporter in Photoshop.
-Solar2D Welcom Window > Open Project or in Finder, select main.lua and then click Corona Simulator in the context menu
-I use vscode’ extension Run Terminal to load the simualtor like this</description></item><item><title>Solar2D Simulator Build</title><link>https://kwiksher.github.io/kwik5docs/get_started/step3_build/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/step3_build/index.html</guid><description>Android
-keytool -genkey -v -keyalg RSA -keystore ‾yyyyy/xxxx.keystore -alias [app name] -validity 10000 adb devices
-if unautohried, enable usb debug and then try it again
-adb install -r .apk
-adb logcat | grep “Corona :”
-mac
-open "corona://open?url=file:///$(pwd)/&amp;skin=kwikEditorLandscape&amp;no-console=YES&amp;no-welcome=YES" open "corona://open?url=file:///$(pwd)/&amp;skin=iPadPro&amp;no-console=YES&amp;no-welcome=YES" open "corona://open?url=file:///$(pwd)/&amp;skin=iPhoneX&amp;no-console=YES&amp;no-welcome=YES" power shell
-Start-Process "file:///$((Get-Item -Path .\).FullName)" “C:\Program Files\Corona Labs\Corona\Corona Simulator.exe” /skin=“iPhone X” /no-console “C:\path\to\your\project\main.lua”
-startSolar2D.bat
-@echo off set APP_NAME=Corona Simulator.exe set APP_FOLDER=C:\Program Files (x86)\Corona Labs\Corona\ cd %APP_FOLDER% rem /f first word for /f %%i in ('tasklist 2^>^&amp;1') do ( if /i %%i==Corona ( taskkill /im "Corona Simulator.exe" /f taskkill /im "Corona.Console.exe" /f goto ENDLOOP; ) ) :ENDLOOP {{^closeCorona}} {{#tmp}} start "" "{{corona}}" "{{projPath}}\temp\main.lua" {{/tmp}} {{^tmp}} start "" "{{corona}}" "{{projPath}}\build4\main.lua" {{/tmp}} {{/closeCorona}}</description></item><item><title>Kwik Editor Screen Orientation</title><link>https://kwiksher.github.io/kwik5docs/get_started/editor_screen/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/editor_screen/index.html</guid><description>controller/scene.lua – sceneGroup is translated to the center
-function scene:create(event) if self.UI.props.appName == nil then self.calssType = event.params.sceneProps.classType self.UI = event.params.sceneProps.UI self.model = event.params.sceneProps.model self.getCommands = event.params.sceneProps.getCommands self.app = event.params.sceneProps.app end -- -- local sceneGroup = self.view -- this comes from composer --self.UI.sceneGroup = self.view -- self.UI.sceneGroup.x = display.contentCenterX self.UI.sceneGroup.y = display.contentCenterY self.UI.sceneGroup.anchorX = .5 self.UI.sceneGroup.anchorY = .5 self.view:insert(self.UI.sceneGroup) build.setting with landscape build.setting with portrait The editable tables for spritesheet, and sync text&amp;audio looks lik this</description></item><item><title>App Icon Launch/Splash image</title><link>https://kwiksher.github.io/kwik5docs/get_started/app_icon_launch_splash/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/app_icon_launch_splash/index.html</guid><description>Solar2D document: Building and Distribution Sample files
-Photoshop/icon/desktop
-Photoshop/icon/icon_splash_launch-assets
-Photoshop/icon/icon_splash_launch.psd
-iOS Managing Xcode Assets
-Images.xcassets
-Icon-40.png 40 × 40 Icon-58.png 58 × 58 Icon-76.png 76 × 76 Icon-80.png 80 × 80 Icon-87.png 87 × 87 Icon-120.png 120 × 120 Icon-152.png 152 × 152 Icon-167.png 167 × 167 Icon-180.png 180 × 180 Icon-1024.png 1024 × 1024 ios_icon.psd 40 x 40 Icon-40.png, 58 x 58 Icon-58.png, 76 x 76 Icon-76.png, 80 x 80 Icon-80.png, 87 x 87 Icon-87.png, 120 x 120 Icon-120.png, 152 x 152 Icon-152.png, 167 x 167 Icon-167.png, 180 x 180 Icon-180.png, 1024 x 1024 Icon-1024.png Launch Screen https://docs.coronalabs.com/guide/distribution/buildSettings/index.html#launch-screen-ios</description></item><item><title>PSD Naming Rule</title><link>https://kwiksher.github.io/kwik5docs/get_started/naming_rule/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/naming_rule/index.html</guid><description>Naming .psd file anad layers in documents
+graph TB subgraph Solar2D subgraph App src[[source &lt;br> Lua files]] subgraph Assets media[(media &lt;br> .mp3 .wav &lt;br> .mp4 .mov )] images end end subgraph KwikEditor anim(animation tool) button(button tool) audio(audio tool) video(video tool) etc( phsics, timer, var ..) end end subgraph Photoshop PSD[[PSD files]] Kwik((extension &lt;br>Kwik Exporter)) end PSD -.-> Kwik Kwik -.-> images Kwik -.-> src kwik5 project template</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/get_started/index.xml" rel="self" type="application/rss+xml"/><item><title>PSD Naming Rule</title><link>https://kwiksher.github.io/kwik5docs/get_started/naming_rule/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/naming_rule/index.html</guid><description>Naming .psd file anad layers in documents
 Project and file names
 Avoid long names for your projects and files and, DO NOT use characters like +-&lt;>%,#;!.
 Layer names
@@ -44,18 +17,28 @@ https://coronalabs.com/blog/2018/08/08/understanding-content-scaling-in-corona/
 https://forums.solar2d.com/t/from-the-blog-understanding-content-scaling-in-corona/348296
 config.lua is always written assuming a portrait orientation
 https://forums.solar2d.com/t/image-scaling/150116/
-The 1.5 is a subtile change, but but instead of waiting until you have a 2160 to use the 2x images, you use them starting at 1620px screens</description></item><item><title>Component &amp; Asset</title><link>https://kwiksher.github.io/kwik5docs/get_started/component_with_asset/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/component_with_asset/index.html</guid><description>First of all, you need to put media files into each folder under App/book/assets. Use Finder(Mac) or File Explore (Win), and copy&amp;paste your pre-made files into them. The folder names under App/book/assets are fixed for kwik editor to use them, so don’t change it.
+The 1.5 is a subtile change, but but instead of waiting until you have a 2160 to use the 2x images, you use them starting at 1620px screens</description></item><item><title>App Icon Launch/Splash image</title><link>https://kwiksher.github.io/kwik5docs/get_started/app_icon_launch_splash/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/app_icon_launch_splash/index.html</guid><description>Solar2D document: Building and Distribution Sample files
+Photoshop/icon/desktop
+Photoshop/icon/icon_splash_launch-assets
+Photoshop/icon/icon_splash_launch.psd
+iOS Managing Xcode Assets
+Images.xcassets
+Icon-40.png 40 × 40 Icon-58.png 58 × 58 Icon-76.png 76 × 76 Icon-80.png 80 × 80 Icon-87.png 87 × 87 Icon-120.png 120 × 120 Icon-152.png 152 × 152 Icon-167.png 167 × 167 Icon-180.png 180 × 180 Icon-1024.png 1024 × 1024 ios_icon.psd 40 x 40 Icon-40.png, 58 x 58 Icon-58.png, 76 x 76 Icon-76.png, 80 x 80 Icon-80.png, 87 x 87 Icon-87.png, 120 x 120 Icon-120.png, 152 x 152 Icon-152.png, 167 x 167 Icon-167.png, 180 x 180 Icon-180.png, 1024 x 1024 Icon-1024.png Launch Screen https://docs.coronalabs.com/guide/distribution/buildSettings/index.html#launch-screen-ios</description></item><item><title>Kwik Exporter</title><link>https://kwiksher.github.io/kwik5docs/get_started/step1_exporter/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/step1_exporter/index.html</guid><description>Kwik Exporter Panel This is the main panel for the Kwik Exporter plugin in Photoshop.
+Settings Photoshop Files Open
+Click “Open” to pick a folder containing your PSD files. The demo project includes two sample PSDs. A kwikconfig.json file will be created to save your settings.
+Double-click a PSD name in the list to open it in Photoshop.
+For example, the sample-projects/SingleBook/photoshop folder contains:
+landscape.psd
+portrait.psd
+kwikconfig.json
+{ "name": "book single", "output": "../../Solar2D/src/App/book", "pages": [ {"psd": "portrait.psd", "name": "portrait"} ], "ignored": [ {"psd": "landscape.psd", "name": "landscape"} ] } kwikconfig.json is automatically created in the selected folder to store the list of PSD files and the output path for your Solar2D project.</description></item><item><title>Kwik Editor</title><link>https://kwiksher.github.io/kwik5docs/get_started/step2_editor/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/step2_editor/index.html</guid><description>you have published .psd files with kwik exporter. The images are the code for Solar2D are available in the output folder - App/book.
+You can manually open Solar2D simulator with Solar2D/main.lua useually when not using kwik exporter in Photoshop.
+Solar2D Welcom Window > Open Project or in Finder, select main.lua and then click Corona Simulator in the context menu
+I use vscode’ extension Run Terminal to load the simualtor like this</description></item><item><title>Component &amp; Asset</title><link>https://kwiksher.github.io/kwik5docs/get_started/component_with_asset/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/component_with_asset/index.html</guid><description>First of all, you need to put media files into each folder under App/book/assets. Use Finder(Mac) or File Explore (Win), and copy&amp;paste your pre-made files into them. The folder names under App/book/assets are fixed for kwik editor to use them, so don’t change it.
 App/book/asset
 kwik editor lists media files under App/book/assets folder
 you may create a sub folder, for instance “myvideo” folder in videos folder
 kwik edior > asset view</description></item><item><title>Copy &amp; Paste components</title><link>https://kwiksher.github.io/kwik5docs/get_started/copy_paste_component/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/copy_paste_component/index.html</guid><description>Copy &amp; Paste Components
 A simple demonstration, you will have three components on page1, and then copy each propertes of the three components to components in page2
 if you want to reuse a layer on page1, Import component layer will work for you. This copy &amp; paste is just to copy values of component properties to another layer
-An action can be copied to another page, make sure each command in the action should be linked to a valid layer in the pasted page. For instance action with play animation can be copied to another page, so the pasted page should have an animation() with the same name to play. You may modify playAnimation() argument to assign a different layer animation in the pasted page.</description></item><item><title>UXP Developer Tool</title><link>https://kwiksher.github.io/kwik5docs/get_started/uxp_dev_tool/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/uxp_dev_tool/index.html</guid><description>To debug kwik expoert, use UXP Developer Tool
-UXP/kwik-exporter Open Adobe UXP Developer Tool
-Add Plugin
-Add Plugin to select develop/UXP/kwik-exporter/dist
-TODO alpla release folder structure may be different to the current develop
-Load com.kiwksher.kwik5.dev-ps
-Add Plugin by selecting develop/UXP/kwik-exporter/dist/manifest.json
-Kwik Exporter Panel apppears</description></item></channel></rss>
+An action can be copied to another page, make sure each command in the action should be linked to a valid layer in the pasted page. For instance action with play animation can be copied to another page, so the pasted page should have an animation() with the same name to play. You may modify playAnimation() argument to assign a different layer animation in the pasted page.</description></item></channel></rss>
