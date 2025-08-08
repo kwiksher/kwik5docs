@@ -10,14 +10,8 @@ Before you start adding buttons and animations, follow the rules below. It is mu
 Only user Western characters are allowed for layer names.
 DO NOT use characters such as + - &lt;> %,#;!. for naming layers</description></item><item><title>PSD Screen Size Orientation</title><link>https://kwiksher.github.io/kwik5docs/get_started/screen_size_orientation/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/screen_size_orientation/index.html</guid><description>Kwik Actions .atn In Photoshop/book folder, you find .atn files for Photoshop Actions
 you can install it from Actions panel’s sub menu (Humberger icon) > Load Actions
-Solar2D config.lua width = 320, height = 480, scale = "letterBox" https://forums.solar2d.com/t/content-positioning/355677/11
-https://forums.solar2d.com/t/image-scaling/150116/10?u=ymmtny
-width 1080, height 1620
-https://coronalabs.com/blog/2018/08/08/understanding-content-scaling-in-corona/
-https://forums.solar2d.com/t/from-the-blog-understanding-content-scaling-in-corona/348296
-config.lua is always written assuming a portrait orientation
-https://forums.solar2d.com/t/image-scaling/150116/
-The 1.5 is a subtile change, but but instead of waiting until you have a 2160 to use the 2x images, you use them starting at 1620px screens</description></item><item><title>App Icon Launch/Splash image</title><link>https://kwiksher.github.io/kwik5docs/get_started/app_icon_launch_splash/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/app_icon_launch_splash/index.html</guid><description>Solar2D document: Building and Distribution Sample files
+1024x768 to iPhone(2776x1440) Step1. Show Safe Area 1920x1280
+select All the layers, and expand them Step2. Show 2776 x 1440 Select the background layer Transform to cover the rect of 2776x1440 Use even width/height images width/height should be even number, it enables to use bilinear interpolation</description></item><item><title>App Icon Launch/Splash image</title><link>https://kwiksher.github.io/kwik5docs/get_started/app_icon_launch_splash/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/app_icon_launch_splash/index.html</guid><description>Solar2D document: Building and Distribution Sample files
 Photoshop/icon/desktop
 Photoshop/icon/icon_splash_launch-assets
 Photoshop/icon/icon_splash_launch.psd
