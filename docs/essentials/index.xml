@@ -6,8 +6,8 @@ this .psd is 768 x 1024 of Kwik4, so it should be enlarged 1920x1280, you may us
 Kwik Exporter Settings</description></item><item><title>Drawing Canvas</title><link>https://kwiksher.github.io/kwik5docs/essentials/drawing_canvas/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/essentials/drawing_canvas/index.html</guid><description>Drawing Canvas
 The following steps to make a canvas to draw with touching the screen
 You can download the tutorial files
-https://www.kwiksher.com/tutorials/Kwik4/canvas.zip the screenshots are of kwik3 but the project file is updated with Kwik4
-New Project Open canvas.psd file. The psd size is for 1024x768 so let’s create a kwik project with iPad Mini.
+TODO Update canvas.zip for kwik5
+https://www.kwiksher.com/tutorials/Kwik4/canvas.zip New Project Open canvas.psd file. The psd size is for 1024x768 so let’s create a kwik project with iPad Mini.
 It is a good practice to click Publish button after you loaded a PSD file into Kwik to make sure every layer name is valid and then you turn it of exporting image. Now you can work to create animations, interactions etc</description></item><item><title>A simple responsive layer</title><link>https://kwiksher.github.io/kwik5docs/essentials/simple_responsive_layer/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/essentials/simple_responsive_layer/index.html</guid><description>Layer properties has the attachToEdge property
 Click the text lablel: ‘attachToEdge` shows the checkbox group view
 For instance, Left is checked, it translates the layer by the following amount of width calcurated by
