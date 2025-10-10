@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Audio :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/ai/audio/index.html</link><description>how to get an audio file
-long short sync audio timecode with text How to Convert Text to Speech in Python
-gTTS pyttsx3 openai Huggingface Transformers tts
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>(TODO) Audio :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/ai/audio/index.html</link><description>how to get an audio file
+long short sync audio timecode with text AI TODO Suno
+https://suno.com/home
+TODO Elenglab
+https://elevenlabs.io/music
+TODO Adobe
+https://www.adobe.com/products/firefly/features/sound-effect-generator.html
+How to Convert Text to Speech in Python gTTS pyttsx3 openai Huggingface Transformers tts
 https://elevenlabs.io/text-to-speech
 https://ttsmaker.com/#google_vignette
 私の 父さん は すてき => ttsmaker-file-2025-2-26-10-52-48.mp3 mv TTS/ttsmaker-file-2025-2-26-10-52-48.mp3 Solar2D/kwik-editor-proj/Solar2D/App/lingualSample/assets/audios/sync/ja/my_father_is_nice.mp3

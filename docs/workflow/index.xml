@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Authoring &amp; Release Workflow :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/workflow/index.html</link><description>Storytelling https://kwiksher.com/doc/design/learning/visualstorytelling/
-Kwiksher messages https://kwiksher.com/doc/design/ https://kwiksher.com/doc/design/overview/ Solar2D with Kwik TODO Workflow overview
-Phase I: Creating App resources
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Authoring &amp; Release Workflow :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/workflow/index.html</link><description>TODO Storytelling https://kwiksher.com/doc/design/learning/visualstorytelling/
+TODO Kwiksher messages https://kwiksher.com/doc/design/ https://kwiksher.com/doc/design/overview/ TODO Solar2D with Kwik Workflow overview
+Plan &amp; Design your app and development process
+(To Be Discussed) Like Spec-Driven Development? spec/task/implementation Phase I: Creating App resources
 Photoshop: kwik exporter
 Assets
 audios images particles sprites thumbnails videos www Phase II: Solar2D Simulator
@@ -9,11 +10,7 @@ optimization
 shared assets png to jpeg conversion orchestration - bookshelf
 analytics and monetization
 Phase III: Solar2D Simulator
-deployment
-build.settings app icon splash/launch screen bookshelf server test
-app store
-description screenshots movie release
-alpha beta production Marketing</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/workflow/index.xml" rel="self" type="application/rss+xml"/><item><title>Challenge: Living stories</title><link>https://kwiksher.github.io/kwik5docs/workflow/challenge_stories/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/workflow/challenge_stories/index.html</guid><description>Christopher Alexander’s A Timeless Way of Building and its companion, A Pattern Language, provide a profound philosophical and practical framework that can be beautifully applied to digital creation, especially a visual storytelling app or game.
+deployment</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/workflow/index.xml" rel="self" type="application/rss+xml"/><item><title>Challenge: Living stories</title><link>https://kwiksher.github.io/kwik5docs/workflow/challenge_stories/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/workflow/challenge_stories/index.html</guid><description>Christopher Alexander’s A Timeless Way of Building and its companion, A Pattern Language, provide a profound philosophical and practical framework that can be beautifully applied to digital creation, especially a visual storytelling app or game.
 The core idea is to move away from designing a rigid, top-down “product” and instead, create a generative system that allows beautiful, coherent, and “living” stories to emerge from the interaction of well-defined patterns.
 Here’s how we can translate Alexander’s concepts for a visual storytelling app.</description></item><item><title>Challenge: time-based media</title><link>https://kwiksher.github.io/kwik5docs/workflow/challenge_media/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/workflow/challenge_media/index.html</guid><description>Animations, videos, and audio are the textures and energies that bring the structural patterns to life. In Alexandrian terms, they are the materials that give a building its “light” and “life.” Their patterns govern how they contribute to the overall “quality without a name” (QWAN) in an interactive context.
 Here are the patterns for these time-based media.

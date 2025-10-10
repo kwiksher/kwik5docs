@@ -3,9 +3,10 @@ If you’re new to Photoshop or Solar2D, check out these links:
 Adobe Creative Cloud > Photoshop
 Getting Started with UXP for Photoshop Solar2D - 2D Game Engine
 Getting Started Kwik exporter – UXP plugin for Adobe Photoshop With Kwik exporter, you select a folder containing your PSD files.
-The exporter opens each PSD, reads the layer structure, and generates images and code for Solar2D.</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Authoring &amp; Release Workflow</title><link>https://kwiksher.github.io/kwik5docs/workflow/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/workflow/index.html</guid><description>Storytelling https://kwiksher.com/doc/design/learning/visualstorytelling/
-Kwiksher messages https://kwiksher.com/doc/design/ https://kwiksher.com/doc/design/overview/ Solar2D with Kwik TODO Workflow overview
-Phase I: Creating App resources
+The exporter opens each PSD, reads the layer structure, and generates images and code for Solar2D.</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Authoring &amp; Release Workflow</title><link>https://kwiksher.github.io/kwik5docs/workflow/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/workflow/index.html</guid><description>TODO Storytelling https://kwiksher.com/doc/design/learning/visualstorytelling/
+TODO Kwiksher messages https://kwiksher.com/doc/design/ https://kwiksher.com/doc/design/overview/ TODO Solar2D with Kwik Workflow overview
+Plan &amp; Design your app and development process
+(To Be Discussed) Like Spec-Driven Development? spec/task/implementation Phase I: Creating App resources
 Photoshop: kwik exporter
 Assets
 audios images particles sprites thumbnails videos www Phase II: Solar2D Simulator
@@ -14,11 +15,7 @@ optimization
 shared assets png to jpeg conversion orchestration - bookshelf
 analytics and monetization
 Phase III: Solar2D Simulator
-deployment
-build.settings app icon splash/launch screen bookshelf server test
-app store
-description screenshots movie release
-alpha beta production Marketing</description></item><item><title>Install &amp; Setup</title><link>https://kwiksher.github.io/kwik5docs/introduction/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/introduction/index.html</guid><description>Kwik requires Adobe Photoshop and Solar2D, with Microsoft Visual Studio Code as the recommended code editor.
+deployment</description></item><item><title>Install &amp; Setup</title><link>https://kwiksher.github.io/kwik5docs/introduction/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/introduction/index.html</guid><description>Kwik requires Adobe Photoshop and Solar2D, with Microsoft Visual Studio Code as the recommended code editor.
 System Requirements
 Note: Android Studio is optional, but Xcode is required for building apps on iOS/Mac.
 kwik5-project-template
@@ -28,7 +25,7 @@ Solar2D Simulator with Kwik Editor
 Open from: Window > View As > Kwik Editor Landscape
 graph TB subgraph Solar2D subgraph App src[[source &lt;br> Lua files]] subgraph Assets media[(media &lt;br> .mp3 .wav &lt;br> .mp4 .mov )] images end end subgraph KwikEditor anim(animation tool) button(button tool) audio(audio tool) video(video tool) etc( phsics, timer, var ..) end end subgraph Photoshop PSD[[PSD files]] Kwik((extension &lt;br>Kwik Exporter)) end PSD -.-> Kwik Kwik -.-> images Kwik -.-> src kwik5 project template</description></item><item><title>Essentials</title><link>https://kwiksher.github.io/kwik5docs/essentials/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/essentials/index.html</guid><description>Solar2D Baiscs TODO convert the solar2d get started for kwik editor
 https://docs.coronalabs.com/guide/programming/index.html
-Chapter 1 — Creating a project Chapter 2 — Upward &amp; Onward Chapter 3 — Bringing it to Life Chapter 4 — Creating Scenes Chapter 5 — Converting the Game to Composer Chapter 6 — Implementing High Scores Chapter 7 — Sounds and Music Chapter 8 — Deployment Storytelling https://kwiksher.com/doc/design/learning/visualstorytelling/</description></item><item><title>Samples and Tutorials</title><link>https://kwiksher.github.io/kwik5docs/tutorial/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/index.html</guid><description>TODO Page:audio, group, … TODO copy&amp;pate page/component/action Samples https://github.com/kwiksher/kwik5-sample-books
+Chapter 1 — Creating a project Chapter 2 — Upward &amp; Onward Chapter 3 — Bringing it to Life Chapter 4 — Creating Scenes Chapter 5 — Converting the Game to Composer Chapter 6 — Implementing High Scores Chapter 7 — Sounds and Music Chapter 8 — Deployment TODO checklist For production</description></item><item><title>Samples and Tutorials</title><link>https://kwiksher.github.io/kwik5docs/tutorial/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/tutorial/index.html</guid><description>TODO Page:audio, group, … TODO copy&amp;pate page/component/action Samples https://github.com/kwiksher/kwik5-sample-books
 Total: 93 scenes across all categories.
 Animation (9) blink, bounce, filter, linear, path, pulse, rotation, switch, tremble
 Book (3) landscape, portrait, shape
