@@ -4,18 +4,10 @@ https://suno.com/home
 TODO Elenglab
 https://elevenlabs.io/music
 TODO Adobe
-https://www.adobe.com/products/firefly/features/sound-effect-generator.html
-How to Convert Text to Speech in Python gTTS pyttsx3 openai Huggingface Transformers tts
-https://elevenlabs.io/text-to-speech
-https://ttsmaker.com/#google_vignette
-私の 父さん は すてき => ttsmaker-file-2025-2-26-10-52-48.mp3 mv TTS/ttsmaker-file-2025-2-26-10-52-48.mp3 Solar2D/kwik-editor-proj/Solar2D/App/lingualSample/assets/audios/sync/ja/my_father_is_nice.mp3
-https://ttsmp3.com/
-online
-elevnlabs offline
-espeak ng
-https://www.rcnp.osaka-u.ac.jp/~kohda/linux/espeak.html
-sudo apt install espeak $ espeak -v +f3 -s 140 "Hello World!" open jtalk
-Mozilla TTS (Tacotron2) を使って日本語音声合成 漢字をひらがな・カタカナ・ローマ字に変換！mecab-unidic-NEologdを活用したPythonパッケージの紹介 Open-JTalkで萌え萌え💕イングリッシュトレーニング Open JTalkの読み上げ用に文章中の英単語をカタカナに変換する</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/ai/audio/index.xml" rel="self" type="application/rss+xml"/><item><title>Elevenlabs</title><link>https://kwiksher.github.io/kwik5docs/ai/audio/elevenlabs/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/ai/audio/elevenlabs/index.html</guid><description>Elevenlabs
+https://www.adobe.com/products/firefly/features/sound-effect-generator.
+The services for SFX and Music generally fall into two categories: Library/Search (for existing assets) and Generative (for creating new assets).
+Here is a combined table showing the API availability for both Search/Library and Generative functionality for the services you mentioned.
+Service Primary Category API for Generation API for Search/Library Notes Freesound.org SFX / Library No [ ] Yes Offers a comprehensive API for searching, browsing, and retrieving sound effects based on keywords and content analysis. Unity Asset Store SFX &amp; Music / Library No Yes (In-Editor) Search functionality is accessible programmatically within the Unity Editor using its specialized search provider. ElevenLabs Voice/SFX / Generative [ ] Yes No (Library) Primarily a Text-to-Speech (TTS) and Text-to-SFX generation API. No API for searching a public library of existing SFX. Audo.ai Audio Processing No No The API is for noise removal and speech enhancement, not for generating or searching a music/SFX library. AIVA Music / Generative Yes Unconfirmed Focused on generating music based on parameters. API access is primarily for generation. Public search API is not explicitly documented. Soundraw Music / Generative [ ] Yes [ ] Yes (By Criteria) API for generating original music based on parameters (genre, mood, etc.). This acts as a search by criteria for original content. Mubert Music / Generative &amp; Library [ ] Yes [ ] Yes Offers both a generative API (Text-to-Music, Image-to-Music) and access to a curated library that can be filtered by genre, mood, or BPM. Amazon Polly Voice / Generative Yes No Text-to-Speech (TTS) API. No API for searching a music/SFX library. Google Gemini/TTS Voice / Generative Yes No Text-to-Speech (TTS) via the Gemini API or Cloud TTS. No API for searching a music/SFX library. Key Takeaways:</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/ai/audio/index.xml" rel="self" type="application/rss+xml"/><item><title>Elevenlabs</title><link>https://kwiksher.github.io/kwik5docs/ai/audio/elevenlabs/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/ai/audio/elevenlabs/index.html</guid><description>Elevenlabs
 generator in kwik visual editor for example sync text &amp; audio
 GitHub/lua-mecab-master/test.lua server/tests/elevenlabs_post.http editor/tests/suite_page2_sync2audio.lua Steps
 input text mecab.command post elevenlabs save files in tmp copy.command to App/book/assets .mp3 .txt steaming
@@ -41,11 +33,14 @@ https://discord.com/channels/721785436195782677/724637134115438714/9518708236548
 Specially if you are working with large messages (which was our case). A good alternative would be the websockets plugin from @joe95 which I think works great
 [WebSockets library written in C] (https://github.com/vrtql/websockets)</description></item><item><title>eSpeak NG</title><link>https://kwiksher.github.io/kwik5docs/ai/audio/espeak-ng/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/ai/audio/espeak-ng/index.html</guid><description>eSpeak NG
 create timecodes from fountain script
-lib/timecodes.lua editor/tests/suite_lingual_page2.lua create a wav and convert with fmpeg to mp3
+lib/timecodes.lua editor/tests/suite_lingual_page2.lua
+local function estimate_duration(text, words_per_minute) local word_count = #string.split(text, " ") return (word_count / words_per_minute) * 60 end create a wav and convert with fmpeg to mp3
 develop/Misc/espeak_ng suite_lingual_page2.lua test_timecodes foutnain text
 NEO Wait. Who was it? Who was the man? She leans close, her lips almost touching his ear as she whispers. TRINITY You know who. She turns and he watches her melt into the shifting wall of bodies. A SOUND RISES steadily, growing out of the music, pressing in on Neo until it is all he can hear as we -- CUT TO: INT. NEO'S APARTMENT The sound is an ALARM CLOCK, slowly dragging Neo to consciousness. He strains to read the clock face: 9:15 A.M. NEO Shitshitshit. ttimecodes by characters</description></item><item><title>Open JTalk</title><link>https://kwiksher.github.io/kwik5docs/ai/audio/openj_talk/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/ai/audio/openj_talk/index.html</guid><description>To convert the text in the array into Japanese and use Open JTalk to create MP3 files for each entry, follow these steps:
 Install
 Ubuntu/Devian (WSL2)
 sudo apt update sudo apt install open-jtalk open-jtalk-mecab-naist-jdic hts-voice-nitech-jp-atr503-m001 Mac
 brew install open-jtalk 1. Translate the Text into Japanese Here’s the translated text in Japanese:
-text_with_timestamps = [ (0, 1.6, "待って。誰だった？"), (2.6, 4.2, "その男は誰？"), (5.2, 9.6, "彼女は身を乗り出し、唇がほとんど彼の耳に触れるほど近づいて囁く。"), (10.6, 11, "囁く。"), (41.8, 42.2, "しまったしまったしまった。") ] 2. Install Open JTalk If you haven’t already installed Open JTalk, follow these steps:</description></item></channel></rss>
+text_with_timestamps = [ (0, 1.6, "待って。誰だった？"), (2.6, 4.2, "その男は誰？"), (5.2, 9.6, "彼女は身を乗り出し、唇がほとんど彼の耳に触れるほど近づいて囁く。"), (10.6, 11, "囁く。"), (41.8, 42.2, "しまったしまったしまった。") ] 2. Install Open JTalk If you haven’t already installed Open JTalk, follow these steps:</description></item><item><title>Replicate</title><link>https://kwiksher.github.io/kwik5docs/ai/audio/replicate/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/ai/audio/replicate/index.html</guid><description>Replicate.com hosts a variety of machine learning models for audio generation, which can be broadly categorized into Music Generation, Text-to-Speech (TTS)/Voice Generation, and Sound Effects (SFX) &amp; Audio Processing.
+Here is a list of some of the most prominent and frequently used audio generation models available on Replicate via their API:
+1. Music Generation (Text-to-Music) These models create full musical tracks, instrumentals, or loops from a text prompt or melody input.</description></item></channel></rss>
