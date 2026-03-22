@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shape Tools :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/components/shape/index.html</link><description>Shapes Shape Tools Reference Name Icon Description Rectangle Creates a rectangular shape. Ellipse Creates an elliptical shape. Text Creates a text element. Image Creates an image element. Context Menu Edit move
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shape Tool :: Kwik5 Doc</title><link>https://kwiksher.github.io/kwik5docs/kwik_editor/components/shape/index.html</link><description>Classes
+Name Icon Description Rectangle Creates a rectangular shape. Ellipse Creates an elliptical shape. Text Creates a text element. Image Creates an image element. Context Menu Edit move
 scale
 rotate
 Image picker for rectangle for insntace, you can set an image (.png) to image > imageFile property with the imageFolder
