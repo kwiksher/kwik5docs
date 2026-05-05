@@ -3,10 +3,12 @@ gh run watch --exit-status &amp;&amp; notify-send "Build Passed!" || notify-send
 # Photoshop/Solar2D gh workflow run kwik-base-proj.yaml --repo kwiksher/kwik5-sample-books --ref develop kwik5-plugin/kwik/test/github/release.http</description><generator>Hugo</generator><language>ja-jp</language><atom:link href="https://kwiksher.github.io/kwik5docs/dev/deployment/index.xml" rel="self" type="application/rss+xml"/><item><title>kwikEditor Plugin</title><link>https://kwiksher.github.io/kwik5docs/dev/deployment/kwikeditor_plugin/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/deployment/kwikeditor_plugin/index.html</guid><description>cloneed the following repositories from github/kwiksher
 ~/Documents/GitHub/kwik5-plugin~/Documents/GitHub/kwik5-plugin_build~/Documents/GitHub/kwik5-project-template~/Documents/GitHub/kwik5-sample-books kwikt-plugin_build
 cd lualn -s ../../kwik5-plugin ./plugin kwik5-sample-books
+Mac
 copy Scripts from kwik5-project-template
-ln -s ../kwik5-project-template/Scripts ./Scripts Windows (requires Administrator or Developer Mode):
-REM run in a cmd.exe shell from the kwik5-sample-books root mklink /D "Scripts" "..\kwik5-project-template\Scripts" or
-REM set project root (no spaces around =) SET "PROJECT_DIR=C:\Users\ymmtny\Documents\GitHub" REM runas with expanded %PROJECT_DIR% (runs mklink as Administrator) runas /user:Administrator "cmd /c mklink /D \"%PROJECT_DIR%\kwik5-sample-books\Scripts\" \"%PROJECT_DIR%\kwik5-project-template\Scripts\"" PowerShell (requires Administrator or Developer Mode):</description></item><item><title>TBI kwik framework repo structure</title><link>https://kwiksher.github.io/kwik5docs/dev/deployment/kwik_framework/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/deployment/kwik_framework/index.html</guid><description>development for the kwwik exporter(UXP), the kwik plugin with kwik editor, web editor
+ln -s ../kwik5-project-template/Scripts ./Scripts create lua_modules folder and link kwik5-plugin as kwiksher
+env.lua with “debug”
+local resourcePath = system.pathForFile("", system.ResourceDirectory)'mkdir -p '..resourcePath ..'/lua_modules &amp;&amp; cd ' .. resourcePath ..'/lua_modules &amp;&amp; ln -s ../../../kwik5-plugin kwiksher', this means
+cd Solar2Dmkdir -p lua_modules &amp;&amp; cd lua_modules &amp;&amp; ln -s ../../../kwik5-plugin kwiksher copy the other folders in lua_modules from kwik5-project-template/lua_modules</description></item><item><title>TBI kwik framework repo structure</title><link>https://kwiksher.github.io/kwik5docs/dev/deployment/kwik_framework/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/dev/deployment/kwik_framework/index.html</guid><description>development for the kwwik exporter(UXP), the kwik plugin with kwik editor, web editor
 kwik5-webEditor: react is linked to kwik5-pluing/kwik/server/webEditor
 when kwik5-webEditor is built locally, the built files are commited in kwik5-plugin repo
 kwik5-plugin_build: lua is linked to kwik5-plugin

@@ -35,7 +35,7 @@ mac
 App/book/asset
 kwik editor lists media files under App/book/assets folder
 you may create a sub folder, for instance “myvideo” folder in videos folder
-kwik edior > asset view</description></item><item><title>Copy &amp; Paste components</title><link>https://kwiksher.github.io/kwik5docs/get_started/copy_paste_component/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/copy_paste_component/index.html</guid><description>example use cases A page editing often starts from a base pattern and is then adapted page by page. Copy a component such as animation(liner spin etc), button, sprite, audio, and action etc from a master or template page to another page.
-This lets users reuse a consistent set of layered components across different destinations.
-Copy one component or action from a reference page to a destination.
-For example, kwik-sample-books can be used as a reference library for all component types. Users can copy a specific component, paste it into another page, and then adjust its properties as needed.</description></item></channel></rss>
+kwik edior > asset view</description></item><item><title>Copy &amp; Paste components</title><link>https://kwiksher.github.io/kwik5docs/get_started/copy_paste_component/index.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kwiksher.github.io/kwik5docs/get_started/copy_paste_component/index.html</guid><description>how to work with copy &amp; paste A page editing references a base page as a master template, or a desing patterns for animations, buttons
+Copy a component such as animation(liner spin etc), button, sprite, audio, and action etc from a master or template page to another page.
+reuse a consistent set of layered components across different destinations.
+Copy one component or action from a reference page to a destination.</description></item></channel></rss>
